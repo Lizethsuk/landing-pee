@@ -1,13 +1,24 @@
 <template>
   <div>
-    <p class="title">bye</p>
+   
+    <HeadePage  />
+
+<div>
+  
+</div>
+     <p class="title">bye</p>
+  
   </div>
 </template>
 
 <script>
+import HeadePage from '../components/HeadePage'
 
 export default {
   name:"SaludPage",
+  components:{
+    HeadePage
+  }
 }
 </script>
 
@@ -17,12 +28,13 @@ export default {
 
 .title 
   font font-sourcesans-extrabold
+  color black
   font-size 45px
   min-height 280px
   width 100%
   margin 0 auto
   border-radius 0 0 27px 27px
-  box-shadow(0px 4px 5px 0px yellow)
+  box-shadow(0px 4px 5px 0px blue)
 
 
 
