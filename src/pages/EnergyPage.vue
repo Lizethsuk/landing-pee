@@ -1,12 +1,14 @@
 <template>
   <div>
-    <router-view />
+    <h1>Energy</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: "App",
+  name: "EnergyPage",
 };
 </script>
 
+<style>
+</style>
