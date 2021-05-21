@@ -27,6 +27,7 @@ export default {
  @import "../styles/main.styl"
 
 .title 
+  background-color primary-finanzas  
   font font-sourcesans-extrabold
   color black
   font-size 45px
@@ -34,7 +35,7 @@ export default {
   width 100%
   margin 0 auto
   border-radius 0 0 27px 27px
-  box-shadow(0px 4px 5px 0px blue)
+  box-shadow(0px 4px 5px 0px secondary-finanzas)
 
 
 
