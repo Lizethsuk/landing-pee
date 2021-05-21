@@ -6,7 +6,7 @@
 <div>
   
 </div>
-     <p class="title">ENERGÍA</p>
+     <p class="title">BUSINESS TO <br> BUSINESS - B2B</p>
   
   </div>
 </template>
@@ -15,7 +15,7 @@
 import HeadePage from '../components/HeadePage'
 
 export default {
-  name:"EnergyPage",
+  name:"B2bPage",
   components:{
     HeadePage
   }
@@ -25,8 +25,9 @@ export default {
 <style lang="stylus" scoped>
 
  @import "../styles/main.styl"
+
 .title 
-  background-color primary-energia
+  background-color primary-b2b
   font font-sourcesans-extrabold
   color black
   font-size 45px
@@ -34,5 +35,8 @@ export default {
   width 100%
   margin 0 auto
   border-radius 0 0 27px 27px
-  box-shadow(0px 4px 5px 0px secondary-energia)
+  box-shadow(0px 4px 5px 0px secondary-b2b)
+
+
+
 </style>
