@@ -6,7 +6,7 @@
 <div>
   
 </div>
-     <p class="title">SALUD</p>
+     <p class="title">TECNOLOGÍAS DE LA <br> INFORMACIÓN</p>
   
   </div>
 </template>
@@ -15,7 +15,7 @@
 import HeadePage from '../components/HeadePage'
 
 export default {
-  name:"SaludPage",
+  name:"TiPage",
   components:{
     HeadePage
   }

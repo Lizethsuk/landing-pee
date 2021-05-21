@@ -6,7 +6,7 @@
 <div>
   
 </div>
-     <p class="title">SALUD</p>
+     <p class="title">BUSINESS TO <br> BUSINESS - B2B</p>
   
   </div>
 </template>
@@ -15,7 +15,7 @@
 import HeadePage from '../components/HeadePage'
 
 export default {
-  name:"SaludPage",
+  name:"B2bPage",
   components:{
     HeadePage
   }

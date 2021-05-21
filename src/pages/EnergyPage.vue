@@ -1,7 +1,7 @@
 <template>
   <div>
     
-    <h1>Energy</h1>
+    <h1>ENERGÍA</h1>
   </div>
 </template>
 
