@@ -1,5 +1,5 @@
 <template>
-  <div class="content-date">
+  <div  bg-variant="info" class="content-date" :style="inlineStyle">
     <b-row>
       <b-col>
         <p class="subtitle">
@@ -10,8 +10,8 @@
       <b-col>
      <br>
         <div id="container">
-          <div class="month" id="navi">de mayo</div>
-          <div id="infoi">06</div>
+          <div class="month" id="navi" v-text="'de'+ ' ' + month"></div>
+          <div id="infoi" v-text="day"></div>
         </div>
       </b-col>
       <b-col>
@@ -26,6 +26,18 @@
 <script>
 export default {
   name: "DatePage",
+   props: {
+    month: {
+      type: String,
+      require: true,
+    },
+    day: {
+      type: String,
+      require: true,
+    },
+   backgroundColor:  String,
+    
+  }
 };
 </script>
 
@@ -64,19 +76,25 @@ export default {
 #infoi {
   z-index: 10;
   margin-left: -15px;
-  font-size: 80px;
+  font-size: 82px;
   margin-top: -50px;
+  font-weight 650
   
 }
 
 #navi {
   background-color:secondary-energia;
-  color: #7D6247
+  color: #FFFFFF
   text-align right 
   padding-right: 20px;
+  font-size 22px
   width 190px
   height 40px
+  font-weight bold
 }
 .subtitle
-  font-size 25px
+  font-size 22px
+  line-height 22px
+  padding 15px 0px 18px
+  font-weight 500
 </style>

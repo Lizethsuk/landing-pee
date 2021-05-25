@@ -42,6 +42,7 @@ export default {
   padding-top 10px
 .button-nav
   padding 10px 25px 10px 25px
+  background-color primary-pee
 .nav
   background-color #212529 !important
 </style>

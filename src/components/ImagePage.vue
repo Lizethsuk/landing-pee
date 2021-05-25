@@ -7,7 +7,7 @@
   >
     <div class="image-opacity">
       <div class="title-content">
-        <p class="title" v-text="message"></p>
+        <p class="title" v-text=" message"></p>
         <hr class="line" />
       </div>
     </div>
@@ -65,13 +65,16 @@ export default {
 
 .title {
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 45px;
   margin-block-end: 0px;
+  width: 26rem;
+  font-weight: bold;
+  line-height 45px
 }
 
 .line {
   border-top: 3px solid white;
-  width: 25rem;
+  width: 35rem;
   margin-left: -100px;
   opacity: 1 !important;
   margin-block-start: 0px;

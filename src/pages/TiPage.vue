@@ -1,24 +1,31 @@
 <template>
   <div>
-   
-    <HeadePage  />
+    <HeadePage />
+    <ImagePage message="Tecnología de la información" background-image="Landscape-Color.jpg" />
+    <div class="date">
+      <b-container>
+        <DatePage month="abril" day="28"  />
+      </b-container>
+    </div>
 
-<div>
-  
-</div>
-     <p class="title">TECNOLOGÍAS DE LA <br> INFORMACIÓN</p>
-  
+    <FooterPage />
   </div>
 </template>
 
 <script>
-import HeadePage from '../components/HeadePage'
+import HeadePage from "../components/HeadePage";
+import FooterPage from "../components/FooterPage";
+import ImagePage from "../components/ImagePage.vue";
+import DatePage from "../components/DatePage.vue";
 
 export default {
   name:"TiPage",
-  components:{
-    HeadePage
-  }
+  components: {
+    HeadePage,
+    FooterPage,
+    ImagePage,
+    DatePage,
+  },
 }
 </script>
 

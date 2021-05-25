@@ -1,24 +1,31 @@
 <template>
   <div>
-   
-    <HeadePage  />
+    <HeadePage />
+    <ImagePage message="Administración y dirección de personas" background-image="Landscape-Color.jpg" />
+    <div class="date">
+      <b-container>
+        <DatePage month="abril" day="29"  />
+      </b-container>
+    </div>
 
-<div>
-  
-</div>
-     <p class="title">ADMINISTRACIÓN Y <br>DIRECCIÓN DE PERSONAS</p>
-  
+    <FooterPage />
   </div>
 </template>
 
 <script>
-import HeadePage from '../components/HeadePage'
+import HeadePage from "../components/HeadePage";
+import FooterPage from "../components/FooterPage";
+import ImagePage from "../components/ImagePage.vue";
+import DatePage from "../components/DatePage.vue";
 
 export default {
   name:"AdministrationPage",
-  components:{
-    HeadePage
-  }
+  components: {
+    HeadePage,
+    FooterPage,
+    ImagePage,
+    DatePage,
+  },
 }
 </script>
 

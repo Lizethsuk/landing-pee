@@ -1,21 +1,32 @@
 <template>
   <div>
-   
-    <HeadePage  />
-   
-     <p class="title">SALUD</p>
+    <HeadePage />
+    <ImagePage message="Salud" background-image="Landscape-Color.jpg" />
+    <div class="date">
+      <b-container>
+        <DatePage month="mayo" day="06" />
+      </b-container>
+    </div>
+
+    <FooterPage />
   </div>
+  
 </template>
 
 <script>
-import HeadePage from '../components/HeadePage'
-
+import HeadePage from "../components/HeadePage";
+import FooterPage from "../components/FooterPage";
+import ImagePage from "../components/ImagePage.vue";
+import DatePage from "../components/DatePage.vue";
 export default {
-  name:"SaludPage",
-  components:{
-    HeadePage
-  }
-}
+  name: "SaludPage",
+  components: {
+    HeadePage,
+    FooterPage,
+    ImagePage,
+    DatePage,
+  },
+};
 </script>
 
 <style lang="stylus" scoped>

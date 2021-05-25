@@ -1,24 +1,31 @@
 <template>
   <div>
-   
-    <HeadePage  />
+    <HeadePage />
+    <ImagePage message="Marketing" background-image="Landscape-Color.jpg" />
+    <div class="date">
+      <b-container>
+        <DatePage month="mayo" day="04"  />
+      </b-container>
+    </div>
 
-<div>
-  
-</div>
-     <p class="title">MARKETING</p>
-  
+    <FooterPage />
   </div>
 </template>
 
 <script>
-import HeadePage from '../components/HeadePage'
+import HeadePage from "../components/HeadePage";
+import FooterPage from "../components/FooterPage";
+import ImagePage from "../components/ImagePage.vue";
+import DatePage from "../components/DatePage.vue";
 
 export default {
   name:"MarketingPage",
-  components:{
-    HeadePage
-  }
+  components: {
+    HeadePage,
+    FooterPage,
+    ImagePage,
+    DatePage,
+  },
 }
 </script>
 

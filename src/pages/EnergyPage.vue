@@ -4,7 +4,7 @@
     <ImagePage message="Energia" background-image="Landscape-Color.jpg" />
     <div class="date">
       <b-container>
-        <DatePage />
+        <DatePage month="junio" day="06"  />
       </b-container>
     </div>
 
@@ -47,5 +47,5 @@ export default {
 <style lang="stylus" scoped>
 @import '../styles/main.styl';
 .date
-  background-color: #7D6247;
+  background-color: pink;
 </style>
