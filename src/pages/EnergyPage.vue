@@ -1,38 +1,51 @@
 <template>
   <div>
-   
-    <HeadePage  />
+    <HeadePage />
+    <ImagePage message="Energia" background-image="Landscape-Color.jpg" />
+    <div class="date">
+      <b-container>
+        <DatePage />
+      </b-container>
+    </div>
 
-<div>
-  
-</div>
-     <p class="title">ENERGÍA</p>
-  
+    <FooterPage />
   </div>
+  <!-- <b-container fluid >
+      <b-row class="no-gutters">
+
+      </b-row>
+ 
+
+
+      <b-row no-gutters>
+       
+      </b-row>
+      <b-row>
+        
+      </b-row>
+
+     
+    </b-container> -->
 </template>
 
 <script>
-import HeadePage from '../components/HeadePage'
-
+import HeadePage from "../components/HeadePage";
+import FooterPage from "../components/FooterPage";
+import ImagePage from "../components/ImagePage.vue";
+import DatePage from "../components/DatePage.vue";
 export default {
-  name:"EnergyPage",
-  components:{
-    HeadePage
-  }
-}
+  name: "EnergyPage",
+  components: {
+    HeadePage,
+    FooterPage,
+    ImagePage,
+    DatePage,
+  },
+};
 </script>
 
 <style lang="stylus" scoped>
-
- @import "../styles/main.styl"
-.title 
-  background-color primary-energia
-  font font-sourcesans-extrabold
-  color black
-  font-size 45px
-  min-height 280px
-  width 100%
-  margin 0 auto
-  border-radius 0 0 27px 27px
-  box-shadow(0px 4px 5px 0px secondary-energia)
+@import '../styles/main.styl';
+.date
+  background-color: #7D6247;
 </style>
