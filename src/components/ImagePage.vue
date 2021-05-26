@@ -28,7 +28,6 @@ export default {
  
     computed: {
     bgImage() {
-      // eslint-disable-next-line no-undef
       return require("@/assets/" + this.backgroundImage);
     },
     inlineStyle() {
@@ -44,23 +43,19 @@ export default {
 @import '../styles/main.styl';
 
 .image {
-  // background-image: url('../assets/Landscape-Color.jpg');
   height: 400px;
   opacity: 0.8;
   position: relative;
+  background-repeat no-repeat
+  background-size cover
 }
 
 .image:before {
   content: ' ';
   display: block;
   position: absolute;
-  left: 0;
-  top: 0;
-  // width: 100%;
-  // height: 100%;
   z-index: 1;
   opacity: 0.4;
-  // background-color: #7D6247;
 }
 
 .title {

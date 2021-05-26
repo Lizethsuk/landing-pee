@@ -2,30 +2,9 @@
   <div>
     <HeadePage />
     <ImagePage message="Energia" background-image="Landscape-Color.jpg" />
-    <div class="date">
-      <b-container>
-        <DatePage month="junio" day="06"  />
-      </b-container>
-    </div>
-
+    <DatePage bgColor="#7D6247"   month="junio" day="06"  />
     <FooterPage />
   </div>
-  <!-- <b-container fluid >
-      <b-row class="no-gutters">
-
-      </b-row>
- 
-
-
-      <b-row no-gutters>
-       
-      </b-row>
-      <b-row>
-        
-      </b-row>
-
-     
-    </b-container> -->
 </template>
 
 <script>
@@ -41,11 +20,11 @@ export default {
     ImagePage,
     DatePage,
   },
+
 };
 </script>
 
 <style lang="stylus" scoped>
 @import '../styles/main.styl';
-.date
-  background-color: pink;
+
 </style>
