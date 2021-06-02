@@ -5,9 +5,7 @@
         <div bg-variant="info" class="content-date">
           <b-row>
             <b-col>
-              <p class="subtitle">
-                Conferencia <br />
-                Informativa
+              <p  v-text="dateText" class="subtitle">
               </p>
             </b-col>
             <b-col>
@@ -18,7 +16,7 @@
               </div>
             </b-col>
             <b-col>
-              <b-button class="button-nav" squared>Inscribete aqui</b-button>
+              <b-button class="button-nav" v-text="buttonText" squared></b-button>
             </b-col>
           </b-row>
           <b-row> </b-row>
@@ -36,6 +34,14 @@ export default {
       type: String,
       require: true,
     },
+    buttonText:{
+      type: String,
+      require: true,
+    },
+    dateText:{
+      type: String,
+      require: true,
+    },
     day: {
       type: String,
       require: true,
@@ -49,7 +55,6 @@ export default {
     cssVars() {
       return {
         "--bg-color": this.bgColor,
-        "--height": this.height + "px",
       };
     },
   },

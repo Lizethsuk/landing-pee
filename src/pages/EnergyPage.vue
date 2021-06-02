@@ -1,32 +1,37 @@
 <template>
   <div>
-    <HeadePage />
-    <ImagePage message="Energia" background-image="Landscape-Color.jpg" />
-    <DatePage bgColor="#7D6247" month="junio" day="06" />
-    <CursosPage title="title" lineColor="#7D6247" bgColor="#7D6247">
-      <CursoList
-        v-for="curso in cursos"
-        :sectionName="curso.section"
-        :cursoName="curso.curso"
-        :teacherName="curso.teacher"
-        :horarioName="curso.horario"
-        :key="curso.id"
+    <div>
+      <HeadePage />
+      <ImagePage :message="myJson.title" background-image="Landscape-Color.jpg" />
+      <DatePage :buttonText="myJson.buttonText"  :dateText="myJson.dateText" bgColor="#7D6247" :month="myJson.month" :day="myJson.date" />
+      <CursosPage :title="myJson.titleCurso" lineColor="#7D6247" bgColor="#7D6247">
+        <CursoList
+          v-for="curso in myJson.cursos"
+          :sectionName="curso.section"
+          :cursoName="curso.curso"
+          :teacherName="curso.teacher"
+          :horarioName="curso.horario"
+          :key="curso.id"
+          bgColor="#7D6247"
+          lineColor="#7D6247"
+        />
+      </CursosPage>
+      <PasosPages
+        colorIcon="green"
         bgColor="#7D6247"
-        lineColor="#7D6247"
+        :calendarioText="myJson.calendatioText"
+        :informeText="myJson.informesText"
+        :folletoText="myJson.folletoText"
+        :admisionText="myJson.admisionText"
+        lineColor="#F3CE8F"
       />
-    </CursosPage>
-    <PasosPages colorIcon="green" bgColor="#7D6247" 
-     calendarioText="calendario"
-     informeText="infor"
-     folletoText="folle"
-     admisionText="admis"
-     lineColor="#F3CE8F"
-    />
-    <FooterPage />
+      <FooterPage />
+    </div>
   </div>
 </template>
 
 <script>
+import json from "../data/energy.json";
 import HeadePage from "../components/HeadePage";
 import FooterPage from "../components/FooterPage";
 import ImagePage from "../components/ImagePage.vue";
@@ -47,6 +52,8 @@ export default {
   },
   data() {
     return {
+      myJson: json,
+      totalVuePackages: {},
       cursos: [
         {
           section: "Foo 1 ",
@@ -69,6 +76,16 @@ export default {
       ],
     };
   },
+  mounted() {
+    console.log(this.myJson)
+   
+  },
+  // created() {
+  //   fetch("../data/energy.json")
+  //   .then(response => response.json())
+  //   .then(data => (this.totalVuePackages = data.total));
+  //   console.log
+  // }
 };
 </script>
 
