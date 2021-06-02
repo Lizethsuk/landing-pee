@@ -113,5 +113,4 @@ export default {
   line-height: 22px;
   padding: 15px 0px 18px;
   font-weight: 500;
-
 </style>

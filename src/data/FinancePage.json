@@ -1,0 +1,34 @@
+{
+  "title":"Finanza",
+  "text-con":"Conferencia Informativa",
+  "date":"27",
+  "month":"de abril",
+  "dateText":"Conferencia Informativa",
+  "buttonText":"Inscribete aqui",
+  "titleCurso":"Cursos del Certificado de Especializacion en Gestion de la Energia",
+  "cursos":[
+    {
+      "section": "Foo 50 ",
+      "curso": "curso - 1",
+      "teacher": "teacher - 1",
+      "horario": "horario - 1"
+    },
+    {
+      "section": "Foo 50 ",
+      "curso": "curso - 2",
+      "teacher": "teacher - 2",
+      "horario": "horario - 2"
+    },
+    {
+      "section": "Foo 80",
+      "curso": "curso - 3",
+      "teacher": "teacher - 3",
+      "horario": "horario - 30"
+    }
+  ],
+  "titlePasos":"Siguientes pasos",
+  "calendatioText":"calendario",
+  "informesText":"Informes",
+  "folletoText":"folleto",
+  "admisionText":"admision"
+}

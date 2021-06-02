@@ -1,32 +1,37 @@
 <template>
-  <div>
-    <HeadePage />
-    <ImagePage message="Tecnología de la información" background-image="Landscape-Color.jpg" />
-    <DatePage bgColor="#5D6F79" month="abril" day="28"  />
-    <CursosPage title="title" lineColor="#5D6F79" bgColor="#7D6247">
-      <CursoList
-        v-for="curso in cursos"
-        :sectionName="curso.section"
-        :cursoName="curso.curso"
-        :teacherName="curso.teacher"
-        :horarioName="curso.horario"
-        :key="curso.id"
-        bgColor="#D5D6DA"
-        lineColor="#5D6F79"
+    <div>
+    <div>
+      <HeadePage />
+      <ImagePage :message="myJson.title" />
+      <DatePage :buttonText="myJson.buttonText"  :dateText="myJson.dateText" bgColor="#7D6247" :month="myJson.month" :day="myJson.date" />
+      <CursosPage :title="myJson.titleCurso" lineColor="#7D6247" bgColor="#7D6247">
+        <CursoList
+          v-for="curso in myJson.cursos"
+          :sectionName="curso.section"
+          :cursoName="curso.curso"
+          :teacherName="curso.teacher"
+          :horarioName="curso.horario"
+          :key="curso.id"
+          bgColor="#7D6247"
+          lineColor="#7D6247"
+        />
+      </CursosPage>
+      <PasosPages
+        colorIcon="green"
+        bgColor="#7D6247"
+        :calendarioText="myJson.calendatioText"
+        :informeText="myJson.informesText"
+        :folletoText="myJson.folletoText"
+        :admisionText="myJson.admisionText"
+        lineColor="#F3CE8F"
       />
-    </CursosPage>
-    <PasosPages colorIcon="green" bgColor="#5D6F79" 
-     calendarioText="calendario"
-     informeText="infor"
-     folletoText="folle"
-     admisionText="admis"
-     lineColor="#57A9D1"
-    />
-    <FooterPage />
+      <FooterPage />
+    </div>
   </div>
 </template>
 
 <script>
+import json from "../data/TiPage.json";
 import HeadePage from "../components/HeadePage";
 import FooterPage from "../components/FooterPage";
 import ImagePage from "../components/ImagePage.vue";
@@ -48,6 +53,7 @@ export default {
   },
   data() {
     return {
+      myJson: json,
       cursos: [
         {
           section: "Foo 1 ",
@@ -76,6 +82,8 @@ export default {
 <style lang="stylus" scoped>
 
  @import "../styles/main.styl"
+.jumbotron
+  background-image url('../assets/Landscape-Color.jpg')
 
 .fecha {
   font-size: 20px;
