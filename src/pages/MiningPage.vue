@@ -1,9 +1,9 @@
 <template>
-  <div>
+ <div>
     <HeadePage />
-    <ImagePage message="Operaciones Logística" background-image="Landscape-Color.jpg" />
-    <DatePage bgColor="#80A0B5" month="abril" day="27"  />
-    <CursosPage title="title" lineColor="#80A0B5" bgColor="#80A0B5">
+    <ImagePage message="Minería" background-image="Landscape-Color.jpg" />
+    <DatePage month="mayo" day="06"  />
+    <CursosPage title="title" lineColor="#7D6247" bgColor="#7D6247">
       <CursoList
         v-for="curso in cursos"
         :sectionName="curso.section"
@@ -11,18 +11,17 @@
         :teacherName="curso.teacher"
         :horarioName="curso.horario"
         :key="curso.id"
-        bgColor="#80A0B5"
-        lineColor="#054662"
+        bgColor="#7D6247"
+        lineColor="#7D6247"
       />
     </CursosPage>
-    <PasosPages colorIcon="green" bgColor="#80A0B5" 
+    <PasosPages colorIcon="green" bgColor="#7D6247" 
      calendarioText="calendario"
      informeText="infor"
      folletoText="folle"
      admisionText="admis"
-     lineColor="#054662"
+     lineColor="#F3CE8F"
     />
-
     <FooterPage />
   </div>
 </template>
@@ -37,7 +36,7 @@ import CursoList from "../components/CursoList";
 import PasosPages from "../components/PasosPages.vue";
 
 export default {
-  name:"LogisticPage",
+  name:"MiningPage",
   components: {
     HeadePage,
     FooterPage,
@@ -161,5 +160,6 @@ li:nth-child(odd) {
 section {
   border-bottom: 4px solid primary-pee;
 }
+
 
 </style>

@@ -8,6 +8,7 @@ import B2bPage from "../pages/B2bPage"
 import FinancePage from "../pages/FinancePage"
 import MarketingPage from "../pages/MarketingPage"
 import LogisticPage from "../pages/LogisticPage"
+import MiningPage from "../pages/MiningPage"
 import HomeView from "../views/HomeView"
 Vue.use(Router)
 export default new Router({
@@ -56,6 +57,11 @@ export default new Router({
       path: "/logistica_page",
       name: "logistica_page",
       component: LogisticPage
+    },
+    {
+      path: "/mineria_page",
+      name: "mineriaa_page",
+      component: MiningPage
     }
   ]
 

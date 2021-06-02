@@ -47,7 +47,9 @@
               <li class="nav-item li-area">
                 <div class="box-area">
                   <router-link class="nav-link" to="/energy_page"
-                    >Energia</router-link
+                    >Energia
+                    
+                    </router-link
                   >
                 </div>
               </li>
@@ -95,6 +97,13 @@
                     >Administración y <br />
                     Dirección de <br />
                     la Información</router-link
+                  >
+                </div>
+              </li>
+              <li class="nav-item li-area">
+                <div class="box-area">
+                  <router-link class="nav-link" to="/mineria_page"
+                    >Mineria</router-link
                   >
                 </div>
               </li>
@@ -205,7 +214,7 @@ ul {
 .nav-item {
   display: inline-block;
   margin: 0px;
-  width: 25%;
+  width: 33.33%;
   min-height: 70px;
   font-size: 24px;
 }
