@@ -14,7 +14,7 @@
           </b-col>
         </b-row>
         <b-row>
-          <b-col
+          <b-col cols="12" md="6"
             class="home-banner d-flex align-items-start justify-content-center flex-column"
           >
             <h1>PEE ONLINE</h1>
@@ -23,7 +23,7 @@
               PARA EJECUTIVOS
             </h2>
           </b-col>
-          <b-col class="d-flex align-items-center justify-content-center">
+          <b-col cols="12" md="6" class="d-flex align-items-center justify-content-center">
             <FormHome />
           </b-col>
         </b-row>
@@ -36,7 +36,7 @@
             <h3 class="text-center pb-5">
               CONOCE NUESTROS <br />ÁREAS DE ESPECIALIZACIÓN
             </h3>
-            <ul class="navbar-nav d-inline-block d-flex flex-wrap">
+            <ul class="justify-content-center d-flex flex-wrap">
               <li class="nav-item li-area">
                 <div class="box-area">
                   <router-link class="nav-link" to="/salud_page"
@@ -214,7 +214,8 @@ ul {
 .nav-item {
   display: inline-block;
   margin: 0px;
-  width: 33.33%;
+  max-width: 380px;
+  width: 100%;
   min-height: 70px;
   font-size: 24px;
 }
@@ -234,6 +235,7 @@ h1 {
 
 .navbar-nav {
   flex-direction: row;
+  
 }
 
 .hello {

@@ -1,11 +1,16 @@
 <template>
   <div>
     <div class="cursos-page">
-      <b-container class="bv-example-row section-areas">
-        <b-row>
+      <b-container  class="bv-example-row section-areas">
+        <b-row no-gutters>
           <b-col>
-            <p v-text="title"></p>
-            <ul class="navbar-nav d-inline-block d-flex flex-wrap">
+            <p v-text="title" ></p>
+          </b-col>
+        </b-row>
+        <b-row no-gutters >
+          <b-col cols="12" class="pl-0 pr-0">
+            
+            <ul class="navbar-nav d-inline-block d-flex  justify-content-between flex-wrap">
              <slot></slot>
           
             </ul> 
@@ -59,4 +64,5 @@ export default {
 section {
   border-bottom: 4px solid primary-pee;
 }
+
 </style>

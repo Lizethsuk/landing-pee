@@ -94,10 +94,11 @@ ul {
 .nav-item {
   display: inline-block;
   margin: 0px;
-  width: 31%;
+  max-width 420px;
+  min-width 300px;
+  width: 100%!important;
   font-size: 24px;
   min-height: 70px;
-  margin 10px  !important
 }
 
 a {
@@ -124,10 +125,12 @@ a {
   height: 180px;
   border: 1px solid  var(--bg-color);
   padding: 10px;
+  
 }
 
 li {
   background: #DBDBDB;
+  margin 0 0 10px 0!important
 }
 
 li:nth-child(odd) {
@@ -144,5 +147,8 @@ li:nth-child(odd) {
 
 section {
   border-bottom: 4px solid primary-pee;
+}
+@media (max-width: 767px) {
+ 
 }
 </style>

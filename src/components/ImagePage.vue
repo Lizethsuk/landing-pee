@@ -87,4 +87,21 @@ export default {
 .image-opacity {
   background-color: rgba(248, 247, 216, 0.7);
 }
+@media (max-width: 767px) {
+.title {
+  font-size: 28px;
+  width: auto;
+  line-height 28px
+}
+.title-content {
+  bottom: 15px;
+  left: 20px;
+  position: absolute;
+  z-index: 2;
+}
+.line {
+  width: auto
+}
+
+}
 </style>

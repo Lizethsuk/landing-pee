@@ -1,4 +1,4 @@
-<template>
+<template class="text-center">
   <svg xmlns="http://www.w3.org/2000/svg" :width="width" :height="width">
     <path
      :class="color"
@@ -31,7 +31,7 @@ export default {
     },
     width: {
       type: Number,
-      default: 50,
+      default: 25,
       required: false,
     },
   },

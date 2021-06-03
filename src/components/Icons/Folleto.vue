@@ -31,7 +31,7 @@ export default {
     },
     width: {
       type: Number,
-      default: 50,
+      default: 25,
       required: false,
     },
   },

@@ -6,29 +6,29 @@
           <p class="title">Siguientes pasos</p>
         </b-row>
         <b-row>
-          <b-col>
+          <b-col lg="3" cols="12">
             <div class="pasos-content">
               <Calendario :color="colorIcon"/>
               <p>Calendario</p>
               <p v-text="calendarioText"></p>
             </div>
           </b-col>
-          <b-col>
+          <b-col lg="3" cols="12">
             <div class="pasos-content">       
             <Informes :color="colorIcon"/>
             <p>Informes e inscripcione</p>
             <p v-text="informeText"></p>
             </div>
           </b-col>
-          <b-col>
+          <b-col lg="3" cols="12">
             <div class="pasos-content">
             <Folleto :color="colorIcon"/>
             <p>Folleto</p>
             <p v-text="folletoText"></p>
             </div>
           </b-col>
-          <b-col>
-            <div>
+          <b-col lg="3" cols="12">
+            <div class="text-center ">
             <Admision :color="colorIcon"/>
             <p>Admision</p>
             <p v-text="admisionText"></p>
@@ -109,5 +109,13 @@ export default {
   padding: 50px 0px;
   padding-top: 20px;
   color white
+}
+@media (max-width: 767px) {
+
+  .pasos-content {
+    
+   border-right: none;
+  }
+
 }
 </style>

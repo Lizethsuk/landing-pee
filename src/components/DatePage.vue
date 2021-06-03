@@ -4,18 +4,17 @@
       <b-container class="bv-footer-row">
         <div bg-variant="info" class="content-date">
           <b-row>
-            <b-col>
+            <b-col md="4" align-self="center">
               <p  v-text="dateText" class="subtitle">
               </p>
             </b-col>
-            <b-col>
-              <br />
-              <div id="container">
+            <b-col md="4" cols="12" align-self="center" >
+              <div id="container" align-items="center">
                 <div class="month" id="navi" v-text="'de' + ' ' + month"></div>
                 <div id="infoi" v-text="day"></div>
               </div>
             </b-col>
-            <b-col>
+            <b-col md="4" cols="12" align-self="center">
               <b-button class="button-nav" v-text="buttonText" squared></b-button>
             </b-col>
           </b-row>
@@ -73,8 +72,9 @@ export default {
 
 .content-date 
   color: white;
-  padding-top: 30px;
+  padding: 30px;
   text-align: center;
+  
  
 .month 
   font-size: 25px;
@@ -87,14 +87,14 @@ export default {
 
 #navi, #infoi 
   position: absolute;
-  top: 0;
+  top: -10px;
   left: 0;
 
 #infoi 
   z-index: 10;
-  margin-left: -15px;
+  margin-left: -30px;
   font-size: 82px;
-  margin-top: -50px;
+  margin-top: -54.5px;
   font-weight: 650;
 
 
@@ -104,7 +104,7 @@ export default {
   text-align: right;
   padding-right: 20px;
   font-size: 22px;
-  width: 190px;
+  width: 196px;
   height: 40px;
   font-weight: bold;
 
@@ -113,4 +113,5 @@ export default {
   line-height: 22px;
   padding: 15px 0px 18px;
   font-weight: 500;
+  margin-bottom 0px
 </style>
