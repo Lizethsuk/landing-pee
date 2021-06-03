@@ -1,9 +1,18 @@
-{
-  "title":"Operaciones y Logística de Proyectos",
+{  
+  "bgColorDividerDate":"#054662" ,
+  "bgColorButtonDate":"#054662",
+  "bgColorDate":"#80A0B5",
+  "lineColorCursos":"#7D6247",
+  "bgColorCursos":"#7D6247",
+  "lineColorPasos":"#054662",
+  "bgColorPasos":"#80A0B5",
+  "colorIcon":"green",
+  "title":"Operaciones Logísticas",
   "text-con":"Conferencia Informativa",
   "date":"10",
-  "month":"de junio",
-  "dateText":"Conferencia Informativa",
+  "month":"junio",
+  "dateTextSecond" : "Informativa",
+  "dateText":"Conferencia",
   "buttonText":"Inscribete aqui",
   "titleCurso":"Cursos del Certificado de Especializacion en Gestion de la Energia",
   "cursos":[

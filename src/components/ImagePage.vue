@@ -64,7 +64,7 @@ export default {
   text-transform: uppercase;
   font-size: 45px;
   margin-block-end: 0px;
-  width: 26rem;
+  width: 15em;
   font-weight: bold;
   line-height 45px
 }

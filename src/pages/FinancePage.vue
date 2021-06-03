@@ -1,10 +1,12 @@
 <template>
-  <div>
+   <div>
     <div>
-      <HeadePage />
+     <HeadePage />
       <ImagePage :message="myJson.title" />
-      <DatePage :buttonText="myJson.buttonText"  :dateText="myJson.dateText" bgColor="#7D6247" :month="myJson.month" :day="myJson.date" />
-      <CursosPage :title="myJson.titleCurso" lineColor="#7D6247" bgColor="#7D6247">
+      <DatePage :bgColorButton="myJson.bgColorButtonDate" :bgColorDivider="myJson.bgColorDividerDate"  
+      :dateTextSecond="myJson.dateTextSecond" :buttonText="myJson.buttonText"  
+      :dateText="myJson.dateText" :bgColor="myJson.bgColorDate" :month="myJson.month" :day="myJson.date" />
+      <CursosPage :title="myJson.titleCurso" >
         <CursoList
           v-for="curso in myJson.cursos"
           :sectionName="curso.section"
@@ -12,18 +14,19 @@
           :teacherName="curso.teacher"
           :horarioName="curso.horario"
           :key="curso.id"
-          bgColor="#7D6247"
-          lineColor="#7D6247"
+          :lineColor="myJson.lineColorCursos" :bgColor="myJson.bgColorCursos"
         />
+
       </CursosPage>
-      <PasosPages
-        colorIcon="green"
-        bgColor="#7D6247"
+       <PasosPages
+        :colorIcon="myJson.colorIcon"
+        :lineColor="myJson.lineColorPasos"
+        :bgColor="myJson.bgColorPasos"
         :calendarioText="myJson.calendatioText"
         :informeText="myJson.informesText"
         :folletoText="myJson.folletoText"
         :admisionText="myJson.admisionText"
-        lineColor="#F3CE8F"
+       
       />
       <FooterPage />
     </div>
