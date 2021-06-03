@@ -2,7 +2,7 @@
   <div>
     <div>
       <HeadePage />
-      <ImagePage :message="myJson.title" background-image="Landscape-Color.jpg" />
+      <ImagePage :message="myJson.title" />
       <DatePage :buttonText="myJson.buttonText"  :dateText="myJson.dateText" bgColor="#7D6247" :month="myJson.month" :day="myJson.date" />
       <CursosPage :title="myJson.titleCurso" lineColor="#7D6247" bgColor="#7D6247">
         <CursoList
@@ -91,6 +91,8 @@ export default {
 
 <style lang="stylus" scoped>
 @import '../styles/main.styl';
+.jumbotron
+  background-image url('../assets/Landscape-Color.jpg')
 
 .fecha {
   font-size: 20px;

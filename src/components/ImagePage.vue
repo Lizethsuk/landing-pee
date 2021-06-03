@@ -2,7 +2,6 @@
   <b-jumbotron
     bg-variant="info"
     class="image"
-    :style="inlineStyle"
     text-variant="white"
   >
     <div class="image-opacity">
@@ -23,19 +22,22 @@ export default {
       type: String,
       require: true,
     },
-    backgroundImage: String
+    backgroundImage:{
+      type:String,
+      require:false
+    } 
   },
  
-    computed: {
-    bgImage() {
-      return require("@/assets/" + this.backgroundImage);
-    },
-    inlineStyle() {
-      return {
-        backgroundImage: `url(${this.bgImage})`
-      };
-    }
-  }
+  //   computed: {
+  //   bgImage() {
+  //     return require("@/assets/" + this.backgroundImage);
+  //   },
+  //   inlineStyle() {
+  //     return {
+  //       backgroundImage: `url(${this.bgImage})`
+  //     };
+  //   }
+  // }
 };
 </script>
 

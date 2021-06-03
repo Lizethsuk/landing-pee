@@ -1,33 +1,51 @@
 <template>
   <div>
-    <HeadePage />
-    <ImagePage message="Administración y dirección de personas" background-image="Landscape-Color.jpg" />
-      <DatePage bgColor="#7D6247" month="abril" day="29"  />
-    <CursosPage title="title" lineColor="#CE920F" bgColor="#7D6247">
-      <CursoList
-        v-for="curso in cursos"
-        :sectionName="curso.section"
-        :cursoName="curso.curso"
-        :teacherName="curso.teacher"
-        :horarioName="curso.horario"
-        :key="curso.id"
-        bgColor="#7D6247"
-        lineColor="#CE920F"
-      />
-    </CursosPage>
-    <PasosPages colorIcon="green" bgColor="#7D6247" 
-     calendarioText="calendario"
-     informeText="infor"
-     folletoText="folle"
-     admisionText="admis"
-     lineColor="#CE920F"
-    />
+    <div>
+      <HeadePage />
+      <ImagePage :message="myJson.title" />
+      <DatePage :buttonText="myJson.buttonText"  :dateText="myJson.dateText" bgColor="#7D6247" :month="myJson.month" :day="myJson.date" />
+      <CursosPage :title="myJson.titleCurso" lineColor="#7D6247" bgColor="#7D6247">
+        <CursoList
+          v-for="curso in myJson.cursos"
+          :sectionName="curso.section"
+          :cursoName="curso.curso"
+          :teacherName="curso.teacher"
+          :horarioName="curso.horario"
+          :key="curso.id"
+          bgColor="#7D6247"
+          lineColor="#7D6247"
+        />
 
-    <FooterPage />
+      </CursosPage>
+      <hr>
+      <CursosPage  lineColor="#7D6247" bgColor="#7D6247">
+        <CursoList
+          v-for="curso in myJson.cursosSecond"
+          :sectionName="curso.section"
+          :cursoName="curso.curso"
+          :teacherName="curso.teacher"
+          :horarioName="curso.horario"
+          :key="curso.id"
+          bgColor="#7D6247"
+          lineColor="#7D6247"
+        />
+      </CursosPage>
+      <PasosPages
+        colorIcon="green"
+        bgColor="#7D6247"
+        :calendarioText="myJson.calendatioText"
+        :informeText="myJson.informesText"
+        :folletoText="myJson.folletoText"
+        :admisionText="myJson.admisionText"
+        lineColor="#F3CE8F"
+      />
+      <FooterPage />
+    </div>
   </div>
 </template>
 
 <script>
+import json from "../data/AdministrationPage.json";
 import HeadePage from "../components/HeadePage";
 import FooterPage from "../components/FooterPage";
 import ImagePage from "../components/ImagePage.vue";
@@ -49,6 +67,7 @@ export default {
   },
   data() {
     return {
+      myJson: json,
       cursos: [
         {
           section: "Foo 1 ",
@@ -77,6 +96,13 @@ export default {
 <style lang="stylus" scoped>
 
  @import "../styles/main.styl"
+
+hr 
+  background-color:secondary-administracion
+  height: 5px;
+  opacity 1 !important
+.jumbotron
+  background-image url('../assets/Landscape-Color.jpg')
 
 .fecha {
   font-size: 20px;
