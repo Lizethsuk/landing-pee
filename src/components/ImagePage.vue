@@ -3,6 +3,7 @@
     bg-variant="info"
     class="image"
     text-variant="white"
+    :style="cssVars"
   >
     <div class="image-opacity">
       <div class="title-content">
@@ -25,19 +26,20 @@ export default {
     backgroundImage:{
       type:String,
       require:false
+    },
+    bgColorDivider: {
+      type: String,
+      default: "white",
     } 
   },
- 
-  //   computed: {
-  //   bgImage() {
-  //     return require("@/assets/" + this.backgroundImage);
-  //   },
-  //   inlineStyle() {
-  //     return {
-  //       backgroundImage: `url(${this.bgImage})`
-  //     };
-  //   }
-  // }
+  computed: {
+    cssVars() {
+      return {
+        "--bg-color-divider":this.bgColorDivider
+      };
+    },
+  },
+
 };
 </script>
 
@@ -70,7 +72,7 @@ export default {
 }
 
 .line {
-  border-top: 3px solid white;
+  border-top: 3px solid var(--bg-color-divider);
   width: 35rem;
   margin-left: -100px;
   opacity: 1 !important;

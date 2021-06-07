@@ -4,7 +4,6 @@
       <br />
       <b-container class="bv-footer-row">
         <div class="line">
-          <hr class="solid">
           <div class="link-section">
            
             <b-row>

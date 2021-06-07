@@ -9,10 +9,29 @@ import FinancePage from "../pages/FinancePage"
 import MarketingPage from "../pages/MarketingPage"
 import LogisticPage from "../pages/LogisticPage"
 import MiningPage from "../pages/MiningPage"
+import AdmisionPage from "../pages/menuPages/AdmisionPage"
+import FinanciamientoPage from "../pages/menuPages/FinanciamientoPage"
+import SolicitaInformacion from "../pages/menuPages/SolicitaInformacion"
+
 import HomeView from "../views/HomeView"
 Vue.use(Router)
 export default new Router({
   routes : [
+    {
+      path: "/solicita_informacion",
+      name: "solicita_informacion",
+      component: SolicitaInformacion
+    },
+    {
+      path: "/financiamiento_page",
+      name: "financiamiento_page",
+      component: FinanciamientoPage
+    },
+    {
+      path: "/admision_page",
+      name: "admision_page",
+      component: AdmisionPage
+    },
     {
       path: "/",
       name: "HomeView",
