@@ -2,16 +2,7 @@
   <div>
     <HeadePage />
     <ImagePage bgColorDivider="#C3B36D" message="Solicita Informacion" />
-    <PasosPages
-      colorIcon="green"
-      lineColor="#C3B36D"
-      bgColor="black"
-      calendarioText="myJson.calendatioText"
-      informeText="myJson.informesText"
-      folletoText="myJson.folletoText"
-      admisionText="myJson.admisionText"
-    />
-    <b-container class="pasos-areas">
+ <b-container class="pasos-areas">
       <b-row>
         <b-col>
           <p class="subtitle-text">Solicita mas Informacion</p>
@@ -134,7 +125,7 @@
                 :aria-describedby="ariaDescribedby"
                 required
               >
-                <b-form-checkbox value="me">Acepto las condiciones de tratamiento para mis datos personales</b-form-checkbox>
+                <b-form-checkbox value="me"> Acepto las condiciones de tratamiento para mis datos personales</b-form-checkbox>
                 <!-- <b-form-checkbox value="that">Check that out</b-form-checkbox> -->
               </b-form-checkbox-group>
             </b-form-group>
@@ -156,6 +147,17 @@
         </b-col>
       </b-row>
     </b-container>
+
+    <PasosPages
+      colorIcon="green"
+      lineColor="#C3B36D"
+      bgColor="black"
+      calendarioText="myJson.calendatioText"
+      informeText="myJson.informesText"
+      folletoText="myJson.folletoText"
+      admisionText="myJson.admisionText"
+    />
+   
   
     <FooterPage />
   </div>
@@ -344,6 +346,7 @@ export default {
   background-image: url('../../assets/Landscape-Color.jpg');
   color: #C3B36D !important;
 }
+textarea
 input
   background-color #DBDBDB
   border-radius 0px 
