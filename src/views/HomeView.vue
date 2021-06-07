@@ -1,7 +1,7 @@
 <template>
   <div>
     <div></div>
-    <section>
+    <section style=" border-bottom: none!important">
       <b-container fluid class="bv-example-row hello">
         <b-row>
           <b-col>
@@ -15,13 +15,29 @@
         </b-row>
         <b-row>
           <b-col cols="12" md="6"
-            class="home-banner d-flex align-items-start justify-content-center flex-column"
+            class=" d-flex align-items-center justify-content-center flex-column"
           >
-            <h1>PEE ONLINE</h1>
+            <div class="home-banner ">
+              <div class=" d-flex align-items-center justify-content-right flex-column">
+                <h1>PEE ONLINE</h1>
             <h2>
               PROGRAMA DE ESPECIALIZACIÓN <br />
               PARA EJECUTIVOS
             </h2>
+              </div>
+            <hr class="line" />
+            <h4>Conoce nuestras 8 áreas</h4>
+            <ul class="list-title">
+              <li>Administración y Dirección de Personas</li>
+              <li>Finanzas</li>
+              <li>Marketing</li>
+              <li>Operaciones y Logística</li>
+              <li>Tecnologías de Información</li>
+              <li>Salud</li>
+              <li>Energía</li>
+              <li>B2B</li>
+            </ul>
+            </div>
           </b-col>
           <b-col cols="12" md="6" class="d-flex align-items-center justify-content-center">
             <FormHome />
@@ -37,14 +53,14 @@
               CONOCE NUESTROS <br />ÁREAS DE ESPECIALIZACIÓN
             </h3>
             <ul class="justify-content-center d-flex flex-wrap">
-              <li class="nav-item li-area">
+              <li class="nav-item2 li-area">
                 <div class="box-area">
                   <router-link class="nav-link" to="/salud_page"
                     >Salud <br />
                   </router-link>
                 </div>
               </li>
-              <li class="nav-item li-area">
+              <li class="nav-item2 li-area">
                 <div class="box-area">
                   <router-link class="nav-link" to="/energy_page"
                     >Energia
@@ -53,7 +69,7 @@
                   >
                 </div>
               </li>
-              <li class="nav-item li-area">
+              <li class="nav-item2 li-area">
                 <div class="box-area">
                   <router-link class="nav-link" to="/ti_page"
                     >Tecnología de <br />
@@ -61,21 +77,21 @@
                   >
                 </div>
               </li>
-              <li class="nav-item li-area">
+              <li class="nav-item2 li-area">
                 <div class="box-area">
                   <router-link class="nav-link" to="/marketing_page"
                     >Marketing</router-link
                   >
                 </div>
               </li>
-              <li class="nav-item li-area">
+              <li class="nav-item2 li-area">
                 <div class="box-area">
                   <router-link class="nav-link" to="/finanzas_page"
                     >Finanzas</router-link
                   >
                 </div>
               </li>
-              <li class="nav-item li-area">
+              <li class="nav-item2 li-area">
                 <div class="box-area">
                   <router-link class="nav-link" to="/b2b_page"
                     >Business to <br />
@@ -83,7 +99,7 @@
                   </router-link>
                 </div>
               </li>
-              <li class="nav-item li-area">
+              <li class="nav-item2 li-area">
                 <div class="box-area">
                   <router-link class="nav-link" to="/logistica_page"
                     >Operaciones y <br />
@@ -91,7 +107,7 @@
                   >
                 </div>
               </li>
-              <li class="nav-item li-area">
+              <li class="nav-item2 li-area">
                 <div class="box-area">
                   <router-link class="nav-link" to="/administracion_page"
                     >Administración y <br />
@@ -100,7 +116,7 @@
                   >
                 </div>
               </li>
-              <li class="nav-item li-area">
+              <li class="nav-item2 li-area">
                 <div class="box-area">
                   <router-link class="nav-link" to="/mineria_page"
                     >Mineria</router-link
@@ -150,33 +166,65 @@
         </b-row>
       </b-container>
     </section>
-    <section class="section-areas">
+    <section class="sect-rankings">
       <b-container>
         <b-row>
-          <b-col cols="9" class="mx-auto text-center">
-            <b-container fluid>
+          <b-col cols="4">
+            <h1>vjhbjjj nnn guiuiiuhiu bhuuu</h1>
+          </b-col>
+          <b-col cols="5">
+
+          </b-col>
+          <b-col cols="3">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto cum optio laboriosam, ullam neque quia repellendus explicabo soluta facere minus. Dolores voluptates neque est eligendi dolore expedita, optio harum magnam!</p>
+          </b-col>
+        </b-row>
+      </b-container>
+    </section>
+    <div class="section-areas-inicio">
+      <section >
+      <b-container>
+        <b-row>
+          <b-col cols="12" class="mx-auto text-center">
+            <b-container class="container-date" >
               <b-row>
-                <b-col cols="6">
-                  <Date />
-                </b-col>
-                <b-col cols="6">
-                  <p>dnsdn dndks skasnk</p>
-                </b-col>
+                 <b-col lg="6" cols="12"  align-self="center" >
+               <div class="section-content">
+                  <div class="section-1">
+                    07
+                  </div>
+                  <div  class="section-2" >
+                    <div class="init-date">
+                      <span>inicio</span><br>
+                    de junio
+                      </div>
+                  </div>
+                </div>
+            </b-col>
+              <b-col class="d-flex alig-items-center justify-content-center">
+                <div class="contact">
+                  <b-container class="contact-container">
+                    <b-row class="pb-3">
+                      <b-col cols="2" ></b-col>
+                      <b-col cols="10"><h5>fdfndjfnjkdnfjkd</h5></b-col>
+                    </b-row>
+                    <b-row>
+                      <b-col cols="2" ></b-col>
+                      <b-col cols="10"><h5>fdfndjfnjkdnfjkd</h5></b-col>
+                    </b-row>
+                  </b-container>
+                </div>
+              </b-col>
               </b-row>
             </b-container>
           </b-col>
         </b-row>
       </b-container>
     </section>
+    </div>
+    
 
-    <section>
-      <b-footer>
-        <b-nav-item active>Active </b-nav-item>
-        <b-nav-item>Link</b-nav-item>
-        <b-nav-item>Another Link</b-nav-item>
-        <b-nav-item disabled>Disabled</b-nav-item>
-      </b-footer>
-    </section>
+       <FooterPage/>
 
     <router-view />
   </div>
@@ -184,7 +232,7 @@
 
 <script>
 import FormHome from "../components/FormHome";
-import Date from "../components/Date";
+import FooterPage from "../components/FooterPage";
 export default {
   name: "HomeView",
   props: {
@@ -192,7 +240,7 @@ export default {
   },
   components: {
     FormHome,
-    Date,
+    FooterPage,
   },
 };
 </script>
@@ -211,7 +259,7 @@ ul {
   width: 100%;
 }
 
-.nav-item {
+.nav-item2 {
   display: inline-block;
   margin: 0px;
   max-width: 380px;
@@ -227,10 +275,27 @@ a {
 }
 
 h1 {
-  font-size: 55px;
+  font-size: 60px;
   text-transform: uppercase;
-  border-bottom: 2px solid white;
   width: 100%;
+  font-weight bold 
+  color primary-pee
+}
+h2 {
+  font-size: 33px;
+  text-transform: uppercase;
+  width: 100%;
+  font-weight bold
+  color primary-pee 
+}
+.line {
+  border-top: 4px solid primary-pee;
+  width: 48rem;
+  margin-left: -220px;
+  opacity: 1 !important
+  margin-block-start: 0px;
+  margin-right 0px
+  right 0
 }
 
 .navbar-nav {
@@ -239,8 +304,15 @@ h1 {
 }
 
 .hello {
-  background-color: primary-pee;
+  background-image: url('../assets/Landscape-Color.jpg');
   color: white;
+  height: 100vh;
+  background-size cover;
+  background-repeat no-repeat
+}
+.list-title li{
+  font-size 24px
+
 }
 
 .nav-link {
@@ -261,14 +333,68 @@ h1 {
 }
 
 .home-banner {
-  height: 88vh;
+  max-width 780px
 }
+.init-date
+  top -35px
+  position: relative
+  right 0px;
+  text-align left
+  width 90px 
+  margin-right 0px
+  margin-left auto
 
 .section-areas {
   padding: 120px 0px;
 }
-
-section {
-  border-bottom: 4px solid primary-pee;
+.container-date{
+  border 3px solid primary-pee;
+  max-width 1050px;
+  width 100%
 }
+
+.section-areas-inicio
+  background-color: black;
+  padding:150px !important
+.section-content
+  padding 50px 30px 35px
+  display: flex;
+  flex-direction: row
+  justify-content: center;
+.section-1
+  position absolute
+  z-index 2
+  width 50px
+  font-size 137px
+  margin-right 282px
+  margin-top -87px
+  font-weight: bold;
+  color white
+.section-2
+  background-color: primary-pee;
+  font-size: 22px;
+  line-height 35px
+  position relative
+  z-index 1
+  text-align right
+  width: 230px;
+  padding-right 10px
+  font-weight: bold;
+  height: 50px
+  span
+    color primary-pee
+    top -20px
+.contact
+  border-left 2px solid white
+  margin auto 0
+  padding 10px 0px
+  width 100%
+  .contact-container
+    max-width 300px
+    color white
+    width 100%
+.sect-rankings
+  background-color #252A2D
+  padding 100px 0px
+
 </style>
