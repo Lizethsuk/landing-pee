@@ -11,10 +11,11 @@
               <b-nav-item>Another Link</b-nav-item>
               <b-nav-item disabled>Disabled</b-nav-item>
             </b-nav>
+            
           </b-col>
         </b-row>
         <b-row>
-          <b-col cols="12" md="6"
+          <b-col cols="12" lg="6"
             class=" d-flex align-items-center justify-content-center flex-column"
           >
             <div class="home-banner ">
@@ -37,9 +38,23 @@
               <li>Energía</li>
               <li>B2B</li>
             </ul>
+             <div>
+                  <div class="section-content2">
+                  <div class="section-1">
+                    07
+                  </div>
+                  <div  class="section-2" >
+                    <div class="init-date">
+                      <span>inicio</span><br>
+                    de junio
+                      </div>
+                  </div>
+                </div>  
+                  
+                  </div>
             </div>
           </b-col>
-          <b-col cols="12" md="6" class="d-flex align-items-center justify-content-center">
+          <b-col cols="12" lg="6" class="d-flex align-items-center justify-content-center">
             <FormHome />
           </b-col>
         </b-row>
@@ -52,79 +67,80 @@
             <h3 class="text-center pb-5">
               CONOCE NUESTROS <br />ÁREAS DE ESPECIALIZACIÓN
             </h3>
-            <ul class="justify-content-center d-flex flex-wrap">
-              <li class="nav-item2 li-area">
-                <div class="box-area">
+          </b-col>
+        </b-row>
+        <b-row>
+          <b-col cols="12" lg="4" md="6" class="pl-0 pr-0"  >
+            <div class="box-area">
                   <router-link class="nav-link" to="/salud_page"
                     >Salud <br />
                   </router-link>
                 </div>
-              </li>
-              <li class="nav-item2 li-area">
-                <div class="box-area">
-                  <router-link class="nav-link" to="/energy_page"
+          </b-col>
+          <b-col cols="12" lg="4" md="6" class="pl-0 pr-0" >
+            <div class="box-area">
+                <router-link class="nav-link" to="/energy_page"
                     >Energia
                     
-                    </router-link
-                  >
-                </div>
-              </li>
-              <li class="nav-item2 li-area">
-                <div class="box-area">
-                  <router-link class="nav-link" to="/ti_page"
+                </router-link>
+            </div>
+          </b-col>
+           <b-col cols="12" lg="4" md="6" class="pl-0 pr-0" >
+            <div class="box-area">
+              <router-link class="nav-link" to="/ti_page"
                     >Tecnología de <br />
                     la Información</router-link
                   >
-                </div>
-              </li>
-              <li class="nav-item2 li-area">
-                <div class="box-area">
-                  <router-link class="nav-link" to="/marketing_page"
+            </div>
+          </b-col>
+           <b-col cols="12" lg="4" md="6" class="pl-0 pr-0" >
+            <div class="box-area">
+              <router-link class="nav-link" to="/marketing_page"
                     >Marketing</router-link
                   >
-                </div>
-              </li>
-              <li class="nav-item2 li-area">
-                <div class="box-area">
-                  <router-link class="nav-link" to="/finanzas_page"
+            </div>
+          </b-col>
+           <b-col cols="12" lg="4" md="6" class="pl-0 pr-0" >
+            <div class="box-area">
+              <router-link class="nav-link" to="/finanzas_page"
                     >Finanzas</router-link
                   >
-                </div>
-              </li>
-              <li class="nav-item2 li-area">
-                <div class="box-area">
-                  <router-link class="nav-link" to="/b2b_page"
+
+            </div>
+          </b-col>
+           <b-col cols="12" lg="4" md="6" class="pl-0 pr-0" >
+            <div class="box-area">
+              <router-link class="nav-link" to="/b2b_page"
                     >Business to <br />
                     Business
                   </router-link>
-                </div>
-              </li>
-              <li class="nav-item2 li-area">
-                <div class="box-area">
-                  <router-link class="nav-link" to="/logistica_page"
+            </div>
+          </b-col>
+           <b-col cols="12" lg="4" md="6" class="pl-0 pr-0" >
+            <div class="box-area">
+              <router-link class="nav-link" to="/logistica_page"
                     >Operaciones y <br />
                     Logística de Proyectos</router-link
                   >
-                </div>
-              </li>
-              <li class="nav-item2 li-area">
-                <div class="box-area">
-                  <router-link class="nav-link" to="/administracion_page"
+            </div>
+          </b-col>
+           <b-col cols="12" lg="4" md="6" class="pl-0 pr-0" >
+            <div class="box-area">
+              <router-link class="nav-link" to="/administracion_page"
                     >Administración y <br />
                     Dirección de <br />
                     la Información</router-link
                   >
-                </div>
-              </li>
-              <li class="nav-item2 li-area">
-                <div class="box-area">
-                  <router-link class="nav-link" to="/mineria_page"
+            </div>
+          </b-col>
+           <b-col cols="12" lg="4" md="6" class="pl-0 pr-0" >
+            <div class="box-area">
+              <router-link class="nav-link" to="/mineria_page"
                     >Mineria</router-link
                   >
-                </div>
-              </li>
-            </ul></b-col
-          >
+            </div>
+          </b-col>
+         
         </b-row>
       </b-container>
     </section>
@@ -169,13 +185,13 @@
     <section class="sect-rankings">
       <b-container>
         <b-row>
-          <b-col cols="4">
-            <h1>vjhbjjj nnn guiuiiuhiu bhuuu</h1>
+          <b-col cols="12" md="4">
+            <h1>vjhbjjj nnn guiuu buuu</h1>
           </b-col>
-          <b-col cols="5">
+          <b-col cols="12" md="5">
 
           </b-col>
-          <b-col cols="3">
+          <b-col cols="12" md="3">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto cum optio laboriosam, ullam neque quia repellendus explicabo soluta facere minus. Dolores voluptates neque est eligendi dolore expedita, optio harum magnam!</p>
           </b-col>
         </b-row>
@@ -188,8 +204,9 @@
           <b-col cols="12" class="mx-auto text-center">
             <b-container class="container-date" >
               <b-row>
-                 <b-col lg="6" cols="12"  align-self="center" >
-               <div class="section-content">
+                 <b-col md="6" cols="12"  align-self="center" >
+                  <div>
+                  <div class="section-content">
                   <div class="section-1">
                     07
                   </div>
@@ -199,9 +216,11 @@
                     de junio
                       </div>
                   </div>
-                </div>
+                </div>  
+                  
+                  </div>  
             </b-col>
-              <b-col class="d-flex alig-items-center justify-content-center">
+              <b-col md="6" cols="12" class="d-flex alig-items-center justify-content-center">
                 <div class="contact">
                   <b-container class="contact-container">
                     <b-row class="pb-3">
@@ -248,6 +267,12 @@ export default {
 
 <style lang="stylus" scoped>
 @import '../styles/main.styl';
+.pr-0{
+  padding-right 0px!important
+}
+.pl-0{
+  padding-left 0px!important
+}
 
 h3 {
   margin: 40px 0 0;
@@ -355,12 +380,22 @@ h2 {
 
 .section-areas-inicio
   background-color: black;
-  padding:150px !important
+  padding:150px 0px !important
 .section-content
-  padding 50px 30px 35px
+  padding 50px 0px 35px
   display: flex;
   flex-direction: row
   justify-content: center;
+
+.section-content2
+  padding 20px 10px 10px 0px
+  display: flex;
+  justify-content: left;  
+  .section-2
+    width 250px
+  .section-1
+    font-size 118px  
+    margin-top -82px
 .section-1
   position absolute
   z-index 2
@@ -397,4 +432,31 @@ h2 {
   background-color #252A2D
   padding 100px 0px
 
+@media only screen and (max-width: 1200px) {
+  .line {
+  width: auto;
+  margin-left: 0px;
+  }
+  .hello {
+  height: auto;
+  padding-bottom 120px
+  }
+  .section-2{
+   width 197px
+   padding-right 0px  
+  }
+  .section-1{
+    margin-right 252px
+  }
+}
+@media only screen and (max-width: 767px) {
+  .section-1{
+    margin-right 179px
+    margin-top -70px
+    font-size 106px
+  }
+  .contact {
+    border-left none
+  }
+}
 </style>
