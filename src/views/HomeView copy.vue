@@ -1,12 +1,9 @@
 <template>
-
   <div>
- 
-    <!-- <div></div> -->
+    <div></div>
     <section style=" border-bottom: none!important">
       <b-container fluid class="bv-example-row hello">
-   <HeadePage/>
-        <!-- <b-row>
+        <b-row>
           <b-col>
             <b-nav>
               <b-nav-item active>Active </b-nav-item>
@@ -16,7 +13,7 @@
             </b-nav>
             
           </b-col>
-        </b-row> -->
+        </b-row>
         <b-row>
           <b-col cols="12" lg="6"
             class=" d-flex align-items-center justify-content-center flex-column"
@@ -253,7 +250,6 @@
 </template>
 
 <script>
-import HeadePage from "../components/HeadePage.vue"
 import FormHome from "../components/FormHome";
 import FooterPage from "../components/FooterPage";
 export default {
@@ -264,7 +260,6 @@ export default {
   components: {
     FormHome,
     FooterPage,
-    HeadePage
   },
 };
 </script>
@@ -272,19 +267,6 @@ export default {
 
 <style lang="stylus" scoped>
 @import '../styles/main.styl';
-.nav {
-  border-width: 0px !important;
-  -webkit-box-shadow: 0px 0px !important;
-  box-shadow: 0px 0px !important;
-  background-color: rgba(0,0,0,0.0)!important; 
-  background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00))) !important;
-  background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%) !important;
-  background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%) !important;
-  color black !important
-}
-.navbar {
-  color black !important
-}
 .pr-0{
   padding-right 0px!important
 }
