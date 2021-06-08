@@ -308,22 +308,55 @@
               <b-container>
                 <b-row>
                   <b-col lg="8">
-                    <b-container>
-                      <b-row>
+                    <b-container class="container-inter" >
+                      <b-row class="row-inter">
                         <b-col md="6">
-                           <img src="../assets/home/iconos/ventajas/v-01.png" alt="" >
+                           <div class="box-option">
+                                 <b-container class="box-container">
+                                   <b-row>
+                                     <b-col cols="4" class="pr-0">
+                                       <h2>5</h2>
+                                     </b-col>
+                                      <b-col cols="8" class="d-flex align-items-center">
+                                        <p>Cursos de la Especialidad elegida</p>
+                                      </b-col>
+                                   </b-row>
+                                 </b-container>
+                               </div>
                         </b-col>
                         <b-col  md="6">
-                           <b-container>
+                           <b-container class="container-inter">
                              <b-row>
                                <b-col cols="12">
-                               <img src="../assets/home/iconos/ventajas/v-01.png" alt="" >
+                               <div class="box-option">
+                                 <b-container class="box-container">
+                                   <b-row>
+                                     <b-col cols="4" class="pr-0">
+                                       <h2>4</h2>
+                                     </b-col>
+                                      <b-col cols="8" class="d-flex align-items-center">
+                                        <p>Cursos de la Especialidad elegida</p>
+                                      </b-col>
+                                   </b-row>
+                                 </b-container>
+                               </div>
                              </b-col>
                              <b-col cols="12">
                                <img src="../assets/home/iconos/certificado-especializacion/conector/conector.png" alt="" >
                              </b-col>
                              <b-col cols="12">
-                               <img src="../assets/home/iconos/ventajas/v-01.png" alt="" >
+                               <div class="box-option">
+                                 <b-container class="box-container">
+                                   <b-row>
+                                     <b-col cols="4" class="pr-0">
+                                       <h2>1</h2>
+                                     </b-col>
+                                      <b-col cols="8" class="d-flex align-items-center">
+                                        <p>Curso de otra área</p>
+                                      </b-col>
+                                   </b-row>
+                                 </b-container>
+                               </div>
                              </b-col>
                              </b-row>
                            </b-container>
@@ -338,22 +371,55 @@
                     </b-container>
                   </b-col>
                   <b-col lg="4">
-                     <b-container>
+                     <b-container class="container-inter">
                              <b-row>
                                <b-col cols="12">
-                               <img src="../assets/home/iconos/ventajas/v-01.png" alt="" >
+                               <div class="box-option">
+                                 <b-container class="box-container">
+                                   <b-row>
+                                     <b-col cols="4" class="pr-0">
+                                       <h2>3</h2>
+                                     </b-col>
+                                      <b-col cols="8" class="d-flex align-items-center">
+                                        <p>Cursos de la Especialidad elegida</p>
+                                      </b-col>
+                                   </b-row>
+                                 </b-container>
+                               </div>
                              </b-col>
                              <b-col cols="12">
                                <img src="../assets/home/iconos/certificado-especializacion/conector/conector.png" alt="" >
                              </b-col>
                              <b-col cols="12">
-                               <img src="../assets/home/iconos/ventajas/v-01.png" alt="" >
+                               <div class="box-option">
+                                 <b-container class="box-container">
+                                   <b-row>
+                                     <b-col cols="4" class="pr-0">
+                                       <h2>1</h2>
+                                     </b-col>
+                                      <b-col cols="8" class="d-flex align-items-center">
+                                        <p>Cursos de otra Especialidad elegida</p>
+                                      </b-col>
+                                   </b-row>
+                                 </b-container>
+                               </div>
                              </b-col>
                              <b-col cols="12">
                                <img src="../assets/home/iconos/certificado-especializacion/conector/conector.png" alt="" >
                              </b-col>
                              <b-col cols="12">
-                               <img src="../assets/home/iconos/ventajas/v-01.png" alt="" >
+                               <div class="box-option">
+                                 <b-container class="box-container">
+                                   <b-row>
+                                     <b-col cols="4" class="pr-0">
+                                       <h2>1</h2>
+                                     </b-col>
+                                      <b-col cols="8" class="d-flex align-items-center">
+                                        <p>Cursos de otra área</p>
+                                      </b-col>
+                                   </b-row>
+                                 </b-container>
+                               </div>
                              </b-col>
                              </b-row>
                            </b-container>
@@ -369,31 +435,26 @@
     <section class="sect-rankings">
       <b-container>
         <b-row>
-          <b-col cols="12" md="4">
+          <b-col cols="12" lg="4">
             <h1>ESAN, PRESENTE EN LOS RANKINGS MÁS PRESTIGIOSOS DEL MUNDO</h1>
           </b-col>
-          <b-col cols="12" md="6">
+          <b-col cols="12" lg="6">
             <b-container>
               <b-row>
-                <b-col lg="4" md="6">
+                <b-col md="4">
                   <img src="../assets/home/iconos/rankings/rk-1.png" alt="" >
                 </b-col>
-                <b-col lg="4" md="6">
+                <b-col md="4" >
                   <img src="../assets/home/iconos/rankings/rk-2.png" alt="" >
                 </b-col>
-                <b-col lg="4" md="6">
+                <b-col md="4">
                   <img src="../assets/home/iconos/rankings/rk-3.png" alt="" >
                 </b-col>
               </b-row>
             </b-container>
              </b-col>
-          <b-col cols="12" md="2">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto cum optio laboriosam, ullam neque quia repellendus
-              explicabo soluta facere minus. Dolores voluptates neque est
-              eligendi dolore expedita, optio harum magnam!
-            </p>
+          <b-col cols="12" lg="2">
+            <img src="../assets/home/iconos/rankings/sponsor/logo-1.png" alt="">
           </b-col>
         </b-row>
       </b-container>
@@ -427,11 +488,11 @@
                       <b-container class="contact-container">
                         <b-row class="pb-3">
                           <b-col cols="2"><img src="../assets/home/iconos/info/mail.png" alt=""></b-col>
-                          <b-col cols="10"><h5>fdfndjfnjkdnfjkd</h5></b-col>
+                          <b-col cols="10"><h5>informes@esan.edu.pe</h5></b-col>
                         </b-row>
                         <b-row>
                           <b-col cols="2"><img src="../assets/home/iconos/info/tel.png" alt=""></b-col>
-                          <b-col cols="10"><h5>fdfndjfnjkdnfjkd</h5></b-col>
+                          <b-col cols="10"><h5>317-7200 | 317-7226</h5></b-col>
                         </b-row>
                       </b-container>
                     </div>
@@ -679,6 +740,37 @@ h2 {
 }
 .s-certificado{
   background-color #E1E1E1
+  .container-inter{
+    padding-left 0px
+    padding-right 0px
+
+  }
+  .box-option{
+    margin 0 auto
+    border-radius 100%
+    border 9.4px solid backg-footer
+    background-color white
+    height 220px
+    width 220px
+    display flex
+    justify-content center
+    align-items center
+    flex-direction row
+    .box-container{
+      width 176px
+      padding  0px
+      p{
+        font-size 18px
+        line-height 21.6px
+        text-align left
+        margin-bottom 0px
+      }
+      h2{
+        font-size 78.38px
+        margin-bottom 0px
+      }
+    }
+  }
 }
 
 .container-date {
@@ -753,6 +845,12 @@ h2 {
     max-width: 300px;
     color: white;
     width: 100%;
+    margin-left 0px
+    padding-left 40px
+    text-align left
+    h5{
+      font-size 24px
+    }
   }
 }
 
@@ -794,6 +892,24 @@ h2 {
 
   .contact {
     border-left: none;
+    .contact-container {
+    
+    margin-left 0px
+    padding-left 0px
+    h5{
+      font-size 18px
+    }
   }
+  }
+  h1 {
+  font-size: 45px;
+  
+}
+
+h2 {
+  font-size: 25px;
+}
+  
+  
 }
 </style>
