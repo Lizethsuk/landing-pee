@@ -49,7 +49,15 @@
                 <li>B2B</li>
               </ul>
               <div>
-                <div class="section-content2">
+                <b-container>
+                  <b-row>
+                    <b-col cols="2">
+                      <div class="d-flex align-items-center">
+                        <span>dsdjsnjds</span>
+                      </div>
+                    </b-col>
+                    <b-col>
+                      <div class="section-content2">
                   <div class="section-1">07</div>
                   <div class="section-2">
                     <div class="init-date">
@@ -58,6 +66,10 @@
                     </div>
                   </div>
                 </div>
+                    </b-col>
+                  </b-row>
+                </b-container>
+                
               </div>
             </div>
           </b-col>
@@ -71,7 +83,7 @@
         </b-row>
       </b-container>
     </section>
-    <section>
+    <section class="section-areas-0">
       <b-container class="bv-example-row section-areas">
         <b-row>
           <b-col>
@@ -247,8 +259,8 @@
         </b-row>
       </b-container>
     </section>
-    <section>
-      <b-container class="bv-example-row section-areas">
+    <section class="section">
+      <b-container class="bv-example-row ">
         <b-row>
           <b-col cols="10" class="text-center mx-auto">
             <h3 class="pb-3">VENTAJAS</h3>
@@ -257,30 +269,99 @@
               Y SE ADAPTA A TUS NECESIDADES
             </h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
-              vero odio in? Sit sunt id eveniet autem, aliquam ratione nihil
-              vero iusto. Voluptates velit, quis accusamus voluptatum aliquid
-              voluptas pariatur.
+              Son una opción flexible que permite que el participante pueda perfeccionarse en un
+              área o detro de ella. <br> Requiere la aprobación de cinco cursos elegidos por el participante. <br>
+              El tiempo para completarlo es de dos años como máximo, contados a partir del primer curso que tome.
             </p>
+          </b-col>
+        </b-row>
+        <b-row>
+          <b-col lg="3" md="6" >
+              <img src="../assets/home/iconos/ventajas/v-01.png" alt="" >
+          </b-col>
+          <b-col lg="3" md="6" >
+              <img src="../assets/home/iconos/ventajas/v-02.png" alt="" >
+          </b-col>
+          <b-col lg="3" md="6" >
+              <img src="../assets/home/iconos/ventajas/v-03.png" alt="" >
+          </b-col>
+          <b-col lg="3" md="6" >
+              <img src="../assets/home/iconos/ventajas/v-04.png" alt="" >
           </b-col>
         </b-row>
       </b-container>
     </section>
-    <section>
-      <b-container class="bv-example-row section-areas">
+    <section class="section s-certificado">
+      <b-container class="bv-example-row ">
         <b-row>
           <b-col class="text-center">
-            <h3 class="pb-3">VENTAJAS</h3>
+            <h3 class="pb-3">3 FORMAS DE OBTENER TU <br> CERTIFICADO DE ESPECIALIZACIÓN</h3>
             <h3 class="pb-5">
               PEE ES UN PROGRAMA CORTO, FLEXIBLE <br />
               Y SE ADAPTA A TUS NECESIDADES
             </h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
-              vero odio in? Sit sunt id eveniet autem, aliquam ratione nihil
-              vero iusto. Voluptates velit, quis accusamus voluptatum aliquid
-              voluptas pariatur.
+              El certificado de Especialización requiere la aprobación de cinco cursos elegidos por el participante, 
+              y pueden ser llevados según las siguientes opciones*:
             </p>
+            <div>
+              <b-container>
+                <b-row>
+                  <b-col lg="8">
+                    <b-container>
+                      <b-row>
+                        <b-col md="6">
+                           <img src="../assets/home/iconos/ventajas/v-01.png" alt="" >
+                        </b-col>
+                        <b-col  md="6">
+                           <b-container>
+                             <b-row>
+                               <b-col cols="12">
+                               <img src="../assets/home/iconos/ventajas/v-01.png" alt="" >
+                             </b-col>
+                             <b-col cols="12">
+                               <img src="../assets/home/iconos/certificado-especializacion/conector/conector.png" alt="" >
+                             </b-col>
+                             <b-col cols="12">
+                               <img src="../assets/home/iconos/ventajas/v-01.png" alt="" >
+                             </b-col>
+                             </b-row>
+                           </b-container>
+                        </b-col>
+                      </b-row>
+                       <b-row>
+                  <b-col>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil blanditiis fuga ratione quasi minima voluptates perferendis ipsum eligendi.
+                       Repellat voluptates fugit possimus inventore molestias corrupti sit doloremque architecto corporis assumenda.</p>
+                  </b-col>
+                </b-row>
+                    </b-container>
+                  </b-col>
+                  <b-col lg="4">
+                     <b-container>
+                             <b-row>
+                               <b-col cols="12">
+                               <img src="../assets/home/iconos/ventajas/v-01.png" alt="" >
+                             </b-col>
+                             <b-col cols="12">
+                               <img src="../assets/home/iconos/certificado-especializacion/conector/conector.png" alt="" >
+                             </b-col>
+                             <b-col cols="12">
+                               <img src="../assets/home/iconos/ventajas/v-01.png" alt="" >
+                             </b-col>
+                             <b-col cols="12">
+                               <img src="../assets/home/iconos/certificado-especializacion/conector/conector.png" alt="" >
+                             </b-col>
+                             <b-col cols="12">
+                               <img src="../assets/home/iconos/ventajas/v-01.png" alt="" >
+                             </b-col>
+                             </b-row>
+                           </b-container>
+                  </b-col>
+                </b-row>
+               
+              </b-container>
+            </div>
           </b-col>
         </b-row>
       </b-container>
@@ -289,10 +370,24 @@
       <b-container>
         <b-row>
           <b-col cols="12" md="4">
-            <h1>vjhbjjj nnn guiuu buuu</h1>
+            <h1>ESAN, PRESENTE EN LOS RANKINGS MÁS PRESTIGIOSOS DEL MUNDO</h1>
           </b-col>
-          <b-col cols="12" md="5"> </b-col>
-          <b-col cols="12" md="3">
+          <b-col cols="12" md="6">
+            <b-container>
+              <b-row>
+                <b-col lg="4" md="6">
+                  <img src="../assets/home/iconos/rankings/rk-1.png" alt="" >
+                </b-col>
+                <b-col lg="4" md="6">
+                  <img src="../assets/home/iconos/rankings/rk-2.png" alt="" >
+                </b-col>
+                <b-col lg="4" md="6">
+                  <img src="../assets/home/iconos/rankings/rk-3.png" alt="" >
+                </b-col>
+              </b-row>
+            </b-container>
+             </b-col>
+          <b-col cols="12" md="2">
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Architecto cum optio laboriosam, ullam neque quia repellendus
@@ -514,7 +609,7 @@ h1 {
 }
 
 h2 {
-  font-size: 33px;
+  font-size: 39.2px;
   text-transform: uppercase;
   width: 100%;
   font-weight: bold;
@@ -545,6 +640,8 @@ h2 {
 
 .list-title li {
   font-size: 24px;
+  line-height 28px
+  font-weight 100
 }
 
 .nav-link {
@@ -568,8 +665,20 @@ h2 {
   margin-left: auto;
 }
 
-.section-areas {
-  padding: 120px 0px;
+.section-areas-0 {
+  padding: 150px 0px;
+  background-image url('../assets/home/banner/section-areas/bg.png');
+  border-bottom 4px solid primary-pee
+}
+.section{
+  padding: 105px 0px;
+  p{
+    font-size 24px
+    line-height 28.8px
+  }
+}
+.s-certificado{
+  background-color #E1E1E1
 }
 
 .container-date {
@@ -650,9 +759,12 @@ h2 {
 .sect-rankings {
   background-color: #252A2D;
   padding: 100px 0px;
+  h1{
+    font-size 39.82px
+  }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1560px) {
   .line {
     width: auto;
     margin-left: 0px;

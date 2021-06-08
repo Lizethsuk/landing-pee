@@ -2,10 +2,10 @@
   <div class="form-class">
     <b-form @submit="onSubmit" @reset="onReset" v-if="show"  class="form-g" >
       <b-form-group class="all-btn">
-        <h1>interesante aqui</h1>
-        <p>los cursos son muy buenos, compre</p>
+        <h1>Regístrate aquí:</h1>
+        <p>Los cursos del PEE te permitirán desarrollarte en el ámbito profesional.</p>
       </b-form-group>
-      <b-form-group  class="all-btn" id="input-group-3" label="Food:" label-for="input-3">
+      <b-form-group  class="all-btn" id="input-group-3"  label-for="input-3">
         <b-form-select
           id="input-3"
           v-model="form.food"
@@ -73,7 +73,7 @@
         </b-form-checkbox-group>
       </b-form-group>
 
-      <b-button class="btn" type="submit" >Submit</b-button>
+      <b-button class="btn" type="submit" >Enviar</b-button>
     </b-form>
   </div>
 </template>
@@ -88,7 +88,7 @@
           food: null,
           checked: []
         },
-        foods: [{ text: 'Select One', value: null }, 'Carrots', 'Beans', 'Tomatoes', 'Corn'],
+        foods: [{ text: '¿Qué área te interesa?', value: null }, 'Carrots', 'Beans', 'Tomatoes', 'Corn'],
         show: true
       }
     },
@@ -118,6 +118,8 @@
 
  @import "../styles/main.styl"
 
+ h1 
+  color primary-pee
 .form-class
   background-color bg-form
   
