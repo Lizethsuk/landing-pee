@@ -1,7 +1,8 @@
 <template>
   <div class="nav mx-auto my-auto m-auto d-flex">
     <b-navbar toggleable="lg" type="dark"  class="m-auto">
-      <b-navbar-brand href="../" to="/">lOGO
+      <b-navbar-brand href="../" to="/">
+        <img src="../assets/components/header/logo/logo.png" alt="">
         <!-- <router-link class="nav-link" to="/">lOGO  </router-link> -->
       </b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>

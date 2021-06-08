@@ -104,7 +104,7 @@ hr
   height: 5px;
   opacity 1 !important
 .jumbotron
-  background-image url('../assets/Landscape-Color.jpg')
+  background-image url('../assets/areas/administracion/banner/kv.jpg')
 
 .fecha {
   font-size: 20px;

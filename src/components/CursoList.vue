@@ -4,6 +4,8 @@
         <p class="title-curso" v-text="sectionName"></p>
         <p class="name-curso" v-text="cursoName"></p>
         <hr class="new4" :style="cssVars" />
+        
+              <img src="../assets/components/cursoList/shap/online.png" alt="">
         <p class="encargado" v-text="teacherName"></p>
         <span class="fecha" v-text="horarioName"></span>
       </div>

@@ -81,11 +81,11 @@
           </b-col>
         </b-row>
         <b-row>
-          <b-col cols="12" lg="4" md="6" class="pl-0 pr-0">
-            <div class="flip-card">
+          <b-col cols="12" lg="4" md="6" class="pl-0 pr-0"  >
+            <div class="flip-card"  >
               <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <router-link class="nav-link" to="/salud_page"
+                <div class="flip-card-front bg-salud"  >
+                  <router-link class="nav-link" to="/salud_page" 
                     >Salud
                     
                 </router-link>
@@ -103,7 +103,7 @@
           <b-col cols="12" lg="4" md="6" class="pl-0 pr-0">
             <div class="flip-card">
               <div class="flip-card-inner">
-                <div class="flip-card-front">
+                <div class="flip-card-front bg-energia">
                   <router-link class="nav-link" to="/energy_page"
                     >Energia
                     
@@ -126,7 +126,7 @@
           <b-col cols="12" lg="4" md="6" class="pl-0 pr-0">
             <div class="flip-card">
               <div class="flip-card-inner">
-                <div class="flip-card-front">
+                <div class="flip-card-front bg-ti">
                    <router-link class="nav-link" to="/ti_page"
                     >Tecnología de <br />
                     la Información</router-link
@@ -145,7 +145,7 @@
           <b-col cols="12" lg="4" md="6" class="pl-0 pr-0">
             <div class="flip-card">
               <div class="flip-card-inner">
-                <div class="flip-card-front">
+                <div class="flip-card-front bg-marketing">
                    <router-link class="nav-link" to="/marketing_page"
                     >Marketing</router-link
                   >
@@ -161,7 +161,7 @@
           <b-col cols="12" lg="4" md="6" class="pl-0 pr-0">
             <div class="flip-card">
               <div class="flip-card-inner">
-                <div class="flip-card-front">
+                <div class="flip-card-front bg-finanzas">
                   <router-link class="nav-link" to="/finanzas_page"
                     >Finanzas</router-link
                   >
@@ -177,7 +177,7 @@
           <b-col cols="12" lg="4" md="6" class="pl-0 pr-0">
             <div class="flip-card">
               <div class="flip-card-inner">
-                <div class="flip-card-front">
+                <div class="flip-card-front bg-b2b">
                        <router-link class="nav-link" to="/b2b_page"
                     >Business to <br />
                     Business
@@ -194,7 +194,7 @@
           <b-col cols="12" lg="4" md="6" class="pl-0 pr-0">
             <div class="flip-card">
               <div class="flip-card-inner">
-                <div class="flip-card-front">
+                <div class="flip-card-front ">
                    <router-link class="nav-link" to="/logistica_page"
                     >Operaciones y <br />
                     Logística de Proyectos</router-link
@@ -211,7 +211,7 @@
           <b-col cols="12" lg="4" md="6" class="pl-0 pr-0">
             <div class="flip-card">
               <div class="flip-card-inner">
-                <div class="flip-card-front">
+                <div class="flip-card-front bg-administracion">
                   <router-link class="nav-link" to="/administracion_page"
                     >Administración y <br />
                     Dirección de <br />
@@ -231,7 +231,7 @@
           <b-col cols="12" lg="4" md="6" class="pl-0 pr-0">
             <div class="flip-card">
               <div class="flip-card-inner">
-                <div class="flip-card-front">
+                <div class="flip-card-front bg-mineria">
                      <router-link class="nav-link" to="/mineria_page"
                     >Mineria</router-link
                   >
@@ -331,11 +331,11 @@
                     <div class="contact">
                       <b-container class="contact-container">
                         <b-row class="pb-3">
-                          <b-col cols="2"></b-col>
+                          <b-col cols="2"><img src="../assets/home/iconos/info/mail.png" alt=""></b-col>
                           <b-col cols="10"><h5>fdfndjfnjkdnfjkd</h5></b-col>
                         </b-row>
                         <b-row>
-                          <b-col cols="2"></b-col>
+                          <b-col cols="2"><img src="../assets/home/iconos/info/tel.png" alt=""></b-col>
                           <b-col cols="10"><h5>fdfndjfnjkdnfjkd</h5></b-col>
                         </b-row>
                       </b-container>
@@ -412,8 +412,33 @@ export default {
 }
 
 .flip-card-front {
-  background-color: bg-black;
+  background-color:black;
   color: black;
+    &.bg-salud{
+     background-image: url('../assets/home/areas/salud/kv.jpg')!important;
+    };
+    &.bg-energia{
+     background-image: url('../assets/home/areas/energia/kv.jpg')!important;
+    };
+   
+    &.bg-finanzas{
+     background-image: url('../assets/home/areas/finanzas/kv.jpg')!important;
+    }
+    &.bg-administracion{
+     background-image: url('../assets/home/areas/administracion/kv.jpg')!important;
+    }
+    &.bg-b2b{
+     background-image: url('../assets/home/areas/b2b/kv.jpg')!important;
+    }
+    &.bg-marketing{
+     background-image: url('../assets/home/areas/marketing/kv.jpg')!important;
+    }
+    &.bg-ti{
+     background-image: url('../assets/home/areas/ti/kv.jpg')!important;
+    };
+    &.bg-mineria{
+     background-image: url('../assets/home/areas/mineria/kv.jpg')!important;
+    };
 }
 
 .flip-card-back {
@@ -511,7 +536,7 @@ h2 {
 }
 
 .hello {
-  background-image: url('../assets/Landscape-Color.jpg');
+  background-image: url('../assets/home/banner/kv.jpg');
   color: white;
   height: 100vh;
   background-size: cover;

@@ -4,15 +4,15 @@
       <b-container class="bv-footer-row">
         <b-row>
           <b-col lg="4" md="6" cols="12">
-            <div class="logo">logo</div>
+            <div class="logo"><img src="../assets/components/footer/logo/logo.png" alt=""></div>
           </b-col>
           <b-col lg="4" md="6" cols="12">
             <div class="column-three">
               <div class="social-media">
-                <span class="icon">icon</span>
-                <span class="icon">icon</span>
-                <span class="icon">icon</span>
-                <span class="icon">icon</span>
+                <span class="icon"><img src="../assets/components/footer/rs/facebook.png" alt=""></span>
+                <span class="icon"><img src="../assets/components/footer/rs/youtube.png" alt=""></span>
+                <span class="icon"><img src="../assets/components/footer/rs/linkedin.png" alt=""></span>
+                <span class="icon"><img src="../assets/components/footer/rs/twitter.png" alt=""></span>
               </div>
               <p class="web"> www.esan.edu.pe  </p>
               <p class="text-uni">&copy; Universidad de ESAN 2020  </p>
@@ -40,7 +40,7 @@ export default {
 <style lang="stylus" scoped>
 @import '../styles/main.styl';
 .icon
-  padding-right 30px
+  margin 0 auto
 .bv-footer-row
   padding-right: 130px;
   padding-left: 130px;
