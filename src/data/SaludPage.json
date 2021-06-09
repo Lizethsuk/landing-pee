@@ -9,7 +9,7 @@
   "colorIcon":"green",
   "title":"Salud",
   "text-con":"Conferencia Informativa",
-  "date":"10",
+  "date":"06",
   "month":"junio",
   "dateTextSecond" : "Informativa",
   "dateText":"Conferencia",
@@ -36,8 +36,8 @@
     }
   ],
   "titlePasos":"Siguientes pasos",
-  "calendatioText":"calendario",
-  "informesText":"Informes",
-  "folletoText":"folleto",
-  "admisionText":"admision"
+  "calendatioText":"Del 07 de junio al 07 de agosto de 2021 ",
+  "informesText":"Informes@esan.edu.pe Alonso de Molina 1652,Monterrico, Surco",
+  "folletoText":"Descarga el folleto del programa (pdf)",
+  "admisionText":"Postula"
 }

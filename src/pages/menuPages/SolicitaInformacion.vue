@@ -174,9 +174,11 @@
                 :aria-describedby="ariaDescribedby"
                 required
               >
-                <b-form-checkbox value="me">
-                  Acepto las condiciones de tratamiento para mis datos
-                  personales</b-form-checkbox
+                <b-form-checkbox class="conditions"  value="me">
+                 
+                  Acepto las  <span class="access"> condiciones de tratamiento para mis datos
+                  personales
+                    </span></b-form-checkbox
                 >
                 <!-- <b-form-checkbox value="that">Check that out</b-form-checkbox> -->
               </b-form-checkbox-group>
@@ -197,7 +199,7 @@
               ></b-form-select>
             </b-form-group>
             <br />
-            <b-button type="submit" variant="primary"
+            <b-button  class="button-text" type="submit" variant="primary"
               >Enviar mis datos</b-button
             >
             <!-- <b-button type="reset" variant="danger">Reset</b-button> -->
@@ -331,9 +333,18 @@ export default {
 
 <style lang="stylus" scoped>
 @import '../../styles/main.styl';
-
+.button-text
+  font-family gt-pressura-bold  
+.conditions
+  font-family Raleway-Regular
+  
+.access
+  font-family Raleway-Bold
+input 
+  font-family Raleway-Regular
 .form-content {
   padding-top: 30px;
+  font-family Raleway-Regular
 }
 
 .second-subtitle {
@@ -392,8 +403,8 @@ export default {
 
 .subtitle-text {
   color: bg-black;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 32px;
+  font-family gt-pressura-bold
 }
 
 .bv-example-row {

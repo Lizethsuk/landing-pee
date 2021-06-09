@@ -10,7 +10,10 @@
             <div class="pasos-content">
               <Calendario :color="colorIcon"/>
               <p class="subtitle">Calendario</p>
-              <p v-text="calendarioText" class="description-text"></p>
+              <p class="description-text">Del 07 de junio al <br>
+                <span> 07 de agosto de 2021 </span>
+                 </p>
+              <!-- <p v-text="calendarioText" class="description-text"></p> -->
               <div class="vl"></div>
             </div>
              
@@ -19,21 +22,26 @@
             <div class="pasos-content">       
             <Informes :color="colorIcon"/>
             <p class="subtitle">Informes e inscripciones</p>
-            <p v-text="informeText"  class="description-text"></p>
+            <p class="description-text">Informes@esan.edu.pe 
+              <br>
+              <span>Alonso de Molina 1652,</span>
+              <br>
+              <span>Monterrico, Surco </span>
+              </p>
             </div>
           </b-col>
           <b-col lg="3" cols="12">
             <div class="pasos-content">
             <Folleto :color="colorIcon"/>
             <p class="subtitle">Folleto</p>
-            <p v-text="folletoText"  class="description-text"></p>
+            <p class="description-text">Descarga el folleto del <br> programa (pdf)</p>
             </div>
           </b-col>
           <b-col lg="3" cols="12">
             <div class="text-center ">
             <Admision :color="colorIcon"/>
             <p class="subtitle">Admision</p>
-            <p v-text="admisionText"  class="description-text"></p>
+            <p class="description-text">Postula</p>
             </div>
           </b-col>
         </b-row>
