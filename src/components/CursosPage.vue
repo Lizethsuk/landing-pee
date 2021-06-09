@@ -52,7 +52,7 @@ export default {
 .navbar-nav {
   flex-direction: row;
   display flex;
-  justify-content space-between
+  justify-content flex-start
   flex-wrap wrap 
 }
 

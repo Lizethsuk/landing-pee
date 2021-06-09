@@ -104,11 +104,11 @@ ul {
 
 .nav-item {
   display: inline-block;
-  margin: 0px;
-  max-width 435px;
+  max-width 430px;
   width: 100%!important;
   font-size: 24px;
   min-height: 70px;
+  margin 0px 3px
 }
 
 a {
@@ -143,7 +143,7 @@ a {
 
 li {
   background: #DBDBDB;
-  margin 0 0 10px 0!important
+  margin 0 3px 10px 3px!important
 }
 
 li:nth-child(odd) {
@@ -165,6 +165,7 @@ section {
   .nav-item 
     max-width 374px;
     width: 100%!important;
+    
 @media (min-width: 768px) and (max-width: 991px)
   .nav-item 
     max-width 359px;
