@@ -2,8 +2,8 @@
   "bgColorDividerDate":" #D3D4E6" ,
   "bgColorButtonDate":" #3F4474",
   "bgColorDate":"#50BDB7",
-  "lineColorCursos":"#7D6247",
-  "bgColorCursos":"#7D6247",
+  "lineColorCursos":"#3F4474",
+  "bgColorCursos":"#3F4474",
   "lineColorPasos":" #D3D4E6 ",
   "bgColorPasos":"#50BDB7",
   "colorIcon":"green",
@@ -14,25 +14,25 @@
   "dateTextSecond" : "Informativa",
   "dateText":"Conferencia",
   "buttonText":"Inscribete aqui",
-  "titleCurso":"Cursos del Certificado de Especializacion en Gestion de la Energia",
+  "titleCurso":"Cursos del Certificado de Especializacion en Gestion de la Salud",
   "cursos":[
     {
-      "section": "Foo 50 ",
-      "curso": "curso - 1",
-      "teacher": "teacher - 1",
-      "horario": "horario - 1"
+      "section": "Salud",
+      "curso": "Acreditación de la calidad en clínicas y hospitales ",
+      "teacher": "Paul Cuellar Villanueva",
+      "horario": "Martes de 7:30 a 10:45 p.m."
     },
     {
-      "section": "Foo 50 ",
-      "curso": "curso - 2",
-      "teacher": "teacher - 2",
-      "horario": "horario - 2"
+      "section": "Salud",
+      "curso": "Elementos claves para una auditoria en salud basada en evidencias",
+      "teacher": "Martín Tantaleán del Águila",
+      "horario": "Viernes de 7:30 a 10:45 p.m."
     },
     {
-      "section": "Foo 80",
-      "curso": "curso - 3",
-      "teacher": "teacher - 3",
-      "horario": "horario - 30"
+      "section": "Salud",
+      "curso": "Economía de la salud",
+      "teacher": "Jorge Alfredo Cordero Valera",
+      "horario": "Miércoles de 7:30 a 10:45 p.m."
     }
   ],
   "titlePasos":"Siguientes pasos",

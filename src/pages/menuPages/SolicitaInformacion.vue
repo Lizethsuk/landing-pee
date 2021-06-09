@@ -2,14 +2,22 @@
   <div>
     <HeadePage />
     <ImagePage bgColorDivider="#C3B36D" message="Solicita Informacion" />
- <b-container class="pasos-areas">
+      <b-form-select v-model="selected" :options="options"></b-form-select>
+      <b-form-select v-model="selected" :options="options" size="sm" class="mt-3"></b-form-select>
+      <div class="mt-3">Selected: <strong>{{ selected }}</strong></div>
+
+    <b-container class="pasos-areas">
       <b-row>
         <b-col>
           <p class="subtitle-text">Solicita mas Informacion</p>
           <b-form @submit="onSubmit" @reset="onReset" v-if="show">
-            <b-form-group class="form-content" id="input-group-1" label-for="input-1">
-              <b-form-select 
-                id="input-1" 
+            <b-form-group
+              class="form-content"
+              id="input-group-1"
+              label-for="input-1"
+            >
+              <b-form-select
+                id="input-1"
                 v-model="form.areasdeIntere"
                 :options="areasdeInteres"
                 required
@@ -18,7 +26,11 @@
             <b-row>
               <b-col>
                 <div>
-                  <b-form-group class="form-content" id="input-group-2" label-for="input-2">
+                  <b-form-group
+                    class="form-content"
+                    id="input-group-2"
+                    label-for="input-2"
+                  >
                     <b-form-input
                       id="input-2"
                       v-model="form.name"
@@ -26,7 +38,11 @@
                       required
                     ></b-form-input>
                   </b-form-group>
-                  <b-form-group class="form-content" id="input-group-3" label-for="input-3">
+                  <b-form-group
+                    class="form-content"
+                    id="input-group-3"
+                    label-for="input-3"
+                  >
                     <b-form-input
                       type="number"
                       id="input-3"
@@ -35,7 +51,11 @@
                       required
                     ></b-form-input>
                   </b-form-group>
-                  <b-form-group class="form-content" id="input-group-4" label-for="input-4">
+                  <b-form-group
+                    class="form-content"
+                    id="input-group-4"
+                    label-for="input-4"
+                  >
                     <b-form-input
                       type="number"
                       id="input-4"
@@ -44,7 +64,11 @@
                       required
                     ></b-form-input>
                   </b-form-group>
-                  <b-form-group class="form-content" id="input-group-5" label-for="input-5">
+                  <b-form-group
+                    class="form-content"
+                    id="input-group-5"
+                    label-for="input-5"
+                  >
                     <b-form-input
                       id="input-5"
                       v-model="form.empresa"
@@ -52,7 +76,11 @@
                       required
                     ></b-form-input>
                   </b-form-group>
-                  <b-form-group class="form-content" id="input-group-6" label-for="input-6">
+                  <b-form-group
+                    class="form-content"
+                    id="input-group-6"
+                    label-for="input-6"
+                  >
                     <b-form-input
                       id="input-6"
                       v-model="form.cargo"
@@ -64,7 +92,11 @@
               </b-col>
               <b-col>
                 <div>
-                  <b-form-group class="form-content"  id="input-group-7" label-for="input-7">
+                  <b-form-group
+                    class="form-content"
+                    id="input-group-7"
+                    label-for="input-7"
+                  >
                     <b-form-input
                       id="input-7"
                       v-model="form.apellido"
@@ -72,7 +104,11 @@
                       required
                     ></b-form-input>
                   </b-form-group>
-                  <b-form-group class="form-content" id="input-group-8" label-for="input-8">
+                  <b-form-group
+                    class="form-content"
+                    id="input-group-8"
+                    label-for="input-8"
+                  >
                     <b-form-input
                       id="input-8"
                       v-model="form.nombre"
@@ -80,7 +116,11 @@
                       required
                     ></b-form-input>
                   </b-form-group>
-                  <b-form-group class="form-content" id="input-group-9" label-for="input-9">
+                  <b-form-group
+                    class="form-content"
+                    id="input-group-9"
+                    label-for="input-9"
+                  >
                     <b-form-select
                       id="input-9"
                       v-model="form.gradoAcademico"
@@ -88,7 +128,11 @@
                       required
                     ></b-form-select>
                   </b-form-group>
-                  <b-form-group class="form-content" id="input-group-10" label-for="input-10">
+                  <b-form-group
+                    class="form-content"
+                    id="input-group-10"
+                    label-for="input-10"
+                  >
                     <b-form-select
                       id="input-10"
                       v-model="form.industria"
@@ -96,7 +140,11 @@
                       required
                     ></b-form-select>
                   </b-form-group>
-                  <b-form-group class="form-content" id="input-group-11" label-for="input-11">
+                  <b-form-group
+                    class="form-content"
+                    id="input-group-11"
+                    label-for="input-11"
+                  >
                     <b-form-select
                       id="input-11"
                       v-model="form.area"
@@ -107,7 +155,7 @@
                 </div>
               </b-col>
             </b-row>
-            <br>
+            <br />
             <p class="subtitle-text">Consulta</p>
             <b-form-group id="input-group-12" label-for="input-12">
               <b-form-textarea
@@ -118,21 +166,32 @@
                 required
               ></b-form-textarea>
             </b-form-group>
-            <b-form-group class="form-content" id="input-group-12" v-slot="{ ariaDescribedby }">
+            <b-form-group
+              class="form-content"
+              id="input-group-12"
+              v-slot="{ ariaDescribedby }"
+            >
               <b-form-checkbox-group
                 v-model="form.checked"
                 id="checkboxes-4"
                 :aria-describedby="ariaDescribedby"
                 required
               >
-                <b-form-checkbox value="me"> Acepto las condiciones de tratamiento para mis datos personales</b-form-checkbox>
+                <b-form-checkbox value="me">
+                  Acepto las condiciones de tratamiento para mis datos
+                  personales</b-form-checkbox
+                >
                 <!-- <b-form-checkbox value="that">Check that out</b-form-checkbox> -->
               </b-form-checkbox-group>
             </b-form-group>
             <p class="subtitle-text">
               ¿Como te enteraste de que dictamos este programa?
             </p>
-            <b-form-group class="form-content"  id="input-group-14" label-for="input-14">
+            <b-form-group
+              class="form-content"
+              id="input-group-14"
+              label-for="input-14"
+            >
               <b-form-select
                 id="input-14"
                 v-model="form.alternativa"
@@ -140,14 +199,15 @@
                 required
               ></b-form-select>
             </b-form-group>
-            <br>
-            <b-button type="submit" variant="primary">Enviar mis datos</b-button>
+            <br />
+            <b-button type="submit" variant="primary"
+              >Enviar mis datos</b-button
+            >
             <!-- <b-button type="reset" variant="danger">Reset</b-button> -->
           </b-form>
         </b-col>
       </b-row>
     </b-container>
-
     <PasosPages
       colorIcon="green"
       lineColor="#C3B36D"
@@ -157,8 +217,6 @@
       folletoText="myJson.folletoText"
       admisionText="myJson.admisionText"
     />
-   
-  
     <FooterPage />
   </div>
 </template>
@@ -178,6 +236,14 @@ export default {
   },
   data() {
     return {
+      selected: null,
+      options: [
+        { value: null, text: 'Please select an option' },
+        { value: 'a', text: 'This is First option' },
+        { value: 'b', text: 'Selected Option' },
+        { value: { C: '3PO' }, text: 'This is an option with object value' },
+        { value: 'd', text: 'This one is disabled', disabled: true }
+      ],
       form: {
         emainumereDNIl: "",
         checked: [],
@@ -254,7 +320,7 @@ export default {
       this.form.gradoAcademico = null;
       this.form.industria = null;
       this.form.area = null;
-      this.form.checked = []
+      this.form.checked = [];
       // Trick to reset/clear native browser form validation state
       this.show = false;
       this.$nextTick(() => {
@@ -268,17 +334,22 @@ export default {
 
 <style lang="stylus" scoped>
 @import '../../styles/main.styl';
-.form-content
-  padding-top 30px
+
+.form-content {
+  padding-top: 30px;
+}
+
 .second-subtitle {
   background-color: #C4B076;
 }
+
 .pasos-areas {
   padding-right: 130px;
   padding-left: 130px;
   padding-bottom: 80px;
   padding-top: 80px;
 }
+
 .subtitle-table {
   text-align: center;
 }
@@ -346,9 +417,10 @@ export default {
   background-image: url('../../assets/Landscape-Color.jpg');
   color: #C3B36D !important;
 }
-textarea
-input
-  background-color #DBDBDB
-  border-radius 0px 
-  border-color black
+
+textarea, input {
+  background-color: #DBDBDB;
+  border-radius: 0px;
+  border-color: black;
+}
 </style>

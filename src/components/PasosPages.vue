@@ -11,7 +11,9 @@
               <Calendario :color="colorIcon"/>
               <p>Calendario</p>
               <p v-text="calendarioText"></p>
+              <div class="vl"></div>
             </div>
+             
           </b-col>
           <b-col lg="3" cols="12">
             <div class="pasos-content">       
@@ -92,12 +94,15 @@ export default {
 
 <style lang="stylus" scoped>
 @import '../styles/main.styl';
+
 .title
   text-align center
   font-size 25px
+  font-weight bold
 .pasos-content
-  border-right: solid var(--line-color);
+  border-right: 2px solid var(--line-color);
   text-align center
+  height: 180px;
 .pasos-page {
   left: 0;
   bottom: 0;

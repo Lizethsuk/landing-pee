@@ -7,7 +7,7 @@
         
               <img src="../assets/components/cursoList/shap/online.png" alt="">
         <p class="encargado" v-text="teacherName"></p>
-        <span class="fecha" v-text="horarioName"></span>
+        <p class="fecha" v-text="horarioName"></p>
       </div>
     </li>
 </template>
@@ -58,22 +58,26 @@ export default {
 // .name-curso {
 //   padding-bottom: 10px;
 // }
-
-// .title-curso {
-//   padding-bottom: 10px;
-// }
+.name-curso
+  font-size: 20px;
+.title-curso 
+  font-size: 15px;
+  margin-block-end: 5px;
 
 .fecha {
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .encargado {
-  margin-block-end: 4px;
+  padding-top 10px
+  margin-block-end: 0px;
+  font-size: 15px;
 }
 
 hr.new4 {
   border: 1px solid var(--line-color);
   opacity: 1;
+  margin-block-end: 0.2em;
 }
 
 .cursos-page {
@@ -124,7 +128,7 @@ a {
   font-weight: bold;
   line-height: 23px;
   width: 100%;
-  height: 180px;
+  height: 200px;
   border: 1px solid  var(--bg-color);
   padding: 10px;
   

@@ -17,22 +17,16 @@
   "titleCurso":"Cursos del Certificado de Especializacion en Gestion de la Energia",
   "cursos":[
     {
-      "section": "Foo 50 ",
-      "curso": "curso - 1",
-      "teacher": "teacher - 1",
-      "horario": "horario - 1"
+      "section": "Energia",
+      "curso": "Economia del negocio del petroleo y gas",
+      "teacher": "Luis Gonzales Talledo",
+      "horario": "Miercoles de 7:30 a 10:45 pm"
     },
     {
-      "section": "Foo 50 ",
+      "section": "Energia",
       "curso": "curso - 2",
       "teacher": "teacher - 2",
       "horario": "horario - 2"
-    },
-    {
-      "section": "Foo 80",
-      "curso": "curso - 3",
-      "teacher": "teacher - 3",
-      "horario": "horario - 30"
     }
   ],
   "titlePasos":"Siguientes pasos",
