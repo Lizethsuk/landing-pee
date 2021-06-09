@@ -259,7 +259,7 @@
         </b-row>
       </b-container>
     </section>
-    <section class="section">
+    <section class="section s-ventajas">
       <b-container class="bv-example-row ">
         <b-row>
           <b-col cols="10" class="text-center mx-auto">
@@ -275,17 +275,17 @@
             </p>
           </b-col>
         </b-row>
-        <b-row>
-          <b-col lg="3" md="6" >
+        <b-row class="pt-5">
+          <b-col lg="3" md="6" class="text-center" >
               <img src="../assets/home/iconos/ventajas/v-01.png" alt="" >
           </b-col>
-          <b-col lg="3" md="6" >
+          <b-col lg="3" md="6" class="text-center" >
               <img src="../assets/home/iconos/ventajas/v-02.png" alt="" >
           </b-col>
-          <b-col lg="3" md="6" >
+          <b-col lg="3" md="6" class="text-center" >
               <img src="../assets/home/iconos/ventajas/v-03.png" alt="" >
           </b-col>
-          <b-col lg="3" md="6" >
+          <b-col lg="3" md="6" class="text-center" >
               <img src="../assets/home/iconos/ventajas/v-04.png" alt="" >
           </b-col>
         </b-row>
@@ -295,12 +295,12 @@
       <b-container class="bv-example-row ">
         <b-row>
           <b-col class="text-center">
-            <h3 class="pb-3">3 FORMAS DE OBTENER TU <br> CERTIFICADO DE ESPECIALIZACIÓN</h3>
+            <h3 class="pb-1">3 FORMAS DE OBTENER TU <br> CERTIFICADO DE ESPECIALIZACIÓN</h3>
             <h3 class="pb-5">
               PEE ES UN PROGRAMA CORTO, FLEXIBLE <br />
               Y SE ADAPTA A TUS NECESIDADES
             </h3>
-            <p>
+            <p class="pb-5">
               El certificado de Especialización requiere la aprobación de cinco cursos elegidos por el participante, 
               y pueden ser llevados según las siguientes opciones*:
             </p>
@@ -308,25 +308,38 @@
               <b-container>
                 <b-row>
                   <b-col lg="8">
-                    <b-container class="container-inter" >
-                      <b-row class="row-inter">
-                        <b-col md="6">
-                           <div class="box-option">
+                    <b-container class="container-inter c-row-inter h-100" >
+                      <b-row>
+                        <b-col md="6" class="col-option">
+                          <b-container class="container-inter">
+                            <b-row>
+                              <b-col cols="12">
+                                <h4>OPCIÓN 1</h4>
+                              </b-col>
+                              <b-col cols="12">
+                                <div class="box-option">
                                  <b-container class="box-container">
                                    <b-row>
                                      <b-col cols="4" class="pr-0">
                                        <h2>5</h2>
                                      </b-col>
-                                      <b-col cols="8" class="d-flex align-items-center">
+                                      <b-col cols="8" class="d-flex align-items-center pl-1">
                                         <p>Cursos de la Especialidad elegida</p>
                                       </b-col>
                                    </b-row>
                                  </b-container>
                                </div>
+                              </b-col>
+                            </b-row>
+                          </b-container>
+                           
                         </b-col>
                         <b-col  md="6">
                            <b-container class="container-inter">
                              <b-row>
+                               <b-col cols="12">
+                                <h4>OPCIÓN 2</h4>
+                              </b-col>
                                <b-col cols="12">
                                <div class="box-option">
                                  <b-container class="box-container">
@@ -334,7 +347,7 @@
                                      <b-col cols="4" class="pr-0">
                                        <h2>4</h2>
                                      </b-col>
-                                      <b-col cols="8" class="d-flex align-items-center">
+                                      <b-col cols="8" class="d-flex align-items-center pl-1">
                                         <p>Cursos de la Especialidad elegida</p>
                                       </b-col>
                                    </b-row>
@@ -351,7 +364,7 @@
                                      <b-col cols="4" class="pr-0">
                                        <h2>1</h2>
                                      </b-col>
-                                      <b-col cols="8" class="d-flex align-items-center">
+                                      <b-col cols="8" class="d-flex align-items-center pl-1">
                                         <p>Curso de otra área</p>
                                       </b-col>
                                    </b-row>
@@ -374,13 +387,16 @@
                      <b-container class="container-inter">
                              <b-row>
                                <b-col cols="12">
+                                <h4>OPCIÓN 3</h4>
+                              </b-col>
+                               <b-col cols="12">
                                <div class="box-option">
                                  <b-container class="box-container">
                                    <b-row>
                                      <b-col cols="4" class="pr-0">
                                        <h2>3</h2>
                                      </b-col>
-                                      <b-col cols="8" class="d-flex align-items-center">
+                                      <b-col cols="8" class="d-flex align-items-center pl-1">
                                         <p>Cursos de la Especialidad elegida</p>
                                       </b-col>
                                    </b-row>
@@ -397,7 +413,7 @@
                                      <b-col cols="4" class="pr-0">
                                        <h2>1</h2>
                                      </b-col>
-                                      <b-col cols="8" class="d-flex align-items-center">
+                                      <b-col cols="8" class="d-flex align-items-center pl-1">
                                         <p>Cursos de otra Especialidad elegida</p>
                                       </b-col>
                                    </b-row>
@@ -414,7 +430,7 @@
                                      <b-col cols="4" class="pr-0">
                                        <h2>1</h2>
                                      </b-col>
-                                      <b-col cols="8" class="d-flex align-items-center">
+                                      <b-col cols="8" class="d-flex align-items-center pl-1">
                                         <p>Cursos de otra área</p>
                                       </b-col>
                                    </b-row>
@@ -433,7 +449,7 @@
       </b-container>
     </section>
     <section class="sect-rankings">
-      <b-container>
+      <b-container class="contain-sec">
         <b-row>
           <b-col cols="12" lg="4">
             <h1>ESAN, PRESENTE EN LOS RANKINGS MÁS PRESTIGIOSOS DEL MUNDO</h1>
@@ -441,13 +457,13 @@
           <b-col cols="12" lg="6">
             <b-container>
               <b-row>
-                <b-col md="4">
+                <b-col md="3" class="text-center">
                   <img src="../assets/home/iconos/rankings/rk-1.png" alt="" >
                 </b-col>
-                <b-col md="4" >
+                <b-col md="6" class="text-center" >
                   <img src="../assets/home/iconos/rankings/rk-2.png" alt="" >
                 </b-col>
-                <b-col md="4">
+                <b-col md="3" class="text-center">
                   <img src="../assets/home/iconos/rankings/rk-3.png" alt="" >
                 </b-col>
               </b-row>
@@ -736,6 +752,17 @@ h2 {
   p{
     font-size 24px
     line-height 28.8px
+    margin-bottom 0px
+  }
+  h3{
+    margin 15px 0 0
+  }
+ 
+}
+.s-ventajas{
+  img{
+    max-width 250px
+    width 100%
   }
 }
 .s-certificado{
@@ -743,6 +770,14 @@ h2 {
   .container-inter{
     padding-left 0px
     padding-right 0px
+    &.c-row-inter{
+      display flex
+      justify-content space-between
+      flex-direction column
+      .col-option{
+        margin-bottom 40px
+      }
+    }
 
   }
   .box-option{
@@ -777,6 +812,7 @@ h2 {
   border: 3px solid primary-pee;
   max-width: 1050px;
   width: 100%;
+  padding: 15px 0px
 }
 
 .section-areas-inicio {
@@ -842,7 +878,7 @@ h2 {
   width: 100%;
 
   .contact-container {
-    max-width: 300px;
+    max-width: 380px;
     color: white;
     width: 100%;
     margin-left 0px
@@ -860,6 +896,9 @@ h2 {
   h1{
     font-size 39.82px
   }
+  .contain-sec{
+    padding-left value
+  } 
 }
 
 @media only screen and (max-width: 1560px) {
