@@ -4,7 +4,7 @@
       <b-container  class="bv-example-row section-areas">
         <b-row no-gutters>
           <b-col>
-            <p v-text="title" ></p>
+            <p v-text="title" class="title-text-curso" ></p>
           </b-col>
         </b-row>
         <b-row no-gutters >
@@ -36,7 +36,11 @@ export default {
 
 <style lang="stylus" scoped>
 @import '../styles/main.styl';
-
+.title-text-curso
+  font-size 30px
+  font-weight bold
+  padding-top 20px
+  padding-bottom 20px
 .cursos-page {
   left: 0;
   bottom: 0;

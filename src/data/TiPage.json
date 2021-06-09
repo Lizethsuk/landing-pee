@@ -2,8 +2,8 @@
   "bgColorDividerDate":"#758791" ,
   "bgColorButtonDate":"#57A9D1",
   "bgColorDate":"#5D6F79",
-  "lineColorCursos":"#7D6247",
-  "bgColorCursos":"#7D6247",
+  "lineColorCursos":"#5D6F79",
+  "bgColorCursos":"#5D6F79",
   "lineColorPasos":"#758791 ",
   "bgColorPasos":"#5D6F79",
   "colorIcon":"green",
@@ -14,22 +14,40 @@
   "dateText":"Conferencia",
   "dateTextSecond" : "Informativa",
   "buttonText":"Inscribete aqui",
-  "titleCurso":"Cursos del Certificado de Especializacion en Gestion de la Energia",
+  "titleCurso":"Cursos del Certificado Tecnologia de la informacion",
   "cursos":[
     {
-      "section": "Foo 50 ",
+      "section": "Tecnologia de la informacion",
       "curso": "curso - 1",
       "teacher": "teacher - 1",
       "horario": "horario - 1"
     },
     {
-      "section": "Foo 50 ",
+      "section": "Tecnologia de la informacion",
       "curso": "curso - 2",
       "teacher": "teacher - 2",
       "horario": "horario - 2"
     },
     {
-      "section": "Foo 80",
+      "section": "Tecnologia de la informacion",
+      "curso": "curso - 3",
+      "teacher": "teacher - 3",
+      "horario": "horario - 30"
+    },
+    {
+      "section": "Tecnologia de la informacion",
+      "curso": "curso - 3",
+      "teacher": "teacher - 3",
+      "horario": "horario - 30"
+    },
+    {
+      "section": "Tecnologia de la informacion",
+      "curso": "curso - 3",
+      "teacher": "teacher - 3",
+      "horario": "horario - 30"
+    },
+    {
+      "section": "Tecnologia de la informacion",
       "curso": "curso - 3",
       "teacher": "teacher - 3",
       "horario": "horario - 30"

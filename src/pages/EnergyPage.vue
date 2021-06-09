@@ -162,7 +162,7 @@ a {
 }
 
 li {
-  background: #DBDBDB;
+  background: #DCD2C6;
 }
 
 li:nth-child(odd) {

@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <!-- <div></div> -->
     <section style="border-bottom: none !important">
       <b-container fluid class="bv-example-row hello">
@@ -443,7 +444,7 @@
         </b-container>
       </section>
     </div>
-
+ 
     <FooterPage />
 
     <router-view />
@@ -470,6 +471,7 @@ export default {
 
 <style lang="stylus" scoped>
 @import '../styles/main.styl';
+
 
 .flip-card {
   background-color: transparent;
