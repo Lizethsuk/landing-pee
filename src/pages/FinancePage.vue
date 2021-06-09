@@ -18,6 +18,34 @@
         />
 
       </CursosPage>
+         <hr>
+      <CursosPage :title="myJson.titleSecondCurso" >
+        <CursoList
+          v-for="curso in myJson.SecondCurso"
+          :sectionName="curso.section"
+          :cursoName="curso.curso"
+          :teacherName="curso.teacher"
+          :horarioName="curso.horario"
+          :key="curso.id"
+          :lineColor="myJson.lineColorCursos" :bgColor="myJson.bgColorCursos"
+        />
+
+      </CursosPage>
+
+         <hr>
+
+      <CursosPage :title="myJson.titleThreeCurso" >
+        <CursoList
+          v-for="curso in myJson.ThreeCurso"
+          :sectionName="curso.section"
+          :cursoName="curso.curso"
+          :teacherName="curso.teacher"
+          :horarioName="curso.horario"
+          :key="curso.id"
+          :lineColor="myJson.lineColorCursos" :bgColor="myJson.bgColorCursos"
+        />
+
+      </CursosPage>
        <PasosPages
         :colorIcon="myJson.colorIcon"
         :lineColor="myJson.lineColorPasos"
@@ -85,6 +113,11 @@ export default {
 <style lang="stylus" scoped>
 
  @import "../styles/main.styl"
+
+hr 
+  background-color:secondary-finanzas
+  height: 3px;
+  opacity 1 !important
 .jumbotron
   background-image url('../assets/areas/finanzas/banner/kv.jpg')
 

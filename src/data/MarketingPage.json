@@ -14,83 +14,113 @@
   "dateTextSecond" : "Informativa",
   "dateText":"Conferencia",
   "buttonText":"Inscribete aqui",
-  "titleCurso":"Cursos del Certificado de Especializacion en Gestion de la Energia",
+  "titleCurso":"Certificado de Especialización en Marketing",
   "cursos":[
     {
-      "section": "Foo 50 ",
-      "curso": "curso - 1",
-      "teacher": "teacher - 1",
-      "horario": "horario - 1"
+      "section": "Marketing",
+      "curso": "Customer Engagement",
+      "teacher": "Guisell Larregui Candelaria",
+      "horario": "Miércoles de 7:30 p. m. a 10:45 p. m."
     },
     {
-      "section": "Foo 50 ",
-      "curso": "curso - 2",
-      "teacher": "teacher - 2",
-      "horario": "horario - 2"
+      "section": "Marketing",
+      "curso": "Customer experience management",
+      "teacher": "Jorge Yáñez Giles",
+      "horario": "Jueves de 7:30 p.m. a 10:45 p.m."
     },
     {
-      "section": "Foo 80",
-      "curso": "curso - 3",
-      "teacher": "teacher - 3",
-      "horario": "horario - 30"
+      "section": "Marketing",
+      "curso": "Dirección de marketing y ventas:blended strategy",
+      "teacher": "José Wakabayashi",
+      "horario": "Lunes de 7:30 p. m. a 10:45 p. m."
     },
     {
-      "section": "Foo 80",
-      "curso": "curso - 3",
-      "teacher": "teacher - 3",
-      "horario": "horario - 30"
+      "section": "Marketing",
+      "curso": "Marketing Intelligence Overview",
+      "teacher": "Christian Aste León",
+      "horario": "Miércoles de 7:30 p. m. a 10:45 p. m."
     },
     {
-      "section": "Foo 80",
-      "curso": "curso - 3",
-      "teacher": "teacher - 3",
-      "horario": "horario - 30"
+      "section": "Marketing",
+      "curso": "Marketing: del diagnóstico a la formulación de estrategias",
+      "teacher": "Carlos Alberto Guerrero Medina",
+      "horario": "Martes de 7:30 a 10:45 p. m."
     }, 
     {
-      "section": "Foo 80",
-      "curso": "curso - 3",
-      "teacher": "teacher - 3",
-      "horario": "horario - 30"
+      "section": "Marketing",
+      "curso": "Retail marketing: diseño de estrategias para las nuevas oportunidades de mercado",
+      "teacher": "Alvaro León-Gambetta Martín-Arranz",
+      "horario": "Lunes de 7:30 p. m. a 10:45 p. m."
     }
   ],
-  "cursosSecond":[
+  "titleSecondCurso":"Certificado de Especialización en Marketing Digital",
+  "SecondCurso":[
     {
-      "section": "Foo 10 ",
-      "curso": "curso - 1",
-      "teacher": "teacher - 1",
-      "horario": "horario - 1"
+      "section": "Marketing",
+      "curso": "Analitica Web",
+      "teacher": "Sergio Cuervo Guzmán | Ronald De La Cruz Cachay",
+      "horario": "Miércoles de 7:30 p.m. a 10:45 pm."
     },
     {
-      "section": "Foo 50 ",
-      "curso": "curso - 2",
-      "teacher": "teacher - 2",
-      "horario": "horario - 2"
+      "section": "Marketing",
+      "curso": "Diseño de estrategias de contenido para marketing digital",
+      "teacher": "Miguel Palacios",
+      "horario": "Martes de 7:00 p. m. a 10:30 p. m."
     },
     {
-      "section": "Foo 80",
-      "curso": "curso - 3",
-      "teacher": "teacher - 3",
-      "horario": "horario - 30"
+      "section": "Marketing",
+      "curso": "Estrategias en Redes Sociales (Twitter,Linkedin, Youtube, Fb, Instagram,Pinterest)",
+      "teacher": "Daniel Chicoma Lúcar",
+      "horario": "Jueves de 7:30 p. m. a 10:45 p. m."
+    },
+    {
+      "section": "Marketing",
+      "curso": "Estrategias para gestionar la disrupción digital",
+      "teacher": "Luis Ubillus Ramírez",
+      "horario": "Lunes de 7:30 a 10:45 p. m."
     }
+    
   ],
-  "cursosThree":[
+  "titleThreeCurso":"Certificado de Especialización en Dirección de Ventas",
+  "ThreeCurso":[
     {
-      "section": "Foo 10 ",
-      "curso": "curso - 1",
-      "teacher": "teacher - 1",
-      "horario": "horario - 1"
+      "section": "Marketing",
+      "curso": "Dimensionamiento de mercado:valor, segmentación, demanda y forecast de ventas",
+      "teacher": "Carlos Medardo Urbina Rivera",
+      "horario": "Jueves de 7:30 p. m. a 10:45 p. m."
     },
     {
-      "section": "Foo 50 ",
-      "curso": "curso - 2",
-      "teacher": "teacher - 2",
-      "horario": "horario - 2"
+      "section": "Marketing",
+      "curso": "Dirección de marketing y ventas:blended strategy",
+      "teacher": "José Wakabayashi",
+      "horario": "Lunes de 7:30 p. m. a 10:45 p. m."
     },
     {
-      "section": "Foo 80",
-      "curso": "curso - 3",
-      "teacher": "teacher - 3",
-      "horario": "horario - 30"
+      "section": "Marketing",
+      "curso": "Estrategias comerciales de alto impacto",
+      "teacher": "José Luis Wakabayashi Muroya",
+      "horario": "Viernes de 7:30 p. m. a 10:45 p. m."
+    }
+    ,
+    {
+      "section": "B2B",
+      "curso": "Estrategias de venta corporativa (B2B)",
+      "teacher": "Ana Belén Perdigones",
+      "horario": "Sábado de 9:00 a.m. a 12:15 p.m."
+    }
+    ,
+    {
+      "section": "Marketing",
+      "curso": "Estrategias de venta internacional:crecimiento a través de exportaciones",
+      "teacher": "Walter Palomino Tamayo",
+      "horario": "Sábado de 9:00 a.m. a 12:15 p.m."
+    }
+    ,
+    {
+      "section": "Marketing",
+      "curso": "Ventas más efectivas con PNL",
+      "teacher": "Juan Pablo Marimón",
+      "horario": "Miércoles de 7:30 p. m. a 10:45 p. m."
     }
   ],
   "titlePasos":"Siguientes pasos",

@@ -9,8 +9,8 @@
   "colorIcon":"green",
   "title":"Tecnología de la Información",
   "text-con":"Conferencia Informativa",
-  "date":"10",
-  "month":"junio",
+  "date":"28",
+  "month":"abril",
   "dateText":"Conferencia",
   "dateTextSecond" : "Informativa",
   "buttonText":"Inscribete aqui",
@@ -18,39 +18,39 @@
   "cursos":[
     {
       "section": "Tecnologia de la informacion",
-      "curso": "curso - 1",
-      "teacher": "teacher - 1",
-      "horario": "horario - 1"
+      "curso": "Agile management: aplicando scrum en equipos y otros métodos de agilidad organizacional",
+      "teacher": "Arturo Valencia Castro",
+      "horario": "Miércoles de 7:30 a 10:45 p. m."
     },
     {
       "section": "Tecnologia de la informacion",
-      "curso": "curso - 2",
-      "teacher": "teacher - 2",
-      "horario": "horario - 2"
+      "curso": "Data Science: La ciencia de los datos",
+      "teacher": "Fernando Casafranca",
+      "horario": "Lunes de 7:30 a 10:45 p.m."
     },
     {
       "section": "Tecnologia de la informacion",
-      "curso": "curso - 3",
-      "teacher": "teacher - 3",
-      "horario": "horario - 30"
+      "curso": "Design thinking para la innovación",
+      "teacher": "Fabián Bueno Méndez",
+      "horario": "Miércoles de 7:30 a 10:45 p. m."
     },
     {
       "section": "Tecnologia de la informacion",
-      "curso": "curso - 3",
-      "teacher": "teacher - 3",
-      "horario": "horario - 30"
+      "curso": "Fundamentos de Cobit 2019 - Marco deGobierno de las TI para la Transformación Digital",
+      "teacher": "Guillermo Yrigoyen Quintanilla",
+      "horario": "Jueves de 7:30 a 10:45 p.m."
     },
     {
       "section": "Tecnologia de la informacion",
-      "curso": "curso - 3",
-      "teacher": "teacher - 3",
-      "horario": "horario - 30"
+      "curso": "Gerencia Efectiva de las Tecnologías de Información",
+      "teacher": "Eddie Morris Abarca",
+      "horario": "Miércoles de 7:30 p. m. a 10:45 p. m."
     },
     {
       "section": "Tecnologia de la informacion",
-      "curso": "curso - 3",
-      "teacher": "teacher - 3",
-      "horario": "horario - 30"
+      "curso": "Inteligencia de Negocios (Business Intelligence)",
+      "teacher": "Richard Moarri Nohra",
+      "horario": "Martes de 7:30 p. m. a 10:45 p. m."
     }
   ],
   "titlePasos":"Siguientes pasos",

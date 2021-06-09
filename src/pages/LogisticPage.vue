@@ -6,9 +6,35 @@
       <DatePage :bgColorButton="myJson.bgColorButtonDate" :bgColorDivider="myJson.bgColorDividerDate"  
       :dateTextSecond="myJson.dateTextSecond" :buttonText="myJson.buttonText"  
       :dateText="myJson.dateText" :bgColor="myJson.bgColorDate" :month="myJson.month" :day="myJson.date" />
-      <CursosPage :title="myJson.titleCurso" >
+     <CursosPage :title="myJson.titleCurso" >
         <CursoList
           v-for="curso in myJson.cursos"
+          :sectionName="curso.section"
+          :cursoName="curso.curso"
+          :teacherName="curso.teacher"
+          :horarioName="curso.horario"
+          :key="curso.id"
+          :lineColor="myJson.lineColorCursos" :bgColor="myJson.bgColorCursos"
+        />
+
+      </CursosPage>
+      <hr>
+      <CursosPage :title="myJson.titleSecondCurso" >
+        <CursoList
+          v-for="curso in myJson.SecondCurso"
+          :sectionName="curso.section"
+          :cursoName="curso.curso"
+          :teacherName="curso.teacher"
+          :horarioName="curso.horario"
+          :key="curso.id"
+          :lineColor="myJson.lineColorCursos" :bgColor="myJson.bgColorCursos"
+        />
+
+      </CursosPage>
+      <hr>
+      <CursosPage :title="myJson.titleThreeCurso" >
+        <CursoList
+          v-for="curso in myJson.ThreeCurso"
           :sectionName="curso.section"
           :cursoName="curso.curso"
           :teacherName="curso.teacher"

@@ -19,7 +19,7 @@
 
       </CursosPage>
       <hr>
-      <CursosPage >
+      <CursosPage :title="myJson.titleSecondCurso">
         <CursoList
           v-for="curso in myJson.cursosSecond"
           :sectionName="curso.section"

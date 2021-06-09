@@ -14,25 +14,139 @@
   "dateTextSecond" : "Informativa",
   "dateText":"Conferencia",
   "buttonText":"Inscribete aqui",
-  "titleCurso":"Cursos del Certificado de Especializacion en Gestion de la Energia",
+  "titleCurso":"Cursos del Certificado de Especialización en Finanzas Corporativas",
   "cursos":[
     {
-      "section": "Foo 50 ",
-      "curso": "curso - 1",
-      "teacher": "teacher - 1",
-      "horario": "horario - 1"
+      "section": "Finanzas ",
+      "curso": "Análisis de Riesgo Crediticio",
+      "teacher": "Arturo García Villacorta",
+      "horario": "Viernes de 7:30 a 10:45 p. m."
     },
     {
-      "section": "Foo 50 ",
-      "curso": "curso - 2",
-      "teacher": "teacher - 2",
-      "horario": "horario - 2"
+      "section": "Finanzas",
+      "curso": "Análisis, modelamiento financiero y proyección de estados financieros a mediano y largo plazo",
+      "teacher": "Carlos Antonio Aguirre Gamarr ",
+      "horario": "Martes de 7:30 p. m. a 10:45 p. m."
     },
     {
-      "section": "Foo 80",
-      "curso": "curso - 3",
-      "teacher": "teacher - 3",
-      "horario": "horario - 30"
+      "section": "Finanzas",
+      "curso": "Cómo gestionar un adecuado planeamiento tributario",
+      "teacher": "Reynaldo Moquillaza Orellan",
+      "horario": "Miércoles de 7:30 p. m. a 10:45 p. m."
+    },
+    {
+      "section": "Finanzas",
+      "curso": "Contabilidad Financiera Gerencial",
+      "teacher": "Luis Ramos Rodríguez",
+      "horario": "Martes de 7:30 p.m. a 10:45 p.m."
+    },
+    {
+      "section": "Finanzas",
+      "curso": "Contabilidad y Finanzas para No Especialistas",
+      "teacher": "Patricia Gonzales",
+      "horario": "Martes de 7:30 p.m. a 10:45 p.m."
+    },
+    {
+      "section": "Finanzas",
+      "curso": "Costos para la gerencia",
+      "teacher": "José Velazco Páucar",
+      "horario": "Miércoles de 7:30 a 10:45 p. m."
+    },
+    {
+      "section": "Finanzas",
+      "curso": "Costos y estrategia: Casos para empresas en crecimiento",
+      "teacher": "René Cornejo Díaz",
+      "horario": "Viernes de 7:30 p. m. a 10:45 p. m."
+    },
+    {
+      "section": "Finanzas",
+      "curso": "Estrategias financieras para la creación de valor",
+      "teacher": "Alfredo Mendiola Cabrera",
+      "horario": "Lunes de 7:30 a 10:45 p.m"
+    },
+    {
+      "section": "Finanzas",
+      "curso": "Estructuración financiera",
+      "teacher": "Diego Campos",
+      "horario": "Lunes 7:30 p. m. a 10:45 p. m."
+    },
+    {
+      "section": "Finanzas",
+      "curso": "Evaluación de Proyectos",
+      "teacher": "Enrique Cárcamo",
+      "horario": "Jueves de 7:30 a 10:45 p.m."
+    },
+    {
+      "section": "Finanzas",
+      "curso": "Gestión de créditos y cobranzas",
+      "teacher": "Arturo García Villacorta",
+      "horario": "Jueves de 7:30 a 10:45 p.m."
+    },
+    {
+      "section": "Finanzas",
+      "curso": "Liderando la toma de decisiones con finanzas",
+      "teacher": "Luis Ángel Piazzón Gallo",
+      "horario": "Viernes de 7:30 a 10:45 p.m."
+    },
+    {
+      "section": "Finanzas",
+      "curso": "Planeamiento Financiero",
+      "teacher": "Manuel Acevedo",
+      "horario": "Miércoles de 7:30 p.m. a 10:45 p.m."
+    },
+    {
+      "section": "Finanzas",
+      "curso": "Reestructuración de Empresas y Patrimonios",
+      "teacher": "Andrés García Uribe",
+      "horario": "Jueves de 7:30 p. m. a 10:45 p. m."
+    },
+    {
+      "section": "Finanzas",
+      "curso": "Tendencias en la gestión financiera",
+      "teacher": "Miguel García Villacorta",
+      "horario": "Lunes de 7:30 p. m a 10:45 p.m."
+    }
+  ],
+  "titleSecondCurso":"Cursos del Certificado de Especialización en Preparación y Evaluación de Proyectos",
+  "SecondCurso":[
+    {
+      "section": "Finanzas ",
+      "curso": "Evaluación de Proyectos",
+      "teacher": "Enrique Cárcamo",
+      "horario": "Jueves de 7:30 a 10:45 p.m."
+    },
+    {
+      "section": "Finanzas ",
+      "curso": "Formulación, Preparación y Evaluación de Proyectos Nuevos y Proyectos en Marcha",
+      "teacher": "Alex Albújar Cruz",
+      "horario": "Miércoles de 7:30 p. m a 10:45 p.m."
+    }
+  ],
+  "titleThreeCurso":"Cursos del Certificado de Especialización en Banca",
+  "ThreeCurso":[
+    {
+      "section": "Finanzas ",
+      "curso": "Análisis de Riesgo Crediticio",
+      "teacher": "Arturo García Villacorta",
+      "horario": "Viernes de 7:30 a 10:45 p. m."
+    },
+    {
+      "section": "Finanzas ",
+      "curso": "Estructuración financiera",
+      "teacher": "Diego Campos",
+      "horario": "Lunes 7:30 p. m. a 10:45 p. m."
+    },
+    {
+      "section": "Finanzas",
+      "curso": "Fundamentos de gestión bancaria",
+      "teacher": "Marita Chang | Walther Reátegui",
+      "horario": "Miércoles de 7:30 a 10:45 p. m."
+    },
+    {
+      "section": "Finanzas",
+      "curso": "Gestión de créditos y cobranzas",
+      "teacher": "Arturo García Villacorta",
+      "horario": "Jueves de 7:30 a 10:45 p.m."
     }
   ],
   "titlePasos":"Siguientes pasos",
