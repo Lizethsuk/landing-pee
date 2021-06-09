@@ -146,24 +146,23 @@ export default {
   padding-right 25px
 .subtitle-text-three
   font-size 15px
-  font-weight bold
+  font-family Raleway-Bold
   color bg-black
 .subtitle-text-second
   font-size 15px
-  font-style: oblique;
-  font-weight bold
+  font-family Raleway-BoldItalic
   color bg-black
 .text-explication
   font-size 13px
-  font-style: oblique;
+  font-family Raleway-Italic
 .title-text
   color bg-black
   font-size 30px
-  font-weight bold
+  font-family gt-pressura-bold
 .subtitle-text
   color bg-black
   font-size 20px
-  font-weight bold
+  font-family Raleway-Bold
 .bv-example-row {
   left: 0;
   bottom: 0;
@@ -176,6 +175,7 @@ export default {
   padding-left : 130px 
   padding-bottom :80px
   padding-top 80px
+  font-family Raleway-Regular
 .jumbotron {
   background-image: url('../../assets/Landscape-Color.jpg');
   color: #C3B36D !important;

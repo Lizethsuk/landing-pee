@@ -9,8 +9,8 @@
           <b-col lg="3" cols="12">
             <div class="pasos-content">
               <Calendario :color="colorIcon"/>
-              <p>Calendario</p>
-              <p v-text="calendarioText"></p>
+              <p class="subtitle">Calendario</p>
+              <p v-text="calendarioText" class="description-text"></p>
               <div class="vl"></div>
             </div>
              
@@ -18,22 +18,22 @@
           <b-col lg="3" cols="12">
             <div class="pasos-content">       
             <Informes :color="colorIcon"/>
-            <p>Informes e inscripcione</p>
-            <p v-text="informeText"></p>
+            <p class="subtitle">Informes e inscripciones</p>
+            <p v-text="informeText"  class="description-text"></p>
             </div>
           </b-col>
           <b-col lg="3" cols="12">
             <div class="pasos-content">
             <Folleto :color="colorIcon"/>
-            <p>Folleto</p>
-            <p v-text="folletoText"></p>
+            <p class="subtitle">Folleto</p>
+            <p v-text="folletoText"  class="description-text"></p>
             </div>
           </b-col>
           <b-col lg="3" cols="12">
             <div class="text-center ">
             <Admision :color="colorIcon"/>
-            <p>Admision</p>
-            <p v-text="admisionText"></p>
+            <p class="subtitle">Admision</p>
+            <p v-text="admisionText"  class="description-text"></p>
             </div>
           </b-col>
         </b-row>
@@ -94,11 +94,12 @@ export default {
 
 <style lang="stylus" scoped>
 @import '../styles/main.styl';
-
+.subtitle
+  font-family gt-pressura-bold
 .title
   text-align center
-  font-size 25px
-  font-weight bold
+  font-size 30px
+  font-family gt-pressura-bold
 .pasos-content
   border-right: 2px solid var(--line-color);
   text-align center
@@ -109,7 +110,8 @@ export default {
   width: 100%;
   background-color: var(--bg-color);
 }
-
+.description-text
+  font-family Raleway-Regular
 .pasos-areas {
   padding: 50px 0px;
   padding-top: 20px;

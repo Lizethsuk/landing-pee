@@ -56,10 +56,12 @@ export default {
   padding-right 15px
   padding-left 15px
   padding-top 10px
+  font-family Raleway-Regular
 .button-nav
   padding 10px 25px 10px 25px
   background-color primary-pee
   color black
+  font-family gt-pressura-bold
 .nav
   background-color bg-black !important
 .router-link-active

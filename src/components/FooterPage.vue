@@ -53,7 +53,13 @@ export default {
   padding-bottom  20px
 }
 
-  
+.distrito
+.direccion  
+.text-uni
+  font-family Roboto-Regular
+.correo
+.web
+  font-family Roboto-Bold
 .correo
   font-size 19px
 .web  

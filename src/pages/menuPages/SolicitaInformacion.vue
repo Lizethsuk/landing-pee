@@ -2,10 +2,7 @@
   <div>
     <HeadePage />
     <ImagePage bgColorDivider="#C3B36D" message="Solicita Informacion" />
-      <b-form-select v-model="selected" :options="options"></b-form-select>
-      <b-form-select v-model="selected" :options="options" size="sm" class="mt-3"></b-form-select>
-      <div class="mt-3">Selected: <strong>{{ selected }}</strong></div>
-
+      
     <b-container class="pasos-areas">
       <b-row>
         <b-col>
