@@ -64,10 +64,10 @@ export default {
 
 .title {
   text-transform: uppercase;
-  font-size: 45px;
+  font-size: 60px;
   margin-block-end: 0px;
   width: 15em;
-  font-weight: bold;
+  font-family: gt-pressura-bold
   line-height 45px
 }
 

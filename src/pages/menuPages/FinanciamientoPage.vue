@@ -9,18 +9,21 @@
             <p class="title-text">
               Financiamineto solo para residentes del Perú
             </p>
-<p class="second-subtitle">Conoce nuestro descuento por matrícula anticipada</p>
+            <p class="second-subtitle">
+              Conoce nuestro descuento por matrícula anticipada
+            </p>
             <p class="subtitle-text">Por curso</p>
-            <p>
+            <p class="cursos">
               Cursos de 14 sesiones + sesión de evaluación final:
               <span class="subtitle-text-three">S/17806$xxx0</span>
             </p>
             <p class="subtitle-text">Por Certificado de Especialización</p>
-            5 Cursos:
+            <span class="cursos">5 Cursos:</span>
+          
             <p>
               <span class="subtitle-text-three"> S/ 17956 $xxo0000</span>
             </p>
-            <p>
+            <p class="nota-text"> 
               <span class="subtitle-text-three"> Nota:</span> Todo
               financiamiento debe estar respaldado de una Declaración Jurada
               aceptada por el alumno.
@@ -28,9 +31,9 @@
             <p class="subtitle-text">
               Descuento por Matrícula Anticipada al Contado
             </p>
-            <p>Descuento: S/ 90 para Curso</p>
-            <span> Descuento: S/ 500 para Certificacos</span>
-            <p>Descuento válido hasta el 12 de mayo de 2021.</p>
+            <p class="descount-text">Descuento: S/ 90 para Curso</p>
+            <span class="descount-text"> Descuento: S/ 500 para Certificacos</span>
+            <p class="descount-text">Descuento válido hasta el 12 de mayo de 2021.</p>
 
             <p class="subtitle-text">Inversión con Financiamiento</p>
             <p class="subtitle-text">Por curso</p>
@@ -39,13 +42,13 @@
               <table class="table">
                 <thead>
                   <tr>
-                    <th class="title-table" scope="col">Alternativa</th>
-                    <th class="title-table" scope="col">En 2 partes</th>
-                    <th class="title-table" scope="col">En 3 partes</th>
-                    <th class="title-table" scope="col">En 4 partes</th>
+                    <th class="title-table  title-t-1" scope="col">Alternativa</th>
+                    <th class="title-table  title-t-1" scope="col">En 2 partes</th>
+                    <th class="title-table  title-t-1" scope="col">En 3 partes</th>
+                    <th class="title-table  title-t-1" scope="col">En 4 partes</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody class="title-t-2">
                   <tr>
                     <th class="title-table" scope="row">
                       Cuota <br />
@@ -95,15 +98,17 @@
               <table class="table">
                 <thead>
                   <tr>
-                    <th class="title-table" scope="col">
+                    <th class="title-table  title-t-1" scope="col">
                       Paquetes de 5 <br />
                       cursos
                     </th>
-                    <th class="title-table" scope="col">Contado</th>
-                    <th class="title-table subtitle-table" scope="col">Financiamiento</th>
+                    <th class="title-table  title-t-1" scope="col">Contado</th>
+                    <th class="title-table subtitle-table title-t-1" scope="col">
+                      Financiamiento
+                    </th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody  class="title-t-2">
                   <tr>
                     <th class="title-table" scope="row"></th>
                     <td>S/ 7195</td>
@@ -118,9 +123,9 @@
                     <th class="title-table" scope="row"></th>
                     <td></td>
                     <div class="section-content">
-                        <div>S/595</div>
-                        <div>S/600</div>
-                      </div>
+                      <div>S/595</div>
+                      <div>S/600</div>
+                    </div>
                   </tr>
                 </tbody>
               </table>
@@ -132,15 +137,17 @@
               <table class="table">
                 <thead>
                   <tr>
-                    <th class="title-table" scope="col">
+                    <th class="title-table title-t-1" scope="col">
                       Paquetes de 5 <br />
                       cursos
                     </th>
-                    <th class="title-table" scope="col">Contado</th>
-                    <th class="title-table subtitle-table" scope="col">Financiamiento</th>
+                    <th class="title-table title-t-1" scope="col">Contado</th>
+                    <th class="title-table subtitle-table title-t-1" scope="col">
+                      Financiamiento
+                    </th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody  class="title-t-2">
                   <tr>
                     <th class="title-table" scope="row"></th>
                     <td>S/ 7195</td>
@@ -155,9 +162,9 @@
                     <th class="title-table" scope="row"></th>
                     <td></td>
                     <div class="section-content">
-                        <div>S/428</div>
-                        <div>S/375</div>
-                      </div>
+                      <div>S/428</div>
+                      <div>S/375</div>
+                    </div>
                   </tr>
                 </tbody>
               </table>
@@ -199,10 +206,25 @@ export default {
 
 <style lang="stylus" scoped>
 @import '../../styles/main.styl';
-.second-subtitle
-  background-color #C4B076
-.subtitle-table
-  text-align center
+.cursos
+  font-family Raleway-Regular
+.nota-text
+  font-family Raleway-Regular
+.descount-text
+  font-family Raleway-Regular
+.title-t-2
+  font-family Raleway-Regular
+.title-t-1
+  font-family Raleway-Bold
+.second-subtitle {
+  background-color: #C4B076;
+  font-family: gt-pressura-bold;
+}
+
+.subtitle-table {
+  text-align: center;
+}
+
 .section-content {
   display: flex;
   flex-direction: row;
@@ -219,7 +241,7 @@ export default {
 
 .subtitle-text-three {
   font-size: 15px;
-  font-weight: bold;
+  font-family Raleway-Bold
   color: bg-black;
 }
 
@@ -238,14 +260,14 @@ export default {
 .title-text {
   color: bg-black;
   font-size: 30px;
-  font-weight: bold;
+  font-family: gt-pressura-bold;
   text-align: left;
 }
 
 .subtitle-text {
   color: bg-black;
   font-size: 20px;
-  font-weight: bold;
+  font-family: Raleway-Bold;
 }
 
 .bv-example-row {

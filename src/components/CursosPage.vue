@@ -37,10 +37,11 @@ export default {
 <style lang="stylus" scoped>
 @import '../styles/main.styl';
 .title-text-curso
+  font-family gt-pressura-bold
   font-size 30px
-  font-weight bold
   padding-top 20px
   padding-bottom 20px
+  
 .cursos-page {
   left: 0;
   bottom: 0;

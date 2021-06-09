@@ -83,6 +83,7 @@ export default {
 
 <style lang="stylus" scoped>
 @import '../styles/main.styl';
+
 .border-text
   border-left: 5px solid blue
   padding-right 50px
@@ -95,11 +96,13 @@ export default {
   text-align right 
   padding-right 50px
   justify-content: center;
+  font-family: gt-pressura-bold
 
 .section-content
   display: flex;
   flex-direction: row
   justify-content: center;
+  font-family: gt-pressura-bold
 .section-1
   position absolute
   z-index 2
@@ -121,6 +124,7 @@ export default {
 .btn-secondary
   background-color: var(--bg-color-button);
   border-color  var(--bg-color-button);
+  font-family: gt-pressura-bold
 .date-page 
   left: 0;
   bottom: 0;

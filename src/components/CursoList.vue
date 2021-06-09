@@ -60,18 +60,23 @@ export default {
 // }
 .name-curso
   font-size: 20px;
+  font-family gt-pressura-bold
 .title-curso 
   font-size: 15px;
   margin-block-end: 5px;
+  font-family Raleway-Regular
 
 .fecha {
   font-size: 14px;
+  font-family Raleway-Regular
+  margin-block-start: 0px
 }
 
 .encargado {
   padding-top 10px
   margin-block-end: 0px;
   font-size: 15px;
+  font-family Raleway-Bold
 }
 
 hr.new4 {
