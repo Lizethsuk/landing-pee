@@ -95,6 +95,7 @@ export default {
   text-align right 
   padding-right 50px
   justify-content: center;
+
 .section-content
   display: flex;
   flex-direction: row
