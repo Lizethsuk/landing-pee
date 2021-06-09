@@ -2,7 +2,7 @@
   <div class="nav mx-auto my-auto m-auto d-flex">
     <b-navbar toggleable="lg" type="dark"  class="m-auto">
       <b-navbar-brand href="../" to="/">
-        <img src="../assets/components/header/logo/logo.png" alt="">
+        <img src="../assets/components/header/logo/logo.png" alt="" class="img-logo">
         <!-- <router-link class="nav-link" to="/">lOGO  </router-link> -->
       </b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -43,7 +43,9 @@ export default {
 
 <style lang="stylus" scoped>
 @import '../styles/main.styl';
-
+.img-logo
+  max-width 254px
+  width 100%
 .navbar.navbar-dark.bg-dark 
   background-color: bg-header;
 .line
@@ -65,4 +67,8 @@ export default {
 // .nav-item.nav-item.nav-item a {
 //   color: red !important;
 // }
+@media (max-width: 480px) 
+  .img-logo
+    max-width 204px
+    width 100%
 </style>

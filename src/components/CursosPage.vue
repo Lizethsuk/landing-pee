@@ -7,10 +7,10 @@
             <p v-text="title" class="title-text-curso" ></p>
           </b-col>
         </b-row>
-        <b-row no-gutters >
+        <b-row no-gutte >
           <b-col cols="12" class="pl-0 pr-0">
             
-            <ul class="navbar-nav d-inline-block d-flex  justify-content-between flex-wrap">
+            <ul class="navbar-nav ">
              <slot></slot>
           
             </ul> 
@@ -50,6 +50,9 @@ export default {
 
 .navbar-nav {
   flex-direction: row;
+  display flex;
+  justify-content space-between
+  flex-wrap wrap 
 }
 
 .nav-link {

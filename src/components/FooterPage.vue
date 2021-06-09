@@ -82,4 +82,12 @@ export default {
 .column-three {
   text-align: center;
 }
+@media (max-width: 480px) 
+  .bv-footer-row
+    padding-right: 20px;
+    padding-left: 20px;
+    margin 0px
+  .logo
+    img
+      margin 0 auto  
 </style>

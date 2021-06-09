@@ -100,8 +100,7 @@ ul {
 .nav-item {
   display: inline-block;
   margin: 0px;
-  max-width 420px;
-  min-width 300px;
+  max-width 435px;
   width: 100%!important;
   font-size: 24px;
   min-height: 70px;
@@ -115,6 +114,9 @@ a {
 
 .navbar-nav {
   flex-direction: row;
+  display flex;
+  justify-content space-between
+  flex-wrap wrap 
 }
 
 .nav-link {
@@ -128,7 +130,7 @@ a {
   font-weight: bold;
   line-height: 23px;
   width: 100%;
-  height: 200px;
+  height: 217px;
   border: 1px solid  var(--bg-color);
   padding: 10px;
   
@@ -154,7 +156,13 @@ li:nth-child(odd) {
 section {
   border-bottom: 4px solid primary-pee;
 }
-@media (max-width: 767px) {
- 
-}
+@media (min-width: 1200px) and (max-width: 1399px)
+  .nav-item 
+    max-width 374px;
+    width: 100%!important;
+@media (min-width: 768px) and (max-width: 991px)
+  .nav-item 
+    max-width 359px;
+    width: 100%!important;   
+
 </style>
