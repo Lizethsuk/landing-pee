@@ -153,7 +153,7 @@ a {
 }
 
 li {
-  background: #B8E1DD
+  background: #B8E1DE
   // opacity 0.5
 }
 

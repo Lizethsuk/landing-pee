@@ -111,6 +111,11 @@ export default {
 <style lang="stylus" scoped>
 
  @import "../styles/main.styl"
+
+hr 
+  background-color:secondary-logistica
+  height: 5px;
+  opacity 1 !important
 .jumbotron
   background-image url('../assets/areas/logistica/banner/kv.jpg')
 
