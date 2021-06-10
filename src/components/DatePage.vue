@@ -4,13 +4,17 @@
       <b-container class="pasos-areas ">
           <b-row>
             <b-col md="3" cols="12"  align-self="center"  >
-              <div class="text-date">
+              <div class="text-date text-date-desktop">
               <span v-text="dateText" class="subtitle"></span>
               <br>
               <span v-text="dateTextSecond" class="subtitle"></span>
+              </div> 
+              <div class="text-date text-date-responsive">
+              <span v-text="dateText" class="subtitle"></span>
+              <span v-text="dateTextSecond" class="subtitle second-title"></span>
               </div>
             </b-col>
-            <b-col md="4" cols="12"  align-self="center" >
+            <b-col md="4" cols="12" class="day-content" align-self="center" >
                <div class="section-content">
                   <div v-text="day" class="section-1">
                   </div>
@@ -18,11 +22,11 @@
                   </div>
                 </div>
             </b-col>
-            <b-col md="1" >
+            <b-col md="1" class="divider-content" >
               <div class="vl"></div>
             </b-col>
             <b-col  md="4" cols="12"  align-self="center">
-               <div >
+               <div  class="button-content">
                  <b-button class="button-nav" v-text="buttonText" squared></b-button>
               </div>
             </b-col>
@@ -84,6 +88,11 @@ export default {
 <style lang="stylus" scoped>
 @import '../styles/main.styl';
 
+.text-date-responsive
+  display none
+.button-content
+  padding-top 10px
+  text-align center
 .border-text
   border-left: 5px solid blue
   padding-right 50px
@@ -147,29 +156,6 @@ export default {
 .number 
   font-size: 40px;
 
-// #container 
-//   position: relative;
-
-// #navi, #infoi 
-//   position: absolute;
-//   top: -10px;
-//   left: 0;
-
-// #infoi 
-//   z-index: 10;
-//   margin-left: -30px;
-//   font-size: 82px;
-//   margin-top: -54.5px;
-//   font-weight: 650;
-// #navi 
-//   background-color: var(--bg-color-button);
-//   color: #FFFFFF;
-//   text-align: right;
-//   padding-right: 20px;
-//   font-size: 22px;
-//   width: 196px;
-//   height: 40px;
-//   font-weight: bold;
 .button-nav
   width: 250px;
   height: 49px;
@@ -182,4 +168,22 @@ export default {
   padding: 15px 0px 18px;
   font-weight: 500;
   margin-bottom 0px
+
+@media only screen and (max-width: 767px) 
+  .text-date-responsive
+    display block
+  .text-date-desktop
+    display none
+  .text-date
+    text-align center 
+    padding-right 0px !important
+    // justify-content: center;
+  .day-content
+    padding-top 20px
+  .divider-content
+    display none
+  .second-title
+    padding-left 5px
+  
+
 </style>

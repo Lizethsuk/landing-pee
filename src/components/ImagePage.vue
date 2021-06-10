@@ -8,6 +8,7 @@
     <div class="image-opacity">
       <div class="title-content">
         <p class="title" v-text=" message"></p>
+        <p class="title" v-text=" messageSecond"></p>
         <hr class="line" />
       </div>
     </div>
@@ -22,6 +23,10 @@ export default {
     message: {
       type: String,
       require: true,
+    },
+    messageSecond:{
+      type: String,
+      require: false,
     },
     backgroundImage:{
       type:String,
@@ -48,7 +53,7 @@ export default {
 
 .image {
   height: 400px;
-  opacity: 0.8;
+  // opacity: 0.8;
   position: relative;
   background-repeat no-repeat
   background-size cover
@@ -64,17 +69,17 @@ export default {
 
 .title {
   text-transform: uppercase;
-  font-size: 60px;
+  font-size: 50px;
   margin-block-end: 0px;
-  width: 15em;
+  width: 12em;
   font-family: gt-pressura-bold
   line-height 60px
 }
 
 .line {
   border-top: 3px solid var(--bg-color-divider);
-  width: 35rem;
-  margin-left: -100px;
+  width: 40rem;
+  margin-left: -120px;
   opacity: 1 !important;
   margin-block-start: 0px;
 }
@@ -86,9 +91,9 @@ export default {
   z-index: 2;
 }
 
-.image-opacity {
-  background-color: rgba(248, 247, 216, 0.7);
-}
+// .image-opacity {
+//   background-color: rgba(248, 247, 216, 0.7);
+// }
 @media (min-width: 768px) and (max-width: 991px)
  .title 
   width: auto
@@ -113,4 +118,8 @@ export default {
 }
 
 }
+
++for_breakpoint(mobile)
+  .title 
+    font-size: 40px;
 </style>

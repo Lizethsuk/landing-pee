@@ -5,7 +5,7 @@
     <div class="bv-example-row">
       <b-container class="pasos-areas">
         <b-row>
-          <b-col cols="6" class="text-columns">
+          <b-col   class="text-columns">
             <p class="title-text">
               Financiamineto solo para residentes del Perú
             </p>
@@ -86,7 +86,7 @@
               </table>
             </div>
           </b-col>
-          <b-col cols="6">
+          <b-col  >
             <br />
             <br />
             <p class="subtitle-text">Por Certificado de Especialización</p>
@@ -285,7 +285,18 @@ export default {
 }
 
 .jumbotron {
-  background-image: url('../../assets/Landscape-Color.jpg');
+  background-image: url('../../assets/home/banner/kv.jpg');
   color: #C3B36D !important;
+  background-position-y: -100px;
+
 }
+
+@media only screen and (max-width: 767px)  
+  .pasos-areas 
+    padding-right : 30px !important
+    padding-left : 30px !important
+    padding-bottom :80px
+    padding-top 80px
+  .text-columns
+    padding-right 0px
 </style>

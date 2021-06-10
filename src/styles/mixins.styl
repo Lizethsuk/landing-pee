@@ -10,3 +10,11 @@ font-face($font-name, $file-path, $format , $weight , $style = 'normal')
     src url ($file-path) format($format)
     font-weight unquote($weight)
     font-style unquote($style)
+
+for_breakpoint(breakpoints)
+  conditions = ()
+  for breakpoint in breakpoints
+    push(conditions, media_queries[breakpoint])
+  conditions = join(", ", conditions)
+  @media conditions
+    {block}

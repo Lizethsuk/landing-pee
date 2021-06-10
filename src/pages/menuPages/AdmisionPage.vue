@@ -5,7 +5,7 @@
     <div class="bv-example-row">
       <b-container class="pasos-areas ">
         <b-row>
-          <b-col cols="6" class="text-columns">
+          <b-col  class="text-columns">
             <p class="title-text">Requisitos de Admisión</p>
             
             <p class="subtitle-text">Generales:</p>
@@ -43,7 +43,7 @@
               </li>
             </ul>
           </b-col>
-          <b-col cols="6">
+          <b-col   >
             <br> <br> 
             <p class="subtitle-text">Diplomas</p>
             <p>Se otorga según sea el caso:</p>
@@ -177,7 +177,25 @@ export default {
   padding-top 80px
   font-family Raleway-Regular
 .jumbotron {
-  background-image: url('../../assets/Landscape-Color.jpg');
+  background-image: url('../../assets/home/banner/kv.jpg');
   color: #C3B36D !important;
+  background-position-y: -100px;
+
 }
+
++for_breakpoint(mobile)
+  .pasos-areas 
+    padding-right : 30px !important
+    padding-left : 30px !important
+    padding-bottom :80px
+    padding-top 80px
+
+@media only screen and (max-width: 767px)  
+  .pasos-areas 
+    padding-right : 30px !important
+    padding-left : 30px !important
+    padding-bottom :80px
+    padding-top 80px
+  .text-columns
+    padding-right 0px
 </style>
