@@ -1,8 +1,9 @@
 <template>
   <div class="nav mx-auto my-auto m-auto d-flex">
     <b-navbar toggleable="lg" type="dark"  class="m-auto">
-      <b-navbar-brand href="../" to="/">
-        <img src="../assets/components/header/logo/logo.png" alt="" class="img-logo">
+      <b-navbar-brand  to="/">
+        <!-- <img src="../assets/components/header/logo/logo.png" alt="" class="img-logo">  -->
+        <!-- <div class="img-logo"></div> -->
         <!-- <router-link class="nav-link" to="/">lOGO  </router-link> -->
       </b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -28,7 +29,7 @@
           <b-nav-item href="#" to="/financiamiento_page" class="nav-link item-nav">
             Financiamento
             <!-- <router-link class="nav-link item-nav" to="">  </router-link>   --></b-nav-item>
-          <b-nav-item to="/solicita_informacion" > <b-button class="button-nav" squared>Solicita información</b-button></b-nav-item>
+          <b-nav-item to="/solicita_informacion" class="button-content" > <b-button class="button-nav" squared>Solicita información</b-button></b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -43,9 +44,11 @@ export default {
 
 <style lang="stylus" scoped>
 @import '../styles/main.styl';
-.img-logo
+.navbar-brand
+  content  url("../assets/components/header/logo/logo.png")
   max-width 254px
   width 100%
+  // background-image url("../assets/components/header/logo/logo.png")
 .navbar.navbar-dark.bg-dark 
   background-color: bg-header;
 .line
@@ -73,4 +76,10 @@ export default {
   .img-logo
     max-width 204px
     width 100%
+
+@media only screen and (max-width: 767px) 
+  .line
+    display none
+  .button-content
+    text-align center
 </style>

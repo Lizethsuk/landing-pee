@@ -422,8 +422,10 @@ input
 }
 
 .jumbotron {
-  background-image: url('../../assets/Landscape-Color.jpg');
+  background-image: url('../../assets/home/banner/kv.jpg');
   color: #C3B36D !important;
+  background-position-y: -100px;
+
 }
 
 textarea, input {
