@@ -68,7 +68,7 @@ export default {
   margin-block-end: 0px;
   width: 15em;
   font-family: gt-pressura-bold
-  line-height 45px
+  line-height 60px
 }
 
 .line {
@@ -89,11 +89,15 @@ export default {
 .image-opacity {
   background-color: rgba(248, 247, 216, 0.7);
 }
+@media (min-width: 768px) and (max-width: 991px)
+ .title 
+  width: auto
+
 @media (max-width: 767px) {
 .title {
-  font-size: 28px;
+  font-size: 62px;
   width: auto;
-  line-height 28px
+  line-height 62px
 }
 .title-content {
   bottom: 15px;
@@ -103,6 +107,9 @@ export default {
 }
 .line {
   width: auto
+}
+.image {
+  height: 340px;
 }
 
 }

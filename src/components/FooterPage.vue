@@ -3,10 +3,10 @@
     <div class="footer">
       <b-container class="bv-footer-row">
         <b-row>
-          <b-col lg="4" md="6" cols="12">
+          <b-col  md="4" cols="12">
             <div class="logo"><img src="../assets/components/footer/logo/logo.png" alt=""></div>
           </b-col>
-          <b-col lg="4" md="6" cols="12">
+          <b-col  md="4" cols="12">
             <div class="column-three">
               <div class="social-media">
                 <span class="icon"><img src="../assets/components/footer/rs/facebook.png" alt=""></span>
@@ -18,7 +18,7 @@
               <p class="text-uni">&copy; Universidad de ESAN 2020  </p>
             </div>
           </b-col>
-          <b-col lg="4" md="6" cols="12">
+          <b-col md="4" cols="12">
             <div class="data">
               <p class="correo">informes@esan.edu.pe</p>
               <p class="direccion">Alonso de Molina 1652,Monterrico</p>
@@ -40,7 +40,7 @@ export default {
 <style lang="stylus" scoped>
 @import '../styles/main.styl';
 .icon
-  margin 0 auto
+  margin 0 15px
 .bv-footer-row
   padding-right: 130px;
   padding-left: 130px;
@@ -88,12 +88,22 @@ export default {
 .column-three {
   text-align: center;
 }
-@media (max-width: 480px) 
+@media (min-width: 768px) and (max-width: 991px)
+  .bv-footer-row
+    padding-right: 25px;
+    padding-left: 25px;
+    margin 0px auto
+
+@media (max-width: 767px) 
   .bv-footer-row
     padding-right: 20px;
     padding-left: 20px;
-    margin 0px
+    margin 0px auto
   .logo
-    img
-      margin 0 auto  
+    display flex 
+    justify-content center
+    margin-bottom 10px
+  .data
+    text-align center
+    padding-top 10px
 </style>

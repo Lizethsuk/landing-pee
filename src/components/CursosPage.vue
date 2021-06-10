@@ -7,7 +7,7 @@
             <p v-text="title" class="title-text-curso" ></p>
           </b-col>
         </b-row>
-        <b-row no-gutte >
+        <b-row no-gutters >
           <b-col cols="12" class="pl-0 pr-0">
             
             <ul class="navbar-nav ">
@@ -66,11 +66,16 @@ export default {
 
 .section-areas {
   padding: 50px 0px;
-  padding-top: 20px;
+
 }
 
 section {
   border-bottom: 4px solid primary-pee;
 }
+@media ( max-width: 767px) 
+  .section-areas 
+    padding: 50px 25px;
+    margin 0
+
 
 </style>

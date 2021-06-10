@@ -3,14 +3,14 @@
     <div class="date-page" :style="cssVars">
       <b-container class="pasos-areas ">
           <b-row>
-            <b-col lg="4" cols="12"  align-self="center"  >
+            <b-col md="3" cols="12"  align-self="center"  >
               <div class="text-date">
               <span v-text="dateText" class="subtitle"></span>
               <br>
               <span v-text="dateTextSecond" class="subtitle"></span>
               </div>
             </b-col>
-            <b-col lg="4" cols="12"  align-self="center" >
+            <b-col md="4" cols="12"  align-self="center" >
                <div class="section-content">
                   <div v-text="day" class="section-1">
                   </div>
@@ -18,10 +18,10 @@
                   </div>
                 </div>
             </b-col>
-            <b-col lg="1">
+            <b-col md="1" >
               <div class="vl"></div>
             </b-col>
-            <b-col  lg="3" cols="12"  align-self="center">
+            <b-col  md="4" cols="12"  align-self="center">
                <div >
                  <b-button class="button-nav" v-text="buttonText" squared></b-button>
               </div>
@@ -171,8 +171,8 @@ export default {
 //   height: 40px;
 //   font-weight: bold;
 .button-nav
-  width: 196px;
-  height: 40px;
+  width: 250px;
+  height: 49px;
   font-size: 22px;
   font-weight: bold;
   

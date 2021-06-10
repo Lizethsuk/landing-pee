@@ -2,10 +2,10 @@
   <div>
     <div class="pasos-page" :style="cssVars">
       <b-container class="bv-example-row pasos-areas">
-        <b-row>
+        <b-row no-gutters>
           <p class="title">Siguientes pasos</p>
-        </b-row>
-        <b-row>
+        </b-row >
+        <b-row no-gutters>
           <b-col lg="3" cols="12">
             <div class="pasos-content">
               <Calendario :color="colorIcon"/>
@@ -121,16 +121,16 @@ export default {
 .description-text
   font-family Raleway-Regular
 .pasos-areas {
-  padding: 50px 0px;
-  padding-top: 20px;
+  padding: 50px 4px
   color white
+  margin 0 auto 
+  
 }
-@media (max-width: 767px) {
-
-  .pasos-content {
-    
-   border-right: none;
-  }
-
-}
+  @media (min-width: 768px) and (max-width: 991px)
+    .pasos-content 
+      border-right: none
+  @media ( max-width: 767px) 
+    .pasos-content 
+      border-right: none
+      margin 0
 </style>

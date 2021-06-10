@@ -662,6 +662,7 @@ ul {
   list-style-type: none;
   padding: 0;
   width: 100%;
+  margin-left: 15px
 }
 
 .nav-item2 {
@@ -685,6 +686,7 @@ h1 {
   width: 100%;
   font-weight: bold;
   color: primary-pee;
+  font-family: gt-pressura-bold
 }
 
 h2 {
@@ -693,6 +695,7 @@ h2 {
   width: 100%;
   font-weight: bold;
   color: primary-pee;
+  font-family: gt-pressura-bold
 }
 
 .line {
@@ -721,6 +724,9 @@ h2 {
   font-size: 24px;
   line-height 28px
   font-weight 100
+}
+.list-title li::marker {
+  content:'- ';
 }
 
 .nav-link {
@@ -904,10 +910,7 @@ h2 {
 }
 
 @media only screen and (max-width: 1560px) {
-  .line {
-    width: auto;
-    margin-left: 0px;
-  }
+
 
   .hello {
     height: auto;
@@ -925,6 +928,10 @@ h2 {
 }
 
 @media only screen and (max-width: 767px) {
+  .line {
+    max-width: 560px
+    width: auto;
+  }
   .section-1 {
     margin-right: 179px;
     margin-top: -70px;
