@@ -2,7 +2,7 @@
   <div class="form-class">
     <b-form @submit="onSubmit" @reset="onReset" v-if="show"  class="form-g" >
       <b-form-group class="all-btn">
-        <h1>Regístrate aquí:</h1>
+        <h1>Regístrate <br> aquí:</h1>
         <p>Los cursos del PEE te permitirán desarrollarte en el ámbito profesional.</p>
       </b-form-group>
       <b-form-group  class="all-btn" id="input-group-3"  label-for="input-3">
@@ -15,11 +15,9 @@
       </b-form-group>
       <b-form-group  class="all-btn"
         id="input-group-1"
-        label="Email address:"
         label-for="input-1"
-        description="We'll never share your email with anyone else."
       >
-        <b-form-input  class="all-btn"
+        <b-form-input 
           id="input-1"
           v-model="form.email"
           type="email"
@@ -28,7 +26,7 @@
         ></b-form-input>
       </b-form-group>
 
-      <b-form-group  class="all-btn" id="input-group-2" label="Your Name:" label-for="input-2">
+      <b-form-group  class="all-btn" id="input-group-2"  label-for="input-2">
         <b-form-input
           id="input-2"
           v-model="form.name"
@@ -39,7 +37,7 @@
        
 
       
-      <b-form-group  class="all-btn" id="input-group-4" label="Your last name:" label-for="input-4">
+      <b-form-group  class="all-btn" id="input-group-4"  label-for="input-4">
         <b-form-input
           id="input-4"
           v-model="form.lastname"
@@ -47,7 +45,7 @@
           required
         ></b-form-input>
       </b-form-group>
-<b-form-group  class="all-btn" id="input-group-6" label="Your last name:" label-for="input-6">
+<b-form-group  class="all-btn" id="input-group-6"  label-for="input-6">
         <b-form-input
           id="input-6"
           v-model="form.lastname"
@@ -55,7 +53,7 @@
           required
         ></b-form-input>
       </b-form-group>
-      <b-form-group  class="all-btn" id="input-group-7" label="Your last name:" label-for="input-7">
+      <b-form-group  class="all-btn" id="input-group-7"  label-for="input-7">
         <b-form-input
           id="input-7"
           v-model="form.lastname"
@@ -120,20 +118,19 @@
 
  h1 
   color primary-pee
+  font-size 39.82px
+  line-height 37px
+  font-family gt-pressura-bold
 .form-class
   background-color bg-form
   
   width 100%
   max-width 420px
-label 
-  display inline-block
-  line-height 54px  
+
 
 .custom-checkbox
   display flex
-  padding-top 10px
-  
-
+  margin-top 10px
 .all-btn
  padding 0px 40px
 
@@ -148,8 +145,24 @@ label
   font-size 40px
 .form-g
   padding-top 40px 
+ 
+input, select
+  margin-bottom 15px
+  background-color bg-form
+  border-radius 0px
+  font-family raleway-regular
+  font-size 14px
+  
+input 
+  border none
+  border-bottom 1.8px solid white
+  color #676868
 select 
-  width 100%   
+  border 1.8px solid white
+  width 100%
+  padding 12px 5px
+  color white  
+      
 
 
 </style>

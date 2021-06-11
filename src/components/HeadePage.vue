@@ -1,6 +1,6 @@
 <template>
   <div class="nav mx-auto my-auto m-auto d-flex">
-    <b-container>
+    <b-container class="pe-0 ps-0">
       <b-navbar toggleable="md" type="dark"  class=" nav-w ">
       <b-navbar-brand  to="/">
         <!-- <img src="../assets/components/header/logo/logo.png" alt="" class="img-logo">  -->
@@ -83,14 +83,13 @@ export default {
 // .nav-item.nav-item.nav-item a {
 //   color: red !important;
 // }
-@media (max-width: 480px) 
-  .img-logo
-    max-width 204px
-    width 100%
+
 
 @media only screen and (max-width: 767px) 
   .line
     display none
   .button-content
     text-align center
+
+
 </style>
