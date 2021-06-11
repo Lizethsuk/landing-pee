@@ -1,7 +1,6 @@
 <template>
   <div>
 
-    <!-- <div></div> -->
     <section style="border-bottom: none !important">
       <b-container fluid class="bv-example-row hello">
         <b-row>
@@ -9,17 +8,7 @@
             <HeadePage />
           </b-col>
         </b-row>
-        <!-- <b-row>
-          <b-col>
-            <b-nav>
-              <b-nav-item active>Active </b-nav-item>
-              <b-nav-item>Link</b-nav-item>
-              <b-nav-item>Another Link</b-nav-item>
-              <b-nav-item disabled>Disabled</b-nav-item>
-            </b-nav>
-            
-          </b-col>
-        </b-row> -->
+ 
         <b-row>
           <b-col
             cols="12"
@@ -107,11 +96,9 @@
                     
                 </router-link>
                 </div>
-                <div class="flip-card-back">
+                <div class="flip-card-back bg-back-salud">
                   <router-link to="/salud_page">
-                    <h1>John Doe</h1>
-                    <p>Architect & Engineer</p>
-                    <p>We love that guy</p>                    
+                    Salud                   
                   </router-link>                 
                 </div>
               </div>
@@ -126,12 +113,10 @@
                     
                 </router-link>
                 </div>
-                <div class="flip-card-back">
+                <div class="flip-card-back bg-back-energia">
                   <router-link  to="/energy_page"
                     >   
-                    <h1>John Doe</h1>
-                  <p>Architect & Engineer</p>
-                  <p>We love that guy</p>
+                   Energia
                     
                 </router-link>
                
@@ -149,7 +134,7 @@
                     la Información</router-link
                   >
                 </div>
-                <div class="flip-card-back">
+                <div class="flip-card-back bg-back-ti">
                   <router-link  to="/ti_page"
                     >Tecnología de <br />
                     la Información</router-link
@@ -167,7 +152,7 @@
                     >Marketing</router-link
                   >
                 </div>
-                <div class="flip-card-back">
+                <div class="flip-card-back bg-back-marketing">
                    <router-link  to="/marketing_page"
                     >Marketing</router-link
                   >
@@ -183,7 +168,7 @@
                     >Finanzas</router-link
                   >
                 </div>
-                <div class="flip-card-back">
+                <div class="flip-card-back bg-back-finanzas">
                   <router-link  to="/finanzas_page"
                     >Finanzas</router-link
                   >
@@ -200,7 +185,7 @@
                     Business
                   </router-link>
                 </div>
-                <div class="flip-card-back">
+                <div class="flip-card-back bg-back-b2b">
                   <router-link  to="/b2b_page"
                     >Finanzas</router-link
                   >
@@ -217,7 +202,7 @@
                     Logística de Proyectos</router-link
                   >
                 </div>
-                <div class="flip-card-back">
+                <div class="flip-card-back bg-back-logistica">
                  <router-link to="/logistica_page"
                     >Finanzas</router-link
                   >
@@ -235,7 +220,7 @@
                     la Información</router-link
                   >
                 </div>
-                <div class="flip-card-back">
+                <div class="flip-card-back bg-back-admi">
                 <router-link  to="/administracion_page"
                     >Administración y <br />
                     Dirección de <br />
@@ -253,7 +238,7 @@
                     >Mineria</router-link
                   >
                 </div>
-                <div class="flip-card-back">
+                <div class="flip-card-back bg-back-mineria">
                   <router-link  to="/mineria_page"
                     >Mineria</router-link
                   >
@@ -550,527 +535,6 @@ export default {
 
 
 <style lang="stylus" scoped>
-/* eslint-disable */
-@import '../styles/main.styl';
-
-
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
-  color: white;
-  font-weight: bold;
-  line-height: 23px;
-  width: 100%;
-  height: 23.2vh;
-  border: 1px solid white;
-  font-family gt-pressura-bold
-
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  padding 20px;
-  text-align left;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color:black;
-  color: black;
-  font-size 39.82px;
-  line-height 47.78px;
-  padding-bottom 10px;
-    &.bg-salud{
-     background-image: url('../assets/home/areas/salud/kv.jpg')!important;
-    };
-    &.bg-energia{
-     background-image: url('../assets/home/areas/energia/kv.jpg')!important;
-    };
-   
-    &.bg-finanzas{
-     background-image: url('../assets/home/areas/finanzas/kv.jpg')!important;
-    }
-    &.bg-administracion{
-     background-image: url('../assets/home/areas/administracion/kv.jpg')!important;
-    }
-    &.bg-b2b{
-     background-image: url('../assets/home/areas/b2b/kv.jpg')!important;
-    }
-    &.bg-marketing{
-     background-image: url('../assets/home/areas/marketing/kv.jpg')!important;
-    }
-    &.bg-ti{
-     background-image: url('../assets/home/areas/ti/kv.jpg')!important;
-    };
-    &.bg-mineria{
-     background-image: url('../assets/home/areas/mineria/kv.jpg')!important;
-    };
-}
-
-.flip-card-back {
-  background-color: bg-black;
-  color: white;
-  transform: rotateY(180deg);
-    a{
-      text-decoration none
-      display flex
-      align-self flex-end
-      flex-direction column
-      justify-items end
-     h1{
-      font-size 21px
-      border-bottom none 
-    }
-  }
- 
-
-}
-
-.box-area {
-  color: white;
-  font-weight: bold;
-  line-height: 23px;
-  width: 100%;
-  height: 180px;
-  border: 1px solid white;
-  background-color: bg-black;
-}
-
-.nav {
-  border-width: 0px !important;
-  -webkit-box-shadow: 0px 0px !important;
-  box-shadow: 0px 0px !important;
-  background-color: rgba(0, 0, 0, 0) !important;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0))) !important;
-  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%) !important;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%) !important;
-  color: black !important;
-}
-
-.navbar {
-  color: black !important;
-}
-
-.pr-0 {
-  padding-right: 0px !important;
-}
-
-.pl-0 {
-  padding-left: 0px !important;
-}
-
-h3 {
-  margin: 40px 0 0;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  width: 100%;
-  margin-left: 15px
-}
-
-.nav-item2 {
-  display: inline-block;
-  margin: 0px;
-  max-width: 380px;
-  width: 100%;
-  min-height: 70px;
-  font-size: 24px;
-}
-
-a {
-  color: white;
-  width: 100%;
-  height: 100%;
-}
-
-h1 {
-  font-size: 60px;
-  text-transform: uppercase;
-  width: 100%;
-  font-weight: bold;
-  color: primary-pee;
-  font-family: gt-pressura-bold
-}
-
-h2 {
-  font-size: 39.2px;
-  text-transform: uppercase;
-  width: 100%;
-  font-weight: bold;
-  color: primary-pee;
-  font-family: gt-pressura-bold
-}
-
-.line {
-  border-top: 4px solid primary-pee;
-  width: 48rem;
-  margin-left: -220px;
-  opacity: 1 !important;
-  margin-block-start: 0px;
-  margin-right: 0px;
-  right: 0;
-}
-
-.navbar-nav {
-  flex-direction: row;
-}
-
-.hello {
-  background-image: url('../assets/home/banner/kv.jpg');
-  color: white;
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.list-title li {
-  font-size: 24px;
-  line-height 28px
-  font-weight 100
-}
-.list-title li::marker {
-  content:'- ';
-}
-
-.nav-link {
-  display: flex;
-  align-items: flex-end;
-}
-
-.home-banner {
-  max-width: 780px;
-}
-
-.init-date {
-  top: -35px;
-  position: relative;
-  right: 0px;
-  text-align: left;
-  width: 110px;
-  margin-right: 0px;
-  margin-left: auto;
-  font-family gt-pressura-bold
-}
-
-.section-areas-0 {
-  padding: 95px 0px;
-  background-image url('../assets/home/banner/section-areas/bg.png');
-  border-bottom 4px solid primary-pee
-  h3{
-    margin 15px 0 0
-    font-size 39.82px
-    font-family gt-pressura-bold
-  }
-}
-.section{
-  padding: 105px 0px;
-  p{
-    font-size 24px
-    line-height 28.8px
-    margin-bottom 0px
-  }
-  h3{
-    margin 15px 0 0
-    font-size 39.82px
-    font-family gt-pressura-bold
-  }
- 
-}
-.s-ventajas{
-  img{
-    max-width 337px
-    width 100%
-  }
-}
-.s-certificado{
-  background-color #E1E1E1
-  .container-inter{
-    padding-left 0px
-    padding-right 0px
-    &.c-row-inter{
-      display flex
-      justify-content space-between
-      flex-direction column
-      .col-option{
-        margin-bottom 40px
-        p{
-          text-align left
-        }
-      }
-    }
-
-  }
-  .box-option{
-    margin 0 auto
-    border-radius 100%
-    border 9.4px solid backg-footer
-    background-color white
-    height 220px
-    width 220px
-    display flex
-    justify-content center
-    align-items center
-    flex-direction row
-    .box-container{
-      width 176px
-      padding  0px
-      p{
-        font-size 18px
-        line-height 21.6px
-        text-align left
-        margin-bottom 0px
-      }
-      h2{
-        font-size 78.38px
-        margin-bottom 0px
-      }
-    }
-  }
-}
-
-.container-date {
-  border: 3px solid primary-pee;
-  max-width: 1046px;
-  width: 100%;
-  padding: 15px 0px
-  .div-section-content{
-    width 300px
-    margin-right 0px
-    margin-left auto
-  }
-}
-
-.section-areas-inicio {
-  background-color: black;
-  padding: 150px 0px !important;
-}
-
-.section-content {
-  padding: 50px 0px 35px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-    
-}
-
-.section-content2 {
-  padding: 20px 10px 10px 0px;
-  display: flex;
-  justify-content: left;
-
-  .section-2 {
-    width: 240px;
-    height: 64px;
-    margin-left 38px
-    span{
-      font-size 35.53px
-      color #252A2D
-      font-family GT-pressura-bold
-    }
-  }
-
-  .section-1 {
-    font-size: 130px;
-    line-height: 182px;
-    margin-top: -68px;
-    font-family GT-pressura-bold
-  }
-  .init-date {
-  top: 5px;
-  position: relative;
-  right: 7px;
-  text-align: left;
-  width: 119px;
-  margin-right: 0px;
-  margin-left: auto;
-
-}
-}
-
-.section-1 {
-  position: absolute;
-  z-index: 2;
-  width: 167px;
-  font-size: 194px;
-  margin-right: 282px;
-  margin-top: -136px;
-  font-weight: bold;
-  color: white;
-  font-family gt-pressura-bold
-}
-
-.section-2 {
-  background-color: primary-pee;
-  font-size: 22px;
-  line-height: 35px;
-  position: relative;
-  z-index: 1;
-  text-align: right;
-  width: 304px;
-  padding-right: 10px;
-  font-weight: bold;
-  height: 50px;
-
-  span {
-    color: white;
-    top: -20px;
-  }
-}
-
-.contact {
-  border-left: 2px solid white;
-
-
-  .contact-container {
-    max-width: 380px;
-    color: white;
-    width: 100%;
-    margin-left 0px
-    padding-left 40px
-    text-align left
-    h5{
-      font-size 24px
-      font-family Raleway-Regular
-    }
-  }
-}
-
-.sect-rankings {
-  background-color: #252A2D;
-  padding: 100px 0px;
-  h1{
-    font-size 39.82px
-    color white
-    line-height 47px
-  }
-  .contain-sec{
-    padding-left value
-  } 
- 
-}
-@media (min-width: 768px) and (max-width: 991px){
-  .contact {
-  border-left: 2px solid white;
-
-
-  .contact-container {
-    max-width: 380px;
-    h5{
-      font-size 20px
-      font-family Raleway-Regular
-    }
-  }
-}
-
-}
-@media only screen and (max-width: 1560px) {
-  .flip-card-front{
-    font-size 30px
-    line-height 31px
-  }
-
-  .hello {
-    height: auto;
-    padding-bottom: 120px;
-  }
-
-  .section-2 {
-    width: 254px;
-    padding-right: 0px;
-  }
-
-  .section-1 {
-    margin-right: 252px;
-  }
-}
-
-@media only screen and (max-width: 767px) 
-  .flip-card{
-    height: 28.2vh
-  }
-  .line {
-    max-width: 560px
-    width: auto;
-  }
-  .section-1 {
-    margin-right: 179px;
-    margin-top: -70px;
-    font-size: 106px;
-  }
-  .container-date {
-    border: 3px solid primary-pee;
-    max-width: 1046px;
-    width: 100%;
-    padding: 15px 0px
-  .div-section-content{
-    max-width 300px
-    width 100%
-    margin auto
-  }
-  .contact {
-    border-left: none;
-    .contact-container {
-    max-width 230px
-    margin auto
-    padding 0
-    h5{
-      font-size 18px
-    }
-    img{
-      width 30px
-    }
-  }
-  }
-}
-  
-h1 {
-  font-size: 45px;
-  
-}
-
-h2 {
-  font-size: 25px;
-}
-.section{
-  padding: 105px 0px;
-  p{
-    font-size 20px
-    line-height 24px
-  }
-  h3{
-    font-size 26px
-  }
- 
-}
-.s-ventajas
-  img
-    max-width 250px
-    width 100%
-.section-areas-0
-  h3 
-    font-size 24px     
-.row
-  --bs-gutter-x 0px    
+@import '../styles/home.styl';
 
 </style>
