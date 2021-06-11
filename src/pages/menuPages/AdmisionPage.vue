@@ -112,7 +112,7 @@
 
     <PasosPages
       colorIcon="green"
-      lineColor="#C3B36D"
+      lineColor="#C1B170"
       bgColor="black"
       calendarioText="myJson.calendatioText"
       informeText="myJson.informesText"
@@ -190,7 +190,7 @@ export default {
     padding-bottom :80px
     padding-top 80px
 
-@media only screen and (max-width: 767px)  
++for_breakpoint(cell)
   .pasos-areas 
     padding-right : 30px !important
     padding-left : 30px !important
@@ -198,4 +198,10 @@ export default {
     padding-top 80px
   .text-columns
     padding-right 0px
+  .jumbotron 
+    background-image: url('../../assets/home/banner/kv.jpg');
+    background-position-y: 0px;
+    background-position-x: center
+    background-size: cover;
+    width: 100%;
 </style>

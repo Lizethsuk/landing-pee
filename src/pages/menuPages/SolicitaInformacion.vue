@@ -20,8 +20,11 @@
                 required
               ></b-form-select>
             </b-form-group>
+            <b-container>
+              
+            </b-container>
             <b-row>
-              <b-col>
+              <b-col lg="6" md="12">
                 <div>
                   <b-form-group
                     class="form-content"
@@ -87,7 +90,7 @@
                   </b-form-group>
                 </div>
               </b-col>
-              <b-col>
+              <b-col lg="6" md="12">
                 <div>
                   <b-form-group
                     class="form-content"
@@ -199,9 +202,10 @@
               ></b-form-select>
             </b-form-group>
             <br />
-            <b-button  class="button-text" type="submit" variant="primary"
-              >Enviar mis datos</b-button
-            >
+            <div class="button-content">
+              <b-button  class="button-text" type="submit" variant="primary">Enviar mis datos</b-button>
+
+            </div>
             <!-- <b-button type="reset" variant="danger">Reset</b-button> -->
           </b-form>
         </b-col>
@@ -209,7 +213,7 @@
     </b-container>
     <PasosPages
       colorIcon="green"
-      lineColor="#C3B36D"
+      lineColor="#C1B170"
       bgColor="black"
       calendarioText="myJson.calendatioText"
       informeText="myJson.informesText"
@@ -333,11 +337,18 @@ export default {
 
 <style lang="stylus" scoped>
 @import '../../styles/main.styl';
+.button-content
+  text-align center
 .button-text
   font-family gt-pressura-bold  
+  width 25em
+  border-radius 0px
+  background-color #C1B170
+  border-color  #C1B170
+  color #252A2D
 .conditions
   font-family Raleway-Regular
-  
+
 .access
   font-family Raleway-Bold
 input 
@@ -433,4 +444,20 @@ textarea, input {
   border-radius: 0px;
   border-color: black;
 }
+
++for_breakpoint(cell)
+  .pasos-areas 
+    padding-right : 30px !important
+    padding-left : 30px !important
+    padding-bottom :80px
+    padding-top 80px
+  .button-text
+    width 10em
+  .jumbotron 
+    background-image: url('../../assets/home/banner/kv.jpg');
+    background-position-y: 0px;
+    background-position-x: center
+    background-size: cover;
+    width: 100%;
+
 </style>

@@ -122,4 +122,6 @@ export default {
 +for_breakpoint(mobile)
   .title 
     font-size: 40px;
+  // .jumbotron 
+  //   background-position-x: center
 </style>
