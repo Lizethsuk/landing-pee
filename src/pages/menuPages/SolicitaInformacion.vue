@@ -161,8 +161,8 @@
               <b-form-textarea
                 id="input-12"
                 v-model="form.consulta"
-                rows="3"
-                max-rows="6"
+                rows="8"
+                max-rows="12"
                 required
               ></b-form-textarea>
             </b-form-group>
@@ -337,22 +337,34 @@ export default {
 
 <style lang="stylus" scoped>
 @import '../../styles/main.styl';
+select
+  width 100%
+  padding 0.375rem 0.75rem
+  height 38px
+  background-color #dbdbdb
 .button-content
   text-align center
 .button-text
   font-family gt-pressura-bold  
   width 25em
+  font-size 18px
   border-radius 0px
   background-color #C1B170
   border-color  #C1B170
   color #252A2D
+  height 52px
+  margin-top 25px
 .conditions
   font-family Raleway-Regular
 
 .access
   font-family Raleway-Bold
+label
+  display inline  
 input 
   font-family Raleway-Regular
+input, select, textarea, .conditions
+ margin-left 10px  
 .form-content {
   padding-top: 30px;
   font-family Raleway-Regular
@@ -367,6 +379,8 @@ input
   padding-left: 130px;
   padding-bottom: 80px;
   padding-top: 80px;
+  max-width : 1084px;
+  width : 100%
 }
 
 .subtitle-table {
@@ -442,8 +456,15 @@ input
 textarea, input {
   background-color: #DBDBDB;
   border-radius: 0px;
-  border-color: black;
 }
+textarea, input, select, checkbox {
+  border: 1.5px solid #252a2d;
+}
+.custom-checkbox
+  display flex
+  margin-top 10px
+.custom-control-label
+  margin-top -5px  
 
 +for_breakpoint(cell)
   .pasos-areas 
@@ -459,5 +480,6 @@ textarea, input {
     background-position-x: center
     background-size: cover;
     width: 100%;
-
+  input, select, textarea, .conditions
+    margin-left 0px  
 </style>
