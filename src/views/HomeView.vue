@@ -4,7 +4,11 @@
     <!-- <div></div> -->
     <section style="border-bottom: none !important">
       <b-container fluid class="bv-example-row hello">
-        <HeadePage />
+        <b-row>
+          <b-col>
+            <HeadePage />
+          </b-col>
+        </b-row>
         <!-- <b-row>
           <b-col>
             <b-nav>
@@ -54,7 +58,7 @@
                   <b-row>
                     <b-col cols="2">
                       <div class="d-flex align-items-center">
-                        <span>dsdjsnjds</span>
+                        <span>inicio</span>
                       </div>
                     </b-col>
                     <b-col>
@@ -62,8 +66,8 @@
                   <div class="section-1">07</div>
                   <div class="section-2">
                     <div class="init-date">
-                      <span>inicio</span><br />
-                      de junio
+                      <span>de junio</span>
+                      
                     </div>
                   </div>
                 </div>
@@ -88,13 +92,13 @@
       <b-container class="bv-example-row section-areas">
         <b-row>
           <b-col>
-            <h3 class="text-center pb-5">
+            <h3 class="text-center ">
               CONOCE NUESTROS <br />ÁREAS DE ESPECIALIZACIÓN
             </h3>
           </b-col>
         </b-row>
-        <b-row>
-          <b-col cols="12" lg="4" md="6" class="pl-0 pr-0"  >
+        <b-row class="d-flex justify-content-center">
+          <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0"  >
             <div class="flip-card"  >
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-salud"  >
@@ -113,7 +117,7 @@
               </div>
             </div>
           </b-col>
-          <b-col cols="12" lg="4" md="6" class="pl-0 pr-0">
+          <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-energia">
@@ -136,7 +140,7 @@
             </div>
      
           </b-col>
-          <b-col cols="12" lg="4" md="6" class="pl-0 pr-0">
+          <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-ti">
@@ -155,7 +159,7 @@
               </div>
             </div>
           </b-col>
-          <b-col cols="12" lg="4" md="6" class="pl-0 pr-0">
+          <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-marketing">
@@ -171,7 +175,7 @@
               </div>
             </div>
           </b-col>
-          <b-col cols="12" lg="4" md="6" class="pl-0 pr-0">
+          <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-finanzas">
@@ -187,7 +191,7 @@
               </div>
             </div>
           </b-col>
-          <b-col cols="12" lg="4" md="6" class="pl-0 pr-0">
+          <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-b2b">
@@ -204,7 +208,7 @@
               </div>
             </div>
           </b-col>
-          <b-col cols="12" lg="4" md="6" class="pl-0 pr-0">
+          <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front ">
@@ -221,7 +225,7 @@
               </div>
             </div>
           </b-col>
-          <b-col cols="12" lg="4" md="6" class="pl-0 pr-0">
+          <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-administracion">
@@ -241,7 +245,7 @@
               </div>
             </div>
           </b-col>
-          <b-col cols="12" lg="4" md="6" class="pl-0 pr-0">
+          <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-mineria">
@@ -377,9 +381,9 @@
                         </b-col>
                       </b-row>
                        <b-row>
-                  <b-col>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil blanditiis fuga ratione quasi minima voluptates perferendis ipsum eligendi.
-                       Repellat voluptates fugit possimus inventore molestias corrupti sit doloremque architecto corporis assumenda.</p>
+                  <b-col class="col-option">
+                    <p>*Para las Áreas de Energía, Salud, B2B y Minería solo se podrá elegir la opción
+1 y 2 para obtener el Certificado de Especialización.</p>
                   </b-col>
                 </b-row>
                     </b-container>
@@ -484,7 +488,7 @@
               <b-container class="container-date">
                 <b-row>
                   <b-col md="6" cols="12" align-self="center">
-                    <div>
+                    <div class="div-section-content">
                       <div class="section-content">
                         <div class="section-1">07</div>
                         <div class="section-2">
@@ -499,20 +503,18 @@
                   <b-col
                     md="6"
                     cols="12"
-                    class="d-flex alig-items-center justify-content-center"
+                    class="d-flex align-items-center contact"
                   >
-                    <div class="contact">
-                      <b-container class="contact-container">
+                    <b-container class="contact-container">
                         <b-row class="pb-3">
-                          <b-col cols="2"><img src="../assets/home/iconos/info/mail.png" alt=""></b-col>
+                          <b-col cols="2 ps-2"><img src="../assets/home/iconos/info/mail.png" alt=""></b-col>
                           <b-col cols="10"><h5>informes@esan.edu.pe</h5></b-col>
                         </b-row>
                         <b-row>
-                          <b-col cols="2"><img src="../assets/home/iconos/info/tel.png" alt=""></b-col>
+                          <b-col cols="2 ps-2"><img src="../assets/home/iconos/info/tel.png" alt=""></b-col>
                           <b-col cols="10"><h5>317-7200 | 317-7226</h5></b-col>
                         </b-row>
                       </b-container>
-                    </div>
                   </b-col>
                 </b-row>
               </b-container>
@@ -529,6 +531,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 import HeadePage from "../components/HeadePage.vue";
 import FormHome from "../components/FormHome";
 import FooterPage from "../components/FooterPage";
@@ -547,6 +550,7 @@ export default {
 
 
 <style lang="stylus" scoped>
+/* eslint-disable */
 @import '../styles/main.styl';
 
 
@@ -559,8 +563,10 @@ export default {
   font-weight: bold;
   line-height: 23px;
   width: 100%;
-  height: 180px;
+  height: 23.2vh;
   border: 1px solid white;
+  font-family gt-pressura-bold
+
 }
 
 .flip-card-inner {
@@ -579,6 +585,8 @@ export default {
 
 .flip-card-front, .flip-card-back {
   position: absolute;
+  padding 20px;
+  text-align left;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
@@ -588,6 +596,9 @@ export default {
 .flip-card-front {
   background-color:black;
   color: black;
+  font-size 39.82px;
+  line-height 47.78px;
+  padding-bottom 10px;
     &.bg-salud{
      background-image: url('../assets/home/areas/salud/kv.jpg')!important;
     };
@@ -619,6 +630,19 @@ export default {
   background-color: bg-black;
   color: white;
   transform: rotateY(180deg);
+    a{
+      text-decoration none
+      display flex
+      align-self flex-end
+      flex-direction column
+      justify-items end
+     h1{
+      font-size 21px
+      border-bottom none 
+    }
+  }
+ 
+
 }
 
 .box-area {
@@ -730,8 +754,6 @@ h2 {
 }
 
 .nav-link {
-  padding-left: 20px;
-  padding-bottom: 20px;
   display: flex;
   align-items: flex-end;
 }
@@ -745,15 +767,21 @@ h2 {
   position: relative;
   right: 0px;
   text-align: left;
-  width: 90px;
+  width: 110px;
   margin-right: 0px;
   margin-left: auto;
+  font-family gt-pressura-bold
 }
 
 .section-areas-0 {
-  padding: 150px 0px;
+  padding: 95px 0px;
   background-image url('../assets/home/banner/section-areas/bg.png');
   border-bottom 4px solid primary-pee
+  h3{
+    margin 15px 0 0
+    font-size 39.82px
+    font-family gt-pressura-bold
+  }
 }
 .section{
   padding: 105px 0px;
@@ -764,12 +792,14 @@ h2 {
   }
   h3{
     margin 15px 0 0
+    font-size 39.82px
+    font-family gt-pressura-bold
   }
  
 }
 .s-ventajas{
   img{
-    max-width 250px
+    max-width 337px
     width 100%
   }
 }
@@ -784,6 +814,9 @@ h2 {
       flex-direction column
       .col-option{
         margin-bottom 40px
+        p{
+          text-align left
+        }
       }
     }
 
@@ -818,9 +851,14 @@ h2 {
 
 .container-date {
   border: 3px solid primary-pee;
-  max-width: 1050px;
+  max-width: 1046px;
   width: 100%;
   padding: 15px 0px
+  .div-section-content{
+    width 300px
+    margin-right 0px
+    margin-left auto
+  }
 }
 
 .section-areas-inicio {
@@ -833,6 +871,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+    
 }
 
 .section-content2 {
@@ -841,24 +880,44 @@ h2 {
   justify-content: left;
 
   .section-2 {
-    width: 250px;
+    width: 240px;
+    height: 64px;
+    margin-left 38px
+    span{
+      font-size 35.53px
+      color #252A2D
+      font-family GT-pressura-bold
+    }
   }
 
   .section-1 {
-    font-size: 118px;
-    margin-top: -82px;
+    font-size: 130px;
+    line-height: 182px;
+    margin-top: -68px;
+    font-family GT-pressura-bold
   }
+  .init-date {
+  top: 5px;
+  position: relative;
+  right: 7px;
+  text-align: left;
+  width: 119px;
+  margin-right: 0px;
+  margin-left: auto;
+
+}
 }
 
 .section-1 {
   position: absolute;
   z-index: 2;
-  width: 50px;
-  font-size: 137px;
+  width: 167px;
+  font-size: 194px;
   margin-right: 282px;
-  margin-top: -87px;
+  margin-top: -136px;
   font-weight: bold;
   color: white;
+  font-family gt-pressura-bold
 }
 
 .section-2 {
@@ -868,22 +927,20 @@ h2 {
   position: relative;
   z-index: 1;
   text-align: right;
-  width: 230px;
+  width: 304px;
   padding-right: 10px;
   font-weight: bold;
   height: 50px;
 
   span {
-    color: primary-pee;
+    color: white;
     top: -20px;
   }
 }
 
 .contact {
   border-left: 2px solid white;
-  margin: auto 0;
-  padding: 10px 0px;
-  width: 100%;
+
 
   .contact-container {
     max-width: 380px;
@@ -894,6 +951,7 @@ h2 {
     text-align left
     h5{
       font-size 24px
+      font-family Raleway-Regular
     }
   }
 }
@@ -903,14 +961,34 @@ h2 {
   padding: 100px 0px;
   h1{
     font-size 39.82px
+    color white
+    line-height 47px
   }
   .contain-sec{
     padding-left value
   } 
+ 
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .contact {
+  border-left: 2px solid white;
+
+
+  .contact-container {
+    max-width: 380px;
+    h5{
+      font-size 20px
+      font-family Raleway-Regular
+    }
+  }
 }
 
+}
 @media only screen and (max-width: 1560px) {
-
+  .flip-card-front{
+    font-size 30px
+    line-height 31px
+  }
 
   .hello {
     height: auto;
@@ -918,7 +996,7 @@ h2 {
   }
 
   .section-2 {
-    width: 197px;
+    width: 254px;
     padding-right: 0px;
   }
 
@@ -927,7 +1005,10 @@ h2 {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) 
+  .flip-card{
+    height: 28.2vh
+  }
   .line {
     max-width: 560px
     width: auto;
@@ -937,19 +1018,33 @@ h2 {
     margin-top: -70px;
     font-size: 106px;
   }
-
+  .container-date {
+    border: 3px solid primary-pee;
+    max-width: 1046px;
+    width: 100%;
+    padding: 15px 0px
+  .div-section-content{
+    max-width 300px
+    width 100%
+    margin auto
+  }
   .contact {
     border-left: none;
     .contact-container {
-    
-    margin-left 0px
-    padding-left 0px
+    max-width 230px
+    margin auto
+    padding 0
     h5{
       font-size 18px
     }
+    img{
+      width 30px
+    }
   }
   }
-  h1 {
+}
+  
+h1 {
   font-size: 45px;
   
 }
@@ -957,7 +1052,25 @@ h2 {
 h2 {
   font-size: 25px;
 }
-  
-  
+.section{
+  padding: 105px 0px;
+  p{
+    font-size 20px
+    line-height 24px
+  }
+  h3{
+    font-size 26px
+  }
+ 
 }
+.s-ventajas
+  img
+    max-width 250px
+    width 100%
+.section-areas-0
+  h3 
+    font-size 24px     
+.row
+  --bs-gutter-x 0px    
+
 </style>

@@ -1,6 +1,7 @@
 <template>
   <div class="nav mx-auto my-auto m-auto d-flex">
-    <b-navbar toggleable="lg" type="dark"  class="m-auto">
+    <b-container>
+      <b-navbar toggleable="md" type="dark"  class=" nav-w ">
       <b-navbar-brand  to="/">
         <!-- <img src="../assets/components/header/logo/logo.png" alt="" class="img-logo">  -->
         <!-- <div class="img-logo"></div> -->
@@ -33,6 +34,7 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
+    </b-container>
   </div>
 </template>
 
@@ -44,6 +46,15 @@ export default {
 
 <style lang="stylus" scoped>
 @import '../styles/main.styl';
+.navbar-expand-md .navbar-collapse{
+  justify-content flex-end
+  padding-right 140px
+}
+.nav-w{
+  display flex 
+  justify-content: space-between;
+
+}
 .navbar-brand
   content  url("../assets/components/header/logo/logo.png")
   max-width 254px
