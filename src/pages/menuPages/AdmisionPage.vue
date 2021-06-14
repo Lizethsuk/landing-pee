@@ -5,7 +5,7 @@
     <div class="bv-example-row">
       <b-container class="pasos-areas ">
         <b-row>
-          <b-col  class="text-columns">
+          <b-col class="text-columns">
             <p class="title-text">Requisitos de Admisión</p>
             
             <p class="subtitle-text">Generales:</p>
@@ -189,6 +189,14 @@ export default {
     padding-left : 30px !important
     padding-bottom :80px
     padding-top 80px
+  .jumbotron 
+    background-image: url('../../assets/home/banner/kv.jpg');
+    background-position-y: 0px;
+    background-position-x: center
+    background-size: cover;
+    width: 100%;
+  .text-columns
+    padding-right 0px
 
 +for_breakpoint(cell)
   .pasos-areas 
