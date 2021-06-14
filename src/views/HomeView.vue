@@ -267,16 +267,17 @@
         </b-row>
         <b-row class="pt-5">
           <b-col lg="3" md="6" class="text-center" >
-              <img src="../assets/home/iconos/ventajas/v-01.png" alt="" >
+              <img class="v-01" alt="" >
+              <!-- <div class="v-01"></div> -->
           </b-col>
           <b-col lg="3" md="6" class="text-center" >
-              <img src="../assets/home/iconos/ventajas/v-02.png" alt="" >
+              <img  class="v-02" alt="" >
           </b-col>
           <b-col lg="3" md="6" class="text-center" >
-              <img src="../assets/home/iconos/ventajas/v-03.png" alt="" >
+              <img class="v-03" alt="" >
           </b-col>
           <b-col lg="3" md="6" class="text-center" >
-              <img src="../assets/home/iconos/ventajas/v-04.png" alt="" >
+              <img class="v-04" alt="" >
           </b-col>
         </b-row>
       </b-container>
@@ -448,19 +449,19 @@
             <b-container>
               <b-row>
                 <b-col md="3" class="text-center">
-                  <img src="../assets/home/iconos/rankings/rk-1.png" alt="" >
+                  <img  class="rk-1" alt="" >
                 </b-col>
                 <b-col md="6" class="text-center" >
-                  <img src="../assets/home/iconos/rankings/rk-2.png" alt="" >
+                  <img class="rk-2"  alt="" >
                 </b-col>
                 <b-col md="3" class="text-center">
-                  <img src="../assets/home/iconos/rankings/rk-3.png" alt="" >
+                  <img class="rk-3"  alt="" >
                 </b-col>
               </b-row>
             </b-container>
              </b-col>
           <b-col cols="12" lg="2">
-            <img src="../assets/home/iconos/rankings/sponsor/logo-1.png" alt="">
+            <img  class="logo-1" alt="">
           </b-col>
         </b-row>
       </b-container>
