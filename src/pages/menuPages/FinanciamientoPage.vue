@@ -5,7 +5,7 @@
     <div class="bv-example-row">
       <b-container class="pasos-areas">
         <b-row>
-          <b-col   class="text-columns ">
+          <b-col md="12" lg="6" class="text-columns ">
             <p class="title-text">
               Financiamiento solo para residentes del Perú
             </p>
@@ -93,7 +93,7 @@
               </table>
             </div>
           </b-col>
-          <b-col  >
+          <b-col md="12" lg="6">
             <br />
             <br />
             <p class="subtitle-text">Por Certificado de Especialización</p>
@@ -368,7 +368,20 @@ p{
     font-size: 19px;
   
 
-
++for_breakpoint(mobile)
+  .pasos-areas 
+    padding-right : 30px !important
+    padding-left : 30px !important
+    padding-bottom :80px
+    padding-top 80px
+  .jumbotron 
+    background-image: url('../../assets/home/banner/kv.jpg');
+    background-position-y: 0px;
+    background-position-x: center
+    background-size: cover;
+    width: 100%;
+  .text-columns
+    padding-right 0px
 +for_breakpoint(cell)
   .pasos-areas 
     padding-right : 30px !important

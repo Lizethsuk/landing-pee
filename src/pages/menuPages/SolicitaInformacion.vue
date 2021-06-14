@@ -482,4 +482,19 @@ textarea, input, select, checkbox {
     width: 100%;
   input, select, textarea, .conditions
     margin-left 0px  
+
++for_breakpoint(mobile)
+  .pasos-areas 
+    padding-right : 30px !important
+    padding-left : 30px !important
+    padding-bottom :80px
+    padding-top 80px
+  .jumbotron 
+    background-image: url('../../assets/home/banner/kv.jpg');
+    background-position-y: 0px;
+    background-position-x: center
+    background-size: cover;
+    width: 100%;
+  .text-columns
+    padding-right 0px
 </style>
