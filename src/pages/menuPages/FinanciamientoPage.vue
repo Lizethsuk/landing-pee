@@ -5,24 +5,29 @@
     <div class="bv-example-row">
       <b-container class="pasos-areas">
         <b-row>
-          <b-col   class="text-columns">
+          <b-col   class="text-columns ">
             <p class="title-text">
-              Financiamineto solo para residentes del Perú
+              Financiamiento solo para residentes del Perú
             </p>
             <p class="second-subtitle">
               Conoce nuestro descuento por matrícula anticipada
             </p>
+       
             <p class="subtitle-text">Por curso</p>
+                 <hr>
             <p class="cursos">
-              Cursos de 14 sesiones + sesión de evaluación final:
-              <span class="subtitle-text-three">S/17806$xxx0</span>
+              Cursos de 14 sesiones + sesión de evaluación final: <br>
+              <span class="subtitle-text-three">S/ 1780 ó $ xxx xxx* </span>
             </p>
-            <p class="subtitle-text">Por Certificado de Especialización</p>
+                 <hr>
+            <p class="subtitle-text pt-3">Por Certificado de Especialización</p>
+                 <hr>
             <span class="cursos">5 Cursos:</span>
           
             <p>
-              <span class="subtitle-text-three"> S/ 17956 $xxo0000</span>
+              <span class="subtitle-text-three"> S/ 1795  ó  $ xxx xxx*</span>
             </p>
+            <hr>
             <p class="nota-text"> 
               <span class="subtitle-text-three"> Nota:</span> Todo
               financiamiento debe estar respaldado de una Declaración Jurada
@@ -32,8 +37,8 @@
               Descuento por Matrícula Anticipada al Contado
             </p>
             <p class="descount-text">Descuento: S/ 90 para Curso</p>
-            <span class="descount-text"> Descuento: S/ 500 para Certificacos</span>
-            <p class="descount-text">Descuento válido hasta el 12 de mayo de 2021.</p>
+            <p class="descount-text"> Descuento: S/ 500 para Certificacos</p>
+            <p class="descount-text pt-3 pb-3">Descuento válido hasta el 12 de mayo de 2021.</p>
 
             <p class="subtitle-text">Inversión con Financiamiento</p>
             <p class="subtitle-text">Por curso</p>
@@ -41,46 +46,48 @@
             <div>
               <table class="table">
                 <thead>
-                  <tr>
-                    <th class="title-table  title-t-1" scope="col">Alternativa</th>
-                    <th class="title-table  title-t-1" scope="col">En 2 partes</th>
-                    <th class="title-table  title-t-1" scope="col">En 3 partes</th>
-                    <th class="title-table  title-t-1" scope="col">En 4 partes</th>
+                  <tr class="row-table">
+                    <th class="title-table  title-t-1" scope="col"><div class="title-th">Alternativa</div></th>
+                    <th class="title-table  title-t-1" scope="col"><div class="title-th">En 2 partes</div></th>
+                    <th class="title-table  title-t-1" scope="col"><div class="title-th">En 3 partes</div></th>
+                    <th class="title-table  title-t-1" scope="col"><div class="title-th two">En 4 partes</div></th>
                   </tr>
                 </thead>
                 <tbody class="title-t-2">
                   <tr>
-                    <th class="title-table" scope="row">
-                      Cuota <br />
+                    <th class="title-table gray " scope="row">
+                      <div >
+                        Cuota <br />
                       inicial
+                      </div>
                     </th>
-                    <td>S/ 894</td>
-                    <td>S/ 600</td>
-                    <td>S/ 451</td>
+                    <td class="my-auto"><div class="title-th text-center">S/ 894</div></td>
+                    <td><div class="title-th text-center">S/ 600</div></td>
+                    <td><div class="title-th text-center">S/ 451</div></td>
                   </tr>
                   <tr>
-                    <th class="title-table" scope="row">Cuotas</th>
-                    <td>
+                    <th class="title-table gray" scope="row">Cuotas</th>
+                    <td class="text-center">
                       S/ 895 <br />
                       (1 cuota)
                     </td>
-                    <td>
+                    <td class="text-center">
                       S/ 599 <br />
                       (2 cuota)
                     </td>
-                    <td>
+                    <td class="text-center">
                       S/ 452 <br />
                       (3 cuota)
                     </td>
                   </tr>
                   <tr>
-                    <th class="title-table" scope="row">
+                    <th class="title-table gray" scope="row">
                       Interes <br />
                       Incluidos
                     </th>
-                    <td>s/9</td>
-                    <td>S/ 18</td>
-                    <td>S/ 27</td>
+                    <td class="text-center">s/9</td>
+                    <td class="text-center">S/ 18</td>
+                    <td class="text-center">S/ 27</td>
                   </tr>
                 </tbody>
               </table>
@@ -97,22 +104,26 @@
             <div>
               <table class="table">
                 <thead>
-                  <tr>
+                  <tr class="row-table">
                     <th class="title-table  title-t-1" scope="col">
-                      Paquetes de 5 <br />
-                      cursos
+                      <div class="title-th">Paquetes de 5 <br />
+                      cursos</div>
                     </th>
-                    <th class="title-table  title-t-1" scope="col">Contado</th>
+                    <th class="title-table  title-t-1" scope="col">
+                      <div class="title-th">Contado</div>
+                    </th>
                     <th class="title-table subtitle-table title-t-1" scope="col">
-                      Financiamiento
+                      <div class="title-th two">
+                        Financiamiento
+                      </div>
                     </th>
                   </tr>
                 </thead>
                 <tbody  class="title-t-2">
                   <tr>
                     <th class="title-table" scope="row"></th>
-                    <td>S/ 7195</td>
-                    <td>
+                    <td class="text-center">S/ 7195</td>
+                    <td class="text-center">
                       <div class="section-content">
                         <div>Cuota inicial</div>
                         <div>11 Cuotas</div>
@@ -120,12 +131,16 @@
                     </td>
                   </tr>
                   <tr>
-                    <th class="title-table" scope="row"></th>
-                    <td></td>
-                    <div class="section-content">
+                    <th class="title-table none" scope="row">
+                      <div class="section-content "></div>
+                    </th>
+                    <td class="none title-table" ><div class="section-content "></div></td>
+                    <td class="title-table none">
+                      <div class="section-content ">
                       <div>S/595</div>
                       <div>S/600</div>
                     </div>
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -136,14 +151,17 @@
             <div>
               <table class="table">
                 <thead>
-                  <tr>
+                  <tr class="row-table">
+                    
                     <th class="title-table title-t-1" scope="col">
-                      Paquetes de 5 <br />
-                      cursos
+                      <div class="title-th">Paquetes de 5 <br />
+                      cursos</div>
                     </th>
-                    <th class="title-table title-t-1" scope="col">Contado</th>
+                    <th class="title-table title-t-1" scope="col">
+                      <div class="title-th">Contado</div>
+                    </th>
                     <th class="title-table subtitle-table title-t-1" scope="col">
-                      Financiamiento
+                      <div class="title-th two">Financiamiento</div>
                     </th>
                   </tr>
                 </thead>
@@ -159,12 +177,14 @@
                     </td>
                   </tr>
                   <tr>
-                    <th class="title-table" scope="row"></th>
-                    <td></td>
-                    <div class="section-content">
+                    <th class="title-table none" scope="row"></th>
+                    <td class="title-table none"></td>
+                    <td class="title-table none">
+                      <div class="section-content">
                       <div>S/428</div>
                       <div>S/375</div>
                     </div>
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -206,12 +226,33 @@ export default {
 
 <style lang="stylus" scoped>
 @import '../../styles/main.styl';
+*{
+  letter-spacing 0.001em
+}
+th, td {
+  border-color #252A2D
+  border-bottom-width 1.6px
+}
+hr
+ height 2.4px
+ color #252A2D
+ opacity 1
+
 .cursos
   font-family Raleway-Regular
 .nota-text
   font-family Raleway-Regular
 .descount-text
   font-family Raleway-Regular
+  margin-left 35px
+  margin-bottom 0px
+thead 
+  padding 10px  
+.row-table
+  background-color primary-pee 
+  height 53px
+  th 
+    padding 0px
 .title-t-2
   font-family Raleway-Regular
 .title-t-1
@@ -219,6 +260,12 @@ export default {
 .second-subtitle {
   background-color: #C4B076;
   font-family: gt-pressura-bold;
+  width fit-content
+  padding 19px 30px
+  font-size 18px
+}
+p{
+  font-size 24px
 }
 
 .subtitle-table {
@@ -229,14 +276,33 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  
 }
 
 .title-table {
   font-size: 14px;
+  &.gray{
+    background-color: #D8D8D8;
+  } 
+  &.none{
+    border-bottom none
+  }
+  .title-th {
+    margin 5px 0px
+    border-right 2px solid #252A2D
+    width 100%
+    height 43px;
+    display flex 
+    align-items center
+    justify-content center
+    &.two{
+      border-right none
+    }
+  }
 }
 
 .text-columns {
-  padding-right: 25px;
+  margin-right: 40px;
 }
 
 .subtitle-text-three {
@@ -259,14 +325,14 @@ export default {
 
 .title-text {
   color: bg-black;
-  font-size: 30px;
+  font-size: 39.82px;
   font-family: gt-pressura-bold;
   text-align: left;
 }
 
 .subtitle-text {
   color: bg-black;
-  font-size: 20px;
+  font-size: 24px;
   font-family: Raleway-Bold;
 }
 
@@ -278,10 +344,9 @@ export default {
 }
 
 .pasos-areas {
-  padding-right: 130px;
-  padding-left: 130px;
-  padding-bottom: 80px;
-  padding-top: 80px;
+  max-width 1250px
+  width 100%
+  padding 100px 60px
 }
 
 .jumbotron {
@@ -290,6 +355,19 @@ export default {
   background-position-y: -100px;
 
 }
++for_breakpoint(lapt)
+  p
+    font-size 19px
+  .title-text
+    line-height 40px 
+  .pasos-areas 
+    max-width 1250px
+    width 100%
+    padding 100px 60px
+  .subtitle-text 
+    font-size: 19px;
+  
+
 
 +for_breakpoint(cell)
   .pasos-areas 
@@ -298,7 +376,7 @@ export default {
     padding-bottom :80px
     padding-top 80px
   .text-columns
-    padding-right 0px
+    margin-right 0px !important
   .jumbotron 
     background-image: url('../../assets/home/banner/kv.jpg');
     background-position-y: 0px;
