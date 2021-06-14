@@ -45,7 +45,7 @@
           </b-col>
           <b-col  md="12" lg="6"  >
             <br> <br> 
-            <p class="subtitle-text">Diplomas</p>
+            <p class="subtitle-text text-second-column">Diplomas</p>
             <p>Se otorga según sea el caso:</p>
             <p>Si se inscribe a un curso:</p>
             <ul>
@@ -141,7 +141,9 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-@import '../../styles/main.styl';
+@import '../../styles/main.styl'
+.text-second-column
+  padding-top 15px
 .text-columns
   padding-right 25px
 .subtitle-text-three

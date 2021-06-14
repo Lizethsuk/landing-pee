@@ -178,10 +178,12 @@
                 required
               >
                 <b-form-checkbox class="conditions"  value="me">
-                 
-                  Acepto las  <span class="access"> condiciones de tratamiento para mis datos
+                 <span class="text-condiciones">
+                   Acepto las  <span class="access"> condiciones de tratamiento para mis datos
                   personales
-                    </span></b-form-checkbox
+                    </span>
+                 </span>
+                  </b-form-checkbox
                 >
                 <!-- <b-form-checkbox value="that">Check that out</b-form-checkbox> -->
               </b-form-checkbox-group>
@@ -337,11 +339,28 @@ export default {
 
 <style lang="stylus" scoped>
 @import '../../styles/main.styl';
+
+input[type=radio], input[type=checkbox] 
+  margin: 4px 3px 3px !important;
+  margin-top: 1px \9 !important;
+  line-height: normal !important;
+
+.text-condiciones
+  padding-left 10px
+
 select
   width 100%
   padding 0.375rem 0.75rem
   height 38px
   background-color #dbdbdb
+  color #6B6B6B;
+  font-family Raleway-Regular 
+
+::placeholder 
+  color: #6B6B6B;
+  opacity: 1; /* Firefox */
+  font-family Raleway-Regular 
+
 .button-content
   text-align center
 .button-text
@@ -363,6 +382,7 @@ label
   display inline  
 input 
   font-family Raleway-Regular
+  color blue !important
 input, select, textarea, .conditions
  margin-left 10px  
 .form-content {

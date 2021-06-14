@@ -38,20 +38,46 @@ export default {
 };
 </script>
 
-<style lang="css" scoped>
-.green {
+<style  lang="stylus" scoped>
+
+.green 
   fill: #61ffab;
   stroke: none;
-}
 
-.green--outline {
+.green--outline 
   fill: #354258;
   stroke: none;
-}
 
-.white {
-  fill: mintcream;
+
+.white 
+  fill: #FFFFFF;
   stroke: none;
-}
+.administracion
+  fill: #CF9111;
+  stroke: none;
+.b2b
+  fill: #284568;
+  stroke: none;
+.energy
+  fill: #FFD172;
+  stroke: none;
+.finance
+  fill: #051D43;
+  stroke: none;
+.logistic
+  fill: #004863;
+  stroke: none;
+.marketing
+  fill: #35B2CC;
+  stroke: none;
+.mining
+  fill: #FFFFFF;
+  stroke: none;
+.salud
+  fill: #3E4472;
+  stroke: none;
+.ti
+  fill: #58A9D1;
+  stroke: none;
 
 </style>
