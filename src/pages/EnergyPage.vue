@@ -18,7 +18,7 @@
         />
 
       </CursosPage>
-       <PasosPages
+       <PasosPages 
         :colorIcon="myJson.colorIcon"
         :lineColor="myJson.lineColorPasos"
         :bgColor="myJson.bgColorPasos"
