@@ -5,7 +5,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import router from './router'
 import './styles/main.styl'
-
+import vueCountryRegionSelect from 'vue-country-region-select'
+Vue.use(vueCountryRegionSelect)
 Vue.use(BootstrapVue)
 
 Vue.config.productionTip = false
