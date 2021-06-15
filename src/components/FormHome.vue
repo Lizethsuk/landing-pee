@@ -93,7 +93,7 @@
     methods: {
       onSubmit(event) {
         event.preventDefault()
-        alert(JSON.stringify(this.form))
+        console.log(JSON.stringify(this.form))
       },
       onReset(event) {
         event.preventDefault()
