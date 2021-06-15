@@ -97,13 +97,13 @@ export default {
   border-left: 5px solid blue
   padding-right 50px
 .vl {
-  border-left: 1px solid var(--bg-color-divider);
+  border-left: 2px solid var(--bg-color-divider);
   height: 100px;
   margin-left -20px
 }
 .text-date
   text-align right 
-  padding-right 50px
+  padding-right 20px
   justify-content: center;
   font-family: gt-pressura-bold
 
@@ -116,20 +116,22 @@ export default {
   position absolute
   z-index 2
   width 50px
-  font-size 75px
-  margin-right 170px
-  margin-top -40px
-  font-weight: bold;
+  font-size 130px
+  margin-right 310px
+  margin-top -67px
+  font-weight: bold
+  line-height 182px
 .section-2
   background-color: var(--bg-color-button);
-  font-size: 22px;
+  font-size: 35.53px;
   position relative
   z-index 1
   text-align right
-  width: 180px;
-  padding-right 10px
+  width: 290px;
+  padding-right 36px
   font-weight: bold;
-  height: 40px;
+  height: 63px;
+  line-height 57px
 .btn-secondary
   background-color: var(--bg-color-button);
   border-color  var(--bg-color-button);
@@ -141,8 +143,7 @@ export default {
   background-color: var(--bg-color);
 
 .pasos-areas 
-  padding: 20px 0px;
-  padding-top: 20px;
+  padding: 45px 0px;
   color white
 
 .content-date 
@@ -157,18 +158,45 @@ export default {
   font-size: 40px;
 
 .button-nav
-  width: 250px;
-  height: 49px;
-  font-size: 22px;
+  width: 386px;
+  height: 71px;
+  font-size: 39.82px;
   font-weight: bold;
+  line-height 37px
   
 .subtitle 
-  font-size: 22px;
-  line-height: 22px;
+  font-size: 39.82px;
+  line-height: 47px;
   padding: 15px 0px 18px;
   font-weight: 500;
   margin-bottom 0px
 
++for_breakpoint(desktop-lap)
+  .section-1
+    width 50px
+    font-size 100px
+    margin-right 190px
+    margin-top -67px
+    font-weight: bold
+    line-height 182px
+  .section-2
+    background-color: var(--bg-color-button);
+    font-size: 28.53px;
+    position relative
+    z-index 1
+    text-align right
+    width: 190px;
+    padding-right 10px
+    font-weight: bold;
+    height: 63px;
+    line-height 57px
+  .button-nav
+    font-size 24.82px 
+    width 225px 
+  .subtitle
+    font-size 30.82px
+    line-height 27px  
+ 
 @media only screen and (max-width: 767px) 
   .text-date-responsive
     display block

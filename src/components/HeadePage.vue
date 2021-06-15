@@ -76,6 +76,7 @@ export default {
   background-color primary-pee
   color black
   font-family gt-pressura-bold
+  font-size 18px
 .nav
   background-color bg-black !important
 .router-link-active

@@ -74,16 +74,16 @@ export default {
 
 .title {
   text-transform: uppercase;
-  font-size: 50px;
+  font-size: 60px;
   margin-block-end: 0px;
   width: 12em;
   font-family: gt-pressura-bold
-  line-height 60px
+  line-height 61px
 }
 
 .line {
   border-top: 3px solid var(--bg-color-divider);
-  max-width: 43.5vw;
+  max-width: 48.5vw;
   width: auto;
   margin-left: -19rem;
   opacity: 1 !important;
