@@ -46,7 +46,7 @@
                     <b-form-input
                       type="number"
                       id="input-3"
-                      v-model="form.numereDNI"
+                      v-model="form.emainumereDNIl"
                       placeholder="Numero de DNI/ID"
                       required
                     ></b-form-input>
@@ -203,12 +203,16 @@
                 required
               ></b-form-select>
             </b-form-group>
+            <br>
+            <b-form-group>
+            <country-select placeholder="Seleccione su pais" v-model="form.country" :country="form.country" topCountry="US" />    
+            </b-form-group>       
             <br />
             <div class="button-content">
               <b-button  class="button-text" type="submit" variant="primary">Enviar mis datos</b-button>
-
             </div>
             <!-- <b-button type="reset" variant="danger">Reset</b-button> -->
+
           </b-form>
         </b-col>
       </b-row>
@@ -250,6 +254,7 @@ export default {
         { value: 'd', text: 'This one is disabled', disabled: true }
       ],
       form: {
+        country: '',
         emainumereDNIl: "",
         checked: [],
         name: "",
@@ -305,9 +310,10 @@ export default {
     };
   },
   methods: {
+ 
     onSubmit(event) {
       event.preventDefault();
-      alert(JSON.stringify(this.form));
+      console.log(JSON.stringify(this.form));
     },
     onReset(event) {
       event.preventDefault();
@@ -325,6 +331,7 @@ export default {
       this.form.gradoAcademico = null;
       this.form.industria = null;
       this.form.area = null;
+      this.form.country="";
       this.form.checked = [];
       // Trick to reset/clear native browser form validation state
       this.show = false;
@@ -382,7 +389,7 @@ label
   display inline  
 input 
   font-family Raleway-Regular
-  color blue !important
+  // color blue !important
 input, select, textarea, .conditions
  margin-left 10px  
 .form-content {
