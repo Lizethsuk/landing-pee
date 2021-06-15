@@ -427,7 +427,7 @@ p{
     width: 100%;
   .text-columns
     padding-right 0px
-+for_breakpoint(cell)
++for_breakpoint(md)
   .pasos-areas 
     padding-right : 30px !important
     padding-left : 30px !important

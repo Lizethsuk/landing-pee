@@ -4,14 +4,19 @@
     class="image"
     text-variant="white"
     :style="cssVars"
+    
   >
-    <div class="image-opacity">
-      <div class="title-content">
-        <p class="title" v-text=" message"></p>
+   <div class="title-content">
+        <b-container>
+          <b-row>
+            <b-col lg="6" cols="12">
+              <p class="title" v-text=" message"></p>
         <p class="title" v-text=" messageSecond"></p>
         <hr class="line" />
+            </b-col>
+          </b-row>
+        </b-container>
       </div>
-    </div>
   </b-jumbotron>
 </template>
 
@@ -52,7 +57,7 @@ export default {
 @import '../styles/main.styl';
 
 .image {
-  height: 400px;
+  height: 590px;
   // opacity: 0.8;
   position: relative;
   background-repeat no-repeat
@@ -78,50 +83,86 @@ export default {
 
 .line {
   border-top: 3px solid var(--bg-color-divider);
-  width: 40rem;
-  margin-left: -120px;
+  max-width: 43.5vw;
+  width: auto;
+  margin-left: -19rem;
   opacity: 1 !important;
   margin-block-start: 0px;
 }
 
 .title-content {
-  bottom: 15px;
-  left: 100px;
-  position: absolute;
-  z-index: 2;
-}
+  bottom: -26rem;
+  position: relative;
+  height 134px;
+  display flex;
+  align-items flex-end
 
-// .image-opacity {
-//   background-color: rgba(248, 247, 216, 0.7);
-// }
-@media (min-width: 768px) and (max-width: 991px)
- .title 
+}
++for_breakpoint(desktop-lap)
+  .image {
+    height: 400px;
+    // opacity: 0.8;
+    position: relative;
+    background-repeat no-repeat
+    background-size cover
+  }
+  .title-content {
+    bottom: -15rem;
+    position: relative;
+    height 134px;
+  }
+
++for_breakpoint(lapt)
+  .line {
+    max-width: 53.5vw;
+    margin-left: -12rem;
+    width auto
+  }
++for_breakpoint(lg)
+  .line {
+    max-width: 58.5vw;
+    margin-left: -8rem;
+    width auto
+  } 
+  .title {
+  font-size: 44px;
+  line-height 52px
+  } 
++for_breakpoint(md)
+  .line {
+    max-width: 81vw;
+    margin-left: -10rem;
+    width auto
+  } 
+  .title {
+  font-size: 44px;
+  line-height 52px
   width: auto
-
-@media (max-width: 767px) {
-.title {
-  font-size: 62px;
-  width: auto;
-  line-height 62px
-}
-.title-content {
-  bottom: 15px;
-  left: 20px;
-  position: absolute;
-  z-index: 2;
-}
-.line {
+  } 
++for_breakpoint(cell-sm)
+  .line {
+    max-width: 105vw;
+    margin-left: -7rem;
+    width auto
+  } 
+  .title {
+  font-size: 27px;
+  line-height 36px
   width: auto
-}
-.image {
-  height: 340px;
-}
+  } 
+  .image {
+  height: 300px
+  } 
+  .title-content {
+  bottom: -9rem;
+  position: relative;
+  height 134px;
 
 }
+  
+  
 
-+for_breakpoint(mobile)
-  .title 
-    font-size: 40px;
-  // .jumbotron 
-  //   background-position-x: center
+
+
+
 </style>

@@ -486,7 +486,7 @@ textarea, input, select, checkbox {
 .custom-control-label
   margin-top -5px  
 
-+for_breakpoint(cell)
++for_breakpoint(md)
   .pasos-areas 
     padding-right : 30px !important
     padding-left : 30px !important
