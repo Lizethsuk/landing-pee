@@ -3,7 +3,7 @@
     <div class="pasos-page" :style="cssVars">
       <b-container class="bv-example-row pasos-areas">
         <b-row no-gutters>
-          <p class="title">Siguientes pasos</p>
+          <p class="title ">Siguientes pasos</p>
         </b-row >
         <b-row no-gutters>
           <b-col lg="3" cols="12">
@@ -104,6 +104,7 @@ export default {
 @import '../styles/main.styl';
 .subtitle
   font-family gt-pressura-bold
+  padding-top 20px
 .title
   text-align center
   font-size 30px
