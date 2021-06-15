@@ -221,7 +221,7 @@
     </div>
 
     <PasosPages
-      colorIcon="green"
+      colorIcon="white"
       lineColor="#C1B170"
       bgColor="black"
       calendarioText="myJson.calendatioText"
