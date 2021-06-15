@@ -5,7 +5,7 @@
     <div class="bv-example-row">
       <b-container class="pasos-areas">
         <b-row>
-          <b-col   class="text-columns ">
+          <b-col md="12" lg="6" class="text-columns ">
             <p class="title-text">
               Financiamiento solo para residentes del Perú
             </p>
@@ -47,7 +47,7 @@
               <table class="table">
                 <thead>
                   <tr class="row-table">
-                    <th class="title-table  title-t-1" scope="col"><div class="title-th">Alternativa</div></th>
+                    <th class="title-table  title-t-1" scope="col"><div class="title-th th-alternativa">Alternativa</div></th>
                     <th class="title-table  title-t-1" scope="col"><div class="title-th">En 2 partes</div></th>
                     <th class="title-table  title-t-1" scope="col"><div class="title-th">En 3 partes</div></th>
                     <th class="title-table  title-t-1" scope="col"><div class="title-th two">En 4 partes</div></th>
@@ -61,19 +61,25 @@
                       inicial
                       </div>
                     </th>
-                    <td class="my-auto"><div class="title-th text-center">S/ 894</div></td>
-                    <td><div class="title-th text-center">S/ 600</div></td>
+                    <td class="my-auto"><div class="title-th text-center td-1">S/ 894</div></td>
+                    <td><div class="title-th text-center  td-1">S/ 600</div></td>
                     <td><div class="title-th text-center">S/ 451</div></td>
                   </tr>
                   <tr>
                     <th class="title-table gray" scope="row">Cuotas</th>
-                    <td class="text-center">
-                      S/ 895 <br />
+                    <td class="text-center ">
+                      <div class="td-1">
+                            S/ 895 <br />
                       (1 cuota)
+                      </div>
+                  
                     </td>
-                    <td class="text-center">
-                      S/ 599 <br />
+                    <td class="text-center ">
+                      <div class="td-1">
+                          S/ 599 <br />
                       (2 cuota)
+                      </div>
+                    
                     </td>
                     <td class="text-center">
                       S/ 452 <br />
@@ -85,15 +91,23 @@
                       Interes <br />
                       Incluidos
                     </th>
-                    <td class="text-center">s/9</td>
-                    <td class="text-center">S/ 18</td>
+                    <td class="text-center">
+                      <div class="td-1">
+                          s/9
+                      </div>
+                    </td>
+                    <td class="text-center">
+                      <div class="td-1">
+                        S/ 18
+                      </div>
+                      </td>
                     <td class="text-center">S/ 27</td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </b-col>
-          <b-col  >
+          <b-col md="12" lg="6">
             <br />
             <br />
             <p class="subtitle-text">Por Certificado de Especialización</p>
@@ -122,10 +136,15 @@
                 <tbody  class="title-t-2">
                   <tr>
                     <th class="title-table" scope="row"></th>
-                    <td class="text-center">S/ 7195</td>
+                    <td class="text-center">
+                      <div class="td-2">
+                         S/ 7195
+                      </div>
+                      </td>
                     <td class="text-center">
                       <div class="section-content">
                         <div>Cuota inicial</div>
+                        <div class="vl"></div>
                         <div>11 Cuotas</div>
                       </div>
                     </td>
@@ -137,7 +156,8 @@
                     <td class="none title-table" ><div class="section-content "></div></td>
                     <td class="title-table none">
                       <div class="section-content ">
-                      <div>S/595</div>
+                      <div class="finac-2">S/595</div>
+                      <div class="vl"></div>
                       <div>S/600</div>
                     </div>
                     </td>
@@ -168,10 +188,15 @@
                 <tbody  class="title-t-2">
                   <tr>
                     <th class="title-table" scope="row"></th>
-                    <td>S/ 7195</td>
-                    <td>
+                    <td class="text-center">
+                      <div class="td-2">
+                        S/ 7195
+                      </div>
+                      </td>
+                    <td class="text-center">
                       <div class="section-content">
-                        <div>Cuota inicial</div>
+                        <div >Cuota inicial</div>
+                        <div class="vl"></div>
                         <div>20 Cuotas</div>
                       </div>
                     </td>
@@ -181,7 +206,8 @@
                     <td class="title-table none"></td>
                     <td class="title-table none">
                       <div class="section-content">
-                      <div>S/428</div>
+                      <div class="finac-1">S/428</div>
+                      <div class="vl"></div>
                       <div>S/375</div>
                     </div>
                     </td>
@@ -229,10 +255,28 @@ export default {
 *{
   letter-spacing 0.001em
 }
+.finac-2
+  padding-left 20px
+.finac-1
+  padding-left 15px
+.vl {
+  border-right: 2px solid #252a2d;
+  height: 30px;
+}
+
+.th-alternativa
+  margin-left 0px
 th, td {
   border-color #252A2D
   border-bottom-width 1.6px
 }
+.td-2
+ border-right: 2px solid #252a2d;
+ height 30px
+.td-1
+ border-right: 2px solid #252a2d;
+ height 45px
+
 hr
  height 2.4px
  color #252A2D
@@ -295,15 +339,16 @@ p{
     display flex 
     align-items center
     justify-content center
+    margin-left -6px
     &.two{
       border-right none
     }
   }
 }
 
-.text-columns {
-  margin-right: 40px;
-}
+// .text-columns {
+//   margin-right: 40px;
+// }
 
 .subtitle-text-three {
   font-size: 15px;
@@ -368,7 +413,20 @@ p{
     font-size: 19px;
   
 
-
++for_breakpoint(mobile)
+  .pasos-areas 
+    padding-right : 30px !important
+    padding-left : 30px !important
+    padding-bottom :80px
+    padding-top 80px
+  .jumbotron 
+    background-image: url('../../assets/home/banner/kv.jpg');
+    background-position-y: 0px;
+    background-position-x: center
+    background-size: cover;
+    width: 100%;
+  .text-columns
+    padding-right 0px
 +for_breakpoint(cell)
   .pasos-areas 
     padding-right : 30px !important
