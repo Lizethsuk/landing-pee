@@ -524,4 +524,6 @@ textarea, input, select, checkbox {
     width: 100%;
   .text-columns
     padding-right 0px
+  .button-text
+    width 15em !important
 </style>

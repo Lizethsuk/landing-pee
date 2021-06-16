@@ -31,7 +31,7 @@
             </div>
           </b-col>
           <b-col lg="3" cols="12">
-            <div class="pasos-content">
+            <div class="pasos-content folleto-content">
             <Folleto :color="colorIcon"/>
             <p class="subtitle">Folleto</p>
             <p class="description-text">Descarga el folleto del <br> programa (pdf)</p>
@@ -130,8 +130,12 @@ export default {
   @media (min-width: 768px) and (max-width: 991px)
     .pasos-content 
       border-right: none
+    
   @media ( max-width: 767px) 
     .pasos-content 
       border-right: none
       margin 0
+      margin-top 25px
+    // .folleto-content
+    //   padding-top 25px
 </style>
