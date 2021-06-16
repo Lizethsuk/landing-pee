@@ -48,25 +48,25 @@
                 <thead>
                   <tr class="row-table">
                     <th class="title-table  title-t-1" scope="col"><div class="title-th th-alternativa">Alternativa</div></th>
-                    <th class="title-table  title-t-1" scope="col"><div class="title-th">En 2 partes</div></th>
-                    <th class="title-table  title-t-1" scope="col"><div class="title-th">En 3 partes</div></th>
-                    <th class="title-table  title-t-1" scope="col"><div class="title-th two">En 4 partes</div></th>
+                    <th class="title-table  title-t-1" scope="col"><div class="title-th title-res">En 2 partes</div></th>
+                    <th class="title-table  title-t-1" scope="col"><div class="title-th title-res">En 3 partes</div></th>
+                    <th class="title-table  title-t-1" scope="col"><div class="title-th two title-res">En 4 partes</div></th>
                   </tr>
                 </thead>
                 <tbody class="title-t-2">
                   <tr>
                     <th class="title-table gray " scope="row">
-                      <div >
+                      <div  class="subtitle-table-1">
                         Cuota <br />
                       inicial
                       </div>
                     </th>
-                    <td class="my-auto"><div class="title-th text-center td-1">S/ 894</div></td>
+                    <td class="my-auto"><div class="title-th  text-center td-1">S/ 894</div></td>
                     <td><div class="title-th text-center  td-1">S/ 600</div></td>
-                    <td><div class="title-th text-center">S/ 451</div></td>
+                    <td><div class="title-th text-center text-final">S/ 451</div></td>
                   </tr>
                   <tr>
-                    <th class="title-table gray" scope="row">Cuotas</th>
+                    <th class="title-table gray subtitle-table-1" scope="row">Cuotas</th>
                     <td class="text-center ">
                       <div class="td-1">
                             S/ 895 <br />
@@ -81,13 +81,17 @@
                       </div>
                     
                     </td>
-                    <td class="text-center">
-                      S/ 452 <br />
+                    <td class="text-center ">
+                      <div class="text-final">
+                          S/ 452 <br />
                       (3 cuota)
+                      </div>
+
+                    
                     </td>
                   </tr>
                   <tr>
-                    <th class="title-table gray" scope="row">
+                    <th class="title-table gray subtitle-table-1" scope="row">
                       Interes <br />
                       Incluidos
                     </th>
@@ -101,7 +105,11 @@
                         S/ 18
                       </div>
                       </td>
-                    <td class="text-center">S/ 27</td>
+                    <td class="text-center ">
+                      <div class="text-final">
+                          S/ 27
+                      </div>
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -120,7 +128,7 @@
                 <thead>
                   <tr class="row-table">
                     <th class="title-table  title-t-1" scope="col">
-                      <div class="title-th">Paquetes de 5 <br />
+                      <div class="title-th title-res">Paquetes de 5 <br />
                       cursos</div>
                     </th>
                     <th class="title-table  title-t-1" scope="col">
@@ -143,9 +151,9 @@
                       </td>
                     <td class="text-center">
                       <div class="section-content">
-                        <div>Cuota inicial</div>
+                        <div class="subtitle-table-2">Cuota inicial</div>
                         <div class="vl"></div>
-                        <div>11 Cuotas</div>
+                        <div class="subtitle-table-2">11 Cuotas</div>
                       </div>
                     </td>
                   </tr>
@@ -156,9 +164,9 @@
                     <td class="none title-table" ><div class="section-content "></div></td>
                     <td class="title-table none">
                       <div class="section-content ">
-                      <div class="finac-2">S/595</div>
+                      <div class="finac-2 subtitle-table-2">S/595</div>
                       <div class="vl"></div>
-                      <div>S/600</div>
+                      <div class="subtitle-table-2">S/600</div>
                     </div>
                     </td>
                   </tr>
@@ -174,7 +182,7 @@
                   <tr class="row-table">
                     
                     <th class="title-table title-t-1" scope="col">
-                      <div class="title-th">Paquetes de 5 <br />
+                      <div class="title-th title-res">Paquetes de 5 <br />
                       cursos</div>
                     </th>
                     <th class="title-table title-t-1" scope="col">
@@ -195,9 +203,9 @@
                       </td>
                     <td class="text-center">
                       <div class="section-content">
-                        <div >Cuota inicial</div>
+                        <div class="subtitle-table-2" >Cuota inicial</div>
                         <div class="vl"></div>
-                        <div>20 Cuotas</div>
+                        <div class="subtitle-table-2">20 Cuotas</div>
                       </div>
                     </td>
                   </tr>
@@ -206,9 +214,9 @@
                     <td class="title-table none"></td>
                     <td class="title-table none">
                       <div class="section-content">
-                      <div class="finac-1">S/428</div>
+                      <div class="finac-1 subtitle-table-2">S/428</div>
                       <div class="vl"></div>
-                      <div>S/375</div>
+                      <div class="subtitle-table-2">S/375</div>
                     </div>
                     </td>
                   </tr>
@@ -255,13 +263,21 @@ export default {
 *{
   letter-spacing 0.001em
 }
-.finac-2
-  padding-left 20px
-.finac-1
-  padding-left 15px
+
+.subtitle-table-2
+  margin: 5px 0px;
+  width: 100%;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+// .finac-2
+//   padding-left 20px
+// .finac-1
+//   padding-left 15px
 .vl {
   border-right: 2px solid #252a2d;
-  height: 30px;
+  height: 43px;
 }
 
 .th-alternativa
@@ -270,12 +286,29 @@ th, td {
   border-color #252A2D
   border-bottom-width 1.6px
 }
+.text-final
+  margin: 5px 0px;
+  width: 100%;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 .td-2
- border-right: 2px solid #252a2d;
- height 30px
+  margin: 5px 0px;
+  border-right: 2px solid #252a2d;
+  width: 100%;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 .td-1
- border-right: 2px solid #252a2d;
- height 45px
+  margin: 5px 0px;
+  border-right: 2px solid #252a2d;
+  width: 100%;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 hr
  height 2.4px
@@ -296,7 +329,8 @@ thead
   background-color primary-pee 
   height 53px
   th 
-    padding 0px
+    padding-top 0px
+    padding-bottom 0px
 .title-t-2
   font-family Raleway-Regular
 .title-t-1
@@ -320,11 +354,12 @@ p{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  
+
+
 }
 
 .title-table {
-  font-size: 14px;
+  // font-size: 14px;
   &.gray{
     background-color: #D8D8D8;
   } 
@@ -339,7 +374,8 @@ p{
     display flex 
     align-items center
     justify-content center
-    margin-left -6px
+    margin-right 10px
+    // margin-left -6px
     &.two{
       border-right none
     }
@@ -349,7 +385,7 @@ p{
 // .text-columns {
 //   margin-right: 40px;
 // }
-
+.
 .subtitle-text-three {
   font-size: 15px;
   font-family Raleway-Bold
@@ -387,7 +423,8 @@ p{
   width: 100%;
   text-align: justify;
 }
-
+.table > :not(caption) > * > *
+  padding-right 0px 
 .pasos-areas {
   max-width 1250px
   width 100%
@@ -414,6 +451,8 @@ p{
   
 
 +for_breakpoint(mobile)
+  // .title-th
+  //   margin-left -5px !important
   .pasos-areas 
     padding-right : 30px !important
     padding-left : 30px !important
@@ -427,6 +466,9 @@ p{
     width: 100%;
   .text-columns
     padding-right 0px
+  .title-res
+    text-align center
+    line-height 1
 +for_breakpoint(md)
   .pasos-areas 
     padding-right : 30px !important
