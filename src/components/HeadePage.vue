@@ -103,14 +103,16 @@ export default {
     line-height 16px 
 
 
-@media only screen and (max-width: 767px) 
+@media (max-width: 767px) 
   .line
     display none
   .button-content
     text-align center
   .navbar-brand
     max-width 220px
-    width 100%  
+    width 100% 
+  .nav
+    padding 10px 5px   
 
 
 </style>

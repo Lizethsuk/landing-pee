@@ -46,7 +46,7 @@
                 <li>B2B</li>
               </ul>
               <div>
-                <b-container class="ps-0">
+                <b-container class="ps-0 pe-0">
                   <b-row>
                     <b-col sm="2" cols="4">
                       <div class="h-100 init">
