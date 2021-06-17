@@ -61,6 +61,14 @@
           required
         ></b-form-input>
       </b-form-group>
+      <b-form-group  class="all-btn" id="input-group-7"  label-for="input-7">
+        <b-form-input
+          id="input-7"
+          v-model="form.lastname"
+          placeholder="Enter last name"
+          required
+        ></b-form-input>
+      </b-form-group>
       <b-form-group  class="all-btn" id="input-group-5" v-slot="{ ariaDescribedby }">
         <b-form-checkbox-group
           v-model="form.checked"
@@ -125,7 +133,7 @@
   background-color bg-form
   
   width 100%
-  max-width 420px
+  max-width 386px
 
 
 .custom-checkbox

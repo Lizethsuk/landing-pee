@@ -189,28 +189,41 @@ h1 {
   font-size: 60px;
   text-transform: uppercase;
   width: 100%;
+  line-height 72px;
   font-weight: bold;
   color: primary-pee;
   font-family: gt-pressura-bold
+  margin-bottom 0
 }
 
 h2 {
-  font-size: 39.2px;
+  font-size: 39.82px;
   text-transform: uppercase;
   width: 100%;
   font-weight: bold;
   color: primary-pee;
-  font-family: gt-pressura-bold
+  font-family: gt-pressura-bold;
+  line-height 47.78px
+  margin-bottom 5px
+  letter-spacing 0.026em
+}
+h4{
+  font-size: 24px;
+  line-height 28px
+  font-weight 100
+  font-family Raleway-Regular
+
 }
 
 .line {
   border-top: 4px solid primary-pee;
-  width: 48rem;
-  margin-left: -220px;
+  width: auto;
+  margin-left: -21rem;
   opacity: 1 !important;
   margin-block-start: 0px;
   margin-right: 0px;
   right: 0;
+  max-width 60rem
 }
 
 .navbar-nav {
@@ -219,16 +232,29 @@ h2 {
 
 .hello {
   background-image: url('../assets/home/banner/kv.jpg');
+  background-position bottom;
   color: white;
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+  .container-home{
+    padding-bottom 120px
+    .col-form{
+      display flex
+      justify-content flex-end
+      padding 0px 
+    }
+  }
 }
 
 .list-title li {
   font-size: 24px;
   line-height 28px
   font-weight 100
+  font-family Raleway-Regular
 }
 .list-title li::marker {
   content:'- ';
@@ -336,7 +362,8 @@ h2 {
   border: 3px solid primary-pee;
   max-width: 1046px;
   width: 100%;
-  padding: 15px 0px
+  padding: 15px 0px;
+  min-height 190pxx
   .div-section-content{
     width 300px
     margin-right 0px
@@ -372,7 +399,7 @@ h2 {
       font-family GT-pressura-bold
     }
   }
-
+  
   .section-1 {
     font-size: 130px;
     line-height: 182px;
@@ -380,15 +407,14 @@ h2 {
     font-family GT-pressura-bold
   }
   .init-date {
-  top: 5px;
-  position: relative;
-  right: 7px;
-  text-align: left;
-  width: 119px;
-  margin-right: 0px;
-  margin-left: auto;
-
-}
+    top: 5px;
+    position: relative;
+    right: 7px;
+    text-align: left;
+    width: 119px;
+    margin-right: 0px;
+    margin-left: auto;
+  }
 }
 
 .section-1 {
@@ -401,6 +427,17 @@ h2 {
   font-weight: bold;
   color: white;
   font-family gt-pressura-bold
+}
+.init{
+  display flex
+  align-items center
+  justify-content center
+  span{
+      font-size 35.53px
+      color white
+      font-family GT-pressura-bold
+    }
+
 }
 
 .section-2 {
@@ -465,9 +502,35 @@ h2 {
     }
   }
 }
+   .hello {
+      background-position bottom;
+      color: white;
+      background-size: cover;
+      .container-home{
+        padding-bottom 90px
+        .col-form{
+          display flex
+          justify-content center
+          margin-top 20px
+        }
+      }
+    }
 
 }
 @media only screen and (max-width: 1560px) {
+
+  h1 { 
+  font-size: 54px;
+  width: 100%;
+  line-height 62px
+  }
+
+  h2 {
+  font-size: 33.82px;
+  line-height 33.78px
+  margin-bottom 15px
+  }
+
   .flip-card-front{
     font-size 30px
     line-height 31px
@@ -475,7 +538,7 @@ h2 {
 
   .hello {
     height: auto;
-    padding-bottom: 120px;
+    padding-bottom: 0px;
   }
 
   .section-2 {
@@ -489,69 +552,92 @@ h2 {
 }
 
 @media only screen and (max-width: 767px) 
-  .flip-card{
-    height: 28.2vh
-  }
-  .line {
-    max-width: 560px
-    width: auto;
-  }
-  .section-1 {
-    margin-right: 179px;
-    margin-top: -70px;
-    font-size: 106px;
-  }
-  .container-date {
-    border: 3px solid primary-pee;
-    max-width: 1046px;
-    width: 100%;
-    padding: 15px 0px
-  .div-section-content{
-    max-width 300px
-    width 100%
-    margin auto
-  }
-  .contact {
-    border-left: none;
-    .contact-container {
-    max-width 230px
-    margin auto
-    padding 0
-    h5{
-      font-size 18px
-    }
-    img{
-      width 30px
-    }
-  }
-  }
-}
+  .section {
+    padding: 105px 0px;
+    p {
+      font-size 20px
+      line-height 24px
+      }
+    h3 {
+      font-size 26px
+      }
   
-h1 {
-  font-size: 45px;
-  
-}
+   };
+  .hello {
+    .container-home{
+      padding-bottom 0px
+      .ps-5 {
+        padding-left 1rem!important
+      }
+      .pe-5 {
+        padding-right 1rem!important
+      }
+      .col-form {
+            display flex
+            justify-content center
+            margin-top 30px
+            padding-bottom 20px
+      }
+      h1 {
+        font-size: 45px;
+      }
 
-h2 {
-  font-size: 25px;
-}
-.section{
-  padding: 105px 0px;
-  p{
-    font-size 20px
-    line-height 24px
-  }
-  h3{
-    font-size 26px
-  }
+      h2 {
+      font-size: 25px;
+      }    
+     }
+    }
+  .flip-card {
+    height: 28.2vh
+    }
+    .line {
+      width: auto;
+    }
+    .section-1 {
+      margin-right: 179px;
+      margin-top: -70px;
+      font-size: 194.05px;
+      line-height: 182.41px
+    }
+    .container-date {
+      border: 3px solid primary-pee;
+      max-width: 1046px;
+      width: 100%;
+      padding: 15px 0px
+    .div-section-content{
+      max-width 300px
+      width 100%
+      margin auto
+    }
+    .contact {
+      border-left: none;
+      .contact-container {
+      max-width 230px
+      margin auto
+      padding 0
+      h5{
+        font-size 18px
+      }
+      img{
+        width 30px
+      }
+      }
+    } 
+   }
+  
  
-}
-.s-ventajas
+    
+  .s-ventajas
   img
-    max-width 250px
-    width 100%
-.section-areas-0
+  max-width 250px
+  width 100%
+  .section-areas-0
   h3 
-    font-size 24px     
-.row
-  --bs-gutter-x 0px    
+  font-size 24px     
+  .row {
+      --bs-gutter-x 0px 
+  }
+  
+
+
+     

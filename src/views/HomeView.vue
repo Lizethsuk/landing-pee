@@ -2,7 +2,7 @@
   <div>
 
     <section style="border-bottom: none !important">
-      <b-container fluid class="bv-example-row hello">
+      <b-container fluid class="bv-example-row hello ">
         <b-row>
           <b-col>
             <HeadePage />
@@ -10,10 +10,13 @@
         </b-row>
  
         <b-row>
-          <b-col
+         <b-col cols="12 ps-0 pe-0">
+           <b-container class="ps-0 pe-0 container-home ">
+             <b-row>
+                <b-col
             cols="12"
             lg="6"
-            class="d-flex align-items-center justify-content-center flex-column"
+            class="d-flex  justify-content-end flex-column ps-5 pe-5"
           >
             <div class="home-banner">
               <div
@@ -26,7 +29,7 @@
               >
                 <h1>PEE ONLINE</h1>
                 <h2>
-                  PROGRAMA DE ESPECIALIZACIÓN <br />
+                  PROGRAMA DE ESPECIALIZACIÓN 
                   PARA EJECUTIVOS
                 </h2>
               </div>
@@ -43,14 +46,14 @@
                 <li>B2B</li>
               </ul>
               <div>
-                <b-container>
+                <b-container class="ps-0">
                   <b-row>
-                    <b-col cols="2">
-                      <div class="d-flex align-items-center">
+                    <b-col sm="2" cols="4">
+                      <div class="h-100 init">
                         <span>inicio</span>
                       </div>
                     </b-col>
-                    <b-col>
+                    <b-col sm="10" cols="8">
                       <div class="section-content2">
                   <div class="section-1">07</div>
                   <div class="section-2">
@@ -70,10 +73,14 @@
           <b-col
             cols="12"
             lg="6"
-            class="d-flex align-items-center justify-content-center"
+            class=" col-form"
+            
           >
             <FormHome />
           </b-col>
+             </b-row>
+           </b-container>
+         </b-col>
         </b-row>
       </b-container>
     </section>

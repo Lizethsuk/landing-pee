@@ -64,13 +64,15 @@ export default {
   background-color: bg-header;
 .line
   border-right: 1px solid white;
-  margin-top: 25px;
+  margin: auto;
   height 15px
 .item-nav
   padding-right 15px
   padding-left 15px
   padding-top 10px
   font-family Raleway-Regular
+  display flex
+  align-items center
 .button-nav
   padding 10px 25px 10px 25px
   background-color primary-pee
@@ -79,11 +81,26 @@ export default {
   font-size 18px
 .nav
   background-color bg-black !important
+  padding 30px 0px
 .router-link-active
   color #9F8F6C !important
 // .nav-item.nav-item.nav-item a {
 //   color: red !important;
 // }
+@media only screen and (max-width: 1700px)
+  .navbar-expand-md .navbar-collapse
+    padding-right 0px
+
+@media (min-width: 768px) and (max-width: 991px)
+  .navbar-brand
+    max-width 216px
+    width 100%
+  .navbar-expand-md .navbar-collapse
+    padding-right 0px
+  .button-nav
+    padding 10px 
+    font-size 15px
+    line-height 16px 
 
 
 @media only screen and (max-width: 767px) 
@@ -91,6 +108,9 @@ export default {
     display none
   .button-content
     text-align center
+  .navbar-brand
+    max-width 220px
+    width 100%  
 
 
 </style>
