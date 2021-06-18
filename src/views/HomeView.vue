@@ -99,13 +99,21 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-salud"  >
                   <router-link class="nav-link" to="/salud_page" 
-                    >Salud
+                    ><h2>Salud</h2>
                     
                 </router-link>
                 </div>
                 <div class="flip-card-back bg-back-salud">
                   <router-link to="/salud_page">
-                    Salud                   
+                  <div class="d-flex flex-column justify-content-between h-100">
+                    <div>
+                      <h2>Salud</h2>  
+                    <p>Especialízate en: Operaciones y logística, 
+                      tecnologías de Proyectos, gestión de
+                      procesos y gerencia de proyectos.</p> 
+                      </div>  
+                      <div class="text-end" ><strong>+</strong></div> 
+                  </div>               
                   </router-link>                 
                 </div>
               </div>
@@ -116,15 +124,23 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-energia">
                   <router-link class="nav-link" to="/energy_page"
-                    >Energia
+                    ><h2>Energia</h2>
                     
                 </router-link>
                 </div>
                 <div class="flip-card-back bg-back-energia">
                   <router-link  to="/energy_page"
-                    >   
-                   Energia
-                    
+                    > 
+                    <div class="d-flex flex-column justify-content-between h-100">
+                      <div>
+                        <h2>Energia</h2>  
+                    <p>Especialízate en: Operaciones y logística, 
+                      tecnologías de Proyectos, gestión de
+                      procesos y gerencia de proyectos.</p>  
+                      </div>
+                      <div class="text-end" ><strong>+</strong></div> 
+                      </div>  
+                  
                 </router-link>
                
                 </div>
@@ -137,14 +153,25 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-ti">
                    <router-link class="nav-link" to="/ti_page"
-                    >Tecnología de <br />
-                    la Información</router-link
+                    ><h2>Tecnología de <br />
+                    la Información</h2></router-link
                   >
                 </div>
                 <div class="flip-card-back bg-back-ti">
                   <router-link  to="/ti_page"
-                    >Tecnología de <br />
-                    la Información</router-link
+                    >
+                    <div class="d-flex flex-column justify-content-between h-100">
+                      <div>
+                        <h2>Tecnología de <br />
+                    la Información</h2>
+                    <p>Especialízate en: Operaciones y logística, 
+                      tecnologías de Proyectos, gestión de
+                      procesos y gerencia de proyectos.</p> 
+                      </div>
+                      <div class="text-end" ><strong>+</strong></div> 
+                    </div>
+                     
+                    </router-link
                   >
                 
                 </div>
@@ -156,12 +183,23 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-marketing">
                    <router-link class="nav-link" to="/marketing_page"
-                    >Marketing</router-link
+                    ><h2>Marketing</h2></router-link
                   >
                 </div>
                 <div class="flip-card-back bg-back-marketing">
                    <router-link  to="/marketing_page"
-                    >Marketing</router-link
+                    >
+                    <div class="d-flex flex-column justify-content-between h-100">
+                      <div>
+                        <h2>Marketing</h2>
+                    <p>Especialízate en: Operaciones y logística, 
+                      tecnologías de Proyectos, gestión de
+                      procesos y gerencia de proyectos.</p>  
+                      </div>
+                      <div class="text-end" ><strong>+</strong></div> 
+                    </div>
+                    
+                    </router-link
                   >
                 </div>
               </div>
@@ -172,12 +210,25 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-finanzas">
                   <router-link class="nav-link" to="/finanzas_page"
-                    >Finanzas</router-link
+                    ><h2>Finanzas</h2>
+                    
+                    </router-link
                   >
                 </div>
                 <div class="flip-card-back bg-back-finanzas">
                   <router-link  to="/finanzas_page"
-                    >Finanzas</router-link
+                    >
+                    <div class="d-flex flex-column justify-content-between h-100">
+                      <div>
+                        <h2>Finanzas</h2>
+                    <p>Especialízate en: Operaciones y logística, 
+                      tecnologías de Proyectos, gestión de
+                      procesos y gerencia de proyectos.</p> 
+                      </div>
+                      <div class="text-end" ><strong>+</strong></div> 
+                    </div>
+                     
+                    </router-link
                   >
                 </div>
               </div>
@@ -188,13 +239,25 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-b2b">
                        <router-link class="nav-link" to="/b2b_page"
-                    >Business to <br />
-                    Business
+                    ><h2>Business to <br />
+                    Business</h2>
                   </router-link>
                 </div>
                 <div class="flip-card-back bg-back-b2b">
                   <router-link  to="/b2b_page"
-                    >Finanzas</router-link
+                    >
+                    <div class="d-flex flex-column justify-content-between h-100">
+                      <div>
+                        <h2>Business to <br />
+                    Business</h2>
+                    <p>Especialízate en: Operaciones y logística, 
+                      tecnologías de Proyectos, gestión de
+                      procesos y gerencia de proyectos.</p>  
+                      </div>
+                      <div class="text-end" ><strong>+</strong></div> 
+                    </div>
+                    
+                    </router-link
                   >
                 </div>
               </div>
@@ -205,13 +268,25 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front ">
                    <router-link class="nav-link" to="/logistica_page"
-                    >Operaciones y <br />
-                    Logística de Proyectos</router-link
+                    ><h2>Operaciones y <br />
+                    Logística de Proyectos</h2></router-link
                   >
                 </div>
                 <div class="flip-card-back bg-back-logistica">
                  <router-link to="/logistica_page"
-                    >Finanzas</router-link
+                    >
+                    <div class="d-flex flex-column justify-content-between h-100">
+                      <div>
+                      <h2>Operaciones y <br />
+                    Logística de Proyectos</h2>
+                    <p>Especialízate en: Operaciones y logística, 
+                      tecnologías de Proyectos, gestión de
+                      procesos y gerencia de proyectos.</p> 
+                      </div> 
+                      <div class="text-end" ><strong>+</strong></div> 
+                      </div>  
+                    
+                    </router-link
                   >
                 </div>
               </div>
@@ -222,16 +297,27 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-administracion">
                   <router-link class="nav-link" to="/administracion_page"
-                    >Administración y <br />
+                    ><h2>Administración y <br />
                     Dirección de <br />
-                    la Información</router-link
+                    la Información</h2></router-link
                   >
                 </div>
                 <div class="flip-card-back bg-back-admi">
                 <router-link  to="/administracion_page"
-                    >Administración y <br />
+                    >
+                    <div class="d-flex flex-column justify-content-between h-100">
+                      <div>
+                      <h2>Administración y <br />
                     Dirección de <br />
-                    la Información</router-link
+                    la Información</h2>
+                    <p>Especialízate en: Operaciones y logística, 
+                      tecnologías de Proyectos, gestión de
+                      procesos y gerencia de proyectos.</p>  
+                    </div>
+                   <div class="text-end" ><strong>+</strong></div> 
+                    </div>
+                    
+                    </router-link
                   >
                 </div>
               </div>
@@ -242,12 +328,22 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-mineria">
                      <router-link class="nav-link" to="/mineria_page"
-                    >Mineria</router-link
+                    ><h2>Mineria</h2></router-link
                   >
                 </div>
                 <div class="flip-card-back bg-back-mineria">
                   <router-link  to="/mineria_page"
-                    >Mineria</router-link
+                    >
+                    <div class="d-flex flex-column justify-content-between h-100">
+                      <div>
+                      <h2>Mineria</h2>
+                    <p>Especialízate en: Operaciones y logística, 
+                      tecnologías de Proyectos, gestión de
+                      procesos y gerencia de proyectos.</p> 
+                    </div>
+                    <div class="text-end" ><strong>+</strong></div> 
+                      </div>  
+                    </router-link
                   >
                 </div>
               </div>

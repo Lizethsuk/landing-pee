@@ -18,14 +18,12 @@
   content url("../assets/home/iconos/rankings/sponsor/logo-1.png")
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
   perspective: 1000px;
   color: white;
   font-weight: bold;
   line-height: 23px;
   width: 100%;
-  height: 23.2vh;
+  height: 25.9vh;
   min-height 190px;
   border: 1px solid white;
   font-family gt-pressura-bold
@@ -58,10 +56,15 @@
 
 .flip-card-front {
   background-color:black;
-  color: black;
-  font-size 39.82px;
-  line-height 47.78px;
+  
+  
   padding-bottom 10px;
+    h2 {
+      color: white;
+      font-size 39.82px;
+      line-height 34.78px;
+      text-transform initial
+    };
     &.bg-salud{
      background-image: url('../assets/home/areas/salud/kv.jpg')!important;
     };
@@ -91,24 +94,54 @@
 
 .flip-card-back 
   background-color: bg-black;
-  color: white;
   transform: rotateY(180deg);
+  h2 
+    text-transform initial
+    font-size 39.82px
+    line-height 34.78px
+    margin-bottom 10px
+  p  
+    font-family Raleway-Regular
+    font-size 18px
+    line-height 19.6px
+    color white
+  strong  
+    color white
+    font-size 39.82px
+    line-height 37px
+    font-family arca-majora-3-heavy
   &.bg-back-salud
     background-color #50BDB7  
+    h2 
+     color light-salud
   &.bg-back-energia
     background-color #89898A
+    h2 
+     color light-energia
   &.bg-back-ti
     background-color #5D6F79
+    h2 
+     color light-ti
   &.bg-back-marketing
     background-color #09484F
+    h2 
+     color light-marketing
   &.bg-back-finanzas
-    background-color  #8395A1 
+    background-color  #8395A1
+    h2 
+     color light-finanzas
   &.bg-back-b2b
     background-color #476BA5
+    h2 
+     color light-b2b
   &.bg-back-logistica
     background-color  #80A0B5
+    h2 
+     color light-logistica
   &.bg-back-admi
     background-color #7D6247
+    h2 
+     color light-administracion
   // &.bg-back-mineria
   //   background-color color
   a
@@ -180,9 +213,9 @@ ul {
 }
 
 a {
-  color: white;
   width: 100%;
   height: 100%;
+  text-decoration none
 }
 
 h1 {
@@ -519,7 +552,17 @@ h4{
     }
 
 }
-@media only screen and (max-width: 1560px) {
+@media  (max-width: 1560px) {
+
+  .flip-card-back {
+    background-color: bg-black;
+    transform: rotateY(180deg);
+    h2 {
+      font-size: 31.82px;
+      line-height 28.78px
+      margin-bottom 8px
+      }  
+  } 
 
   h1 { 
   font-size: 54px;
@@ -534,8 +577,10 @@ h4{
   }
 
   .flip-card-front{
-    font-size 30px
+    h2 {
+      font-size 30px
     line-height 31px
+    }
   }
 
   .hello {
@@ -544,12 +589,15 @@ h4{
   }
 
   .section-2 {
-    width: 254px;
+    width: 237px;
     padding-right: 0px;
   }
 
   .section-1 {
-    margin-right: 252px;
+    margin-right: 215px;
+    font-size 162px
+    margin-top -110px
+    margin-left 20px
   }
 }
 
