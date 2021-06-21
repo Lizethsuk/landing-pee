@@ -79,6 +79,9 @@ export default {
       ],
     };
   },
+  beforeCreate() {
+    window.scrollTo(0, 0);
+  }
 }
 </script>
 

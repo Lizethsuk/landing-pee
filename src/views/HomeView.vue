@@ -638,6 +638,7 @@ export default {
     FooterPage,
     HeadePage,
   },
+  
 };
 </script>
 

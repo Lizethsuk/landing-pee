@@ -80,6 +80,9 @@ export default {
     CursoList,
     PasosPages,
   },
+  beforeCreate() {
+    window.scrollTo(0, 0);
+  },
   data() {
     return {
       myJson: json,
