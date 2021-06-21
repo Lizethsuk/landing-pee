@@ -170,7 +170,8 @@ export default {
   padding: 15px 0px 18px;
   font-weight: 500;
   margin-bottom 0px
-
+.col-md-1
+    width 4.33%!important  
 +for_breakpoint(desktop-lap)
   .section-1
     width 50px
@@ -192,12 +193,16 @@ export default {
     line-height 57px
   .button-nav
     font-size 24.82px 
-    width 225px 
+    max-width 273px
+    width 100%
+    height 65px 
   .subtitle
     font-size 30.82px
     line-height 27px  
- 
-@media only screen and (max-width: 767px) 
++for_breakpoint(md) 
+  .col-md-1
+    width 2.33%!important  
+@media  (max-width: 767px) 
   .text-date-responsive
     display block
   .text-date-desktop
@@ -212,6 +217,9 @@ export default {
     display none
   .second-title
     padding-left 5px
++for_breakpoint(xs)     
+  .subtitle 
+    font-size: 25.65px;
   
 
 </style>

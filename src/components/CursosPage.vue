@@ -76,6 +76,9 @@ section {
   .section-areas 
     padding: 50px 25px;
     margin 0
+  .title-text-curso
+    line-height 30px 
+    font-size 28px
 
 
 </style>

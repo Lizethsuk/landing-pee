@@ -146,8 +146,8 @@ export default {
     width auto
   } 
   .title {
-  font-size: 27px;
-  line-height 36px
+  font-size: 40px;
+  line-height 40px
   width: auto
   } 
   .image {
@@ -158,7 +158,14 @@ export default {
   position: relative;
   height 134px;
 
-}
+ }
++for_breakpoint(xs) 
+  .title {
+  font-size: 33px;
+  line-height 35px
+  width: auto
+  } 
+
   
   
 

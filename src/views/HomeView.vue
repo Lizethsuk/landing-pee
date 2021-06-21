@@ -554,7 +554,7 @@
                 <b-col md="3" class="text-center">
                   <img  class="rk-1" alt="" >
                 </b-col>
-                <b-col md="6" class="text-center" >
+                <b-col md="6"  class="text-center" >
                   <img class="rk-2"  alt="" >
                 </b-col>
                 <b-col md="3" class="text-center">
@@ -563,8 +563,12 @@
               </b-row>
             </b-container>
              </b-col>
-          <b-col cols="12" lg="2">
-            <img  class="logo-1" alt="">
+          <b-col cols="12" lg="2"  class="d-flex align-items-center justify-content-center">
+            <div>
+              <p class="text-center ">Pertenecientes a la red:</p>
+            <b-img center  class="logo-1" alt=""></b-img>
+            </div>
+           
           </b-col>
         </b-row>
       </b-container>

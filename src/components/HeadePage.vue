@@ -71,8 +71,6 @@ export default {
   padding-left 15px
   padding-top 10px
   font-family Raleway-Regular
-  display flex
-  align-items center
 .button-nav
   padding 10px 25px 10px 25px
   background-color primary-pee
@@ -98,9 +96,10 @@ export default {
   .navbar-expand-md .navbar-collapse
     padding-right 0px
   .button-nav
-    padding 10px 
+    padding 10px 7px 
     font-size 15px
     line-height 16px 
+    letter-spacing -0.04em
 
 
 @media (max-width: 767px) 
