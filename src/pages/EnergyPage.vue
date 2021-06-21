@@ -83,6 +83,9 @@ export default {
     console.log(this.myJson)
    
   },
+  beforeCreate() {
+    window.scrollTo(0, 0);
+  }
   // created() {
   //   fetch("../data/energy.json")
   //   .then(response => response.json())
