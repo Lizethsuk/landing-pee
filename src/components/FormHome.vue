@@ -150,7 +150,7 @@
   border-radius 0px
   color bg-form
   font-weight bold 
-  font-size 40px
+  font-size 30px
 .form-g
   padding-top 40px 
  

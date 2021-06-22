@@ -1,12 +1,12 @@
 <template>
   <div>
     <HeadePage />
-    <ImagePage bgColorDivider="#C3B36D" message="Solicita Informacion" />
+    <ImagePage bgColorDivider="#C3B36D" message="Solicita Información" />
       
     <b-container class="pasos-areas">
       <b-row>
         <b-col>
-          <p class="subtitle-text">Solicita mas Informacion</p>
+          <p class="subtitle-text">Solicita mas Información</p>
           <b-form @submit="onSubmit" @reset="onReset" v-if="show">
             <b-form-group
               class="form-content"
@@ -189,7 +189,7 @@
               </b-form-checkbox-group>
             </b-form-group>
             <p class="subtitle-text">
-              ¿Como te enteraste de que dictamos este programa?
+              ¿Cómo te enteraste de que dictamos este programa?
             </p>
             <b-form-group
               class="form-content"

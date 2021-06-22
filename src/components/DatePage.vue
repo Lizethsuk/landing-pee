@@ -116,7 +116,7 @@ export default {
   position absolute
   z-index 2
   width 50px
-  font-size 130px
+  font-size 120px
   margin-right 310px
   margin-top -67px
   font-weight: bold
@@ -158,9 +158,9 @@ export default {
   font-size: 40px;
 
 .button-nav
-  width: 386px;
+  width: 316px;
   height: 71px;
-  font-size: 39.82px;
+  font-size: 29.82px;
   font-weight: bold;
   line-height 37px
   

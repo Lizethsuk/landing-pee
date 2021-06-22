@@ -34,7 +34,7 @@
                 </h2>
               </div>
               <hr class="line" />
-              <h4>Conoce nuestras 8 áreas</h4>
+              <h4>Conoce nuestras 9 áreas</h4>
               <ul class="list-title">
                 <li>Administración y Dirección de Personas</li>
                 <li>Finanzas</li>
@@ -44,6 +44,7 @@
                 <li>Salud</li>
                 <li>Energía</li>
                 <li>B2B</li>
+                <li>Minería</li>
               </ul>
               <div>
                 <b-container class="ps-0 pe-0">
@@ -124,7 +125,7 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-energia">
                   <router-link class="nav-link" to="/energy_page"
-                    ><h2>Energia</h2>
+                    ><h2>Energía</h2>
                     
                 </router-link>
                 </div>
@@ -133,7 +134,7 @@
                     > 
                     <div class="d-flex flex-column justify-content-between h-100">
                       <div>
-                        <h2>Energia</h2>  
+                        <h2>Energía</h2>  
                     <p>Especialízate en: Operaciones y logística, 
                       tecnologías de Proyectos, gestión de
                       procesos y gerencia de proyectos.</p>  
@@ -299,7 +300,7 @@
                   <router-link class="nav-link" to="/administracion_page"
                     ><h2>Administración y <br />
                     Dirección de <br />
-                    la Información</h2></router-link
+                    Personas</h2></router-link
                   >
                 </div>
                 <div class="flip-card-back bg-back-admi">
@@ -308,8 +309,8 @@
                     <div class="d-flex flex-column justify-content-between h-100">
                       <div>
                       <h2>Administración y <br />
-                    Dirección de <br />
-                    la Información</h2>
+                    Dirección de 
+                    Personas</h2>
                     <p>Especialízate en: Operaciones y logística, 
                       tecnologías de Proyectos, gestión de
                       procesos y gerencia de proyectos.</p>  
@@ -328,7 +329,7 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-mineria">
                      <router-link class="nav-link" to="/mineria_page"
-                    ><h2>Mineria</h2></router-link
+                    ><h2>Minería</h2></router-link
                   >
                 </div>
                 <div class="flip-card-back bg-back-mineria">
@@ -336,7 +337,7 @@
                     >
                     <div class="d-flex flex-column justify-content-between h-100">
                       <div>
-                      <h2>Mineria</h2>
+                      <h2>Minería</h2>
                     <p>Especialízate en: Operaciones y logística, 
                       tecnologías de Proyectos, gestión de
                       procesos y gerencia de proyectos.</p> 

@@ -145,7 +145,7 @@ export default {
 .text-second-column
   padding-top 15px
 .text-columns
-  padding-right 25px
+  padding-right 50px
 .subtitle-text-three
   font-size 15px
   font-family Raleway-Bold
@@ -161,6 +161,8 @@ export default {
   color bg-black
   font-size 30px
   font-family gt-pressura-bold
+  text-align left
+  line-height 33px
 .subtitle-text
   color bg-black
   font-size 20px
