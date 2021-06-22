@@ -110,7 +110,7 @@
       </b-container>
     </div>
 
-    <PasosPages
+    <PasosPages2
       colorIcon="white"
       lineColor="#C1B170"
       bgColor="black"
@@ -127,7 +127,7 @@
 import HeadePage from "../../components/HeadePage";
 import FooterPage from "../../components/FooterPage";
 import ImagePage from "../../components/ImagePage.vue";
-import PasosPages from "../../components/PasosPages.vue";
+import PasosPages2 from "../../components/PasosPages2.vue";
 
 export default {
   name: "AdmisionPage",
@@ -135,7 +135,7 @@ export default {
     HeadePage,
     FooterPage,
     ImagePage,
-    PasosPages,
+    PasosPages2,
   },
 };
 </script>
