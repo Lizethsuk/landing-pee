@@ -1,5 +1,5 @@
 {
-  "title":"energia",
+  "title":"energía",
   "text-con":"Conferencia Informativa",
   "bgColorDividerDate":"#BFAF9D" ,
   "bgColorButtonDate":"#FFD074",
@@ -17,13 +17,13 @@
   "titleCurso":"Cursos del Certificado de Especializacion en Gestion de la Energia",
   "cursos":[
     {
-      "section": "Energia",
+      "section": "Energía",
       "curso": "Economia del negocio del petroleo y gas",
       "teacher": "Luis Gonzales Talledo",
       "horario": "Miercoles de 7:30 a 10:45 pm"
     },
     {
-      "section": "Energia",
+      "section": "Energía",
       "curso": "Sistemas de generación eléctrica con energía renovable",
       "teacher": "José Estela Ramírez | Arnoldus Van Den Hurk",
       "horario": "Sábado de 9:00 a.m. a 12:15 p.m."

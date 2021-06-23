@@ -40,7 +40,7 @@
           <b-col lg="3" cols="12">
             <div class="text-center ">
             <Admision :color="colorIcon"/>
-            <p class="subtitle">Admision</p>
+            <p class="subtitle">Admisión</p>
             <p class="description-text">Postula</p>
             </div>
           </b-col>

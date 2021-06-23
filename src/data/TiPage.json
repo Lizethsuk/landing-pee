@@ -14,40 +14,40 @@
   "dateText":"Conferencia",
   "dateTextSecond" : "Informativa",
   "buttonText":"Inscríbete aquí",
-  "titleCurso":"Cursos del Certificado Tecnologia de la informacion",
+  "titleCurso":"Cursos del Certificado Tecnologia de la información",
   "cursos":[
     {
-      "section": "Tecnologia de la informacion",
+      "section": "Tecnología de la información",
       "curso": "Agile management: aplicando scrum en equipos y otros métodos de agilidad organizacional",
       "teacher": "Arturo Valencia Castro",
       "horario": "Miércoles de 7:30 a 10:45 p. m."
     },
     {
-      "section": "Tecnologia de la informacion",
+      "section": "Tecnología de la información",
       "curso": "Data Science: La ciencia de los datos",
       "teacher": "Fernando Casafranca",
       "horario": "Lunes de 7:30 a 10:45 p.m."
     },
     {
-      "section": "Tecnologia de la informacion",
+      "section": "Tecnología de la información",
       "curso": "Design thinking para la innovación",
       "teacher": "Fabián Bueno Méndez",
       "horario": "Miércoles de 7:30 a 10:45 p. m."
     },
     {
-      "section": "Tecnologia de la informacion",
+      "section": "Tecnología de la información",
       "curso": "Fundamentos de Cobit 2019 - Marco deGobierno de las TI para la Transformación Digital",
       "teacher": "Guillermo Yrigoyen Quintanilla",
       "horario": "Jueves de 7:30 a 10:45 p.m."
     },
     {
-      "section": "Tecnologia de la informacion",
+      "section": "Tecnología de la información",
       "curso": "Gerencia Efectiva de las Tecnologías de Información",
       "teacher": "Eddie Morris Abarca",
       "horario": "Miércoles de 7:30 p. m. a 10:45 p. m."
     },
     {
-      "section": "Tecnologia de la informacion",
+      "section": "Tecnología de la información",
       "curso": "Inteligencia de Negocios (Business Intelligence)",
       "teacher": "Richard Moarri Nohra",
       "horario": "Martes de 7:30 p. m. a 10:45 p. m."
