@@ -89,7 +89,7 @@ export default {
 
  @import "../styles/main.styl"
 .jumbotron
-  background-image url('../assets/areas/b2b/banner/kv.jpg')
+  background-image url('../assets/areas/b2b/banner/kv_008.jpg')
 
 .fecha {
   font-size: 20px;
