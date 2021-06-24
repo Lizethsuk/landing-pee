@@ -162,16 +162,25 @@ const router = new VueRouter ({
     console.log(savedPosition)
     if (savedPosition) {
       return savedPosition
-    } else if (to.hash){
+    } else if (to.hash == "#experience3"){
        return{
-         selector:to.hash
+        x:10 , y:10
        }
-    }
-    else{
+    }else if (to.hash == "#experience1"){
       return{
-        x:0 , y:0
+       x:100 , y:100
       }
+   }
+   else if (to.hash == "#experience2"){
+    return{
+     x:50 , y:50
     }
+ }
+    // else{
+    //   return{
+    //     x:10 , y:10
+    //   }
+    // }
   }
   
 })

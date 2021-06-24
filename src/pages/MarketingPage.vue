@@ -1,6 +1,6 @@
 <template>
   <div >
-    <div id="experience">
+    <div >
      <HeadePage />
       <ImagePage :message="myJson.title" />
       <DatePage :bgColorButton="myJson.bgColorButtonDate" :bgColorDivider="myJson.bgColorDividerDate"  
