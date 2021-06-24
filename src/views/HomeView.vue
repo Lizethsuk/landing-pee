@@ -94,18 +94,26 @@
             </h3>
           </b-col>
         </b-row>
-        <b-row class="d-flex justify-content-center">
+        <b-row class="d-flex justify-content-center" id="experiences">
           <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0"  >
-            <div class="flip-card"  >
+            <div class="flip-card" id="experience"  >
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-salud"  >
-                  <router-link class="nav-link" to="/salud_page" 
+                  <router-link class="nav-link" :to="{
+                    name: '/salud_page',
+                    params: { experienceSlug: experience.slug},
+                    hash: '#experience'
+                  }" 
                     ><h2>Salud</h2>
                     
                 </router-link>
                 </div>
                 <div class="flip-card-back bg-back-salud">
-                  <router-link to="/salud_page">
+                  <router-link  :to="{
+                    name: '/salud_page',
+                    params: { experienceSlug: experience.slug},
+                    hash: '#experience'
+                  }" >
                   <div class="d-flex flex-column justify-content-between h-100">
                     <div>
                       <h2>Salud</h2>  
@@ -121,16 +129,24 @@
             </div>
           </b-col>
           <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
-            <div class="flip-card">
+            <div class="flip-card" id="experience">
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-energia">
-                  <router-link class="nav-link" to="/energy_page"
+                  <router-link class="nav-link"  :to="{
+                    name: '/energy_page',
+                    params: { experienceSlug: experience.slug},
+                    hash: '#experience'
+                  }" 
                     ><h2>Energía</h2>
                     
                 </router-link>
                 </div>
                 <div class="flip-card-back bg-back-energia">
-                  <router-link  to="/energy_page"
+                  <router-link   :to="{
+                    name: '/energy_page',
+                    params: { experienceSlug: experience.slug},
+                    hash: '#experience'
+                  }"
                     > 
                     <div class="d-flex flex-column justify-content-between h-100">
                       <div>
@@ -150,16 +166,24 @@
      
           </b-col>
           <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
-            <div class="flip-card">
+            <div class="flip-card" id="experience">
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-ti">
-                   <router-link class="nav-link" to="/ti_page"
+                   <router-link class="nav-link" :to="{
+                    name: '/ti_page',
+                    params: { experienceSlug: experience.slug},
+                    hash: '#experience'
+                  }"
                     ><h2>Tecnología de <br />
                     la Información</h2></router-link
                   >
                 </div>
                 <div class="flip-card-back bg-back-ti">
-                  <router-link  to="/ti_page"
+                  <router-link  :to="{
+                    name: '/ti_page',
+                    params: { experienceSlug: experience.slug},
+                    hash: '#experience'
+                  }"
                     >
                     <div class="d-flex flex-column justify-content-between h-100">
                       <div>
@@ -180,15 +204,23 @@
             </div>
           </b-col>
           <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
-            <div class="flip-card">
+            <div class="flip-card" id="experience">
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-marketing">
-                   <router-link class="nav-link" to="/marketing_page"
+                   <router-link class="nav-link" :to="{
+                    name: '/marketing_page',
+                    params: { experienceSlug: experience.slug},
+                    hash: '#experience'
+                  }"
                     ><h2>Marketing</h2></router-link
                   >
                 </div>
                 <div class="flip-card-back bg-back-marketing">
-                   <router-link  to="/marketing_page"
+                   <router-link  :to="{
+                    name: '/marketing_page',
+                    params: { experienceSlug: experience.slug},
+                    hash: '#experience'
+                  }"
                     >
                     <div class="d-flex flex-column justify-content-between h-100">
                       <div>
@@ -207,17 +239,25 @@
             </div>
           </b-col>
           <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
-            <div class="flip-card">
+            <div class="flip-card" id="experience">
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-finanzas">
-                  <router-link class="nav-link" to="/finanzas_page"
+                  <router-link class="nav-link" :to="{
+                    name: '/finanzas_page',
+                    params: { experienceSlug: experience.slug},
+                    hash: '#experience'
+                  }"
                     ><h2>Finanzas</h2>
                     
                     </router-link
                   >
                 </div>
                 <div class="flip-card-back bg-back-finanzas">
-                  <router-link  to="/finanzas_page"
+                  <router-link  :to="{
+                    name: '/finanzas_page',
+                    params: { experienceSlug: experience.slug},
+                    hash: '#experience'
+                  }"
                     >
                     <div class="d-flex flex-column justify-content-between h-100">
                       <div>
@@ -236,16 +276,24 @@
             </div>
           </b-col>
           <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
-            <div class="flip-card">
+            <div class="flip-card" id="experience">
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-b2b">
-                       <router-link class="nav-link" to="/b2b_page"
+                       <router-link class="nav-link" :to="{
+                    name: '/b2b_page',
+                    params: { experienceSlug: experience.slug},
+                    hash: '#experience'
+                  }"
                     ><h2>Business to <br />
                     Business</h2>
                   </router-link>
                 </div>
                 <div class="flip-card-back bg-back-b2b">
-                  <router-link  to="/b2b_page"
+                  <router-link  :to="{
+                    name: '/b2b_page',
+                    params: { experienceSlug: experience.slug},
+                    hash: '#experience'
+                  }"
                     >
                     <div class="d-flex flex-column justify-content-between h-100">
                       <div>
@@ -265,16 +313,24 @@
             </div>
           </b-col>
           <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
-            <div class="flip-card">
+            <div class="flip-card" id="experience">
               <div class="flip-card-inner">
                 <div class="flip-card-front ">
-                   <router-link class="nav-link" to="/logistica_page"
+                   <router-link class="nav-link" :to="{
+                    name: '/logistica_page',
+                    params: { experienceSlug: experience.slug},
+                    hash: '#experience'
+                  }"
                     ><h2>Operaciones y <br />
                     Logística de Proyectos</h2></router-link
                   >
                 </div>
                 <div class="flip-card-back bg-back-logistica">
-                 <router-link to="/logistica_page"
+                 <router-link :to="{
+                    name: '/logistica_page',
+                    params: { experienceSlug: experience.slug},
+                    hash: '#experience'
+                  }"
                     >
                     <div class="d-flex flex-column justify-content-between h-100">
                       <div>
@@ -294,17 +350,25 @@
             </div>
           </b-col>
           <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
-            <div class="flip-card">
+            <div class="flip-card" id="experience">
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-administracion">
-                  <router-link class="nav-link" to="/administracion_page"
+                  <router-link class="nav-link" :to="{
+                    name: '/administracion_page',
+                    params: { experienceSlug: experience.slug},
+                    hash: '#experience'
+                  }"
                     ><h2>Administración y <br />
                     Dirección de <br />
                     Personas</h2></router-link
                   >
                 </div>
                 <div class="flip-card-back bg-back-admi">
-                <router-link  to="/administracion_page"
+                <router-link  :to="{
+                    name: '/administracion_page',
+                    params: { experienceSlug: experience.slug},
+                    hash: '#experience'
+                  }"
                     >
                     <div class="d-flex flex-column justify-content-between h-100">
                       <div>
@@ -325,15 +389,23 @@
             </div>
           </b-col>
           <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
-            <div class="flip-card">
+            <div class="flip-card" id="experience">
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-mineria">
-                     <router-link class="nav-link" to="/mineria_page"
+                     <router-link class="nav-link" :to="{
+                    name: '/mineria_page',
+                    params: { experienceSlug: experience.slug},
+                    hash: '#experience'
+                  }"
                     ><h2>Minería</h2></router-link
                   >
                 </div>
                 <div class="flip-card-back bg-back-mineria">
-                  <router-link  to="/mineria_page"
+                  <router-link  :to="{
+                    name: '/mineria_page',
+                    params: { experienceSlug: experience.slug},
+                    hash: '#experience'
+                  }"
                     >
                     <div class="d-flex flex-column justify-content-between h-100">
                       <div>
@@ -603,6 +675,7 @@
                         <b-row class="pb-3">
                           <b-col cols="2 ps-2"><img src="../assets/home/iconos/info/mail.png" alt=""></b-col>
                           <b-col cols="10"><h5>informes@esan.edu.pe</h5></b-col>
+                         
                         </b-row>
                         <b-row>
                           <b-col cols="2 ps-2"><img src="../assets/home/iconos/info/tel.png" alt=""></b-col>
