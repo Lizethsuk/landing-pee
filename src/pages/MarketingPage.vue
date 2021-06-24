@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div>
+  <div >
+    <div id="experience">
      <HeadePage />
       <ImagePage :message="myJson.title" />
       <DatePage :bgColorButton="myJson.bgColorButtonDate" :bgColorDivider="myJson.bgColorDividerDate"  
@@ -80,9 +80,9 @@ export default {
     CursoList,
     PasosPages,
   },
-  beforeCreate() {
-    window.scrollTo(0, 0);
-  },
+  // beforeCreate() {
+  //   window.scrollTo(0, 0);
+  // },
   data() {
     return {
       myJson: json,
@@ -119,7 +119,7 @@ hr
   height: 5px;
   opacity 1 !important
 .jumbotron
-  background-image url('../assets/areas/marketing/banner/kv.jpg')
+  background-image url('../assets/areas/marketing/banner/kv_004.jpg')
 
 .fecha {
   font-size: 20px;

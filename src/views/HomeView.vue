@@ -1,17 +1,17 @@
 <template>
-  <div>
+  <div >
 
-    <section style="border-bottom: none !important">
+    <section id="experience" style="border-bottom: none !important">
       <b-container fluid class="bv-example-row hello ">
         <b-row>
-          <b-col>
+          <b-col >
             <HeadePage />
           </b-col>
         </b-row>
  
         <b-row>
          <b-col cols="12 ps-0 pe-0">
-           <b-container class="ps-0 pe-0 container-home ">
+           <b-container  class="ps-0 pe-0 container-home ">
              <b-row>
                 <b-col
             cols="12"
@@ -94,14 +94,13 @@
             </h3>
           </b-col>
         </b-row>
-        <b-row class="d-flex justify-content-center" id="experiences">
+        <b-row class="d-flex justify-content-center" >
           <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0"  >
             <div class="flip-card" id="experience"  >
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-salud"  >
                   <router-link class="nav-link" :to="{
-                    name: '/salud_page',
-                    params: { experienceSlug: experience.slug},
+                    name: 'salud_page',
                     hash: '#experience'
                   }" 
                     ><h2>Salud</h2>
@@ -110,8 +109,7 @@
                 </div>
                 <div class="flip-card-back bg-back-salud">
                   <router-link  :to="{
-                    name: '/salud_page',
-                    params: { experienceSlug: experience.slug},
+                    name: 'salud_page',
                     hash: '#experience'
                   }" >
                   <div class="d-flex flex-column justify-content-between h-100">
@@ -133,8 +131,7 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-energia">
                   <router-link class="nav-link"  :to="{
-                    name: '/energy_page',
-                    params: { experienceSlug: experience.slug},
+                    name: 'energy_page',
                     hash: '#experience'
                   }" 
                     ><h2>Energía</h2>
@@ -143,8 +140,7 @@
                 </div>
                 <div class="flip-card-back bg-back-energia">
                   <router-link   :to="{
-                    name: '/energy_page',
-                    params: { experienceSlug: experience.slug},
+                    name: 'energy_page',
                     hash: '#experience'
                   }"
                     > 
@@ -170,8 +166,7 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-ti">
                    <router-link class="nav-link" :to="{
-                    name: '/ti_page',
-                    params: { experienceSlug: experience.slug},
+                    name: 'ti_page',
                     hash: '#experience'
                   }"
                     ><h2>Tecnología de <br />
@@ -180,8 +175,7 @@
                 </div>
                 <div class="flip-card-back bg-back-ti">
                   <router-link  :to="{
-                    name: '/ti_page',
-                    params: { experienceSlug: experience.slug},
+                    name: 'ti_page',
                     hash: '#experience'
                   }"
                     >
@@ -204,24 +198,21 @@
             </div>
           </b-col>
           <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
-            <div class="flip-card" id="experience">
+            <div class="flip-card" >
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-marketing">
-                   <router-link class="nav-link" :to="{
-                    name: '/marketing_page',
-                    params: { experienceSlug: experience.slug},
-                    hash: '#experience'
-                  }"
-                    ><h2>Marketing</h2></router-link
-                  >
+                   
+                    <h2>Marketing</h2>
+                  
                 </div>
                 <div class="flip-card-back bg-back-marketing">
-                   <router-link  :to="{
-                    name: '/marketing_page',
-                    params: { experienceSlug: experience.slug},
+                  <router-link  :to="{
+                    name: 'marketing_page',
                     hash: '#experience'
-                  }"
+                  }" 
                     >
+                   <!-- <router-link  to='/marketing_page'
+                    > -->
                     <div class="d-flex flex-column justify-content-between h-100">
                       <div>
                         <h2>Marketing</h2>
@@ -243,8 +234,7 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-finanzas">
                   <router-link class="nav-link" :to="{
-                    name: '/finanzas_page',
-                    params: { experienceSlug: experience.slug},
+                    name: 'finanzas_page',
                     hash: '#experience'
                   }"
                     ><h2>Finanzas</h2>
@@ -254,8 +244,7 @@
                 </div>
                 <div class="flip-card-back bg-back-finanzas">
                   <router-link  :to="{
-                    name: '/finanzas_page',
-                    params: { experienceSlug: experience.slug},
+                    name: 'finanzas_page',
                     hash: '#experience'
                   }"
                     >
@@ -280,8 +269,7 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-b2b">
                        <router-link class="nav-link" :to="{
-                    name: '/b2b_page',
-                    params: { experienceSlug: experience.slug},
+                    name: 'b2b_page',
                     hash: '#experience'
                   }"
                     ><h2>Business to <br />
@@ -290,8 +278,7 @@
                 </div>
                 <div class="flip-card-back bg-back-b2b">
                   <router-link  :to="{
-                    name: '/b2b_page',
-                    params: { experienceSlug: experience.slug},
+                    name: 'b2b_page',
                     hash: '#experience'
                   }"
                     >
@@ -317,8 +304,7 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front ">
                    <router-link class="nav-link" :to="{
-                    name: '/logistica_page',
-                    params: { experienceSlug: experience.slug},
+                    name: 'logistica_page',
                     hash: '#experience'
                   }"
                     ><h2>Operaciones y <br />
@@ -327,8 +313,7 @@
                 </div>
                 <div class="flip-card-back bg-back-logistica">
                  <router-link :to="{
-                    name: '/logistica_page',
-                    params: { experienceSlug: experience.slug},
+                    name: 'logistica_page',
                     hash: '#experience'
                   }"
                     >
@@ -354,8 +339,7 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-administracion">
                   <router-link class="nav-link" :to="{
-                    name: '/administracion_page',
-                    params: { experienceSlug: experience.slug},
+                    name: 'administracion_page',
                     hash: '#experience'
                   }"
                     ><h2>Administración y <br />
@@ -365,8 +349,7 @@
                 </div>
                 <div class="flip-card-back bg-back-admi">
                 <router-link  :to="{
-                    name: '/administracion_page',
-                    params: { experienceSlug: experience.slug},
+                    name: 'administracion_page',
                     hash: '#experience'
                   }"
                     >
@@ -393,8 +376,7 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-mineria">
                      <router-link class="nav-link" :to="{
-                    name: '/mineria_page',
-                    params: { experienceSlug: experience.slug},
+                    name: 'mineria_page',
                     hash: '#experience'
                   }"
                     ><h2>Minería</h2></router-link
@@ -402,8 +384,7 @@
                 </div>
                 <div class="flip-card-back bg-back-mineria">
                   <router-link  :to="{
-                    name: '/mineria_page',
-                    params: { experienceSlug: experience.slug},
+                    name: 'mineria_page',
                     hash: '#experience'
                   }"
                     >
@@ -719,5 +700,4 @@ export default {
 
 <style lang="stylus" scoped>
 @import '../styles/home.styl';
-
 </style>
