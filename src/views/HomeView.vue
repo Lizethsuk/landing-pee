@@ -101,7 +101,7 @@
                 <div class="flip-card-front bg-salud"  >
                   <router-link class="nav-link" :to="{
                     name: 'salud_page',
-                    hash: '#experience1'
+                    hash: '#experience'
                   }" 
                     ><h2>Salud</h2>
                     
@@ -110,7 +110,7 @@
                 <div class="flip-card-back bg-back-salud">
                   <router-link  :to="{
                     name: 'salud_page',
-                    hash: '#experience1'
+                    hash: '#experience'
                   }" >
                   <div class="d-flex flex-column justify-content-between h-100">
                     <div>
@@ -132,7 +132,7 @@
                 <div class="flip-card-front bg-energia">
                   <router-link class="nav-link"  :to="{
                     name: 'energy_page',
-                    hash: '#experience1'
+                    hash: '#experience'
                   }" 
                     ><h2>Energía</h2>
                     
@@ -141,7 +141,7 @@
                 <div class="flip-card-back bg-back-energia">
                   <router-link   :to="{
                     name: 'energy_page',
-                    hash: '#experience1'
+                    hash: '#experience'
                   }"
                     > 
                     <div class="d-flex flex-column justify-content-between h-100">
@@ -167,7 +167,7 @@
                 <div class="flip-card-front bg-ti">
                    <router-link class="nav-link" :to="{
                     name: 'ti_page',
-                    hash: '#experience1'
+                    hash: '#experience'
                   }"
                     ><h2>Tecnologías de <br />
                     la Información </h2></router-link
@@ -176,7 +176,7 @@
                 <div class="flip-card-back bg-back-ti">
                   <router-link  :to="{
                     name: 'ti_page',
-                    hash: '#experience1'
+                    hash: '#experience'
                   }"
                     >
                     <div class="d-flex flex-column justify-content-between h-100">
@@ -203,7 +203,7 @@
                 <div class="flip-card-front bg-marketing">
                       <router-link class="nav-link" :to="{
                     name: 'marketing_page',
-                    hash: '#experience2'
+                    hash: '#experience'
                   }"
                     ><h2>Marketing</h2></router-link
                   >
@@ -213,7 +213,7 @@
                 <div class="flip-card-back bg-back-marketing">
                   <router-link  :to="{
                     name: 'marketing_page',
-                    hash: '#experience2'
+                    hash: '#experience'
                   }" 
                     >
                    <!-- <router-link  to='/marketing_page'
@@ -240,7 +240,7 @@
                 <div class="flip-card-front bg-finanzas">
                   <router-link class="nav-link" :to="{
                     name: 'finanzas_page',
-                    hash: '#experience2'
+                    hash: '#experience'
                   }"
                     ><h2>Finanzas</h2>
                     
@@ -250,7 +250,7 @@
                 <div class="flip-card-back bg-back-finanzas">
                   <router-link  :to="{
                     name: 'finanzas_page',
-                    hash: '#experience2'
+                    hash: '#experience'
                   }"
                     >
                     <div class="d-flex flex-column justify-content-between h-100">
@@ -275,7 +275,7 @@
                 <div class="flip-card-front bg-b2b">
                        <router-link class="nav-link" :to="{
                     name: 'b2b_page',
-                    hash: '#experience2'
+                    hash: '#experience'
                   }"
                     ><h2>Business to <br />
                     Business</h2>
@@ -284,7 +284,7 @@
                 <div class="flip-card-back bg-back-b2b">
                   <router-link  :to="{
                     name: 'b2b_page',
-                    hash: '#experience2'
+                    hash: '#experience'
                   }"
                     >
                     <div class="d-flex flex-column justify-content-between h-100">
@@ -310,7 +310,7 @@
                 <div class="flip-card-front ">
                    <router-link class="nav-link" :to="{
                     name: 'logistica_page',
-                    hash: '#experience3'
+                    hash: '#experience'
                   }"
                     ><h2>Operaciones y <br />
                     Logística de Proyectos</h2></router-link
@@ -319,7 +319,7 @@
                 <div class="flip-card-back bg-back-logistica">
                  <router-link :to="{
                     name: 'logistica_page',
-                    hash: '#experience3'
+                    hash: '#experience'
                   }"
                     >
                     <div class="d-flex flex-column justify-content-between h-100">
@@ -345,7 +345,7 @@
                 <div class="flip-card-front bg-administracion">
                   <router-link class="nav-link" :to="{
                     name: 'administracion_page',
-                    hash: '#experience3'
+                    hash: '#experience'
                   }"
                     ><h2>Administración y <br />
                     Dirección de <br />
@@ -355,7 +355,7 @@
                 <div class="flip-card-back bg-back-admi">
                 <router-link  :to="{
                     name: 'administracion_page',
-                    hash: '#experience3'
+                    hash: '#experience'
                   }"
                     >
                     <div class="d-flex flex-column justify-content-between h-100">
@@ -382,7 +382,7 @@
                 <div class="flip-card-front bg-mineria">
                      <router-link class="nav-link" :to="{
                     name: 'mineria_page',
-                    hash: '#experience3'
+                    hash: '#experience'
                   }"
                     ><h2>Minería</h2></router-link
                   >
@@ -390,7 +390,7 @@
                 <div class="flip-card-back bg-back-mineria">
                   <router-link  :to="{
                     name: 'mineria_page',
-                    hash: '#experience3'
+                    hash: '#experience'
                   }"
                     >
                     <div class="d-flex flex-column justify-content-between h-100">
