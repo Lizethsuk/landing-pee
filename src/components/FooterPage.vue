@@ -15,14 +15,14 @@
                 <span class="icon"><img src="../assets/components/footer/rs/twitter.png" alt=""></span>
               </div>
               <p class="web"> www.esan.edu.pe  </p>
-              <p class="text-uni">&copy; Universidad de ESAN 2020  </p>
+              <p class="text-uni">&copy; Universidad de ESAN 2021  </p>
             </div>
           </b-col>
           <b-col md="4" cols="12">
             <div class="data">
               <p class="correo">informes@esan.edu.pe</p>
-              <p class="direccion">Alonso de Molina 1652,Monterrico</p>
-              <p class="distrito">Surco,Lima - Perú</p>
+              <p class="direccion">Alonso de Molina 1652, Monterrico</p>
+              <p class="distrito">Surco, Lima - Perú</p>
             </div>
           </b-col>
         </b-row>

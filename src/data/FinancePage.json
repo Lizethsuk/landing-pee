@@ -1,5 +1,5 @@
 {
-  "title":"Finanza",
+  "title":"Finanzas",
   "text-con":"Conferencia Informativa",
   "bgColorDividerDate":"#C6D1D7" ,
   "bgColorButtonDate":"#051D43",
@@ -20,19 +20,19 @@
       "section": "Finanzas ",
       "curso": "Análisis de Riesgo Crediticio",
       "teacher": "Arturo García Villacorta",
-      "horario": "Viernes de 7:30 a 10:45 p. m."
+      "horario": "Viernes de 7:30 p.m. a 10:45 p.m."
     },
     {
       "section": "Finanzas",
       "curso": "Análisis, modelamiento financiero y proyección de estados financieros a mediano y largo plazo",
       "teacher": "Carlos Antonio Aguirre Gamarr ",
-      "horario": "Martes de 7:30 p. m. a 10:45 p. m."
+      "horario": "Martes de 7:30 p.m. a 10:45 p.m."
     },
     {
       "section": "Finanzas",
       "curso": "Cómo gestionar un adecuado planeamiento tributario",
       "teacher": "Reynaldo Moquillaza Orellan",
-      "horario": "Miércoles de 7:30 p. m. a 10:45 p. m."
+      "horario": "Miércoles de 7:30 p.m. a 10:45 p.m."
     },
     {
       "section": "Finanzas",
@@ -50,43 +50,43 @@
       "section": "Finanzas",
       "curso": "Costos para la gerencia",
       "teacher": "José Velazco Páucar",
-      "horario": "Miércoles de 7:30 a 10:45 p. m."
+      "horario": "Miércoles de 7:30 p.m. a 10:45 p.m."
     },
     {
       "section": "Finanzas",
       "curso": "Costos y estrategia: Casos para empresas en crecimiento",
       "teacher": "René Cornejo Díaz",
-      "horario": "Viernes de 7:30 p. m. a 10:45 p. m."
+      "horario": "Viernes de 7:30 p.m. a 10:45 p.m."
     },
     {
       "section": "Finanzas",
       "curso": "Estrategias financieras para la creación de valor",
       "teacher": "Alfredo Mendiola Cabrera",
-      "horario": "Lunes de 7:30 a 10:45 p.m"
+      "horario": "Lunes de 7:30 p.m. a 10:45 p.m."
     },
     {
       "section": "Finanzas",
       "curso": "Estructuración financiera",
       "teacher": "Diego Campos",
-      "horario": "Lunes 7:30 p. m. a 10:45 p. m."
+      "horario": "Lunes de 7:30 p.m. a 10:45 p.m."
     },
     {
       "section": "Finanzas",
       "curso": "Evaluación de Proyectos",
       "teacher": "Enrique Cárcamo",
-      "horario": "Jueves de 7:30 a 10:45 p.m."
+      "horario": "Jueves de 7:30 p.m. a 10:45 p.m."
     },
     {
       "section": "Finanzas",
       "curso": "Gestión de créditos y cobranzas",
       "teacher": "Arturo García Villacorta",
-      "horario": "Jueves de 7:30 a 10:45 p.m."
+      "horario": "Jueves de 7:30 p.m. a 10:45 p.m."
     },
     {
       "section": "Finanzas",
       "curso": "Liderando la toma de decisiones con finanzas",
       "teacher": "Luis Ángel Piazzón Gallo",
-      "horario": "Viernes de 7:30 a 10:45 p.m."
+      "horario": "Viernes de 7:30 p.m. a 10:45 p.m."
     },
     {
       "section": "Finanzas",
@@ -98,13 +98,13 @@
       "section": "Finanzas",
       "curso": "Reestructuración de Empresas y Patrimonios",
       "teacher": "Andrés García Uribe",
-      "horario": "Jueves de 7:30 p. m. a 10:45 p. m."
+      "horario": "Jueves de 7:30 p.m. a 10:45 p.m."
     },
     {
       "section": "Finanzas",
       "curso": "Tendencias en la gestión financiera",
       "teacher": "Miguel García Villacorta",
-      "horario": "Lunes de 7:30 p. m a 10:45 p.m."
+      "horario": "Lunes de 7:30 p.m. a 10:45 p.m."
     }
   ],
   "titleSecondCurso":"Cursos del Certificado de Especialización en Preparación y Evaluación de Proyectos",
@@ -113,13 +113,13 @@
       "section": "Finanzas ",
       "curso": "Evaluación de Proyectos",
       "teacher": "Enrique Cárcamo",
-      "horario": "Jueves de 7:30 a 10:45 p.m."
+      "horario": "Jueves de 7:30 p.m. a 10:45 p.m."
     },
     {
       "section": "Finanzas ",
       "curso": "Formulación, Preparación y Evaluación de Proyectos Nuevos y Proyectos en Marcha",
       "teacher": "Alex Albújar Cruz",
-      "horario": "Miércoles de 7:30 p. m a 10:45 p.m."
+      "horario": "Miércoles de 7:30 p.m. a 10:45 p.m."
     }
   ],
   "titleThreeCurso":"Cursos del Certificado de Especialización en Banca",
@@ -128,25 +128,25 @@
       "section": "Finanzas ",
       "curso": "Análisis de Riesgo Crediticio",
       "teacher": "Arturo García Villacorta",
-      "horario": "Viernes de 7:30 a 10:45 p. m."
+      "horario": "Viernes de 7:30 p.m. a 10:45 p.m."
     },
     {
       "section": "Finanzas ",
       "curso": "Estructuración financiera",
       "teacher": "Diego Campos",
-      "horario": "Lunes 7:30 p. m. a 10:45 p. m."
+      "horario": "Lunes de 7:30 p.m. a 10:45 p.m."
     },
     {
       "section": "Finanzas",
       "curso": "Fundamentos de gestión bancaria",
       "teacher": "Marita Chang | Walther Reátegui",
-      "horario": "Miércoles de 7:30 a 10:45 p. m."
+      "horario": "Miércoles de 7:30 p.m. a 10:45 p.m."
     },
     {
       "section": "Finanzas",
       "curso": "Gestión de créditos y cobranzas",
       "teacher": "Arturo García Villacorta",
-      "horario": "Jueves de 7:30 a 10:45 p.m."
+      "horario": "Jueves de 7:30 p.m. a 10:45 p.m."
     }
   ],
   "titlePasos":"Siguientes pasos",

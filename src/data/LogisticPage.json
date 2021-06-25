@@ -7,7 +7,7 @@
   "lineColorPasos":"#537B96",
   "bgColorPasos":"#80A0B5",
   "colorIcon":"logistic",
-  "title":"Operaciones",
+  "title":"Operaciones y",
   "title2":"Logísticas",
   "text-con":"Conferencia Informativa",
   "date":"27",
@@ -18,55 +18,55 @@
   "titleCurso":"Cursos del Certificado de Especialización en Operaciones y Logística",
   "cursos":[
     {
-      "section": "Operaciones y logística ",
+      "section": "Operaciones y Logística",
       "curso": "Administración logística y Control de Inventarios",
       "teacher": "David Gallardo",
-      "horario": "Martes de 7:30 a 10:45 p.m"
+      "horario": "Martes de 7:30 p.m. a 10:45 p.m."
     },
     {
-      "section": "Operaciones y logística ",
+      "section": "Operaciones y Logística",
       "curso": "Forecasting, Advanced Planning y Scheduling y Optimización de la Cadena de Abastecimiento",
       "teacher": "Christian Ramírez",
-      "horario": "Jueves de 7:30 a 10:45 p.m."
+      "horario": "Jueves de 7:30 p.m. a 10:45 p.m."
     },
     {
-      "section": "Operaciones y logística",
+      "section": "Operaciones y Logística",
       "curso": "Gerencia de compras y abastecimiento",
       "teacher": "Victor Tateishi Saito",
       "horario": "Martes de 7:30 p.m. a 10:45 p.m."
     }
     ,
     {
-      "section": "Operaciones y logística",
+      "section": "Operaciones y Logística",
       "curso": "Gerencia de operaciones",
       "teacher": "Aldo de la Cruz González | Aldo Bresani Torres",
-      "horario": "Miércoles de 7:30 p.m. a 10:45 p.m"
+      "horario": "Miércoles de 7:30 p.m. a 10:45 p.m."
     }
     ,
     {
-      "section": "Operaciones y logística",
+      "section": "Operaciones y Logística",
       "curso": "Gestión de la Calidad con Six Sigma",
       "teacher": "Freddy Alvarado",
-      "horario": "Miércoles de 7:30 a 10:45 p. m."
+      "horario": "Miércoles de 7:30 p.m. a 10:45 p.m."
     }
     ,
     {
-      "section": "Operaciones y logística",
+      "section": "Operaciones y Logística",
       "curso": "Innovación Operativa & Dynamic Demand Planning",
       "teacher": "Fernando Maradiegue Tuesta",
-      "horario": "Jueves de 7:30 p. m. a 10:45 p. m."
+      "horario": "Jueves de 7:30 p.m. a 10:45 p.m."
     }
     ,
     {
-      "section": "Operaciones y logística",
+      "section": "Operaciones y Logística",
       "curso": "Lean Manufacturing",
       "teacher": "Luis Bedoya",
-      "horario": "Lunes de 7:30 a 10:45 p.m."
+      "horario": "Lunes de 7:30 p.m. a 10:45 p.m."
     }
     ,
     {
-      "section": "Operaciones y logística",
-      "curso": "Supply Chain Management II. Gestionando la Cadena.",
+      "section": "Operaciones y Logística",
+      "curso": "Supply Chain Management II: Gestionando la Cadena",
       "teacher": "Germán Velásquez Salazar",
       "horario": "Martes de 7:30 p.m. a 10:45 p.m."
     }
@@ -74,58 +74,58 @@
   "titleSecondCurso":"Cursos del Certificado de Especialización en Gestión de Procesos",
   "SecondCurso":[
     {
-      "section": "Operaciones y logística ",
-      "curso": "Analitica Web",
+      "section": "Operaciones y Logística",
+      "curso": "Analítica Web",
       "teacher": "Tomás Minauro Latorre",
-      "horario": "Viernes de 7:30 a 10:45 p.m."
+      "horario": "Viernes de 7:30 p.m. a 10:45 p.m."
     },
     {
-      "section": "Operaciones y logística",
+      "section": "Operaciones y Logística",
       "curso": "Estrategia de transformación omnicanal",
       "teacher": "Carlos Osorio González",
       "horario": "Sábado de 9:00 a.m. a 12:15 p.m."
     },
     {
-      "section": "Operaciones y logística",
+      "section": "Operaciones y Logística",
       "curso": "Gestión de la Calidad con Six Sigma",
       "teacher": "Freddy Alvarado",
-      "horario": "Miércoles de 7:30 a 10:45 p. m."
+      "horario": "Miércoles de 7:30 p.m. a 10:45 p.m."
     }
     ,
     {
-      "section": "Operaciones y logística",
+      "section": "Operaciones y Logística",
       "curso": "Herramientas de BPMN para el Modelamiento y Simulación de Procesos",
       "teacher": "José Díaz León",
-      "horario": "Lunes de 7:30 a 10:45 p.m."
+      "horario": "Lunes de 7:30 p.m. a 10:45 p.m."
     }
     ,
     {
-      "section": "Operaciones y logística",
-      "curso": "Indicadores (KPIs) y OKRs para la gestión de procesos",
+      "section": "Operaciones y Logística",
+      "curso": "Indicadores (KPI) y OKR para la gestión de procesos",
       "teacher": "Luis Fernández Aguilar",
-      "horario": "Miércoles de 7:30 a 10:45 p.m"
+      "horario": "Miércoles de 7:30 p.m. a 10:45 p.m."
     }
     
   ],
-  "titleThreeCurso":"Cursos del Certificado de Especializacion en Gestion de la Energia",
+  "titleThreeCurso":"Cursos del Certificado de Especialización en Gestión de la Energía",
   "ThreeCurso":[
     {
-      "section": "Operaciones y logística",
+      "section": "Operaciones y Logística",
       "curso": "Gestión de proyectos",
       "teacher": "Peter Yamakawa Tsuja",
-      "horario": "Miércoles de 7:30 a 10:45 p.m"
+      "horario": "Miércoles de 7:30 p.m. a 10:45 p.m."
     },
     {
-      "section": "Operaciones y logística ",
+      "section": "Operaciones y Logística",
       "curso": "Gestión del Portafolio de Proyectos con Metodologías Ágiles",
       "teacher": "Eddy Morris Abarca | Gustavo Ortega Ubillus",
-      "horario": "Martes de 7:30 a 10:45 p.m."
+      "horario": "Martes de 7:30 p.m. a 10:45 p.m."
     },
     {
-      "section": "Operaciones y logística",
+      "section": "Operaciones y Logística",
       "curso": "Herramientas para la Gerencia de Proyectos",
       "teacher": "Luis Madrid Guerra",
-      "horario": "Lunes de 7:30 a 10:45 p.m."
+      "horario": "Lunes de 7:30 p.m. a 10:45 p.m."
     }
   ],
   "titlePasos":"Siguientes pasos",

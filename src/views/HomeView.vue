@@ -90,7 +90,7 @@
         <b-row>
           <b-col>
             <h3 class="text-center ">
-              CONOCE NUESTROS <br />ÁREAS DE ESPECIALIZACIÓN
+              CONOCE NUESTRAS <br />ÁREAS DE ESPECIALIZACIÓN
             </h3>
           </b-col>
         </b-row>
@@ -169,8 +169,8 @@
                     name: 'ti_page',
                     hash: '#experience1'
                   }"
-                    ><h2>Tecnología de <br />
-                    la Información</h2></router-link
+                    ><h2>Tecnologías de <br />
+                    la Información </h2></router-link
                   >
                 </div>
                 <div class="flip-card-back bg-back-ti">
@@ -419,11 +419,10 @@
             <h3 class="pb-3">VENTAJAS</h3>
             <h3 class="pb-5">
               PEE ES UN PROGRAMA CORTO, FLEXIBLE <br />
-              Y SE ADAPTA A TUS NECESIDADES
+              Y QUE SE ADAPTA A TUS NECESIDADES
             </h3>
             <p>
-              Son una opción flexible que permite que el participante pueda perfeccionarse en un
-              área o detro de ella. <br> Requiere la aprobación de cinco cursos elegidos por el participante. <br>
+              Permite que el participante pueda perfeccionarse en un área o dentro de ella. <br> Requiere la aprobación de cinco cursos elegidos por el participante. <br>
               El tiempo para completarlo es de dos años como máximo, contados a partir del primer curso que tome.
             </p>
           </b-col>
@@ -452,7 +451,7 @@
             <h3 class="pb-1">3 FORMAS DE OBTENER TU <br> CERTIFICADO DE ESPECIALIZACIÓN</h3>
             <h3 class="pb-5">
               PEE ES UN PROGRAMA CORTO, FLEXIBLE <br />
-              Y SE ADAPTA A TUS NECESIDADES
+              Y QUE SE ADAPTA A TUS NECESIDADES
             </h3>
             <p class="pb-5">
               El certificado de Especialización requiere la aprobación de cinco cursos elegidos por el participante, 
@@ -568,7 +567,7 @@
                                        <h2>1</h2>
                                      </b-col>
                                       <b-col cols="8" class="d-flex align-items-center pl-1">
-                                        <p>Cursos de otra Especialidad elegida</p>
+                                        <p>Curso de otra Especialidad elegida</p>
                                       </b-col>
                                    </b-row>
                                  </b-container>
@@ -585,7 +584,7 @@
                                        <h2>1</h2>
                                      </b-col>
                                       <b-col cols="8" class="d-flex align-items-center pl-1">
-                                        <p>Cursos de otra área</p>
+                                        <p>Curso de otra área</p>
                                       </b-col>
                                    </b-row>
                                  </b-container>

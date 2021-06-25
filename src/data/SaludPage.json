@@ -14,7 +14,7 @@
   "dateTextSecond" : "Informativa",
   "dateText":"Conferencia",
   "buttonText":"Inscríbete aquí",
-  "titleCurso":"Cursos del Certificado de Especializacion en Gestion de la Salud",
+  "titleCurso":"Cursos del Certificado de Especialización en Gestión de la Salud",
   "cursos":[
     {
       "section": "Salud",
@@ -24,7 +24,7 @@
     },
     {
       "section": "Salud",
-      "curso": "Elementos claves para una auditoria en salud basada en evidencias",
+      "curso": "Elementos claves para una auditoría en salud basada en evidencias",
       "teacher": "Martín Tantaleán del Águila",
       "horario": "Viernes de 7:30 a 10:45 p.m."
     },

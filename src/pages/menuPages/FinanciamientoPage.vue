@@ -29,15 +29,14 @@
             </p>
             <hr>
             <p class="nota-text"> 
-              <span class="subtitle-text-three"> Nota:</span> Todo
-              financiamiento debe estar respaldado de una Declaración Jurada
-              aceptada por el alumno.
+              <span class="subtitle-text-three"> Nota:</span>
+              Todo financiamiento debe estar respaldado por una declaración jurada aceptada por el alumno.
             </p>
             <p class="subtitle-text">
               Descuento por Matrícula Anticipada al Contado
             </p>
             <p class="descount-text">Descuento: S/ 90 para Curso</p>
-            <p class="descount-text"> Descuento: S/ 500 para Certificacos</p>
+            <p class="descount-text"> Descuento: S/ 500 para Certificados</p>
             <p class="descount-text pt-3 pb-3">Descuento válido hasta el 12 de mayo de 2021.</p>
 
             <p class="subtitle-text">Inversión con Financiamiento</p>
@@ -70,21 +69,21 @@
                     <td class="text-center ">
                       <div class="td-1">
                             S/ 895 <br />
-                      (1 cuota)
+                      (1ª Cuota)
                       </div>
                   
                     </td>
                     <td class="text-center ">
                       <div class="td-1">
                           S/ 599 <br />
-                      (2 cuota)
+                      (2ª Cuota)
                       </div>
                     
                     </td>
                     <td class="text-center ">
                       <div class="text-final">
                           S/ 452 <br />
-                      (3 cuota)
+                      (3ª Cuota)
                       </div>
 
                     
@@ -92,7 +91,7 @@
                   </tr>
                   <tr>
                     <th class="title-table gray subtitle-table-1" scope="row">
-                      Interes <br />
+                      Intereses <br />
                       Incluidos
                     </th>
                     <td class="text-center">
@@ -421,7 +420,7 @@ p{
   left: 0;
   bottom: 0;
   width: 100%;
-  text-align: justify;
+  text-align: left;
 }
 .table > :not(caption) > * > *
   padding-right 0px 
