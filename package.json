@@ -10,8 +10,8 @@
   "dependencies": {
     "@panter/vue-i18next": "^0.15.2",
     "axios": "^0.21.1",
-    "bootstrap": "^5.0.1",
-    "bootstrap-vue": "^2.21.2",
+    "bootstrap": "^4.4.1",
+    "bootstrap-vue": "^2.6.1",
     "core-js": "^3.6.5",
     "focus-trap": "^5.1.0",
     "focus-trap-vue": "^0.0.6",
