@@ -17,7 +17,7 @@
             <p>
               Algunos cursos requieren que el participante tenga conocimientos
               previos. En estos casos, se especificará claramente cuáles son y
-              la obligatorie- dad de observarlos para el mejor aprovechamiento
+              la obligatoriedad de observarlos para el mejor aprovechamiento
               del curso.
             </p>
             <p class="subtitle-text">Perfil del Participante</p>
@@ -89,12 +89,12 @@
                 Copia de grado bachiller o constancia de egresado universitario,
                 si no contase con el requisito remitir el CV para evaluación.
               </li>
-              <li>Puedes descargar la ficha de inscripción aquí:  <span class="subtitle-text-second">link</span>  </li>
+              <li>Descarga la ficha de inscripción aquí.  <span class="subtitle-text-second">link</span>  </li>
             </ul>
-            <p class="subtitle-text">Formas de Inscripción ex-Alumnos PEE</p>
+            <p class="subtitle-text">Formas de Inscripción Exalumnos PEE</p>
             <p>
-              Si es ex alumno del PEE o está matriculado en uno de los
-              Certificados de Especialización deberá for- malizar su matrícula
+              Si es Exalumnos del PEE o está matriculado en uno de los
+              Certificados de Especialización deberá formalizar su matrícula
               en:link
             </p>
             <p>Teléfono: 317-7226</p>
@@ -102,8 +102,8 @@
             <p>Cuenta Corriente: 193-1764415-0-72, Banco de Crédito.</p>
             <p>
               <span class="subtitle-text-three"> Nota:</span>  Si el depósito es realizado en el banco, el participante
-              deberá presentar la boleta de depósi- to para poder sustentar el
-              pago realizado al mo- mento de la inscripción.
+              deberá presentar la boleta de depósito para poder sustentar el
+              pago realizado al momento de la inscripción.
             </p>
           </b-col>
         </b-row>
@@ -171,7 +171,7 @@ export default {
   left: 0;
   bottom: 0;
   width: 100%;
-  text-align: justify;
+  text-align: left;
 }
 
 .pasos-areas 

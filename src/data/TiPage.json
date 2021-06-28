@@ -7,50 +7,50 @@
   "lineColorPasos":"#929BA2 ",
   "bgColorPasos":"#5D6F79",
   "colorIcon":"ti",
-  "title":"Tecnología de la Información",
+  "title":"Tecnologías de la Información",
   "text-con":"Conferencia Informativa",
   "date":"28",
   "month":"abril",
   "dateText":"Conferencia",
   "dateTextSecond" : "Informativa",
   "buttonText":"Inscríbete aquí",
-  "titleCurso":"Cursos del Certificado Tecnologia de la información",
+  "titleCurso":"Cursos del Certificado en Tecnologías de la Información",
   "cursos":[
     {
-      "section": "Tecnología de la información",
+      "section": "Tecnologías de la Información",
       "curso": "Agile management: aplicando scrum en equipos y otros métodos de agilidad organizacional",
       "teacher": "Arturo Valencia Castro",
-      "horario": "Miércoles de 7:30 a 10:45 p. m."
+      "horario": "Miércoles de 7:30 p.m. a 10:45 p.m."
     },
     {
-      "section": "Tecnología de la información",
+      "section": "Tecnologías de la Información",
       "curso": "Data Science: La ciencia de los datos",
       "teacher": "Fernando Casafranca",
-      "horario": "Lunes de 7:30 a 10:45 p.m."
+      "horario": "Lunes de 7:30 p.m. a 10:45 p.m."
     },
     {
-      "section": "Tecnología de la información",
+      "section": "Tecnologías de la Información",
       "curso": "Design thinking para la innovación",
       "teacher": "Fabián Bueno Méndez",
-      "horario": "Miércoles de 7:30 a 10:45 p. m."
+      "horario": "Miércoles de 7:30 p.m. a 10:45 p.m."
     },
     {
-      "section": "Tecnología de la información",
-      "curso": "Fundamentos de Cobit 2019 - Marco deGobierno de las TI para la Transformación Digital",
+      "section": "Tecnologías de la Información",
+      "curso": "Fundamentos de Cobit 2019 - Marco de Gobierno de las TI para la Transformación Digital",
       "teacher": "Guillermo Yrigoyen Quintanilla",
-      "horario": "Jueves de 7:30 a 10:45 p.m."
+      "horario": "Jueves de 7:30 p.m. a 10:45 p.m."
     },
     {
-      "section": "Tecnología de la información",
+      "section": "Tecnologías de la Información",
       "curso": "Gerencia Efectiva de las Tecnologías de Información",
       "teacher": "Eddie Morris Abarca",
-      "horario": "Miércoles de 7:30 p. m. a 10:45 p. m."
+      "horario": "Miércoles de 7:30 p.m. a 10:45 p.m."
     },
     {
-      "section": "Tecnología de la información",
+      "section": "Tecnologías de la Información",
       "curso": "Inteligencia de Negocios (Business Intelligence)",
       "teacher": "Richard Moarri Nohra",
-      "horario": "Martes de 7:30 p. m. a 10:45 p. m."
+      "horario": "Martes de 7:30 p.m. a 10:45 p.m."
     }
   ],
   "titlePasos":"Siguientes pasos",

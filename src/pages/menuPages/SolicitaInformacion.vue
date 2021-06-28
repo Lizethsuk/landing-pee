@@ -47,7 +47,7 @@
                       type="number"
                       id="input-3"
                       v-model="form.emainumereDNIl"
-                      placeholder="Numero de DNI/ID"
+                      placeholder="Número de DNI/ID"
                       required
                     ></b-form-input>
                   </b-form-group>
@@ -60,7 +60,7 @@
                       type="number"
                       id="input-4"
                       v-model="form.telefono"
-                      placeholder="Telefono"
+                      placeholder="Teléfono"
                       required
                     ></b-form-input>
                   </b-form-group>
@@ -205,7 +205,7 @@
             </b-form-group>
             <br>
             <b-form-group>
-            <country-select placeholder="Seleccione su pais" v-model="form.country" :country="form.country" topCountry="US" />    
+            <country-select  :removePlaceholder="true"   v-model="form.country" :country="form.country" topCountry="PE" />    
             </b-form-group>       
             <br />
             <div class="button-content">
@@ -246,6 +246,7 @@ export default {
   data() {
     return {
       selected: null,
+      countryName:false,
       options: [
         { value: null, text: 'Please select an option' },
         { value: 'a', text: 'This is First option' },
@@ -278,14 +279,14 @@ export default {
         "Corn",
       ],
       areasdeInteres: [
-        { text: "Areas de interes", value: null },
+        { text: "Áreas de interés", value: null },
         "Carrots",
         "Beans",
         "Tomatoes",
         "Corn",
       ],
       gradoAcademicos: [
-        { text: "-Grado Academico-", value: null },
+        { text: "-Grado Académico-", value: null },
         "Carrots",
         "Beans",
         "Tomatoes",
