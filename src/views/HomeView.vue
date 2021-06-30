@@ -101,7 +101,7 @@
                 <div class="flip-card-front bg-salud"  >
                   <router-link class="nav-link" :to="{
                     name: 'salud_page',
-                    hash: '#experience'
+                    
                   }" 
                     ><h2>Salud</h2>
                     
@@ -110,7 +110,7 @@
                 <div class="flip-card-back bg-back-salud">
                   <router-link  :to="{
                     name: 'salud_page',
-                    hash: '#experience'
+                    
                   }" >
                   <div class="d-flex flex-column justify-content-between h-100">
                     <div>
@@ -131,8 +131,8 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-energia">
                   <router-link class="nav-link"  :to="{
-                    name: 'energy_page',
-                    hash: '#experience'
+                    name: 'energy_page'
+                    
                   }" 
                     ><h2>Energía</h2>
                     
@@ -140,8 +140,8 @@
                 </div>
                 <div class="flip-card-back bg-back-energia">
                   <router-link   :to="{
-                    name: 'energy_page',
-                    hash: '#experience'
+                    name: 'energy_page'
+                   
                   }"
                     > 
                     <div class="d-flex flex-column justify-content-between h-100">
@@ -166,8 +166,7 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-ti">
                    <router-link class="nav-link" :to="{
-                    name: 'ti_page',
-                    hash: '#experience'
+                    name: 'ti_page'
                   }"
                     ><h2>Tecnologías de <br />
                     la Información </h2></router-link
@@ -175,8 +174,7 @@
                 </div>
                 <div class="flip-card-back bg-back-ti">
                   <router-link  :to="{
-                    name: 'ti_page',
-                    hash: '#experience'
+                    name: 'ti_page'
                   }"
                     >
                     <div class="d-flex flex-column justify-content-between h-100">
@@ -202,8 +200,7 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-marketing">
                       <router-link class="nav-link" :to="{
-                    name: 'marketing_page',
-                    hash: '#experience'
+                    name: 'marketing_page'
                   }"
                     ><h2>Marketing</h2></router-link
                   >
@@ -212,8 +209,7 @@
                 </div>
                 <div class="flip-card-back bg-back-marketing">
                   <router-link  :to="{
-                    name: 'marketing_page',
-                    hash: '#experience'
+                    name: 'marketing_page'
                   }" 
                     >
                    <!-- <router-link  to='/marketing_page'
@@ -239,8 +235,7 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-finanzas">
                   <router-link class="nav-link" :to="{
-                    name: 'finanzas_page',
-                    hash: '#experience'
+                    name: 'finanzas_page'
                   }"
                     ><h2>Finanzas</h2>
                     
@@ -249,8 +244,7 @@
                 </div>
                 <div class="flip-card-back bg-back-finanzas">
                   <router-link  :to="{
-                    name: 'finanzas_page',
-                    hash: '#experience'
+                    name: 'finanzas_page'
                   }"
                     >
                     <div class="d-flex flex-column justify-content-between h-100">
@@ -274,8 +268,7 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-b2b">
                        <router-link class="nav-link" :to="{
-                    name: 'b2b_page',
-                    hash: '#experience'
+                    name: 'b2b_page'
                   }"
                     ><h2>Business to <br />
                     Business</h2>
@@ -283,8 +276,7 @@
                 </div>
                 <div class="flip-card-back bg-back-b2b">
                   <router-link  :to="{
-                    name: 'b2b_page',
-                    hash: '#experience'
+                    name: 'b2b_page'
                   }"
                     >
                     <div class="d-flex flex-column justify-content-between h-100">
@@ -309,8 +301,7 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front ">
                    <router-link class="nav-link" :to="{
-                    name: 'logistica_page',
-                    hash: '#experience'
+                    name: 'logistica_page'
                   }"
                     ><h2>Operaciones y <br />
                     Logística de Proyectos</h2></router-link
@@ -318,8 +309,7 @@
                 </div>
                 <div class="flip-card-back bg-back-logistica">
                  <router-link :to="{
-                    name: 'logistica_page',
-                    hash: '#experience'
+                    name: 'logistica_page'
                   }"
                     >
                     <div class="d-flex flex-column justify-content-between h-100">
@@ -344,8 +334,7 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-administracion">
                   <router-link class="nav-link" :to="{
-                    name: 'administracion_page',
-                    hash: '#experience'
+                    name: 'administracion_page'
                   }"
                     ><h2>Administración y <br />
                     Dirección de <br />
@@ -354,8 +343,7 @@
                 </div>
                 <div class="flip-card-back bg-back-admi">
                 <router-link  :to="{
-                    name: 'administracion_page',
-                    hash: '#experience'
+                    name: 'administracion_page'
                   }"
                     >
                     <div class="d-flex flex-column justify-content-between h-100">
@@ -381,16 +369,14 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-mineria">
                      <router-link class="nav-link" :to="{
-                    name: 'mineria_page',
-                    hash: '#experience'
+                    name: 'mineria_page'
                   }"
                     ><h2>Minería</h2></router-link
                   >
                 </div>
                 <div class="flip-card-back bg-back-mineria">
                   <router-link  :to="{
-                    name: 'mineria_page',
-                    hash: '#experience'
+                    name: 'mineria_page'
                   }"
                     >
                     <div class="d-flex flex-column justify-content-between h-100">

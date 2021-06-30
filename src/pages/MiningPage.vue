@@ -89,7 +89,7 @@ export default {
 
  @import "../styles/main.styl"
 .jumbotron
-  background-image url('../assets/Landscape-Color.jpg')
+  background-image url('../assets/areas/mineria/img-mineria.jpg')
 
 .fecha {
   font-size: 20px;
