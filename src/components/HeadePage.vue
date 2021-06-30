@@ -1,6 +1,6 @@
 <template>
   <div class="nav mx-auto my-auto m-auto d-flex">
-    <b-container class="pe-0 ps-0">
+    <b-container class="pl-0 pr-0">
       <b-navbar toggleable="md" type="dark"  class=" nav-w ">
       <b-navbar-brand  to="/">
         <!-- <img src="../assets/components/header/logo/logo.png" alt="" class="img-logo">  -->

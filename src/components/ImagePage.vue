@@ -9,7 +9,7 @@
    <div class="title-content">
         <b-container>
           <b-row>
-            <b-col lg="6" cols="12">
+            <b-col lg="7" cols="12">
               <p class="title" v-text=" message"></p>
         <p class="title" v-text=" messageSecond"></p>
         <hr class="line" />
@@ -56,6 +56,12 @@ export default {
 <style lang="stylus" scoped>
 @import '../styles/main.styl';
 
+.jumbotron{
+  margin-bottom 0px
+  padding 0px
+  border-radius 0px
+}
+
 .image {
   height: 590px;
   // opacity: 0.8;
@@ -78,16 +84,17 @@ export default {
   margin-block-end: 0px;
   width: 12em;
   font-family: gt-pressura-bold
-  line-height 61px
+  line-height 68px
 }
 
 .line {
   border-top: 3px solid var(--bg-color-divider);
   max-width: 48.5vw;
   width: auto;
-  margin-left: -19rem;
+  margin-left: -25rem;
   opacity: 1 !important;
   margin-block-start: 0px;
+  margin-bottom 55px
 }
 
 .title-content {
@@ -115,7 +122,7 @@ export default {
 +for_breakpoint(lapt)
   .line {
     max-width: 53.5vw;
-    margin-left: -12rem;
+    margin-left: -18rem;
     width auto
   }
 +for_breakpoint(lg)
@@ -133,6 +140,7 @@ export default {
     max-width: 81vw;
     margin-left: -10rem;
     width auto
+    margin-bottom 30px
   } 
   .title {
   font-size: 44px;
@@ -144,6 +152,7 @@ export default {
     max-width: 105vw;
     margin-left: -7rem;
     width auto
+    margin-bottom 30px
   } 
   .title {
   font-size: 40px;

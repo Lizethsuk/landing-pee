@@ -104,7 +104,7 @@ ul {
 
 .nav-item {
   display: inline-block;
-  max-width 430px;
+  max-width 374px;
   width: 100%!important;
   font-size: 24px;
   min-height: 70px;
@@ -165,6 +165,10 @@ section {
   .nav-item 
     max-width 373px;
     width: 100%!important;
+@media (min-width: 992px) and (max-width: 1199px)
+  .nav-item 
+    max-width 311px;
+    width: 100%!important;    
     
 @media (min-width: 768px) and (max-width: 991px)
   .nav-item 
