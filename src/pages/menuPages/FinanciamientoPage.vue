@@ -431,7 +431,7 @@ p{
 }
 
 .jumbotron {
-  background-image: url('../../assets/home/banner/kv.jpg');
+  background-image: url('../../assets/home/banner/kv-001.jpg');
   color: #C3B36D !important;
   background-position-y: -100px;
 
@@ -458,7 +458,7 @@ p{
     padding-bottom :80px
     padding-top 80px
   .jumbotron 
-    background-image: url('../../assets/home/banner/kv.jpg');
+    background-image: url('../../assets/home/banner/kv-001.jpg');
     background-position-y: 0px;
     background-position-x: center
     background-size: cover;
@@ -477,7 +477,7 @@ p{
   .text-columns
     margin-right 0px !important
   .jumbotron 
-    background-image: url('../../assets/home/banner/kv.jpg');
+    background-image: url('../../assets/home/banner/kv-001.jpg');
     background-position-y: 0px;
     background-position-x: center
     background-size: cover;
