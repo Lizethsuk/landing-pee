@@ -119,7 +119,7 @@
                       tecnologías de Proyectos, gestión de
                       procesos y gerencia de proyectos.</p> 
                       </div>  
-                      <div class="text-end" ><strong>+</strong></div> 
+                      <div class="text-right" ><strong>+</strong></div> 
                   </div>               
                   </router-link>                 
                 </div>
@@ -151,7 +151,7 @@
                       tecnologías de Proyectos, gestión de
                       procesos y gerencia de proyectos.</p>  
                       </div>
-                      <div class="text-end" ><strong>+</strong></div> 
+                      <div class="text-right" ><strong>+</strong></div> 
                       </div>  
                   
                 </router-link>
@@ -187,7 +187,7 @@
                       tecnologías de Proyectos, gestión de
                       procesos y gerencia de proyectos.</p> 
                       </div>
-                      <div class="text-end" ><strong>+</strong></div> 
+                      <div class="text-right" ><strong>+</strong></div> 
                     </div>
                      
                     </router-link
@@ -225,7 +225,7 @@
                       tecnologías de Proyectos, gestión de
                       procesos y gerencia de proyectos.</p>  
                       </div>
-                      <div class="text-end" ><strong>+</strong></div> 
+                      <div class="text-right" ><strong>+</strong></div> 
                     </div>
                     
                     </router-link
@@ -260,7 +260,7 @@
                       tecnologías de Proyectos, gestión de
                       procesos y gerencia de proyectos.</p> 
                       </div>
-                      <div class="text-end" ><strong>+</strong></div> 
+                      <div class="text-right" ><strong>+</strong></div> 
                     </div>
                      
                     </router-link
@@ -295,7 +295,7 @@
                       tecnologías de Proyectos, gestión de
                       procesos y gerencia de proyectos.</p>  
                       </div>
-                      <div class="text-end" ><strong>+</strong></div> 
+                      <div class="text-right" ><strong>+</strong></div> 
                     </div>
                     
                     </router-link
@@ -307,7 +307,7 @@
           <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
             <div class="flip-card" >
               <div class="flip-card-inner">
-                <div class="flip-card-front ">
+                <div class="flip-card-front bg-logistica">
                    <router-link class="nav-link" :to="{
                     name: 'logistica_page',
                     hash: '#experience'
@@ -330,7 +330,7 @@
                       tecnologías de Proyectos, gestión de
                       procesos y gerencia de proyectos.</p> 
                       </div> 
-                      <div class="text-end" ><strong>+</strong></div> 
+                      <div class="text-right" ><strong>+</strong></div> 
                       </div>  
                     
                     </router-link
@@ -367,7 +367,7 @@
                       tecnologías de Proyectos, gestión de
                       procesos y gerencia de proyectos.</p>  
                     </div>
-                   <div class="text-end" ><strong>+</strong></div> 
+                   <div class="text-right" ><strong>+</strong></div> 
                     </div>
                     
                     </router-link
@@ -400,7 +400,7 @@
                       tecnologías de Proyectos, gestión de
                       procesos y gerencia de proyectos.</p> 
                     </div>
-                    <div class="text-end" ><strong>+</strong></div> 
+                    <div class="text-right" ><strong>+</strong></div> 
                       </div>  
                     </router-link
                   >
@@ -604,25 +604,25 @@
     <section class="sect-rankings">
       <b-container class="contain-sec">
         <b-row>
-          <b-col cols="12" lg="4">
+          <b-col cols="12" lg="3" class="pl-2 pr-2">
             <h1>ESAN, PRESENTE EN LOS RANKINGS MÁS PRESTIGIOSOS DEL MUNDO</h1>
           </b-col>
-          <b-col cols="12" lg="6">
-            <b-container>
+          <b-col cols="12" lg="7" class="pl-1 pr-1">
+            <b-container class="pl-0 pr-0">
               <b-row>
-                <b-col md="3" class="text-center">
+                <b-col md="4" class="text-center">
                   <img  class="rk-1" alt="" >
                 </b-col>
-                <b-col md="6"  class="text-center" >
+                <b-col md="4"  class="text-center" >
                   <img class="rk-2"  alt="" >
                 </b-col>
-                <b-col md="3" class="text-center">
+                <b-col md="4" class="text-center">
                   <img class="rk-3"  alt="" >
                 </b-col>
               </b-row>
             </b-container>
              </b-col>
-          <b-col cols="12" lg="2"  class="d-flex align-items-center justify-content-center">
+          <b-col cols="12" lg="2"  class="d-flex align-items-center justify-content-center pr-1 pl-1">
             <div>
               <p class="text-center ">Pertenecientes a la red:</p>
             <b-img center  class="logo-1" alt=""></b-img>
@@ -630,6 +630,7 @@
            
           </b-col>
         </b-row>
+       
       </b-container>
     </section>
     <div class="section-areas-inicio">
@@ -673,6 +674,13 @@
               </b-container>
             </b-col>
           </b-row>
+           <b-row>
+          <b-col class="text-center">
+            <div>
+  <b-button href="#">Regístrate</b-button>
+</div>
+          </b-col>
+        </b-row>
         </b-container>
       </section>
     </div>
