@@ -120,7 +120,7 @@ hr
   height: 5px;
   opacity 1 !important
 .jumbotron
-  background-image url('../assets/areas/logistica/banner/kv_003.jpg')
+  background-image url('../assets/areas/logistica/banner/kv_003-1.jpg')
 
 .fecha {
   font-size: 20px;

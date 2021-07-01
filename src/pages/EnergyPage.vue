@@ -98,7 +98,7 @@ export default {
 <style lang="stylus" scoped>
 @import '../styles/main.styl';
 .jumbotron
-  background-image url('../assets/areas/energia/banner/kv_001.jpg')
+  background-image url('../assets/areas/energia/banner/kv_001-1.jpg')
 
 .fecha {
   font-size: 20px;

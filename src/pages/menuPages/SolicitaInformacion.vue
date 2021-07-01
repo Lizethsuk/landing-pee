@@ -475,7 +475,7 @@ input, select, textarea, .conditions
 }
 
 .jumbotron {
-  background-image: url('../../assets/home/banner/kv-001.jpg');
+  background-image: url('../../assets/home/banner/kv-001-1.jpg');
   color: #C3B36D !important;
   background-position-y: -100px;
 
@@ -503,7 +503,7 @@ textarea, input, select, checkbox {
   .button-text
     width 10em
   .jumbotron 
-    background-image: url('../../assets/home/banner/kv-001.jpg');
+    background-image: url('../../assets/home/banner/kv-001-1.jpg');
     background-position-y: 0px;
     background-position-x: center
     background-size: cover;
@@ -518,7 +518,7 @@ textarea, input, select, checkbox {
     padding-bottom :80px
     padding-top 80px
   .jumbotron 
-    background-image: url('../../assets/home/banner/kv-001.jpg');
+    background-image: url('../../assets/home/banner/kv-001-1.jpg');
     background-position-y: 0px;
     background-position-x: center
     background-size: cover;
