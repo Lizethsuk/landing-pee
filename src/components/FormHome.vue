@@ -168,7 +168,7 @@ input
 select 
   border 1.8px solid white
   width 100%
-  padding 12px 5px
+  // padding 12px 5px
   color white  
       
 

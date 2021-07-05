@@ -122,7 +122,7 @@ hr
   height: 3px;
   opacity 1 !important
 .jumbotron
-  background-image url('../assets/areas/finanzas/banner/kv_002.jpg')
+  background-image url('../assets/areas/finanzas/banner/kv_002-1.jpg')
 
 .fecha {
   font-size: 20px;
