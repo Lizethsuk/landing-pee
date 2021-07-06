@@ -447,11 +447,28 @@ p{
     padding 100px 60px
   .subtitle-text 
     font-size: 19px;
-  
+  .jumbotron 
+    background-position-y: 0px;
++for_breakpoint(cell-sm)
+  .second-subtitle
+    padding 15px 10px   
+  .jumbotron 
+    background-position-y: 0px; 
+  .title-text
+    line-height 35px 
+    font-size 28px 
+  .cursos, .nota-text, .descount-text
+    font-size: 19px   
+  .table th, .table td
+    padding 5px 1px
+    font-size 13.4px  
+    br 
+     display none  
 
 +for_breakpoint(mobile)
   // .title-th
   //   margin-left -5px !important
+  
   .pasos-areas 
     padding-right : 30px !important
     padding-left : 30px !important
@@ -482,4 +499,5 @@ p{
     background-position-x: center
     background-size: cover;
     width: 100%;
+  
 </style>
