@@ -20,19 +20,22 @@
       "section": "Salud",
       "curso": "Acreditación de la calidad en clínicas y hospitales ",
       "teacher": "Paul Cuellar Villanueva",
-      "horario": "Martes de 7:30 a 10:45 p.m."
+      "horario": "Martes de 7:30 a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/salud/-acreditacion-de-la-calidad-en-clinicas-y-hospitales/"
     },
     {
       "section": "Salud",
       "curso": "Elementos claves para una auditoría en salud basada en evidencias",
       "teacher": "Martín Tantaleán del Águila",
-      "horario": "Viernes de 7:30 a 10:45 p.m."
+      "horario": "Viernes de 7:30 a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/salud/-elementos-claves-para-una-auditoria-en-salud-basada-en-evidencias/"
     },
     {
       "section": "Salud",
       "curso": "Economía de la salud",
       "teacher": "Jorge Alfredo Cordero Valera",
-      "horario": "Miércoles de 7:30 a 10:45 p.m."
+      "horario": "Miércoles de 7:30 a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/salud/economia-de-la-salud/"
     }
   ],
   "titlePasos":"Siguientes pasos",

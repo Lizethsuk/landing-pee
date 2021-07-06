@@ -14,6 +14,7 @@
           :teacherName="curso.teacher"
           :horarioName="curso.horario"
           :key="curso.id"
+          :linkCurso="curso.linkCurso"
           :lineColor="myJson.lineColorCursos" :bgColor="myJson.bgColorCursos"
         />
 
@@ -56,27 +57,6 @@ export default {
   data() {
     return {
       myJson: json,
-      totalVuePackages: {},
-      cursos: [
-        {
-          section: "Foo 1 ",
-          curso: "curso - 1",
-          teacher: "teacher - 1",
-          horario: "horario - 1",
-        },
-        {
-          section: "Foo 2 ",
-          curso: "curso - 2",
-          teacher: "teacher - 2",
-          horario: "horario - 2",
-        },
-        {
-          section: "Foo 3",
-          curso: "curso - 3",
-          teacher: "teacher - 3",
-          horario: "horario - 3",
-        },
-      ],
     };
   },
   mounted() {
@@ -86,12 +66,6 @@ export default {
   beforeCreate() {
     window.scrollTo(0, 0);
   }
-  // created() {
-  //   fetch("../data/energy.json")
-  //   .then(response => response.json())
-  //   .then(data => (this.totalVuePackages = data.total));
-  //   console.log
-  // }
 };
 </script>
 

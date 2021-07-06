@@ -21,89 +21,94 @@
       "section": "Operaciones y Logística",
       "curso": "Administración logística y Control de Inventarios",
       "teacher": "David Gallardo",
-      "horario": "Martes de 7:30 p.m. a 10:45 p.m."
+      "horario": "Martes de 7:30 p.m. a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/administracion-logistica-y-control-de-inventarios/"
     },
     {
       "section": "Operaciones y Logística",
       "curso": "Forecasting, Advanced Planning y Scheduling y Optimización de la Cadena de Abastecimiento",
       "teacher": "Christian Ramírez",
-      "horario": "Jueves de 7:30 p.m. a 10:45 p.m."
+      "horario": "Jueves de 7:30 p.m. a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/forecasting-advanced-planning-y-scheduling-y-optimizacion-de-la-cadena-de-abastecimiento/"
     },
     {
       "section": "Operaciones y Logística",
       "curso": "Gerencia de compras y abastecimiento",
       "teacher": "Victor Tateishi Saito",
-      "horario": "Martes de 7:30 p.m. a 10:45 p.m."
+      "horario": "Martes de 7:30 p.m. a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/gerencia-de-compras-y-abastecimiento/"
     }
     ,
     {
       "section": "Operaciones y Logística",
       "curso": "Gerencia de operaciones",
       "teacher": "Aldo de la Cruz González | Aldo Bresani Torres",
-      "horario": "Miércoles de 7:30 p.m. a 10:45 p.m."
+      "horario": "Miércoles de 7:30 p.m. a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/gerencia-de-operaciones/"
     }
     ,
     {
       "section": "Operaciones y Logística",
       "curso": "Gestión de la Calidad con Six Sigma",
       "teacher": "Freddy Alvarado",
-      "horario": "Miércoles de 7:30 p.m. a 10:45 p.m."
+      "horario": "Miércoles de 7:30 p.m. a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/gestion-de-la-calidad-con-six-sigma/"
     }
     ,
     {
       "section": "Operaciones y Logística",
       "curso": "Innovación Operativa & Dynamic Demand Planning",
       "teacher": "Fernando Maradiegue Tuesta",
-      "horario": "Jueves de 7:30 p.m. a 10:45 p.m."
+      "horario": "Jueves de 7:30 p.m. a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/innovacion-operativa-dynamic-demand-planning/"
     }
     ,
     {
       "section": "Operaciones y Logística",
       "curso": "Lean Manufacturing",
       "teacher": "Luis Bedoya",
-      "horario": "Lunes de 7:30 p.m. a 10:45 p.m."
+      "horario": "Lunes de 7:30 p.m. a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/lean-manufacturing/"
     }
     ,
     {
       "section": "Operaciones y Logística",
       "curso": "Supply Chain Management II: Gestionando la Cadena",
       "teacher": "Germán Velásquez Salazar",
-      "horario": "Martes de 7:30 p.m. a 10:45 p.m."
+      "horario": "Martes de 7:30 p.m. a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/supply-chain-management-ii-gestionando-la-cadena/"
     }
   ],
   "titleSecondCurso":"Cursos del Certificado de Especialización en Gestión de Procesos",
   "SecondCurso":[
     {
       "section": "Operaciones y Logística",
-      "curso": "Analítica Web",
+      "curso": "Análisis cuantitativo para la toma de decisiones",
       "teacher": "Tomás Minauro Latorre",
-      "horario": "Viernes de 7:30 p.m. a 10:45 p.m."
+      "horario": "Viernes de 7:30 p.m. a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/analisis-cuantitativo-para-la-toma-de-decisiones/"
     },
     {
       "section": "Operaciones y Logística",
       "curso": "Estrategia de transformación omnicanal",
       "teacher": "Carlos Osorio González",
-      "horario": "Sábado de 9:00 a.m. a 12:15 p.m."
+      "horario": "Sábado de 9:00 a.m. a 12:15 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/estrategia-de-transformacion-omnicanal/"
     },
-    {
-      "section": "Operaciones y Logística",
-      "curso": "Gestión de la Calidad con Six Sigma",
-      "teacher": "Freddy Alvarado",
-      "horario": "Miércoles de 7:30 p.m. a 10:45 p.m."
-    }
-    ,
     {
       "section": "Operaciones y Logística",
       "curso": "Herramientas de BPMN para el Modelamiento y Simulación de Procesos",
       "teacher": "José Díaz León",
-      "horario": "Lunes de 7:30 p.m. a 10:45 p.m."
+      "horario": "Lunes de 7:30 p.m. a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/herramientas-de-bpmn-para-modelamiento-y-simulacion-de-procesos/"
     }
     ,
     {
       "section": "Operaciones y Logística",
-      "curso": "Indicadores (KPI) y OKR para la gestión de procesos",
+      "curso": "Indicadores (KPI) y OKRs para la gestión de procesos",
       "teacher": "Luis Fernández Aguilar",
-      "horario": "Miércoles de 7:30 p.m. a 10:45 p.m."
+      "horario": "Miércoles de 7:30 p.m. a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/indicadores-kpis-para-la-gestion-de-procesos/"
     }
     
   ],
@@ -113,19 +118,22 @@
       "section": "Operaciones y Logística",
       "curso": "Gestión de proyectos",
       "teacher": "Peter Yamakawa Tsuja",
-      "horario": "Miércoles de 7:30 p.m. a 10:45 p.m."
+      "horario": "Miércoles de 7:30 p.m. a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/gestion-de-proyectos/"
     },
     {
       "section": "Operaciones y Logística",
       "curso": "Gestión del Portafolio de Proyectos con Metodologías Ágiles",
       "teacher": "Eddy Morris Abarca | Gustavo Ortega Ubillus",
-      "horario": "Martes de 7:30 p.m. a 10:45 p.m."
+      "horario": "Martes de 7:30 p.m. a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/gestion-del-portafolio-de-proyectos-con-metodologias-agiles/"
     },
     {
       "section": "Operaciones y Logística",
       "curso": "Herramientas para la Gerencia de Proyectos",
       "teacher": "Luis Madrid Guerra",
-      "horario": "Lunes de 7:30 p.m. a 10:45 p.m."
+      "horario": "Lunes de 7:30 p.m. a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/herramientas-para-la-gerencia-de-proyectos/"
     }
   ],
   "titlePasos":"Siguientes pasos",
