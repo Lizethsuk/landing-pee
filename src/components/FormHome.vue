@@ -13,6 +13,33 @@
           required
         ></b-form-select>
       </b-form-group>
+       <b-form-group  class="all-btn" id="input-group-2"  label-for="input-2">
+        <b-form-input
+          id="input-2"
+          v-model="form.name"
+          placeholder="Nombres"
+          required
+        ></b-form-input>
+      </b-form-group>
+      <b-form-group  class="all-btn" id="input-group-4"  label-for="input-4">
+        <b-form-input
+          id="input-4"
+          v-model="form.lastname"
+          placeholder="Apellidos"
+          required
+        ></b-form-input>
+      </b-form-group>
+       <b-form-group  class="all-btn"
+        id="input-group-1"
+        label-for="input-1"
+      >
+        <b-form-input 
+          id="input-1"
+          v-model="form.email"
+          placeholder="DNI"
+          required
+        ></b-form-input>
+      </b-form-group>
       <b-form-group  class="all-btn"
         id="input-group-1"
         label-for="input-1"
@@ -21,35 +48,22 @@
           id="input-1"
           v-model="form.email"
           type="email"
-          placeholder="Enter email"
+          placeholder="Correo electrónico"
           required
         ></b-form-input>
       </b-form-group>
+   
 
-      <b-form-group  class="all-btn" id="input-group-2"  label-for="input-2">
-        <b-form-input
-          id="input-2"
-          v-model="form.name"
-          placeholder="Enter name"
-          required
-        ></b-form-input>
-      </b-form-group>
+     
        
 
       
-      <b-form-group  class="all-btn" id="input-group-4"  label-for="input-4">
-        <b-form-input
-          id="input-4"
-          v-model="form.lastname"
-          placeholder="Enter last name"
-          required
-        ></b-form-input>
-      </b-form-group>
+      
 <b-form-group  class="all-btn" id="input-group-6"  label-for="input-6">
         <b-form-input
           id="input-6"
           v-model="form.lastname"
-          placeholder="Enter last name"
+          placeholder="Teléfono"
           required
         ></b-form-input>
       </b-form-group>
@@ -57,15 +71,7 @@
         <b-form-input
           id="input-7"
           v-model="form.lastname"
-          placeholder="Enter last name"
-          required
-        ></b-form-input>
-      </b-form-group>
-      <b-form-group  class="all-btn" id="input-group-7"  label-for="input-7">
-        <b-form-input
-          id="input-7"
-          v-model="form.lastname"
-          placeholder="Enter last name"
+          placeholder="Cargo"
           required
         ></b-form-input>
       </b-form-group>
@@ -94,7 +100,8 @@
           food: null,
           checked: []
         },
-        foods: [{ text: '¿Qué área te interesa?', value: null }, 'Carrots', 'Beans', 'Tomatoes', 'Corn'],
+        foods: [{ text: '¿Qué área te interesa?', value: null }, 'Administración y Dirección de personas', 'Business to Business', 
+        'Business to Business', 'Energía', 'Finanzas', 'Marketing', 'Minería', 'Salud',  'Operaciones y Logística', 'Tecnologías de la Información' ],
         show: true
       }
     },
