@@ -37,14 +37,18 @@
               <h4>Conoce nuestras 9 áreas</h4>
               <ul class="list-title">
                 <li>Administración y Dirección de Personas</li>
-                <li>Finanzas</li>
-                <li>Marketing</li>
-                <li>Operaciones y Logística</li>
-                <li>Tecnologías de Información</li>
-                <li>Salud</li>
-                <li>Energía</li>
                 <li>B2B</li>
+                <li>Finanzas</li>
+                <li>Energía</li>
+                <li>Marketing</li>
                 <li>Minería</li>
+                <li>Operaciones y Logística</li>
+                
+                <li>Salud</li>
+                <li>Tecnologías de Información</li>
+                
+                
+                
               </ul>
               <div>
                 <b-container class="ps-0 pe-0">
@@ -56,10 +60,10 @@
                     </b-col>
                     <b-col sm="10" cols="8">
                       <div class="section-content2">
-                  <div class="section-1">07</div>
+                  <div class="section-1">16</div>
                   <div class="section-2">
                     <div class="init-date">
-                      <span>de junio</span>
+                      <span>de agosto</span>
                       
                     </div>
                   </div>
@@ -96,128 +100,62 @@
           </b-col>
         </b-row>
         <b-row class="d-flex justify-content-center" >
-          <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0"  >
-            <div class="flip-card"  >
-              <div class="flip-card-inner">
-                <div class="flip-card-front bg-salud"  >
-                  <router-link class="nav-link" :to="{
-                    name: 'salud_page',
-                    
-                  }" 
-                    ><h2>Salud</h2>
-                    
-                </router-link>
-                </div>
-                <div class="flip-card-back bg-back-salud">
-                  <router-link  :to="{
-                    name: 'salud_page',
-                    
-                  }" >
-                  <div class="d-flex flex-column justify-content-between h-100">
-                    <div>
-                      <h2>Salud</h2>  
-                    <p>Especialízate en: Operaciones y logística, 
-                      tecnologías de Proyectos, gestión de
-                      procesos y gerencia de proyectos.</p> 
-                      </div>  
-                      <div class="text-right" ><strong>+</strong></div> 
-                  </div>               
-                  </router-link>                 
-                </div>
-              </div>
-            </div>
-          </b-col>
-          <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
+           <b-col cols="12" lg="4"  sm="6" class="pl-0 pr-0">
             <div class="flip-card" >
               <div class="flip-card-inner">
-                <div class="flip-card-front bg-energia">
-                  <router-link class="nav-link"  :to="{
-                    name: 'energy_page'
-                    
-                  }" 
-                    ><h2>Energía</h2>
-                    
-                </router-link>
-                </div>
-                <div class="flip-card-back bg-back-energia">
-                  <router-link   :to="{
-                    name: 'energy_page'
-                   
+                <div class="flip-card-front bg-administracion">
+                  <router-link class="nav-link" :to="{
+                    name: 'administracion_page'
                   }"
-                    > 
+                    ><h2>Administración y <br />
+                    Dirección de <br />
+                    Personas</h2></router-link
+                  >
+                </div>
+                <div class="flip-card-back bg-back-admi">
+                <router-link  :to="{
+                    name: 'administracion_page'
+                  }"
+                    >
                     <div class="d-flex flex-column justify-content-between h-100">
                       <div>
-                        <h2>Energía</h2>  
+                      <h2>Administración y <br />
+                    Dirección de 
+                    Personas</h2>
                     <p>Especialízate en: Operaciones y logística, 
                       tecnologías de Proyectos, gestión de
                       procesos y gerencia de proyectos.</p>  
-                      </div>
-                      <div class="text-right" ><strong>+</strong></div> 
-                      </div>  
-                  
-                </router-link>
-               
-                </div>
-              </div>
-            </div>
-     
-          </b-col>
-          <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front bg-ti">
-                   <router-link class="nav-link" :to="{
-                    name: 'ti_page'
-                  }"
-                    ><h2>Tecnologías de <br />
-                    la Información </h2></router-link
-                  >
-                </div>
-                <div class="flip-card-back bg-back-ti">
-                  <router-link  :to="{
-                    name: 'ti_page'
-                  }"
-                    >
-                    <div class="d-flex flex-column justify-content-between h-100">
-                      <div>
-                        <h2>Tecnología de <br />
-                    la Información</h2>
-                    <p>Especialízate en: Operaciones y logística, 
-                      tecnologías de Proyectos, gestión de
-                      procesos y gerencia de proyectos.</p> 
-                      </div>
-                      <div class="text-right" ><strong>+</strong></div> 
                     </div>
-                     
+                   <div class="text-right" ><strong>+</strong></div> 
+                    </div>
+                    
                     </router-link
                   >
-                
                 </div>
               </div>
             </div>
           </b-col>
-          <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
+
+           <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
             <div class="flip-card" >
               <div class="flip-card-inner">
-                <div class="flip-card-front bg-marketing">
-                      <router-link class="nav-link" :to="{
-                    name: 'marketing_page'
+                <div class="flip-card-front bg-b2b">
+                       <router-link class="nav-link" :to="{
+                    name: 'b2b_page'
                   }"
-                    ><h2>Marketing</h2></router-link
-                  >
-                    
-                  
+                    ><h2>Business to <br />
+                    Business</h2>
+                  </router-link>
                 </div>
-                <div class="flip-card-back bg-back-marketing">
+                <div class="flip-card-back bg-back-b2b">
                   <router-link  :to="{
-                    name: 'marketing_page'
-                  }" 
+                    name: 'b2b_page'
+                  }"
                     >
-                   <!-- <router-link  to='/marketing_page'
-                    > -->
                     <div class="d-flex flex-column justify-content-between h-100">
                       <div>
-                        <h2>Marketing</h2>
+                        <h2>Business to <br />
+                    Business</h2>
                     <p>Especialízate en: Operaciones y logística, 
                       tecnologías de Proyectos, gestión de
                       procesos y gerencia de proyectos.</p>  
@@ -267,36 +205,104 @@
           <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
             <div class="flip-card" >
               <div class="flip-card-inner">
-                <div class="flip-card-front bg-b2b">
-                       <router-link class="nav-link" :to="{
-                    name: 'b2b_page'
-                  }"
-                    ><h2>Business to <br />
-                    Business</h2>
-                  </router-link>
+                <div class="flip-card-front bg-energia">
+                  <router-link class="nav-link"  :to="{
+                    name: 'energy_page'
+                    
+                  }" 
+                    ><h2>Energía</h2>
+                    
+                </router-link>
                 </div>
-                <div class="flip-card-back bg-back-b2b">
-                  <router-link  :to="{
-                    name: 'b2b_page'
+                <div class="flip-card-back bg-back-energia">
+                  <router-link   :to="{
+                    name: 'energy_page'
+                   
                   }"
-                    >
+                    > 
                     <div class="d-flex flex-column justify-content-between h-100">
                       <div>
-                        <h2>Business to <br />
-                    Business</h2>
+                        <h2>Energía</h2>  
                     <p>Especialízate en: Operaciones y logística, 
                       tecnologías de Proyectos, gestión de
                       procesos y gerencia de proyectos.</p>  
                       </div>
                       <div class="text-right" ><strong>+</strong></div> 
+                      </div>  
+                  
+                </router-link>
+               
+                </div>
+              </div>
+            </div>
+     
+          </b-col>
+
+        <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
+                    <div class="flip-card" >
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front bg-marketing">
+                              <router-link class="nav-link" :to="{
+                            name: 'marketing_page'
+                          }"
+                            ><h2>Marketing</h2></router-link
+                          >
+                            
+                          
+                        </div>
+                        <div class="flip-card-back bg-back-marketing">
+                          <router-link  :to="{
+                            name: 'marketing_page'
+                          }" 
+                            >
+                          <!-- <router-link  to='/marketing_page'
+                            > -->
+                            <div class="d-flex flex-column justify-content-between h-100">
+                              <div>
+                                <h2>Marketing</h2>
+                            <p>Especialízate en: Operaciones y logística, 
+                              tecnologías de Proyectos, gestión de
+                              procesos y gerencia de proyectos.</p>  
+                              </div>
+                              <div class="text-right" ><strong>+</strong></div> 
+                            </div>
+                            
+                            </router-link
+                          >
+                        </div>
+                      </div>
                     </div>
-                    
+                  </b-col>
+          <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
+            <div class="flip-card" >
+              <div class="flip-card-inner">
+                <div class="flip-card-front bg-mineria">
+                     <router-link class="nav-link" :to="{
+                    name: 'mineria_page'
+                  }"
+                    ><h2>Minería</h2></router-link
+                  >
+                </div>
+                <div class="flip-card-back bg-back-mineria">
+                  <router-link  :to="{
+                    name: 'mineria_page'
+                  }"
+                    >
+                    <div class="d-flex flex-column justify-content-between h-100">
+                      <div>
+                      <h2>Minería</h2>
+                    <p>Especialízate en: Operaciones y logística, 
+                      tecnologías de Proyectos, gestión de
+                      procesos y gerencia de proyectos.</p> 
+                    </div>
+                    <div class="text-right" ><strong>+</strong></div> 
+                      </div>  
                     </router-link
                   >
                 </div>
               </div>
             </div>
-          </b-col>
+          </b-col> 
           <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
             <div class="flip-card" >
               <div class="flip-card-inner">
@@ -329,72 +335,81 @@
                 </div>
               </div>
             </div>
-          </b-col>
-          <b-col cols="12" lg="4"  sm="6" class="pl-0 pr-0">
-            <div class="flip-card" >
+          </b-col>        
+          
+          <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0"  >
+            <div class="flip-card"  >
               <div class="flip-card-inner">
-                <div class="flip-card-front bg-administracion">
+                <div class="flip-card-front bg-salud"  >
                   <router-link class="nav-link" :to="{
-                    name: 'administracion_page'
-                  }"
-                    ><h2>Administración y <br />
-                    Dirección de <br />
-                    Personas</h2></router-link
-                  >
-                </div>
-                <div class="flip-card-back bg-back-admi">
-                <router-link  :to="{
-                    name: 'administracion_page'
-                  }"
-                    >
-                    <div class="d-flex flex-column justify-content-between h-100">
-                      <div>
-                      <h2>Administración y <br />
-                    Dirección de 
-                    Personas</h2>
-                    <p>Especialízate en: Operaciones y logística, 
-                      tecnologías de Proyectos, gestión de
-                      procesos y gerencia de proyectos.</p>  
-                    </div>
-                   <div class="text-right" ><strong>+</strong></div> 
-                    </div>
+                    name: 'salud_page',
                     
-                    </router-link
-                  >
+                  }" 
+                    ><h2>Salud</h2>
+                    
+                </router-link>
                 </div>
-              </div>
-            </div>
-          </b-col>
-          <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
-            <div class="flip-card" >
-              <div class="flip-card-inner">
-                <div class="flip-card-front bg-mineria">
-                     <router-link class="nav-link" :to="{
-                    name: 'mineria_page'
-                  }"
-                    ><h2>Minería</h2></router-link
-                  >
-                </div>
-                <div class="flip-card-back bg-back-mineria">
+                <div class="flip-card-back bg-back-salud">
                   <router-link  :to="{
-                    name: 'mineria_page'
-                  }"
-                    >
-                    <div class="d-flex flex-column justify-content-between h-100">
-                      <div>
-                      <h2>Minería</h2>
+                    name: 'salud_page',
+                    
+                  }" >
+                  <div class="d-flex flex-column justify-content-between h-100">
+                    <div>
+                      <h2>Salud</h2>  
                     <p>Especialízate en: Operaciones y logística, 
                       tecnologías de Proyectos, gestión de
                       procesos y gerencia de proyectos.</p> 
-                    </div>
-                    <div class="text-right" ><strong>+</strong></div> 
                       </div>  
-                    </router-link
-                  >
+                      <div class="text-right" ><strong>+</strong></div> 
+                  </div>               
+                  </router-link>                 
                 </div>
               </div>
             </div>
-          </b-col>       
+          </b-col>
+          
+          
+         
+         
+          
+         
+          
+
+          <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front bg-ti">
+                   <router-link class="nav-link" :to="{
+                    name: 'ti_page'
+                  }"
+                    ><h2>Tecnologías de <br />
+                    la Información </h2></router-link
+                  >
+                </div>
+                <div class="flip-card-back bg-back-ti">
+                  <router-link  :to="{
+                    name: 'ti_page'
+                  }"
+                    >
+                    <div class="d-flex flex-column justify-content-between h-100">
+                      <div>
+                        <h2>Tecnología de <br />
+                    la Información</h2>
+                    <p>Especialízate en: Operaciones y logística, 
+                      tecnologías de Proyectos, gestión de
+                      procesos y gerencia de proyectos.</p> 
+                      </div>
+                      <div class="text-right" ><strong>+</strong></div> 
+                    </div>
+                     
+                    </router-link
+                  >
+                
+                </div>
+              </div>
+            </div>
+          </b-col>     
         </b-row>
       </b-container>
     </section>
@@ -630,11 +645,11 @@
                   <b-col md="6" cols="12" align-self="center">
                     <div class="div-section-content">
                       <div class="section-content">
-                        <div class="section-1">07</div>
+                        <div class="section-1">16</div>
                         <div class="section-2">
                           <div class="init-date">
                             <span>inicio</span><br />
-                            de junio
+                            de agosto
                           </div>
                         </div>
                       </div>

@@ -3,7 +3,9 @@
     <div class="pasos-page" :style="cssVars">
       <b-container class="bv-example-row pasos-areas">
         <b-row no-gutters>
-          <p class="title ">Siguientes pasos</p>
+          <b-col>
+            <p class="title ">Siguientes pasos</p>
+          </b-col>
         </b-row >
         <b-row no-gutters>
           <b-col lg="4" cols="12">
