@@ -14,6 +14,7 @@
           :teacherName="curso.teacher"
           :horarioName="curso.horario"
           :key="curso.id"
+          :linkCurso="curso.linkCurso"
           :lineColor="myJson.lineColorCursos" :bgColor="myJson.bgColorCursos"
         />
 

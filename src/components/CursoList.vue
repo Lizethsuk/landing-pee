@@ -1,14 +1,17 @@
 <template>
     <li class="nav-item li-area">
-      <div class="box-area" :style="cssVars">
-        <p class="title-curso" v-text="sectionName"></p>
-        <p class="name-curso" v-text="cursoName"></p>
-        <hr class="new4" :style="cssVars" />
-        
-              <img src="../assets/components/cursoList/shap/online.png" alt="">
-        <p class="encargado" v-text="teacherName"></p>
-        <p class="fecha" v-text="horarioName"></p>
-      </div>
+      <a target="_blank" class="text" :href="linkCurso">
+        <div class="box-area" :style="cssVars">
+          <p class="title-curso" v-text="sectionName"></p>
+          <p class="name-curso" v-text="cursoName"></p>
+          <hr class="new4" :style="cssVars" />
+          
+                <img src="../assets/components/cursoList/shap/online.png" alt="">
+          <p class="encargado" v-text="teacherName"></p>
+          <p class="fecha" v-text="horarioName"></p>
+        </div>
+      </a>
+  
     </li>
 </template>
 
@@ -16,6 +19,10 @@
 export default {
   name: "CursoList",
   props: {
+   linkCurso:{
+      type: String,
+      require: true,
+   } ,
    sectionName: {
       type: String,
       require: true,
@@ -58,6 +65,10 @@ export default {
 // .name-curso {
 //   padding-bottom: 10px;
 // }
+.text
+  color #212529
+  text-decoration: none; /* no underline */
+
 .name-curso
   font-size: 20px;
   font-family gt-pressura-bold

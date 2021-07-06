@@ -21,13 +21,15 @@
       "section": "B2B",
       "curso": "Estrategias de venta corporativa (B2B)",
       "teacher": "Ana Belén Perdigones",
-      "horario": "Sábado de 9:00 a.m. a 12:15 p.m."
+      "horario": "Sábado de 9:00 a.m. a 12:15 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/b2b/estrategias-de-venta-corporativa-b2b/"
     },
     {
       "section": "B2B",
       "curso": "Transformación digital en B2B",
       "teacher": "Cesar Cam Gensollen",
-      "horario": "Lunes de 7:30 p.m. a 10:45 p.m."
+      "horario": "Lunes de 7:30 p.m. a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/b2b/transformacion-digital-en-b2b/"
     }
   ],
   "titlePasos":"Siguientes pasos",
