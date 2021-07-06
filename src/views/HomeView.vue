@@ -93,9 +93,10 @@
       <b-container class="bv-example-row section-areas">
         <b-row>
           <b-col>
-            <h3 class="text-center ">
+            <h3 class="text-center conoce-home">
               CONOCE NUESTRAS <br />ÁREAS DE ESPECIALIZACIÓN
             </h3>
+           
           </b-col>
         </b-row>
         <b-row class="d-flex justify-content-center" >
