@@ -37,7 +37,7 @@
             </p>
             <p class="descount-text">Descuento: S/ 90 para Curso</p>
             <p class="descount-text"> Descuento: S/ 500 para Certificados</p>
-            <p class="descount-text pt-3 pb-3">Descuento válido hasta el 12 de mayo de 2021.</p>
+            <p class="descount-text pt-3 pb-3">Descuento válido hasta el 23 de Julio de 2021.</p>
 
             <p class="subtitle-text">Inversión con Financiamiento</p>
             <p class="subtitle-text">Por curso</p>

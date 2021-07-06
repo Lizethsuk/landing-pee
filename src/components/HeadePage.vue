@@ -11,15 +11,22 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
           <b-nav-item-dropdown text="Áreas" class="nav-link item-nav" right>
-            <b-dropdown-item to="/salud_page" href="#">Salud</b-dropdown-item>
-            <b-dropdown-item to="/energy_page" href="#">Energía</b-dropdown-item>
-            <b-dropdown-item to="/ti_page" href="#">Tecnologías de la Información</b-dropdown-item>
-            <b-dropdown-item to="/marketing_page" href="#">Marketing</b-dropdown-item>
-            <b-dropdown-item to="/finanzas_page" href="#">Finanzas</b-dropdown-item>
-            <b-dropdown-item to="/b2b_page" href="#">Business to Business</b-dropdown-item>
-            <b-dropdown-item to="/logistica_page" href="#">Operaciones y Logística</b-dropdown-item>
             <b-dropdown-item to="/administracion_page" href="#">Administración y Dirección de personas</b-dropdown-item>
+            <b-dropdown-item to="/b2b_page" href="#">Business to Business</b-dropdown-item>
+            <b-dropdown-item to="/energy_page" href="#">Energía</b-dropdown-item>
+            <b-dropdown-item to="/finanzas_page" href="#">Finanzas</b-dropdown-item>
+            
+            <b-dropdown-item to="/marketing_page" href="#">Marketing</b-dropdown-item>
             <b-dropdown-item to="/mineria_page" href="#">Minería</b-dropdown-item>
+            <b-dropdown-item to="/salud_page" href="#">Salud</b-dropdown-item>
+            <b-dropdown-item to="/logistica_page" href="#">Operaciones y Logística</b-dropdown-item>
+            <b-dropdown-item to="/ti_page" href="#">Tecnologías de la Información</b-dropdown-item>
+            
+            
+            
+            
+            
+            
           </b-nav-item-dropdown>
         
           <p class="line"></p>
