@@ -20,31 +20,36 @@
       "section": "Minería ",
       "curso": "Evaluación de proyectos en minería",
       "teacher": "Alfredo Mendiola Cabrera | Carlos Aguirre Gamarra",
-      "horario": "Sábado de 9:00 a.m. a 12:15 p.m."
+      "horario": "Sábado de 9:00 a.m. a 12:15 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/mineria/evaluacion-de-proyectos-en-mineria/"
     },
     {
       "section": "Minería",
       "curso": "Fiscalización ambiental",
       "teacher": "Milagros Pozo Ascuña | Karina Montes Tapia",
-      "horario": "Jueves de 7:30 p.m. a 10:45 p.m."
+      "horario": "Jueves de 7:30 p.m. a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/mineria/fiscalizacion-ambiental/"
     },
     {
       "section": "Minería",
       "curso": "Gestión ambiental en minería",
       "teacher": "Ernesto Leo Flores Velásquez",
-      "horario": "Viernes de 7:30 p.m. a 10:45 p.m."
+      "horario": "Viernes de 7:30 p.m. a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/mineria/gestion-ambiental-en-mineria/"
     },
     {
       "section": "Minería",
       "curso": "Gestión de la compensación y la retribución total en tiempos Post Covid",
       "teacher": "Martín Vergara Pinto",
-      "horario": "Miércoles de 7:30 p.m. a 10:45 p.m."
+      "horario": "Miércoles de 7:30 p.m. a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/mineria/gestion-de-la-compensacion-y-la-retribucion-total-en-tiempos-post-covid/"
     },
     {
       "section": "Minería",
       "curso": "Tributación minera",
       "teacher": "Jorge Márquez",
-      "horario": "Viernes de 7:30 p.m. a 10:45 p.m."
+      "horario": "Viernes de 7:30 p.m. a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/mineria/tributacion-minera/"
     }
   ],
   "titlePasos":"Siguientes pasos",

@@ -13,6 +13,7 @@
           :cursoName="curso.curso"
           :teacherName="curso.teacher"
           :horarioName="curso.horario"
+          :linkCurso="curso.linkCurso"
           :key="curso.id"
           :lineColor="myJson.lineColorCursos" :bgColor="myJson.bgColorCursos"
         />
@@ -25,6 +26,7 @@
           :sectionName="curso.section"
           :cursoName="curso.curso"
           :teacherName="curso.teacher"
+          :linkCurso="curso.linkCurso"
           :horarioName="curso.horario"
           :key="curso.id"
           :lineColor="myJson.lineColorCursos" :bgColor="myJson.bgColorCursos"
@@ -38,6 +40,7 @@
           :sectionName="curso.section"
           :cursoName="curso.curso"
           :teacherName="curso.teacher"
+          :linkCurso="curso.linkCurso"
           :horarioName="curso.horario"
           :key="curso.id"
           :lineColor="myJson.lineColorCursos" :bgColor="myJson.bgColorCursos"
@@ -86,26 +89,6 @@ export default {
   data() {
     return {
       myJson: json,
-      cursos: [
-        {
-          section: "Foo 1 ",
-          curso: "curso - 1",
-          teacher: "teacher - 1",
-          horario: "horario - 1",
-        },
-        {
-          section: "Foo 2 ",
-          curso: "curso - 2",
-          teacher: "teacher - 2",
-          horario: "horario - 2",
-        },
-        {
-          section: "Foo 3",
-          curso: "curso - 3",
-          teacher: "teacher - 3",
-          horario: "horario - 3",
-        },
-      ],
     };
   },
 }
