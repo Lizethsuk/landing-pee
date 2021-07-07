@@ -259,7 +259,7 @@
              <b-button class="btn-m"   block @click="hideModal">Cerrar</b-button>
           </b-col>
           <b-col cols="7">
-            <b-button class="btn-m"  block @click="toggleModal">Acepto esta política</b-button>
+            <b-button class="btn-m"  block @click="accept">Acepto esta política</b-button>
           </b-col>
         </b-row>
       </b-container>
@@ -392,6 +392,11 @@ export default {
         // We pass the ID of the button that we want to return focus to
         // when the modal has hidden 
         this.$refs['my-modal'].toggle('#toggle-btn');
+      },
+      accept(){
+        const data = ["me"];
+        this.$refs['my-modal'].toggle('#toggle-btn');
+        this.form.checked = this.form.checked.concat(data);
       }
   },
 };
