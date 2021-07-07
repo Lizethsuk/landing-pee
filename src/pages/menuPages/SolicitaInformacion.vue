@@ -126,7 +126,9 @@
                       v-model="form.gradoAcademico"
                       :options="gradoAcademicos"
                       required
-                    ></b-form-select>
+                    >
+                    
+                    </b-form-select>
                   </b-form-group>
                   <b-form-group
                     class="form-content"
@@ -177,14 +179,14 @@
                 :aria-describedby="ariaDescribedby"
                 required
               >
-                <b-form-checkbox class="conditions"  value="me">
-                 <span class="text-condiciones">
-                   Acepto las  <span class="access"> condiciones de tratamiento para mis datos
-                  personales
-                    </span>
-                 </span>
-                  </b-form-checkbox
+                <b-form-checkbox class="conditions"  value="me"> </b-form-checkbox
                 >
+                 <span class="text-condiciones">
+                   Acepto las  <a @click="toggleModal" class="access"> condiciones de tratamiento para mis datos
+                  personales
+                    </a>
+                 </span>
+                 
                 <!-- <b-form-checkbox value="that">Check that out</b-form-checkbox> -->
               </b-form-checkbox-group>
             </b-form-group>
@@ -227,7 +229,45 @@
       admisionText="myJson.admisionText"
     />
     <FooterPage />
+      <b-modal  ref="my-modal" hide-footer title="Política de Protección de Datos Personales" >
+      <div class="d-block text-justify modal1">
+        <h3 class="text-center">Política de Protección de Datos Personales</h3>
+        <p>De conformidad con la Ley N° 29733, Ley de Protección de Datos Personales, 
+          el usuario da su consentimiento para el tratamiento de los datos personales 
+          que son facilitados en el presente formulario o por cualquier medio desde el 
+          momento de su ingreso o utilización del portal. Asimismo, el usuario consiente 
+          que la Universidad ESAN pueda ceder estos datos a terceros para los fines 
+          expuestos a continuación.</p>
+         <p>
+           Estos serán incorporados en el banco de datos de usuarios de la Universidad ESAN, 
+           para utilizarlos en seguimiento de un eventual proceso de matrícula, envío de 
+           publicidad mediante cualquier medio y soporte, envío de invitaciones a actividades 
+           convocadas por ESAN o sus socios comerciales, para fines estadísticos, gestiones 
+           institucionales y administrativas; y se mantendrán mientras sean útiles para que la
+            Universidad pueda prestar y ofrecer sus servicios y darles trámite.
+           </p> 
+           <p>
+             El usuario podrá ejercer los derechos de acceso, rectificación, oposición y 
+             cancelación de los datos personales escribiendo a datospersonales@esan.edu.pe o 
+             a la siguiente dirección: <br>
+             Oficina de Protección de Datos Personales, Universidad ESAN. Alonso de Molina 1652, Monterrico, Surco, Lima - Perú
+           </p>
+      </div>
+      <b-container fluid class="modal2" >
+        <b-row class="mb-1 text-center">
+          <b-col cols="5">
+             <b-button class="btn-m"   block @click="hideModal">Cerrar</b-button>
+          </b-col>
+          <b-col cols="7">
+            <b-button class="btn-m"  block @click="toggleModal">Acepto esta política</b-button>
+          </b-col>
+        </b-row>
+      </b-container>
+     
+      
+    </b-modal>
   </div>
+  
 </template>
 
 <script>
@@ -273,18 +313,20 @@ export default {
       },
       alternativas: [
         { text: "-Elije una alternativa-", value: null },
-        "Carrots",
-        "Beans",
-        "Tomatoes",
-        "Corn",
+        "Me lo comentó una amiga o amigo.",
+        "Vi un aviso publicitario en un periódico o revista.",
+        "Recibí un folleto impreso en mi casa u oficina.",
+        "Vi un aviso publicitario en internet.",
+        "Buscando información en Google u otros buscadores.",
+        "Recibí información de mi empleador, jefe o de la empresa para la que trabajo.",
+        "Me contactó un representante de ventas.",
+        "Mediante Facebook, Twitter u otras redes sociales.",
+        "Leyendo un artículo de Conexión ESAN.",
+        "Visitando el sitio web de ESAN.",
+        "Navegando por internet, en blogs u otros sitios web."
       ],
-      areasdeInteres: [
-        { text: "Áreas de interés", value: null },
-        "Carrots",
-        "Beans",
-        "Tomatoes",
-        "Corn",
-      ],
+      areasdeInteres: [{ text: '¿Qué área te interesa?', value: null }, 'Administración y Dirección de personas', 'Business to Business', 
+         'Energía', 'Finanzas', 'Marketing', 'Minería', 'Salud',  'Operaciones y Logística', 'Tecnologías de la Información' ],
       gradoAcademicos: [
         { text: "-Grado Académico-", value: null },
         "Carrots",
@@ -340,6 +382,17 @@ export default {
         this.show = true;
       });
     },
+     showModal() {
+        this.$refs['my-modal'].show()
+      },
+      hideModal() {
+        this.$refs['my-modal'].hide()
+      },
+      toggleModal() {
+        // We pass the ID of the button that we want to return focus to
+        // when the modal has hidden 
+        this.$refs['my-modal'].toggle('#toggle-btn');
+      }
   },
 };
 </script>
@@ -347,6 +400,19 @@ export default {
 
 <style lang="stylus" scoped>
 @import '../../styles/main.styl';
+.custom-checkbox
+  display inline-flex !important
+.modal1
+  h3
+    font-size 21px
+  p
+    font-size 14px
+  btn-m
+    font-size 1px 
+.modal2
+  .btn
+    font-size 16px 
+    height 50px      
 
 input[type=radio], input[type=checkbox] 
   margin: 4px 3px 3px !important;
