@@ -2,7 +2,7 @@
   <div>
     <HeadePage />
     <ImagePage bgColorDivider="#C3B36D" message="Solicita Información" />
-      
+
     <b-container class="pasos-areas">
       <b-row>
         <b-col>
@@ -20,9 +20,7 @@
                 required
               ></b-form-select>
             </b-form-group>
-            <b-container>
-              
-            </b-container>
+            <b-container> </b-container>
             <b-row>
               <b-col lg="6" md="12">
                 <div>
@@ -121,38 +119,79 @@
                     id="input-group-9"
                     label-for="input-9"
                   >
-                    <b-form-select
+                  
+                    <select
+                      class="form-select"
+                      v-model="form.gradoAcademico"
+                      required
+                    >
+                      <option v-bind:value="null" selected >-Grado Académico-</option>
+                      <option
+                        v-for="gradoAcademico in gradoAcademicos"
+                        :key="gradoAcademico.id"
+                      >
+                        {{ gradoAcademico.name }}
+                      </option>
+                    </select>
+                    <!-- <b-form-select
+                      :key="name.id"
+                      v-for="name in gradoAcademicos"
                       id="input-9"
                       v-model="form.gradoAcademico"
-                      :options="gradoAcademicos"
+                      :options="name"
                       required
                     >
                     
-                    </b-form-select>
+                    </b-form-select> -->
                   </b-form-group>
                   <b-form-group
                     class="form-content"
                     id="input-group-10"
                     label-for="input-10"
                   >
-                    <b-form-select
+                    <!-- <b-form-select
                       id="input-10"
                       v-model="form.industria"
                       :options="industrias"
                       required
-                    ></b-form-select>
+                    ></b-form-select> -->
+
+                     <select
+                      v-model="form.industria"
+                      required
+                    >
+                      <option v-bind:value="null" selected>-Industria o giro-</option>
+                      <option
+                        v-for="industria in industrias"
+                        :key="industria.id"
+                      >
+                        {{ industria.name }}
+                      </option>
+                    </select>
                   </b-form-group>
                   <b-form-group
                     class="form-content"
                     id="input-group-11"
                     label-for="input-11"
                   >
-                    <b-form-select
+                    <!-- <b-form-select
                       id="input-11"
                       v-model="form.area"
                       :options="areas"
                       required
-                    ></b-form-select>
+                    ></b-form-select> -->
+                         <select
+                      v-model="form.area"
+                      required
+                    >
+                      <option v-bind:value="null" selected>-Areas donde trabaja-</option>
+                      <option
+                        v-for="area in areas"
+                        :key="area.id"
+                      >
+                        {{ area.name }}
+                      </option>
+                    </select>
                   </b-form-group>
                 </div>
               </b-col>
@@ -179,14 +218,15 @@
                 :aria-describedby="ariaDescribedby"
                 required
               >
-                <b-form-checkbox class="conditions"  value="me"> </b-form-checkbox
-                >
-                 <span class="text-condiciones">
-                   Acepto las  <a @click="toggleModal" class="access"> condiciones de tratamiento para mis datos
-                  personales
-                    </a>
-                 </span>
-                 
+                <b-form-checkbox class="conditions" value="me">
+                </b-form-checkbox>
+                <span class="text-condiciones">
+                  Acepto las
+                  <a @click="toggleModal" class="access">
+                    condiciones de tratamiento para mis datos personales
+                  </a>
+                </span>
+
                 <!-- <b-form-checkbox value="that">Check that out</b-form-checkbox> -->
               </b-form-checkbox-group>
             </b-form-group>
@@ -205,16 +245,22 @@
                 required
               ></b-form-select>
             </b-form-group>
-            <br>
+            <br />
             <b-form-group>
-            <country-select  :removePlaceholder="true"   v-model="form.country" :country="form.country" topCountry="PE" />    
-            </b-form-group>       
+              <country-select
+                :removePlaceholder="true"
+                v-model="form.country"
+                :country="form.country"
+                topCountry="PE"
+              />
+            </b-form-group>
             <br />
             <div class="button-content">
-              <b-button  class="button-text" type="submit" variant="primary">Enviar mis datos</b-button>
+              <b-button class="button-text" type="submit" variant="primary"
+                >Enviar mis datos</b-button
+              >
             </div>
             <!-- <b-button type="reset" variant="danger">Reset</b-button> -->
-
           </b-form>
         </b-col>
       </b-row>
@@ -229,48 +275,56 @@
       admisionText="myJson.admisionText"
     />
     <FooterPage />
-      <b-modal  ref="my-modal" hide-footer title="Política de Protección de Datos Personales" >
+    <b-modal
+      ref="my-modal"
+      hide-footer
+      title="Política de Protección de Datos Personales"
+    >
       <div class="d-block text-justify modal1">
         <h3 class="text-center">Política de Protección de Datos Personales</h3>
-        <p>De conformidad con la Ley N° 29733, Ley de Protección de Datos Personales, 
-          el usuario da su consentimiento para el tratamiento de los datos personales 
-          que son facilitados en el presente formulario o por cualquier medio desde el 
-          momento de su ingreso o utilización del portal. Asimismo, el usuario consiente 
-          que la Universidad ESAN pueda ceder estos datos a terceros para los fines 
-          expuestos a continuación.</p>
-         <p>
-           Estos serán incorporados en el banco de datos de usuarios de la Universidad ESAN, 
-           para utilizarlos en seguimiento de un eventual proceso de matrícula, envío de 
-           publicidad mediante cualquier medio y soporte, envío de invitaciones a actividades 
-           convocadas por ESAN o sus socios comerciales, para fines estadísticos, gestiones 
-           institucionales y administrativas; y se mantendrán mientras sean útiles para que la
-            Universidad pueda prestar y ofrecer sus servicios y darles trámite.
-           </p> 
-           <p>
-             El usuario podrá ejercer los derechos de acceso, rectificación, oposición y 
-             cancelación de los datos personales escribiendo a datospersonales@esan.edu.pe o 
-             a la siguiente dirección: <br>
-             Oficina de Protección de Datos Personales, Universidad ESAN. Alonso de Molina 1652, Monterrico, Surco, Lima - Perú
-           </p>
+        <p>
+          De conformidad con la Ley N° 29733, Ley de Protección de Datos
+          Personales, el usuario da su consentimiento para el tratamiento de los
+          datos personales que son facilitados en el presente formulario o por
+          cualquier medio desde el momento de su ingreso o utilización del
+          portal. Asimismo, el usuario consiente que la Universidad ESAN pueda
+          ceder estos datos a terceros para los fines expuestos a continuación.
+        </p>
+        <p>
+          Estos serán incorporados en el banco de datos de usuarios de la
+          Universidad ESAN, para utilizarlos en seguimiento de un eventual
+          proceso de matrícula, envío de publicidad mediante cualquier medio y
+          soporte, envío de invitaciones a actividades convocadas por ESAN o sus
+          socios comerciales, para fines estadísticos, gestiones institucionales
+          y administrativas; y se mantendrán mientras sean útiles para que la
+          Universidad pueda prestar y ofrecer sus servicios y darles trámite.
+        </p>
+        <p>
+          El usuario podrá ejercer los derechos de acceso, rectificación,
+          oposición y cancelación de los datos personales escribiendo a
+          datospersonales@esan.edu.pe o a la siguiente dirección: <br />
+          Oficina de Protección de Datos Personales, Universidad ESAN. Alonso de
+          Molina 1652, Monterrico, Surco, Lima - Perú
+        </p>
       </div>
-      <b-container fluid class="modal2" >
+      <b-container fluid class="modal2">
         <b-row class="mb-1 text-center">
           <b-col cols="5">
-             <b-button class="btn-m"   block @click="hideModal">Cerrar</b-button>
+            <b-button class="btn-m" block @click="hideModal">Cerrar</b-button>
           </b-col>
           <b-col cols="7">
-            <b-button class="btn-m"  block @click="accept">Acepto esta política</b-button>
+            <b-button class="btn-m" block @click="accept"
+              >Acepto esta política</b-button
+            >
           </b-col>
         </b-row>
       </b-container>
-     
-      
     </b-modal>
   </div>
-  
 </template>
 
 <script>
+import axios from "axios";
 import HeadePage from "../../components/HeadePage";
 import FooterPage from "../../components/FooterPage";
 import ImagePage from "../../components/ImagePage.vue";
@@ -286,16 +340,16 @@ export default {
   data() {
     return {
       selected: null,
-      countryName:false,
+      countryName: false,
       options: [
-        { value: null, text: 'Please select an option' },
-        { value: 'a', text: 'This is First option' },
-        { value: 'b', text: 'Selected Option' },
-        { value: { C: '3PO' }, text: 'This is an option with object value' },
-        { value: 'd', text: 'This one is disabled', disabled: true }
+        { value: null, text: "Please select an option" },
+        { value: "a", text: "This is First option" },
+        { value: "b", text: "Selected Option" },
+        { value: { C: "3PO" }, text: "This is an option with object value" },
+        { value: "d", text: "This one is disabled", disabled: true },
       ],
       form: {
-        country: '',
+        country: "",
         emainumereDNIl: "",
         checked: [],
         name: "",
@@ -323,37 +377,59 @@ export default {
         "Mediante Facebook, Twitter u otras redes sociales.",
         "Leyendo un artículo de Conexión ESAN.",
         "Visitando el sitio web de ESAN.",
-        "Navegando por internet, en blogs u otros sitios web."
+        "Navegando por internet, en blogs u otros sitios web.",
       ],
-      areasdeInteres: [{ text: '¿Qué área te interesa?', value: null }, 'Administración y Dirección de personas', 'Business to Business', 
-         'Energía', 'Finanzas', 'Marketing', 'Minería', 'Salud',  'Operaciones y Logística', 'Tecnologías de la Información' ],
-      gradoAcademicos: [
-        { text: "-Grado Académico-", value: null },
-        "Carrots",
-        "Beans",
-        "Tomatoes",
-        "Corn",
+      areasdeInteres: [
+        { text: "¿Qué área te interesa?", value: null },
+        "Administración y Dirección de personas",
+        "Business to Business",
+        "Energía",
+        "Finanzas",
+        "Marketing",
+        "Minería",
+        "Salud",
+        "Operaciones y Logística",
+        "Tecnologías de la Información",
       ],
-      industrias: [
-        { text: "-Industria o giro-", value: null },
-        "Carrots",
-        "Beans",
-        "Tomatoes",
-        "Corn",
-      ],
-      areas: [
-        { text: "-Areas donde trabaja-", value: null },
-        "Carrots",
-        "Beans",
-        "Tomatoes",
-        "Corn",
-      ],
-
+      gradoAcademicos: [],
+      industrias: [],
+      areas: [],
       show: true,
     };
   },
+  mounted() {
+    axios
+      .get(
+        "https://www.esanbackoffice.com/api/world/academic-degrees/?limit=100%27"
+      )
+      .then(
+        (response) => (
+          (this.gradoAcademicos = response.data.results),
+          console.log(response.data.results)
+        )
+      );
+      axios
+      .get(
+        "https://www.esanbackoffice.com/api/world/industries/?limit=100%27"
+      )
+      .then(
+        (response) => (
+          (this.industrias = response.data.results),
+          console.log(response.data.results)
+        )
+      );
+      axios
+      .get(
+        "https://www.esanbackoffice.com/api/world/functions/?limit=100%27"
+      )
+      .then(
+        (response) => (
+          (this.areas = response.data.results),
+          console.log(response.data.results)
+        )
+      );
+  },
   methods: {
- 
     onSubmit(event) {
       event.preventDefault();
       console.log(JSON.stringify(this.form));
@@ -374,7 +450,7 @@ export default {
       this.form.gradoAcademico = null;
       this.form.industria = null;
       this.form.area = null;
-      this.form.country="";
+      this.form.country = "";
       this.form.checked = [];
       // Trick to reset/clear native browser form validation state
       this.show = false;
@@ -382,22 +458,22 @@ export default {
         this.show = true;
       });
     },
-     showModal() {
-        this.$refs['my-modal'].show()
-      },
-      hideModal() {
-        this.$refs['my-modal'].hide()
-      },
-      toggleModal() {
-        // We pass the ID of the button that we want to return focus to
-        // when the modal has hidden 
-        this.$refs['my-modal'].toggle('#toggle-btn');
-      },
-      accept(){
-        const data = ["me"];
-        this.$refs['my-modal'].toggle('#toggle-btn');
-        this.form.checked = this.form.checked.concat(data);
-      }
+    showModal() {
+      this.$refs["my-modal"].show();
+    },
+    hideModal() {
+      this.$refs["my-modal"].hide();
+    },
+    toggleModal() {
+      // We pass the ID of the button that we want to return focus to
+      // when the modal has hidden
+      this.$refs["my-modal"].toggle("#toggle-btn");
+    },
+    accept() {
+      const data = ["me"];
+      this.$refs["my-modal"].toggle("#toggle-btn");
+      this.form.checked = this.form.checked.concat(data);
+    },
   },
 };
 </script>
@@ -405,68 +481,97 @@ export default {
 
 <style lang="stylus" scoped>
 @import '../../styles/main.styl';
-.custom-checkbox
-  display inline-flex !important
-.modal1
-  h3
-    font-size 21px
-  p
-    font-size 14px
-  btn-m
-    font-size 1px 
-.modal2
-  .btn
-    font-size 16px 
-    height 50px      
 
-input[type=radio], input[type=checkbox] 
+.custom-checkbox {
+  display: inline-flex !important;
+}
+
+.modal1 {
+  h3 {
+    font-size: 21px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  btn-m {
+    font-size: 1px;
+  }
+}
+
+.modal2 {
+  .btn {
+    font-size: 16px;
+    height: 50px;
+  }
+}
+
+input[type=radio], input[type=checkbox] {
   margin: 4px 3px 3px !important;
   margin-top: 1px \9 !important;
   line-height: normal !important;
+}
 
-.text-condiciones
-  padding-left 10px
+.text-condiciones {
+  padding-left: 10px;
+}
 
-select
-  width 100%
-  padding 0.375rem 0.75rem
-  height 38px
-  background-color #dbdbdb
-  color #6B6B6B;
-  font-family Raleway-Regular 
+select {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  height: 38px;
+  background-color: #dbdbdb;
+  color: #6B6B6B;
+  font-family: Raleway-Regular;
+}
 
-::placeholder 
+::placeholder {
   color: #6B6B6B;
   opacity: 1; /* Firefox */
-  font-family Raleway-Regular 
+  font-family: Raleway-Regular;
+}
 
-.button-content
-  text-align center
-.button-text
-  font-family gt-pressura-bold  
-  width 25em
-  font-size 18px
-  border-radius 0px
-  background-color #C1B170
-  border-color  #C1B170
-  color #252A2D
-  height 52px
-  margin-top 25px
-.conditions
-  font-family Raleway-Regular
+.button-content {
+  text-align: center;
+}
 
-.access
-  font-family Raleway-Bold
-label
-  display inline  
-input 
-  font-family Raleway-Regular
+.button-text {
+  font-family: gt-pressura-bold;
+  width: 25em;
+  font-size: 18px;
+  border-radius: 0px;
+  background-color: #C1B170;
+  border-color: #C1B170;
+  color: #252A2D;
+  height: 52px;
+  margin-top: 25px;
+}
+
+.conditions {
+  font-family: Raleway-Regular;
+}
+
+.access {
+  font-family: Raleway-Bold;
+}
+
+label {
+  display: inline;
+}
+
+input {
+  font-family: Raleway-Regular;
   // color blue !important
-input, select, textarea, .conditions
- margin-left 10px  
+}
+
+input, select, textarea, .conditions {
+  margin-left: 10px;
+}
+
 .form-content {
   padding-top: 30px;
-  font-family Raleway-Regular
+  font-family: Raleway-Regular;
 }
 
 .second-subtitle {
@@ -478,8 +583,8 @@ input, select, textarea, .conditions
   padding-left: 130px;
   padding-bottom: 80px;
   padding-top: 80px;
-  max-width : 1084px;
-  width : 100%
+  max-width: 1084px;
+  width: 100%;
 }
 
 .subtitle-table {
@@ -528,7 +633,7 @@ input, select, textarea, .conditions
 .subtitle-text {
   color: bg-black;
   font-size: 32px;
-  font-family gt-pressura-bold
+  font-family: gt-pressura-bold;
 }
 
 .bv-example-row {
@@ -549,53 +654,73 @@ input, select, textarea, .conditions
   background-image: url('../../assets/home/banner/kv-001-1.jpg');
   color: #C3B36D !important;
   background-position-y: -100px;
-
 }
 
 textarea, input {
   background-color: #DBDBDB;
   border-radius: 0px;
 }
+
 textarea, input, select, checkbox {
   border: 1.5px solid #252a2d;
 }
-.custom-checkbox
-  display flex
-  margin-top 10px
-.custom-control-label
-  margin-top -5px  
 
-+for_breakpoint(md)
-  .pasos-areas 
-    padding-right : 30px !important
-    padding-left : 30px !important
-    padding-bottom :80px
-    padding-top 80px
-  .button-text
-    width 10em
-  .jumbotron 
+.custom-checkbox {
+  display: flex;
+  margin-top: 10px;
+}
+
+.custom-control-label {
+  margin-top: -5px;
+}
+
++for_breakpoint(md) {
+  .pasos-areas {
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+
+  .button-text {
+    width: 10em;
+  }
+
+  .jumbotron {
     background-image: url('../../assets/home/banner/kv-001-1.jpg');
     background-position-y: 0px;
-    background-position-x: center
+    background-position-x: center;
     background-size: cover;
     width: 100%;
-  input, select, textarea, .conditions
-    margin-left 0px  
+  }
 
-+for_breakpoint(mobile)
-  .pasos-areas 
-    padding-right : 30px !important
-    padding-left : 30px !important
-    padding-bottom :80px
-    padding-top 80px
-  .jumbotron 
+  input, select, textarea, .conditions {
+    margin-left: 0px;
+  }
+}
+
++for_breakpoint(mobile) {
+  .pasos-areas {
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+
+  .jumbotron {
     background-image: url('../../assets/home/banner/kv-001-1.jpg');
     background-position-y: 0px;
-    background-position-x: center
+    background-position-x: center;
     background-size: cover;
     width: 100%;
-  .text-columns
-    padding-right 0px
-  .button-text
-    width 15em !important
+  }
+
+  .text-columns {
+    padding-right: 0px;
+  }
+
+  .button-text {
+    width: 15em !important;
+  }
+}
 </style>
