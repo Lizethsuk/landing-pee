@@ -6,9 +6,10 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import router from './router'
 import './styles/main.styl'
 import vueCountryRegionSelect from 'vue-country-region-select'
+import axios from 'axios'
 Vue.use(vueCountryRegionSelect)
 Vue.use(BootstrapVue)
-
+Vue.prototype.$http = axios
 Vue.config.productionTip = false
 
 new Vue({
