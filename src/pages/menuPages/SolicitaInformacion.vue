@@ -119,13 +119,14 @@
                     id="input-group-9"
                     label-for="input-9"
                   >
-                  
                     <select
                       class="form-select"
                       v-model="form.gradoAcademico"
                       required
                     >
-                      <option v-bind:value="null" selected >-Grado Académico-</option>
+                      <option v-bind:value="null" selected>
+                        -Grado Académico-
+                      </option>
                       <option
                         v-for="gradoAcademico in gradoAcademicos"
                         :key="gradoAcademico.id"
@@ -156,11 +157,10 @@
                       required
                     ></b-form-select> -->
 
-                     <select
-                      v-model="form.industria"
-                      required
-                    >
-                      <option v-bind:value="null" selected>-Industria o giro-</option>
+                    <select v-model="form.industria" required>
+                      <option v-bind:value="null" selected>
+                        -Industria o giro-
+                      </option>
                       <option
                         v-for="industria in industrias"
                         :key="industria.id"
@@ -180,15 +180,11 @@
                       :options="areas"
                       required
                     ></b-form-select> -->
-                         <select
-                      v-model="form.area"
-                      required
-                    >
-                      <option v-bind:value="null" selected>-Areas donde trabaja-</option>
-                      <option
-                        v-for="area in areas"
-                        :key="area.id"
-                      >
+                    <select v-model="form.area" required>
+                      <option v-bind:value="null" selected>
+                        -Areas donde trabaja-
+                      </option>
+                      <option v-for="area in areas" :key="area.id">
                         {{ area.name }}
                       </option>
                     </select>
@@ -408,20 +404,16 @@ export default {
           console.log(response.data.results)
         )
       );
-      axios
-      .get(
-        "https://www.esanbackoffice.com/api/world/industries/?limit=100%27"
-      )
+    axios
+      .get("https://www.esanbackoffice.com/api/world/industries/?limit=100%27")
       .then(
         (response) => (
           (this.industrias = response.data.results),
           console.log(response.data.results)
         )
       );
-      axios
-      .get(
-        "https://www.esanbackoffice.com/api/world/functions/?limit=100%27"
-      )
+    axios
+      .get("https://www.esanbackoffice.com/api/world/functions/?limit=100%27")
       .then(
         (response) => (
           (this.areas = response.data.results),

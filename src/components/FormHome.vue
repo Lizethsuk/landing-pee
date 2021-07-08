@@ -43,7 +43,7 @@
           required
         ></b-form-input>
       </b-form-group>
-      <b-form-group class="all-btn" id="input-group-1" label-for="input-1">
+      <b-form-group class="all-btn" id="input-group-5" label-for="input-1">
         <b-form-input
           id="input-1"
           v-model="form.email"
@@ -52,7 +52,6 @@
           required
         ></b-form-input>
       </b-form-group>
-
       <b-form-group class="all-btn" id="input-group-6" label-for="input-6">
         <b-form-input
           id="input-6"
@@ -69,6 +68,14 @@
           required
         ></b-form-input>
       </b-form-group>
+      <b-form-group class="all-btn">
+        <country-select
+          placeholder="Seleccione su país"
+          v-model="form.country"
+          :country="form.country"
+        />
+      </b-form-group>
+
       <b-form-group
         class="all-btn"
         id="input-group-5"
@@ -135,16 +142,19 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   data() {
     return {
+      countryName: false,
       form: {
+        country: "",
         email: "",
         name: "",
-        lastname:"",
-        dni:"",
-        telefono:"",
-        cargo:"",
+        lastname: "",
+        dni: "",
+        telefono: "",
+        cargo: "",
         food: null,
         checked: [],
       },
@@ -161,12 +171,75 @@ export default {
         "Tecnologías de la Información",
       ],
       show: true,
+      sending: false,
+      retry_sending_times: 3, 
+      attempted_sendings_count: 0, 
+      seconds_before_next_attempt: 2,
     };
   },
   methods: {
     onSubmit(event) {
       event.preventDefault();
       console.log(JSON.stringify(this.form));
+      // ESTO ES PROPIAMENTE LO QUE SE ENVÍA + LA METADATA
+      this.sending = true;
+      const information_request = {
+        timestamp: new Date().toJSON(), // FECHA Y HORA EXACTAS DEL ENVIO EN FORMATO JSON
+        form: this.form,
+      }
+      
+      // console.log(this.payload);
+      var limit = this.retry_sending_times;
+      var attempts_count = this.attempted_sendings_count;
+      var miliseconds_delay = this.seconds_before_next_attempt * 1000;
+      
+      axios.post(
+        'https://staging.esanbackoffice.com/websites/products/information-request/',
+        information_request
+      )
+        .then(function (response) {
+          console.log(response.data);
+          if (response.data.information_requested) {
+            alert( "Éxito." );
+            // Ir a la página de gracias
+            // window.location.href = 'https://www.esan.edu.pe/backoffice/muestras/solicitud-de-informacion.html';
+            this.sending = false;
+          } else {
+            
+            if (attempts_count < limit) {
+              setTimeout(
+                () => {
+                  this.attempted_sendings_count = attempts_count + 1
+                  console.log(this.attempted_sendings_count + ' retry attempts.')
+                  this.onSubmit();
+                  },
+                  miliseconds_delay
+                );
+            } else {
+              alert( "Hubo un error. Inténtalo de nuevo en unos minutos, por favor." ); // en lugar de una alerta, puede ser más claro para el usuario levantar un modal
+              this.sending = false;
+              this.attempted_sendings_count = 0;
+            }
+          }
+        })
+        .catch(function (error) {
+          console.log(error);
+          if (attempts_count < limit) {
+            setTimeout(
+              () => {
+                this.attempted_sendings_count = attempts_count + 1
+                  console.log(this.attempted_sendings_count + ' retry attempts.')
+                this.onSubmit();
+                },
+                miliseconds_delay
+              );
+          } else {
+            alert( "Hubo un error. Inténtalo de nuevo en unos minutos, por favor." ); // en lugar de una alerta, puede ser más claro para el usuario levantar un modal
+            this.sending = false;
+            this.attempted_sendings_count = 0;
+          }
+        });
+
     },
     onReset(event) {
       event.preventDefault();
@@ -179,6 +252,7 @@ export default {
       this.form.telefono = "";
       this.form.food = null;
       this.form.checked = [];
+      this.form.country = "";
       // Trick to reset/clear native browser form validation state
       this.show = false;
       this.$nextTick(() => {
@@ -196,11 +270,11 @@ export default {
       // when the modal has hidden
       this.$refs["my-modal"].toggle("#toggle-btn");
     },
-    accept(){
-        const data = ["me"];
-        this.$refs['my-modal'].toggle('#toggle-btn');
-        this.form.checked = this.form.checked.concat(data);
-    }
+    accept() {
+      const data = ["me"];
+      this.$refs["my-modal"].toggle("#toggle-btn");
+      this.form.checked = this.form.checked.concat(data);
+    },
   },
 };
 </script>
