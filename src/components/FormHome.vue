@@ -1,6 +1,6 @@
 <template>
   <div class="form-class">
-    <b-form @submit="sendInformationRequest" @reset="onReset" v-if="show" class="form-g">
+    <b-form @submit="sendInformationRequest" v-if="show" class="form-g">
       <b-form-group class="all-btn">
         <h1>
           Regístrate <br />
@@ -172,98 +172,150 @@ export default {
       ],
       show: true,
       sending: false,
-      // retry_sending_times: 3,
-      // attempted_sendings_count: 0,
-      // seconds_before_next_attempt: 2,
+      retry_sending_times: 3,
+      attempted_sendings_count: 0,
+      seconds_before_next_attempt: 2,
     };
   },
+  mounted(){
+    this.loadHiddenFields();
+  },
+  computed: {
+    document_cookies: function () {
+      var key_values_list = document.cookie.split('; ');
+      var cookies_list = [];
+      for (let i = 0; i < key_values_list.length; i++) {
+        var current_key_and_value = key_values_list[i].split('=');
+        cookies_list.push({
+          key: current_key_and_value[0],
+          value: current_key_and_value[1],
+        })
+      }
+      return cookies_list;
+    },
+    nueva_procedencia: function () {
+      if (this.form.source != '') {
+        // 				this.addTrafficSourceToForm();
+        return this.form.source + '|>' + this.source_datetime + ')';
+      }
+      return '(cómo llegará a Formstack)';
+    },
+    procedencia: function () {
+      return this.getCookieWithName("traffic_source");
+    },
+    user_agent_uuid: function () {
+      // id = 'sdi_user_agent_uuid'
+      return this.getCookieWithName("user_agent_uuid");
+    },
+    source_datetime: function () {
+      var right_now = new Date();
+      var date_of_click = new Date(right_now.getTime() - 10 * 60 * 1000);
+      var currDate = date_of_click.getDate();
+      var hours = date_of_click.getHours();
+      var minutes = date_of_click.getMinutes();
+      var month = date_of_click.getMonth() + 1;
+      var year = date_of_click.getFullYear();
+      var ampm = hours >= 12 ? 'pm' : 'am';
+      hours = hours % 12;
+      hours = hours ? hours : 12; // the hour '0' makes '12'
+      minutes = minutes < 10 ? '0' + minutes : minutes;
+      var strTime = currDate + '-' + month + '-' + year + ' ' + hours + ':' + minutes + ' ' + ampm;
+      return strTime;
+    },
+  },
+  
   methods: {
+    getCookieWithName: function (cookie_name) {
+      var matches = this.document_cookies.filter(function (el) {
+        return el.key == cookie_name;
+      });
+      if (matches.length > 0) {
+        return matches[0].value;
+      }
+      return '';
+    },
+    loadHiddenFields: function () {
+      // injects the traffic_source value to the form
+      var elValorDeLaProcedencia = this.procedencia;
+      if ((this.input_source_manually) && (this.form.source != '')) {
+        elValorDeLaProcedencia = this.nueva_procedencia;
+      }
+      this.payload.procedencia = elValorDeLaProcedencia;
+      this.payload.user_agent_uuid = this.user_agent_uuid;
+      this.payload.url_del_formulario = window.location.href;
+    },
     sendInformationRequest() {
-      // event.preventDefault();
-      // console.log(JSON.stringify(this.form));
-      // ESTO ES PROPIAMENTE LO QUE SE ENVÍA + LA METADATA
       this.sending = true;
-      const information_request = {
-        timestamp: new Date().toJSON(), // FECHA Y HORA EXACTAS DEL ENVIO EN FORMATO JSON
+      var information_request = {
+        timestamp: new Date().toJSON(), 
         payload: this.payload,
       };
-
       console.log(information_request);
-      const limit = this.retry_sending_times;
-      const attempts_count = this.attempted_sendings_count;
-      const miliseconds_delay = this.seconds_before_next_attempt * 1000;
-      // axios
-      //   .post(
-      //     "https://staging.esanbackoffice.com/websites/products/information-request/'",this.form
-      //   )
-      //   .then((result) => {
-      //     console.log(result);
-      //   });
+      var limit = this.retry_sending_times;
+      var attempts_count = this.attempted_sendings_count;
+      var miliseconds_delay = this.seconds_before_next_attempt * 1000;
       axios.post(
-        'https://staging.esanbackoffice.com/websites/products/information-request/',
-        information_request
+         'https://www.esanbackoffice.com/websites/products/information-request/',information_request
+ 
       )
-        .then(function (response) {
-          console.log(response.data);
-          if (response.data.information_requested) {
-            console.log( "Éxito." );
-            // Ir a la página de gracias
-            // window.location.href = 'https://www.esan.edu.pe/backoffice/muestras/solicitud-de-informacion.html';
+        .then( (response) => {
+          console.log(response);
+          if (response.data) {
+            alert( "Éxito." );
             this.sending = false;
           } else {
-
             if (attempts_count < limit) {
               setTimeout(
                 () => {
                   this.attempted_sendings_count = attempts_count + 1
-                  console.log(this.attempted_sendings_count + ' retry attempts.')
+                  console.log(this.attempted_sendings_count + ' retry attempts.1')
                   this.sendInformationRequest();
                   },
                   miliseconds_delay
                 );
             } else {
-              alert( "Hubo un error. Inténtalo de nuevo en unos minutos, por favor." ); // en lugar de una alerta, puede ser más claro para el usuario levantar un modal
+              alert( "Hubo un error. Inténtalo de nuevo en unos minutos, por favor.1" ); // en lugar de una alerta, puede ser más claro para el usuario levantar un modal
               this.sending = false;
               this.attempted_sendings_count = 0;
             }
           }
         })
-        .catch(function (error) {
+        .catch( (error) =>{
           console.log(error);
           if (attempts_count < limit) {
             setTimeout(
               () => {
                 this.attempted_sendings_count = attempts_count + 1
-                console.log(this.attempted_sendings_count + ' retry attempts.')
+                console.log(this.attempted_sendings_count + ' retry attempts.2')
                 this.sendInformationRequest();
                 },
                 miliseconds_delay
               );
           } else {
-            alert( "Hubo un error. Inténtalo de nuevo en unos minutos, por favor." ); // en lugar de una alerta, puede ser más claro para el usuario levantar un modal
+            alert( "Hubo un error. Inténtalo de nuevo en unos minutos, por favor.2" ); // en lugar de una alerta, puede ser más claro para el usuario levantar un modal
             this.sending = false;
             this.attempted_sendings_count = 0;
           }
         });
     },
-    onReset(event) {
-      event.preventDefault();
-      // Reset our form values
-      this.payload.email = "";
-      this.payload.name = "";
-      this.payload.lastname = "";
-      this.payload.dni = "";
-      this.payload.cargo = "";
-      this.payload.telefono = "";
-      this.payload.food = null;
-      this.payload.checked = [];
-      this.payload.country = "";
-      // Trick to reset/clear native browser form validation state
-      this.show = false;
-      this.$nextTick(() => {
-        this.show = true;
-      });
-    },
+    // onReset(event) {
+    //   event.preventDefault();
+    //   // Reset our form values
+    //   this.payload.email = "";
+    //   this.payload.name = "";
+    //   this.payload.lastname = "";
+    //   this.payload.dni = "";
+    //   this.payload.cargo = "";
+    //   this.payload.telefono = "";
+    //   this.payload.food = null;
+    //   this.payload.checked = [];
+    //   this.payload.country = "";
+    //   // Trick to reset/clear native browser form validation state
+    //   this.show = false;
+    //   this.$nextTick(() => {
+    //     this.show = true;
+    //   });
+    // },
     showModal() {
       this.$refs["my-modal"].show();
     },
@@ -271,8 +323,6 @@ export default {
       this.$refs["my-modal"].hide();
     },
     toggleModal() {
-      // We pass the ID of the button that we want to return focus to
-      // when the modal has hidden
       this.$refs["my-modal"].toggle("#toggle-btn");
     },
     accept() {
