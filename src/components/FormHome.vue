@@ -180,70 +180,8 @@ export default {
   mounted(){
     this.loadHiddenFields();
   },
-  computed: {
-    document_cookies: function () {
-      var key_values_list = document.cookie.split('; ');
-      var cookies_list = [];
-      for (let i = 0; i < key_values_list.length; i++) {
-        var current_key_and_value = key_values_list[i].split('=');
-        cookies_list.push({
-          key: current_key_and_value[0],
-          value: current_key_and_value[1],
-        })
-      }
-      return cookies_list;
-    },
-    nueva_procedencia: function () {
-      if (this.form.source != '') {
-        // 				this.addTrafficSourceToForm();
-        return this.form.source + '|>' + this.source_datetime + ')';
-      }
-      return '(cómo llegará a Formstack)';
-    },
-    procedencia: function () {
-      return this.getCookieWithName("traffic_source");
-    },
-    user_agent_uuid: function () {
-      // id = 'sdi_user_agent_uuid'
-      return this.getCookieWithName("user_agent_uuid");
-    },
-    source_datetime: function () {
-      var right_now = new Date();
-      var date_of_click = new Date(right_now.getTime() - 10 * 60 * 1000);
-      var currDate = date_of_click.getDate();
-      var hours = date_of_click.getHours();
-      var minutes = date_of_click.getMinutes();
-      var month = date_of_click.getMonth() + 1;
-      var year = date_of_click.getFullYear();
-      var ampm = hours >= 12 ? 'pm' : 'am';
-      hours = hours % 12;
-      hours = hours ? hours : 12; // the hour '0' makes '12'
-      minutes = minutes < 10 ? '0' + minutes : minutes;
-      var strTime = currDate + '-' + month + '-' + year + ' ' + hours + ':' + minutes + ' ' + ampm;
-      return strTime;
-    },
-  },
-  
+
   methods: {
-    getCookieWithName: function (cookie_name) {
-      var matches = this.document_cookies.filter(function (el) {
-        return el.key == cookie_name;
-      });
-      if (matches.length > 0) {
-        return matches[0].value;
-      }
-      return '';
-    },
-    loadHiddenFields: function () {
-      // injects the traffic_source value to the form
-      var elValorDeLaProcedencia = this.procedencia;
-      if ((this.input_source_manually) && (this.form.source != '')) {
-        elValorDeLaProcedencia = this.nueva_procedencia;
-      }
-      this.payload.procedencia = elValorDeLaProcedencia;
-      this.payload.user_agent_uuid = this.user_agent_uuid;
-      this.payload.url_del_formulario = window.location.href;
-    },
     sendInformationRequest() {
       this.sending = true;
       var information_request = {
