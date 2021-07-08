@@ -1,6 +1,6 @@
 <template>
   <div class="form-class">
-    <b-form @submit="onSubmit" @reset="onReset" v-if="show" class="form-g">
+    <b-form @submit="sendInformationRequest" @reset="onReset" v-if="show" class="form-g">
       <b-form-group class="all-btn">
         <h1>
           Regístrate <br />
@@ -14,7 +14,7 @@
       <b-form-group class="all-btn" id="input-group-3" label-for="input-3">
         <b-form-select
           id="input-3"
-          v-model="form.food"
+          v-model="payload.food"
           :options="foods"
           required
         ></b-form-select>
@@ -22,7 +22,7 @@
       <b-form-group class="all-btn" id="input-group-2" label-for="input-2">
         <b-form-input
           id="input-2"
-          v-model="form.name"
+          v-model="payload.name"
           placeholder="Nombres"
           required
         ></b-form-input>
@@ -30,7 +30,7 @@
       <b-form-group class="all-btn" id="input-group-4" label-for="input-4">
         <b-form-input
           id="input-4"
-          v-model="form.lastname"
+          v-model="payload.lastname"
           placeholder="Apellidos"
           required
         ></b-form-input>
@@ -38,7 +38,7 @@
       <b-form-group class="all-btn" id="input-group-1" label-for="input-1">
         <b-form-input
           id="input-1"
-          v-model="form.dni"
+          v-model="payload.dni"
           placeholder="DNI"
           required
         ></b-form-input>
@@ -46,7 +46,7 @@
       <b-form-group class="all-btn" id="input-group-5" label-for="input-1">
         <b-form-input
           id="input-1"
-          v-model="form.email"
+          v-model="payload.email"
           type="email"
           placeholder="Correo electrónico"
           required
@@ -55,7 +55,7 @@
       <b-form-group class="all-btn" id="input-group-6" label-for="input-6">
         <b-form-input
           id="input-6"
-          v-model="form.telefono"
+          v-model="payload.telefono"
           placeholder="Teléfono"
           required
         ></b-form-input>
@@ -63,7 +63,7 @@
       <b-form-group class="all-btn" id="input-group-7" label-for="input-7">
         <b-form-input
           id="input-7"
-          v-model="form.cargo"
+          v-model="payload.cargo"
           placeholder="Cargo"
           required
         ></b-form-input>
@@ -71,8 +71,8 @@
       <b-form-group class="all-btn">
         <country-select
           placeholder="Seleccione su país"
-          v-model="form.country"
-          :country="form.country"
+          v-model="payload.country"
+          :country="payload.country"
         />
       </b-form-group>
 
@@ -82,7 +82,7 @@
         v-slot="{ ariaDescribedby }"
       >
         <b-form-checkbox-group
-          v-model="form.checked"
+          v-model="payload.checked"
           id="checkboxes-5"
           :aria-describedby="ariaDescribedby"
         >
@@ -147,7 +147,7 @@ export default {
   data() {
     return {
       countryName: false,
-      form: {
+      payload: {
         country: "",
         email: "",
         name: "",
@@ -172,27 +172,33 @@ export default {
       ],
       show: true,
       sending: false,
-      retry_sending_times: 3, 
-      attempted_sendings_count: 0, 
-      seconds_before_next_attempt: 2,
+      // retry_sending_times: 3,
+      // attempted_sendings_count: 0,
+      // seconds_before_next_attempt: 2,
     };
   },
   methods: {
-    onSubmit(event) {
-      event.preventDefault();
-      console.log(JSON.stringify(this.form));
+    sendInformationRequest() {
+      // event.preventDefault();
+      // console.log(JSON.stringify(this.form));
       // ESTO ES PROPIAMENTE LO QUE SE ENVÍA + LA METADATA
       this.sending = true;
       const information_request = {
         timestamp: new Date().toJSON(), // FECHA Y HORA EXACTAS DEL ENVIO EN FORMATO JSON
-        form: this.form,
-      }
-      
-      // console.log(this.payload);
-      var limit = this.retry_sending_times;
-      var attempts_count = this.attempted_sendings_count;
-      var miliseconds_delay = this.seconds_before_next_attempt * 1000;
-      
+        payload: this.payload,
+      };
+
+      console.log(information_request);
+      const limit = this.retry_sending_times;
+      const attempts_count = this.attempted_sendings_count;
+      const miliseconds_delay = this.seconds_before_next_attempt * 1000;
+      // axios
+      //   .post(
+      //     "https://staging.esanbackoffice.com/websites/products/information-request/'",this.form
+      //   )
+      //   .then((result) => {
+      //     console.log(result);
+      //   });
       axios.post(
         'https://staging.esanbackoffice.com/websites/products/information-request/',
         information_request
@@ -200,18 +206,18 @@ export default {
         .then(function (response) {
           console.log(response.data);
           if (response.data.information_requested) {
-            alert( "Éxito." );
+            console.log( "Éxito." );
             // Ir a la página de gracias
             // window.location.href = 'https://www.esan.edu.pe/backoffice/muestras/solicitud-de-informacion.html';
             this.sending = false;
           } else {
-            
+
             if (attempts_count < limit) {
               setTimeout(
                 () => {
                   this.attempted_sendings_count = attempts_count + 1
                   console.log(this.attempted_sendings_count + ' retry attempts.')
-                  this.onSubmit();
+                  this.sendInformationRequest();
                   },
                   miliseconds_delay
                 );
@@ -228,8 +234,8 @@ export default {
             setTimeout(
               () => {
                 this.attempted_sendings_count = attempts_count + 1
-                  console.log(this.attempted_sendings_count + ' retry attempts.')
-                this.onSubmit();
+                console.log(this.attempted_sendings_count + ' retry attempts.')
+                this.sendInformationRequest();
                 },
                 miliseconds_delay
               );
@@ -239,20 +245,19 @@ export default {
             this.attempted_sendings_count = 0;
           }
         });
-
     },
     onReset(event) {
       event.preventDefault();
       // Reset our form values
-      this.form.email = "";
-      this.form.name = "";
-      this.form.lastname = "";
-      this.form.dni = "";
-      this.form.cargo = "";
-      this.form.telefono = "";
-      this.form.food = null;
-      this.form.checked = [];
-      this.form.country = "";
+      this.payload.email = "";
+      this.payload.name = "";
+      this.payload.lastname = "";
+      this.payload.dni = "";
+      this.payload.cargo = "";
+      this.payload.telefono = "";
+      this.payload.food = null;
+      this.payload.checked = [];
+      this.payload.country = "";
       // Trick to reset/clear native browser form validation state
       this.show = false;
       this.$nextTick(() => {
@@ -273,7 +278,7 @@ export default {
     accept() {
       const data = ["me"];
       this.$refs["my-modal"].toggle("#toggle-btn");
-      this.form.checked = this.form.checked.concat(data);
+      this.payload.checked = this.payload.checked.concat(data);
     },
   },
 };
