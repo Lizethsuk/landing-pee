@@ -12,6 +12,16 @@ Vue.use(BootstrapVue)
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
 
+// function(cookie_name) {
+//   var matches = this.document_cookies.filter(function(el) {
+//     return el.key == cookie_name;
+//   });
+//   if (matches.length > 0) {
+//     return matches[0].value;
+//   }
+//   return '';
+// },
+
 new Vue({
   router,
   render: h => h(App),
