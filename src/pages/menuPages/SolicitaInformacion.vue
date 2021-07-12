@@ -102,10 +102,13 @@
                       required
                     ></b-form-input>
                   </b-form-group>
+
+
+                  
                   <b-form-group
                     class="form-content"
-                    id="input-group-9"
-                    label-for="input-9"
+                    id="input-group-8"
+                    label-for="input-8"
                   >
                     <select
                       class="form-select"
@@ -125,8 +128,8 @@
                   </b-form-group>
                   <b-form-group
                     class="form-content"
-                    id="input-group-10"
-                    label-for="input-10"
+                    id="input-group-9"
+                    label-for="input-9"
                   >
                     <select v-model="payload.job_industry_code" required>
                       <option v-bind:value="null" selected>
@@ -142,8 +145,8 @@
                   </b-form-group>
                   <b-form-group
                     class="form-content"
-                    id="input-group-11"
-                    label-for="input-11"
+                    id="input-group-10"
+                    label-for="input-10"
                   >
                     <select v-model="payload.job_function_code" required>
                       <option v-bind:value="null" selected>
@@ -154,6 +157,7 @@
                       </option>
                     </select>
                   </b-form-group>
+                  
                   <b-form-group
                     class="form-content"
                     id="input-group-11"
@@ -174,7 +178,7 @@
               <b-col class="form-responsive" lg="6" md="12">
                 <b-form-group
                   class="form-content"
-                  id="input-group-2"
+                  id="input-group-12"
                   label-for="input-2"
                 >
                   <b-form-input
@@ -186,8 +190,8 @@
                 </b-form-group>
                 <b-form-group
                   class="form-content"
-                  id="input-group-7"
-                  label-for="input-7"
+                  id="input-group-13"
+                  label-for="input-13"
                 >
                   <b-form-input
                     id="input-7"
@@ -198,8 +202,8 @@
                 </b-form-group>
                 <b-form-group
                   class="form-content"
-                  id="input-group-3"
-                  label-for="input-3"
+                  id="input-group-14"
+                  label-for="input-14"
                 >
                   <b-form-input
                     type="number"
@@ -211,8 +215,8 @@
                 </b-form-group>
                 <b-form-group
                   class="form-content"
-                  id="input-group-4"
-                  label-for="input-4"
+                  id="input-group-15"
+                  label-for="input-15"
                 >
                   <b-form-input
                     type="number"
@@ -223,102 +227,99 @@
                   ></b-form-input>
                 </b-form-group>
                 <b-form-group
-                    class="form-content"
-                    id="input-group-9"
-                    label-for="input-9"
+                  class="form-content"
+                  id="input-group-16"
+                  label-for="input-16"
+                >
+                  <select
+                    class="form-select"
+                    v-model="payload.academic_degree_code"
+                    required
                   >
-                    <select
-                      class="form-select"
-                      v-model="payload.academic_degree_code"
-                      required
+                    <option v-bind:value="null" selected>
+                      -Grado Académico-
+                    </option>
+                    <option
+                      v-for="gradoAcademico in gradoAcademicos"
+                      :key="gradoAcademico.id"
                     >
-                      <option v-bind:value="null" selected>
-                        -Grado Académico-
-                      </option>
-                      <option
-                        v-for="gradoAcademico in gradoAcademicos"
-                        :key="gradoAcademico.id"
-                      >
-                        {{ gradoAcademico.name }}
-                      </option>
-                    </select>
-                  </b-form-group>
-                   <b-form-group
-                    class="form-content"
-                    id="input-group-11"
-                    label-for="input-11"
-                  >
-                    <select v-model="payload.pais_nacionalidad_iso3" required>
-                      <option v-bind:value="null" selected>
-                        -Seleccione su país-
-                      </option>
-                      <option v-for="country in countries" :key="country.id">
-                        {{ country.short_name }}
-                      </option>
-                    </select>
-                  </b-form-group>
-                      <b-form-group
-                    class="form-content"
-                    id="input-group-5"
-                    label-for="input-5"
-                  >
-                    <b-form-input
-                      id="input-5"
-                      v-model="payload.empresa"
-                      placeholder="Empresa"
-                      required
-                    ></b-form-input>
-                  </b-form-group>
-                   <b-form-group
-                    class="form-content"
-                    id="input-group-10"
-                    label-for="input-10"
-                  >
-                    <select v-model="payload.job_industry_code" required>
-                      <option v-bind:value="null" selected>
-                        -Industria o giro-
-                      </option>
-                      <option
-                        v-for="industria in industrias"
-                        :key="industria.id"
-                      >
-                        {{ industria.name }}
-                      </option>
-                    </select>
-                  </b-form-group>
-                           <b-form-group
-                    class="form-content"
-                    id="input-group-11"
-                    label-for="input-11"
-                  >
-                    <select v-model="payload.job_function_code" required>
-                      <option v-bind:value="null" selected>
-                        -Areas donde trabaja-
-                      </option>
-                      <option v-for="area in areas" :key="area.id">
-                        {{ area.name }}
-                      </option>
-                    </select>
-                  </b-form-group>
-                    <b-form-group
-                    class="form-content"
-                    id="input-group-6"
-                    label-for="input-6"
-                  >
-                    <b-form-input
-                      id="input-6"
-                      v-model="payload.cargo"
-                      placeholder="Cargo"
-                      required
-                    ></b-form-input>
-                  </b-form-group>
+                      {{ gradoAcademico.name }}
+                    </option>
+                  </select>
+                </b-form-group>
+                <b-form-group
+                  class="form-content"
+                  id="input-group-17"
+                  label-for="input-17"
+                >
+                  <select v-model="payload.pais_nacionalidad_iso3" required>
+                    <option v-bind:value="null" selected>
+                      -Seleccione su país-
+                    </option>
+                    <option v-for="country in countries" :key="country.id">
+                      {{ country.short_name }}
+                    </option>
+                  </select>
+                </b-form-group>
+                <b-form-group
+                  class="form-content"
+                  id="input-group-18"
+                  label-for="input-18"
+                >
+                  <b-form-input
+                    id="input-5"
+                    v-model="payload.empresa"
+                    placeholder="Empresa"
+                    required
+                  ></b-form-input>
+                </b-form-group>
+                <b-form-group
+                  class="form-content"
+                  id="input-group-19"
+                  label-for="input-19"
+                >
+                  <select v-model="payload.job_industry_code" required>
+                    <option v-bind:value="null" selected>
+                      -Industria o giro-
+                    </option>
+                    <option v-for="industria in industrias" :key="industria.id">
+                      {{ industria.name }}
+                    </option>
+                  </select>
+                </b-form-group>
+                <b-form-group
+                  class="form-content"
+                  id="input-group-20"
+                  label-for="input-20"
+                >
+                  <select v-model="payload.job_function_code" required>
+                    <option v-bind:value="null" selected>
+                      -Areas donde trabaja-
+                    </option>
+                    <option v-for="area in areas" :key="area.id">
+                      {{ area.name }}
+                    </option>
+                  </select>
+                </b-form-group>
+                <b-form-group
+                  class="form-content"
+                  id="input-group-21"
+                  label-for="input-21"
+                >
+                  <b-form-input
+                    id="input-6"
+                    v-model="payload.cargo"
+                    placeholder="Cargo"
+                    required
+                  ></b-form-input>
+                </b-form-group>
               </b-col>
             </b-row>
             <br />
             <p class="subtitle-text">Consulta</p>
-            <b-form-group id="input-group-12" label-for="input-12">
+            <b-form-group id="input-group-22" label-for="input-12">
               <b-form-textarea
-                id="input-12"
+                id="input-22"
                 v-model="payload.consulta"
                 rows="8"
                 max-rows="12"
@@ -327,7 +328,7 @@
             </b-form-group>
             <b-form-group
               class="form-content"
-              id="input-group-12"
+              id="input-group-23"
               v-slot="{ ariaDescribedby }"
             >
               <b-form-checkbox-group
@@ -351,11 +352,11 @@
             </p>
             <b-form-group
               class="form-content"
-              id="input-group-14"
-              label-for="input-14"
+              id="input-group-24"
+              label-for="input-24"
             >
               <b-form-select
-                id="input-14"
+                id="input-24"
                 v-model="payload.como_te_enteraste"
                 :options="alternativas"
                 required
@@ -806,8 +807,11 @@ textarea, input, select, checkbox {
 .custom-control-label {
   margin-top: -5px;
 }
-.form-responsive
-  display none
+
+.form-responsive {
+  display: none;
+}
+
 +for_breakpoint(md) {
   .pasos-areas {
     padding-right: 30px !important;
@@ -834,13 +838,14 @@ textarea, input, select, checkbox {
 }
 
 +for_breakpoint(mobile) {
-  .form-desktop{
-    display none
+  .form-desktop {
+    display: none;
   }
-   
-  .form-responsive{
-    display block
+
+  .form-responsive {
+    display: block;
   }
+
   .pasos-areas {
     padding-right: 30px !important;
     padding-left: 30px !important;
