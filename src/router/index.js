@@ -12,12 +12,18 @@ import MiningPage from "../pages/MiningPage"
 import AdmisionPage from "../pages/menuPages/AdmisionPage"
 import FinanciamientoPage from "../pages/menuPages/FinanciamientoPage"
 import SolicitaInformacion from "../pages/menuPages/SolicitaInformacion"
+import Gracias from "../pages/menuPages/Gracias"
 
 import HomeView from "../views/HomeView"
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 export default new VueRouter({
   routes : [
+    {
+      path: "/gracias",
+      name: "gracias",
+      component: Gracias
+    },
     {
       path: "/solicita_informacion",
       name: "solicita_informacion",
