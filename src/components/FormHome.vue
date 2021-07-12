@@ -1,6 +1,5 @@
 <template>
   <div class="form-class">
-    
     <b-form @submit="sendInformationRequest" v-if="show" class="form-g">
       <b-form-group class="all-btn">
         <h1>
@@ -12,14 +11,14 @@
           profesional.
         </p>
       </b-form-group>
-    <b-form-group class="all-btn" id="input-group-3" label-for="input-3">
+      <b-form-group class="all-btn" id="input-group-3" label-for="input-3">
         <b-form-select
           id="input-3"
-          v-model="payload.food"
-          :options="foods"
+          v-model="payload.areasdeIntere"
+          :options="areasdeInteres"
           required
         ></b-form-select>
-      </b-form-group> 
+      </b-form-group>
       <b-form-group class="all-btn" id="input-group-2" label-for="input-2">
         <b-form-input
           id="input-2"
@@ -28,10 +27,10 @@
           required
         ></b-form-input>
       </b-form-group>
-     <b-form-group class="all-btn" id="input-group-4" label-for="input-4">
+      <b-form-group class="all-btn" id="input-group-4" label-for="input-4">
         <b-form-input
           id="input-4"
-          v-model="payload.lastname"
+          v-model="payload.apellido_paterno"
           placeholder="Apellidos"
           required
         ></b-form-input>
@@ -39,7 +38,7 @@
       <b-form-group class="all-btn" id="input-group-1" label-for="input-1">
         <b-form-input
           id="input-1"
-          v-model="payload.dni"
+          v-model="payload.numero_de_id"
           placeholder="DNI"
           required
         ></b-form-input>
@@ -47,7 +46,7 @@
       <b-form-group class="all-btn" id="input-group-5" label-for="input-1">
         <b-form-input
           id="input-1"
-          v-model="payload.email"
+          v-model="payload.correo_electrnico"
           type="email"
           placeholder="Correo electrónico"
           required
@@ -70,31 +69,38 @@
         ></b-form-input>
       </b-form-group>
       <b-form-group class="all-btn">
-        <country-select
-          placeholder="Seleccione su país"
-          v-model="payload.country"
-          :country="payload.country"
-        />
+      <select v-model="payload.pais_nacionalidad_iso3" required>
+                <option v-bind:value="null" selected>
+                  -Seleccione su país-
+                </option>
+                <option v-for="country in countries" :key="country.id">
+                  {{ country.short_name }}
+                </option>
+              </select>
       </b-form-group>
-
       <b-form-group
         class="all-btn"
-        id="input-group-5"
+        id="input-group-12"
         v-slot="{ ariaDescribedby }"
       >
         <b-form-checkbox-group
-          v-model="payload.checked"
-          id="checkboxes-5"
+          v-model="payload.acepta_politica_de_privacidad"
+          id="checkboxes-4"
           :aria-describedby="ariaDescribedby"
+          required
         >
-          <b-form-checkbox value="me"></b-form-checkbox>Acepto las
-          <a @click="toggleModal">condiciones de tratamiento para mis datos</a>
+          <b-form-checkbox class="conditions" value="0"> </b-form-checkbox>
+          <span class="text-condiciones">
+            Acepto las
+            <a @click="toggleModal" >
+              condiciones de tratamiento para mis datos.
+            </a>
+          </span>
         </b-form-checkbox-group>
-      </b-form-group> 
-
+      </b-form-group>
       <b-button class="btn" type="submit">Enviar</b-button>
     </b-form>
-  <b-modal
+    <b-modal
       ref="my-modal"
       hide-footer
       title="Política de Protección de Datos Personales"
@@ -138,7 +144,7 @@
           </b-col>
         </b-row>
       </b-container>
-    </b-modal> 
+    </b-modal>
   </div>
 </template>
 
@@ -149,17 +155,17 @@ export default {
     return {
       countryName: false,
       payload: {
-        country: "",
-        email: "",
+        pais_nacionalidad_iso3: "",
+        correo_electrnico: "",
         nombres: "",
-        lastname: "",
-        dni: "",
+        apellido_paterno: "",
+        numero_de_id: "",
         telefono: "",
         cargo: "",
-        food: null,
-        checked: [],
+        areasdeIntere: null,
+        acepta_politica_de_privacidad: [],
       },
-      foods: [
+      areasdeInteres: [
         { text: "¿Qué área te interesa?", value: null },
         "Administración y Dirección de personas",
         "Business to Business",
@@ -171,6 +177,7 @@ export default {
         "Operaciones y Logística",
         "Tecnologías de la Información",
       ],
+      countries: [],
       show: true,
       sending: false,
       retry_sending_times: 3,
@@ -179,63 +186,66 @@ export default {
     };
   },
 
-
   methods: {
-    sendInformationRequest() {
-      this.sending = true;
-      var information_request = {
-        timestamp: new Date().toJSON(), 
-        payload: this.payload,
-      };
-      console.log(information_request);
-      var limit = this.retry_sending_times;
-      var attempts_count = this.attempted_sendings_count;
-      var miliseconds_delay = this.seconds_before_next_attempt * 1000;
-      axios.post(
-         'https://www.esanbackoffice.com/websites/products/information-request/',information_request
- 
-      )
-        .then( (response) => {
-          console.log(response);
-          if (response.data) {
-            alert( "Éxito." );
-            this.sending = false;
-         }
-          else {
-            if (attempts_count < limit) {
-              setTimeout(
-                () => {
-                  this.attempted_sendings_count = attempts_count + 1
-                  console.log(this.attempted_sendings_count + ' retry attempts.1')
-                  this.sendInformationRequest();
-                  },
-                  miliseconds_delay
-                );
-            } else {
-              alert( "Hubo un error. Inténtalo de nuevo en unos minutos, por favor.1" ); // en lugar de una alerta, puede ser más claro para el usuario levantar un modal
-              this.sending = false;
-              this.attempted_sendings_count = 0;
-            }
-          }
-        })
-        .catch( (error) =>{
-          alert(error);
-          if (attempts_count < limit) {
-            setTimeout(
-              () => {
-                this.attempted_sendings_count = attempts_count + 1
-                console.log(this.attempted_sendings_count + ' retry attempts.2')
-                this.sendInformationRequest();
-                },
-                miliseconds_delay
-              );
-          } else {
-            alert( "Hubo un error. Inténtalo de nuevo en unos minutos, por favor.2" ); // en lugar de una alerta, puede ser más claro para el usuario levantar un modal
-            this.sending = false;
-            this.attempted_sendings_count = 0;
-          }
-        });
+    sendInformationRequest(event) {
+      event.preventDefault();
+      // console.log(JSON.stringify(this.payload));
     },
+    // sendInformationRequest() {
+    //   this.sending = true;
+    //   var information_request = {
+    //     timestamp: new Date().toJSON(),
+    //     payload: this.payload,
+    //   };
+    //   console.log(information_request);
+    //   var limit = this.retry_sending_times;
+    //   var attempts_count = this.attempted_sendings_count;
+    //   var miliseconds_delay = this.seconds_before_next_attempt * 1000;
+    //   axios
+    //     .post(
+    //       "https://www.esanbackoffice.com/websites/products/information-request/",
+    //       information_request
+    //     )
+    //     .then((response) => {
+    //       console.log(response);
+    //       if (response.data) {
+    //         alert("Éxito.");
+    //         this.sending = false;
+    //       } else {
+    //         if (attempts_count < limit) {
+    //           setTimeout(() => {
+    //             this.attempted_sendings_count = attempts_count + 1;
+    //             console.log(
+    //               this.attempted_sendings_count + " retry attempts.1"
+    //             );
+    //             this.sendInformationRequest();
+    //           }, miliseconds_delay);
+    //         } else {
+    //           alert(
+    //             "Hubo un error. Inténtalo de nuevo en unos minutos, por favor.1"
+    //           ); // en lugar de una alerta, puede ser más claro para el usuario levantar un modal
+    //           this.sending = false;
+    //           this.attempted_sendings_count = 0;
+    //         }
+    //       }
+    //     })
+    //     .catch((error) => {
+    //       alert(error);
+    //       if (attempts_count < limit) {
+    //         setTimeout(() => {
+    //           this.attempted_sendings_count = attempts_count + 1;
+    //           console.log(this.attempted_sendings_count + " retry attempts.2");
+    //           this.sendInformationRequest();
+    //         }, miliseconds_delay);
+    //       } else {
+    //         alert(
+    //           "Hubo un error. Inténtalo de nuevo en unos minutos, por favor.2"
+    //         ); // en lugar de una alerta, puede ser más claro para el usuario levantar un modal
+    //         this.sending = false;
+    //         this.attempted_sendings_count = 0;
+    //       }
+    //     });
+    // },
     // onReset(event) {
     //   event.preventDefault();
     //   // Reset our form values
@@ -264,11 +274,16 @@ export default {
       this.$refs["my-modal"].toggle("#toggle-btn");
     },
     accept() {
-      const data = ["me"];
+      const data = ["0"];
       this.$refs["my-modal"].toggle("#toggle-btn");
-      this.payload.checked = this.payload.checked.concat(data);
+      this.payload.acepta_politica_de_privacidad = this.payload.acepta_politica_de_privacidad.concat(data);
     },
   },
+  mounted(){
+    axios
+    .get("https://www.esanbackoffice.com/world/api/countries/?limit=200")
+    .then((response) => (this.countries = response.data.results));
+  }
 };
 </script>
 <style lang="stylus" scoped>
