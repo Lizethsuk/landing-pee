@@ -70,7 +70,7 @@
         ></b-form-input>
       </b-form-group>
       <b-form-group class="all-btn">
-        <country-select
+        <country-select class="custom-select"
           placeholder="Seleccione su país"
           v-model="payload.country"
           :country="payload.country"
@@ -273,6 +273,9 @@ export default {
 </script>
 <style lang="stylus" scoped>
 @import '../styles/main.styl';
+p {
+  margin-bottom 1px
+}
 
 .modal1 {
   h3 {
@@ -337,7 +340,7 @@ h1 {
 }
 
 input, select {
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   background-color: bg-form;
   border-radius: 0px;
   font-family: raleway-regular;
