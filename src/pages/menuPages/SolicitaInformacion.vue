@@ -7,7 +7,7 @@
       <b-row>
         <b-col>
           <p class="subtitle-text">Solicita mas Información</p>
-          <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+          <b-form @submit="sendInformationRequest" @reset="onReset" v-if="show">
             <b-form-group
               class="form-content"
               id="input-group-1"
@@ -15,14 +15,14 @@
             >
               <b-form-select
                 id="input-1"
-                v-model="form.areasdeIntere"
+                v-model="payload.areasdeIntere"
                 :options="areasdeInteres"
                 required
               ></b-form-select>
             </b-form-group>
             <b-container> </b-container>
             <b-row>
-              <b-col lg="6" md="12">
+              <b-col class="form-desktop" lg="6" md="12">
                 <div>
                   <b-form-group
                     class="form-content"
@@ -31,7 +31,7 @@
                   >
                     <b-form-input
                       id="input-2"
-                      v-model="form.name"
+                      v-model="payload.nombres"
                       placeholder="Nombre"
                       required
                     ></b-form-input>
@@ -44,7 +44,7 @@
                     <b-form-input
                       type="number"
                       id="input-3"
-                      v-model="form.emainumereDNIl"
+                      v-model="payload.numero_de_id"
                       placeholder="Número de DNI/ID"
                       required
                     ></b-form-input>
@@ -57,7 +57,7 @@
                     <b-form-input
                       type="number"
                       id="input-4"
-                      v-model="form.telefono"
+                      v-model="payload.telefono"
                       placeholder="Teléfono"
                       required
                     ></b-form-input>
@@ -69,7 +69,7 @@
                   >
                     <b-form-input
                       id="input-5"
-                      v-model="form.empresa"
+                      v-model="payload.empresa"
                       placeholder="Empresa"
                       required
                     ></b-form-input>
@@ -81,14 +81,14 @@
                   >
                     <b-form-input
                       id="input-6"
-                      v-model="form.cargo"
+                      v-model="payload.cargo"
                       placeholder="Cargo"
                       required
                     ></b-form-input>
                   </b-form-group>
                 </div>
               </b-col>
-              <b-col lg="6" md="12">
+              <b-col class="form-desktop" lg="6" md="12">
                 <div>
                   <b-form-group
                     class="form-content"
@@ -97,31 +97,22 @@
                   >
                     <b-form-input
                       id="input-7"
-                      v-model="form.apellido"
+                      v-model="payload.apellido_paterno"
                       placeholder="Apellido"
                       required
                     ></b-form-input>
                   </b-form-group>
+
+
+                  
                   <b-form-group
                     class="form-content"
                     id="input-group-8"
                     label-for="input-8"
                   >
-                    <b-form-input
-                      id="input-8"
-                      v-model="form.nombre"
-                      placeholder="Nombre"
-                      required
-                    ></b-form-input>
-                  </b-form-group>
-                  <b-form-group
-                    class="form-content"
-                    id="input-group-9"
-                    label-for="input-9"
-                  >
                     <select
                       class="form-select"
-                      v-model="form.gradoAcademico"
+                      v-model="payload.academic_degree_code"
                       required
                     >
                       <option v-bind:value="null" selected>
@@ -134,30 +125,13 @@
                         {{ gradoAcademico.name }}
                       </option>
                     </select>
-                    <!-- <b-form-select
-                      :key="name.id"
-                      v-for="name in gradoAcademicos"
-                      id="input-9"
-                      v-model="form.gradoAcademico"
-                      :options="name"
-                      required
-                    >
-                    
-                    </b-form-select> -->
                   </b-form-group>
                   <b-form-group
                     class="form-content"
-                    id="input-group-10"
-                    label-for="input-10"
+                    id="input-group-9"
+                    label-for="input-9"
                   >
-                    <!-- <b-form-select
-                      id="input-10"
-                      v-model="form.industria"
-                      :options="industrias"
-                      required
-                    ></b-form-select> -->
-
-                    <select v-model="form.industria" required>
+                    <select v-model="payload.job_industry_code" required>
                       <option v-bind:value="null" selected>
                         -Industria o giro-
                       </option>
@@ -171,16 +145,10 @@
                   </b-form-group>
                   <b-form-group
                     class="form-content"
-                    id="input-group-11"
-                    label-for="input-11"
+                    id="input-group-10"
+                    label-for="input-10"
                   >
-                    <!-- <b-form-select
-                      id="input-11"
-                      v-model="form.area"
-                      :options="areas"
-                      required
-                    ></b-form-select> -->
-                    <select v-model="form.area" required>
+                    <select v-model="payload.job_function_code" required>
                       <option v-bind:value="null" selected>
                         -Areas donde trabaja-
                       </option>
@@ -189,15 +157,170 @@
                       </option>
                     </select>
                   </b-form-group>
+                  
+                  <b-form-group
+                    class="form-content"
+                    id="input-group-11"
+                    label-for="input-11"
+                  >
+                    <select v-model="payload.pais_nacionalidad_iso3" required>
+                      <option v-bind:value="null" selected>
+                        -Seleccione su país-
+                      </option>
+                      <option v-for="country in countries" :key="country.id">
+                        {{ country.short_name }}
+                      </option>
+                    </select>
+                  </b-form-group>
                 </div>
+              </b-col>
+              <!-- responsive -->
+              <b-col class="form-responsive" lg="6" md="12">
+                <b-form-group
+                  class="form-content"
+                  id="input-group-12"
+                  label-for="input-2"
+                >
+                  <b-form-input
+                    id="input-2"
+                    v-model="payload.nombres"
+                    placeholder="Nombre"
+                    required
+                  ></b-form-input>
+                </b-form-group>
+                <b-form-group
+                  class="form-content"
+                  id="input-group-13"
+                  label-for="input-13"
+                >
+                  <b-form-input
+                    id="input-7"
+                    v-model="payload.apellido_paterno"
+                    placeholder="Apellido"
+                    required
+                  ></b-form-input>
+                </b-form-group>
+                <b-form-group
+                  class="form-content"
+                  id="input-group-14"
+                  label-for="input-14"
+                >
+                  <b-form-input
+                    type="number"
+                    id="input-3"
+                    v-model="payload.numero_de_id"
+                    placeholder="Número de DNI/ID"
+                    required
+                  ></b-form-input>
+                </b-form-group>
+                <b-form-group
+                  class="form-content"
+                  id="input-group-15"
+                  label-for="input-15"
+                >
+                  <b-form-input
+                    type="number"
+                    id="input-4"
+                    v-model="payload.telefono"
+                    placeholder="Teléfono"
+                    required
+                  ></b-form-input>
+                </b-form-group>
+                <b-form-group
+                  class="form-content"
+                  id="input-group-16"
+                  label-for="input-16"
+                >
+                  <select
+                    class="form-select"
+                    v-model="payload.academic_degree_code"
+                    required
+                  >
+                    <option v-bind:value="null" selected>
+                      -Grado Académico-
+                    </option>
+                    <option
+                      v-for="gradoAcademico in gradoAcademicos"
+                      :key="gradoAcademico.id"
+                    >
+                      {{ gradoAcademico.name }}
+                    </option>
+                  </select>
+                </b-form-group>
+                <b-form-group
+                  class="form-content"
+                  id="input-group-17"
+                  label-for="input-17"
+                >
+                  <select v-model="payload.pais_nacionalidad_iso3" required>
+                    <option v-bind:value="null" selected>
+                      -Seleccione su país-
+                    </option>
+                    <option v-for="country in countries" :key="country.id">
+                      {{ country.short_name }}
+                    </option>
+                  </select>
+                </b-form-group>
+                <b-form-group
+                  class="form-content"
+                  id="input-group-18"
+                  label-for="input-18"
+                >
+                  <b-form-input
+                    id="input-5"
+                    v-model="payload.empresa"
+                    placeholder="Empresa"
+                    required
+                  ></b-form-input>
+                </b-form-group>
+                <b-form-group
+                  class="form-content"
+                  id="input-group-19"
+                  label-for="input-19"
+                >
+                  <select v-model="payload.job_industry_code" required>
+                    <option v-bind:value="null" selected>
+                      -Industria o giro-
+                    </option>
+                    <option v-for="industria in industrias" :key="industria.id">
+                      {{ industria.name }}
+                    </option>
+                  </select>
+                </b-form-group>
+                <b-form-group
+                  class="form-content"
+                  id="input-group-20"
+                  label-for="input-20"
+                >
+                  <select v-model="payload.job_function_code" required>
+                    <option v-bind:value="null" selected>
+                      -Areas donde trabaja-
+                    </option>
+                    <option v-for="area in areas" :key="area.id">
+                      {{ area.name }}
+                    </option>
+                  </select>
+                </b-form-group>
+                <b-form-group
+                  class="form-content"
+                  id="input-group-21"
+                  label-for="input-21"
+                >
+                  <b-form-input
+                    id="input-6"
+                    v-model="payload.cargo"
+                    placeholder="Cargo"
+                    required
+                  ></b-form-input>
+                </b-form-group>
               </b-col>
             </b-row>
             <br />
             <p class="subtitle-text">Consulta</p>
-            <b-form-group id="input-group-12" label-for="input-12">
+            <b-form-group id="input-group-22" label-for="input-12">
               <b-form-textarea
-                id="input-12"
-                v-model="form.consulta"
+                id="input-22"
+                v-model="payload.consulta"
                 rows="8"
                 max-rows="12"
                 required
@@ -205,16 +328,16 @@
             </b-form-group>
             <b-form-group
               class="form-content"
-              id="input-group-12"
+              id="input-group-23"
               v-slot="{ ariaDescribedby }"
             >
               <b-form-checkbox-group
-                v-model="form.checked"
+                v-model="payload.acepta_politica_de_privacidad"
                 id="checkboxes-4"
                 :aria-describedby="ariaDescribedby"
                 required
               >
-                <b-form-checkbox class="conditions" value="me">
+                <b-form-checkbox class="conditions" value="0">
                 </b-form-checkbox>
                 <span class="text-condiciones">
                   Acepto las
@@ -222,8 +345,6 @@
                     condiciones de tratamiento para mis datos personales
                   </a>
                 </span>
-
-                <!-- <b-form-checkbox value="that">Check that out</b-form-checkbox> -->
               </b-form-checkbox-group>
             </b-form-group>
             <p class="subtitle-text">
@@ -231,32 +352,24 @@
             </p>
             <b-form-group
               class="form-content"
-              id="input-group-14"
-              label-for="input-14"
+              id="input-group-24"
+              label-for="input-24"
             >
               <b-form-select
-                id="input-14"
-                v-model="form.alternativa"
+                id="input-24"
+                v-model="payload.como_te_enteraste"
                 :options="alternativas"
                 required
               ></b-form-select>
             </b-form-group>
             <br />
-            <b-form-group>
-              <country-select
-                :removePlaceholder="true"
-                v-model="form.country"
-                :country="form.country"
-                topCountry="PE"
-              />
-            </b-form-group>
+
             <br />
             <div class="button-content">
               <b-button class="button-text" type="submit" variant="primary"
                 >Enviar mis datos</b-button
               >
             </div>
-            <!-- <b-button type="reset" variant="danger">Reset</b-button> -->
           </b-form>
         </b-col>
       </b-row>
@@ -336,30 +449,20 @@ export default {
   data() {
     return {
       selected: null,
-      countryName: false,
-      options: [
-        { value: null, text: "Please select an option" },
-        { value: "a", text: "This is First option" },
-        { value: "b", text: "Selected Option" },
-        { value: { C: "3PO" }, text: "This is an option with object value" },
-        { value: "d", text: "This one is disabled", disabled: true },
-      ],
-      form: {
-        country: "",
-        emainumereDNIl: "",
-        checked: [],
-        name: "",
+      payload: {
+        pais_nacionalidad_iso3: "",
+        numero_de_id: "",
+        acepta_politica_de_privacidad: [],
+        nombres: "",
         telefono: "",
         empresa: "",
         cargo: "",
-        apellido: "",
-        nombre: "",
+        apellido_paterno: "",
         consulta: "",
         areasdeIntere: null,
-        gradoAcademico: null,
-        industria: null,
-        area: null,
-        alternativa: null,
+        academic_degree_code: null,
+        job_industry_code: null,
+        como_te_enteraste: null,
       },
       alternativas: [
         { text: "-Elije una alternativa-", value: null },
@@ -390,6 +493,7 @@ export default {
       gradoAcademicos: [],
       industrias: [],
       areas: [],
+      countries: [],
       show: true,
     };
   },
@@ -398,53 +502,92 @@ export default {
       .get(
         "https://www.esanbackoffice.com/api/world/academic-degrees/?limit=100%27"
       )
-      .then(
-        (response) => (
-          (this.gradoAcademicos = response.data.results),
-          console.log(response.data.results)
-        )
-      );
+      .then((response) => (this.gradoAcademicos = response.data.results));
     axios
       .get("https://www.esanbackoffice.com/api/world/industries/?limit=100%27")
-      .then(
-        (response) => (
-          (this.industrias = response.data.results),
-          console.log(response.data.results)
-        )
-      );
+      .then((response) => (this.industrias = response.data.results));
     axios
       .get("https://www.esanbackoffice.com/api/world/functions/?limit=100%27")
-      .then(
-        (response) => (
-          (this.areas = response.data.results),
-          console.log(response.data.results)
-        )
-      );
+      .then((response) => (this.areas = response.data.results));
+    axios
+      .get("https://www.esanbackoffice.com/world/api/countries/?limit=200")
+      .then((response) => (this.countries = response.data.results));
   },
   methods: {
-    onSubmit(event) {
+    sendInformationRequest(event) {
       event.preventDefault();
-      console.log(JSON.stringify(this.form));
+      console.log(JSON.stringify(this.payload));
     },
+    // sendInformationRequest() {
+    //   this.sending = true;
+    //   var information_request = {
+    //     timestamp: new Date().toJSON(),
+    //     payload: this.payload,
+    //   };
+    //   console.log(information_request);
+    //   var limit = this.retry_sending_times;
+    //   var attempts_count = this.attempted_sendings_count;
+    //   var miliseconds_delay = this.seconds_before_next_attempt * 1000;
+    //   axios
+    //     .post(
+    //       "https://www.esanbackoffice.com/websites/products/information-request/",
+    //       information_request
+    //     )
+    //     .then((response) => {
+    //       console.log(response);
+    //       if (response.data) {
+    //         alert("Éxito.");
+    //         this.sending = false;
+    //       } else {
+    //         if (attempts_count < limit) {
+    //           setTimeout(() => {
+    //             this.attempted_sendings_count = attempts_count + 1;
+    //             console.log(
+    //               this.attempted_sendings_count + " retry attempts.1"
+    //             );
+    //             this.sendInformationRequest();
+    //           }, miliseconds_delay);
+    //         } else {
+    //           alert(
+    //             "Hubo un error. Inténtalo de nuevo en unos minutos, por favor.1"
+    //           ); // en lugar de una alerta, puede ser más claro para el usuario levantar un modal
+    //           this.sending = false;
+    //           this.attempted_sendings_count = 0;
+    //         }
+    //       }
+    //     })
+    //     .catch((error) => {
+    //       alert(error);
+    //       if (attempts_count < limit) {
+    //         setTimeout(() => {
+    //           this.attempted_sendings_count = attempts_count + 1;
+    //           console.log(this.attempted_sendings_count + " retry attempts.2");
+    //           this.sendInformationRequest();
+    //         }, miliseconds_delay);
+    //       } else {
+    //         alert(
+    //           "Hubo un error. Inténtalo de nuevo en unos minutos, por favor.2"
+    //         ); // en lugar de una alerta, puede ser más claro para el usuario levantar un modal
+    //         this.sending = false;
+    //         this.attempted_sendings_count = 0;
+    //       }
+    //     });
+    // },
     onReset(event) {
       event.preventDefault();
-      // Reset our form values
-      this.form.numereDNI = "";
-      this.form.name = "";
-      this.form.telefono = "";
-      this.form.empresa = "";
-      this.form.cargo = "";
-      this.form.apellido = "";
-      this.form.nombre = "";
-      this.form.consulta = "";
-      this.form.alternativa = null;
-      this.form.areasdeIntere = null;
-      this.form.gradoAcademico = null;
-      this.form.industria = null;
-      this.form.area = null;
-      this.form.country = "";
-      this.form.checked = [];
-      // Trick to reset/clear native browser form validation state
+      this.payload.numero_de_id = "";
+      this.payload.nombres = "";
+      this.payload.telefono = "";
+      this.payload.empresa = "";
+      this.payload.cargo = "";
+      this.payload.apellido_paterno = "";
+      this.payload.consulta = "";
+      this.payload.como_te_enteraste = null;
+      this.payload.areasdeIntere = null;
+      this.payload.academic_degree_code = null;
+      this.payload.job_industry_code = null;
+      this.payload.pais_nacionalidad_iso3 = "";
+      this.payload.acepta_politica_de_privacidad = [];
       this.show = false;
       this.$nextTick(() => {
         this.show = true;
@@ -457,14 +600,13 @@ export default {
       this.$refs["my-modal"].hide();
     },
     toggleModal() {
-      // We pass the ID of the button that we want to return focus to
-      // when the modal has hidden
       this.$refs["my-modal"].toggle("#toggle-btn");
     },
     accept() {
-      const data = ["me"];
+      const data = ["0"];
       this.$refs["my-modal"].toggle("#toggle-btn");
-      this.form.checked = this.form.checked.concat(data);
+      this.form.acepta_politica_de_privacidad =
+        this.form.acepta_politica_de_privacidad.concat(data);
     },
   },
 };
@@ -666,6 +808,10 @@ textarea, input, select, checkbox {
   margin-top: -5px;
 }
 
+.form-responsive {
+  display: none;
+}
+
 +for_breakpoint(md) {
   .pasos-areas {
     padding-right: 30px !important;
@@ -692,6 +838,14 @@ textarea, input, select, checkbox {
 }
 
 +for_breakpoint(mobile) {
+  .form-desktop {
+    display: none;
+  }
+
+  .form-responsive {
+    display: block;
+  }
+
   .pasos-areas {
     padding-right: 30px !important;
     padding-left: 30px !important;
