@@ -8,7 +8,11 @@
         <b-col>
           <p class="subtitle-text">Solicita mas Información</p>
           <b-form @submit="sendInformationRequest" @reset="onReset" v-if="show">
-            <b-form-group
+           
+            <b-container class="pl-0 pr-0" > 
+            <b-row>
+              <b-col cols="12">
+                 <b-form-group
               class="form-content"
               id="input-group-1"
               label-for="input-1"
@@ -20,9 +24,8 @@
                 required
               ></b-form-select>
             </b-form-group>
-            <b-container> </b-container>
-            <b-row>
-              <b-col class="form-desktop" lg="6" md="12">
+              </b-col>
+              <b-col class="form-desktop" sm="6" >
                 <div>
                   <b-form-group
                     class="form-content"
@@ -49,19 +52,7 @@
                       required
                     ></b-form-input>
                   </b-form-group>
-                  <b-form-group
-                    class="form-content"
-                    id="input-group-4"
-                    label-for="input-4"
-                  >
-                    <b-form-input
-                      type="number"
-                      id="input-4"
-                      v-model="payload.telefono"
-                      placeholder="Teléfono"
-                      required
-                    ></b-form-input>
-                  </b-form-group>
+                  
                   <b-form-group
                     class="form-content"
                     id="input-group-5"
@@ -88,7 +79,7 @@
                   </b-form-group>
                 </div>
               </b-col>
-              <b-col class="form-desktop" lg="6" md="12">
+              <b-col class="form-desktop" sm="6" >
                 <div>
                   <b-form-group
                     class="form-content"
@@ -102,61 +93,34 @@
                       required
                     ></b-form-input>
                   </b-form-group>
-
-
-                  
                   <b-form-group
                     class="form-content"
-                    id="input-group-8"
-                    label-for="input-8"
+                    id="input-group-11"
+                    label-for="input-11"
                   >
-                    <select
-                      class="form-select"
-                      v-model="payload.academic_degree_code"
+                    <b-form-input
+                      type="number"
+                      id="input-4"
+                      v-model="payload.correo"
+                      placeholder="Correo"
                       required
-                    >
-                      <option v-bind:value="null" selected>
-                        -Grado Académico-
-                      </option>
-                      <option
-                        v-for="gradoAcademico in gradoAcademicos"
-                        :key="gradoAcademico.id"
-                      >
-                        {{ gradoAcademico.name }}
-                      </option>
-                    </select>
-                  </b-form-group>
-                  <b-form-group
+                    ></b-form-input>
+                  </b-form-group> 
+                 <b-form-group
                     class="form-content"
-                    id="input-group-9"
-                    label-for="input-9"
+                    id="input-group-4"
+                    label-for="input-4"
                   >
-                    <select v-model="payload.job_industry_code" required>
-                      <option v-bind:value="null" selected>
-                        -Industria o giro-
-                      </option>
-                      <option
-                        v-for="industria in industrias"
-                        :key="industria.id"
-                      >
-                        {{ industria.name }}
-                      </option>
-                    </select>
-                  </b-form-group>
-                  <b-form-group
-                    class="form-content"
-                    id="input-group-10"
-                    label-for="input-10"
-                  >
-                    <select v-model="payload.job_function_code" required>
-                      <option v-bind:value="null" selected>
-                        -Areas donde trabaja-
-                      </option>
-                      <option v-for="area in areas" :key="area.id">
-                        {{ area.name }}
-                      </option>
-                    </select>
-                  </b-form-group>
+                    <b-form-input
+                      type="number"
+                      id="input-4"
+                      v-model="payload.telefono"
+                      placeholder="Teléfono"
+                      required
+                    ></b-form-input>
+                  </b-form-group> 
+
+                 
                   
                   <b-form-group
                     class="form-content"
@@ -215,6 +179,19 @@
                 </b-form-group>
                 <b-form-group
                   class="form-content"
+                  id="input-group-20"
+                  label-for="input-20"
+                >
+                  <b-form-input
+                    type="number"
+                    id="input-3"
+                    v-model="payload.numero_de_id"
+                    placeholder="Correo"
+                    required
+                  ></b-form-input>
+                </b-form-group>
+                <b-form-group
+                  class="form-content"
                   id="input-group-15"
                   label-for="input-15"
                 >
@@ -226,26 +203,17 @@
                     required
                   ></b-form-input>
                 </b-form-group>
-                <b-form-group
+              <b-form-group
                   class="form-content"
-                  id="input-group-16"
-                  label-for="input-16"
+                  id="input-group-18"
+                  label-for="input-18"
                 >
-                  <select
-                    class="form-select"
-                    v-model="payload.academic_degree_code"
+                  <b-form-input
+                    id="input-5"
+                    v-model="payload.empresa"
+                    placeholder="Empresa"
                     required
-                  >
-                    <option v-bind:value="null" selected>
-                      -Grado Académico-
-                    </option>
-                    <option
-                      v-for="gradoAcademico in gradoAcademicos"
-                      :key="gradoAcademico.id"
-                    >
-                      {{ gradoAcademico.name }}
-                    </option>
-                  </select>
+                  ></b-form-input>
                 </b-form-group>
                 <b-form-group
                   class="form-content"
@@ -261,46 +229,7 @@
                     </option>
                   </select>
                 </b-form-group>
-                <b-form-group
-                  class="form-content"
-                  id="input-group-18"
-                  label-for="input-18"
-                >
-                  <b-form-input
-                    id="input-5"
-                    v-model="payload.empresa"
-                    placeholder="Empresa"
-                    required
-                  ></b-form-input>
-                </b-form-group>
-                <b-form-group
-                  class="form-content"
-                  id="input-group-19"
-                  label-for="input-19"
-                >
-                  <select v-model="payload.job_industry_code" required>
-                    <option v-bind:value="null" selected>
-                      -Industria o giro-
-                    </option>
-                    <option v-for="industria in industrias" :key="industria.id">
-                      {{ industria.name }}
-                    </option>
-                  </select>
-                </b-form-group>
-                <b-form-group
-                  class="form-content"
-                  id="input-group-20"
-                  label-for="input-20"
-                >
-                  <select v-model="payload.job_function_code" required>
-                    <option v-bind:value="null" selected>
-                      -Areas donde trabaja-
-                    </option>
-                    <option v-for="area in areas" :key="area.id">
-                      {{ area.name }}
-                    </option>
-                  </select>
-                </b-form-group>
+                
                 <b-form-group
                   class="form-content"
                   id="input-group-21"
@@ -315,6 +244,7 @@
                 </b-form-group>
               </b-col>
             </b-row>
+            </b-container>
             <br />
             <p class="subtitle-text">Consulta</p>
             <b-form-group id="input-group-22" label-for="input-12">
@@ -777,12 +707,7 @@ input, select, textarea, .conditions {
   text-align: justify;
 }
 
-.pasos-areas {
-  padding-right: 130px;
-  padding-left: 130px;
-  padding-bottom: 80px;
-  padding-top: 80px;
-}
+
 
 .jumbotron {
   background-image: url('../../assets/home/banner/kv-001-1.jpg');
@@ -836,8 +761,17 @@ textarea, input, select, checkbox {
     margin-left: 0px;
   }
 }
-
++for_breakpoint(cell-sm){
+.pasos-areas {
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+}
 +for_breakpoint(mobile) {
+  
+
   .form-desktop {
     display: none;
   }

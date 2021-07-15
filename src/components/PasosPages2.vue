@@ -105,7 +105,7 @@ export default {
 .pasos-content
   border-right: 2px solid var(--line-color);
   text-align center
-  height: 180px;
+  height: 190px;
 .pasos-page {
   left: 0;
   bottom: 0;
