@@ -18,7 +18,7 @@
                   >
                     <b-form-select
                       id="input-1"
-                      v-model="payload.areasdeIntere"
+                      v-model="payload.especialidad_o_concentracion"
                       :options="areasdeInteres"
                       required
                     ></b-form-select>
@@ -377,12 +377,10 @@ export default {
     PasosPages2,
   },
   data() {
-    return {
-      selected: null,
+    return {  
       payload: {
         pais_nacionalidad_iso3: null,
         numero_de_id: "",
-        acepta_politica_de_privacidad: [],
         nombres: "",
         telefono: "",
         empresa: "",
@@ -390,10 +388,14 @@ export default {
         correo_electrnico: "",
         apellido_paterno: "",
         consulta: "",
-        areasdeIntere: null,
-        academic_degree_code: null,
-        job_industry_code: null,
         como_te_enteraste: null,
+        acepta_politica_de_privacidad: [],
+        ciudad: 'LIMA', // debe inicializarse, aquí; en javascript después; o, en última instancia, presentar opciones en el HTML para que el usuario elija
+        programa: 'PEE', // igual que *ciudad*
+        url_del_formulario: '', // se carga automáticamente
+        procedencia: '',// se carga automáticamente
+        user_agent_uuid: '',// se carga automáticamente
+        especialidad_o_concentracion:null,
       },
       alternativas: [
         { text: "-Elije una alternativa-", value: null },
@@ -425,92 +427,146 @@ export default {
       industrias: [],
       areas: [],
       pais_nacionalidad_iso3: [],
+      countries: [],
+      personal_id_types: [],
+      academic_degrees: [],
+      functions: [],
+      industries: [],
       show: true,
+      sending: false,
+      retry_sending_times: 3, // Cuántas veces queremos que se reintente enviar la data automáticamente, cuando se encuentra algún error.
+      attempted_sendings_count: 0, // Conteo de las veces que ya se intentó enviar la data antes de tener éxito: usado para los reintentos automáticos
+      seconds_before_next_attempt: 2, // Tiempo de espera entre reintentos  
+      selected: null,
     };
   },
   mounted() {
-    // console.log(this.options)
-    // const data = []
-    axios
-      .get(
-        "https://www.esanbackoffice.com/api/world/academic-degrees/?limit=100%27"
-      )
-      .then((response) => (this.gradoAcademicos = response.data.results));
-    // axios
-    //   .get("https://www.esanbackoffice.com/api/world/industries/?limit=100%27")
-    //   .then((response) => (console.log(response.data.results) ));
-    axios
-      .get("https://www.esanbackoffice.com/api/world/functions/?limit=100%27")
-      .then((response) => (this.areas = response.data.results));
+    this.loadHiddenFields();
     axios
       .get("https://www.esanbackoffice.com/world/api/countries/?limit=200")
       .then(
         (response) => (
-          (this.pais_nacionalidad_iso3 = response.data.results),
-          console.log(this.options)
+          (this.pais_nacionalidad_iso3 = response.data.results)
         )
       );
   },
-  methods: {
-    sendInformationRequest(event) {
-      event.preventDefault();
-      console.log(JSON.stringify(this.payload));
+
+  computed: {
+    document_cookies: function() {
+      var key_values_list = document.cookie.split('; ');
+      var cookies_list = [];
+      for (let i = 0; i < key_values_list.length; i++) { 
+          var current_key_and_value = key_values_list[i].split('=');
+          cookies_list.push({
+            key: current_key_and_value[0],
+            value: current_key_and_value[1],
+          })
+      }
+      return cookies_list;
     },
-    // sendInformationRequest() {
-    //   this.sending = true;
-    //   var information_request = {
-    //     timestamp: new Date().toJSON(),
-    //     payload: this.payload,
-    //   };
-    //   console.log(information_request);
-    //   var limit = this.retry_sending_times;
-    //   var attempts_count = this.attempted_sendings_count;
-    //   var miliseconds_delay = this.seconds_before_next_attempt * 1000;
-    //   axios
-    //     .post(
-    //       "https://www.esanbackoffice.com/websites/products/information-request/",
-    //       information_request
-    //     )
-    //     .then((response) => {
-    //       console.log(response);
-    //       if (response.data) {
-    //         alert("Éxito.");
-    //         this.sending = false;
-    //       } else {
-    //         if (attempts_count < limit) {
-    //           setTimeout(() => {
-    //             this.attempted_sendings_count = attempts_count + 1;
-    //             console.log(
-    //               this.attempted_sendings_count + " retry attempts.1"
-    //             );
-    //             this.sendInformationRequest();
-    //           }, miliseconds_delay);
-    //         } else {
-    //           alert(
-    //             "Hubo un error. Inténtalo de nuevo en unos minutos, por favor.1"
-    //           ); // en lugar de una alerta, puede ser más claro para el usuario levantar un modal
-    //           this.sending = false;
-    //           this.attempted_sendings_count = 0;
-    //         }
-    //       }
-    //     })
-    //     .catch((error) => {
-    //       alert(error);
-    //       if (attempts_count < limit) {
-    //         setTimeout(() => {
-    //           this.attempted_sendings_count = attempts_count + 1;
-    //           console.log(this.attempted_sendings_count + " retry attempts.2");
-    //           this.sendInformationRequest();
-    //         }, miliseconds_delay);
-    //       } else {
-    //         alert(
-    //           "Hubo un error. Inténtalo de nuevo en unos minutos, por favor.2"
-    //         ); // en lugar de una alerta, puede ser más claro para el usuario levantar un modal
-    //         this.sending = false;
-    //         this.attempted_sendings_count = 0;
-    //       }
-    //     });
-    // },
+    nueva_procedencia: function() {
+      if (this.form.source != '') {
+// 				this.addTrafficSourceToForm();
+        return this.form.source + '|>' + this.source_datetime + ')';
+      }
+      return '(cómo llegará a Formstack)';
+    },
+    procedencia: function() {
+      return this.getCookieWithName("traffic_source");
+    },
+    user_agent_uuid: function() {
+      // id = 'sdi_user_agent_uuid'
+      return this.getCookieWithName("user_agent_uuid");
+    },
+    source_datetime: function() {
+      var right_now = new Date();
+      var date_of_click = new Date(right_now.getTime() - 10*60*1000);
+      var currDate = date_of_click.getDate();
+      var hours = date_of_click.getHours();
+      var minutes = date_of_click.getMinutes();
+      var month = date_of_click.getMonth() + 1;
+      var year = date_of_click.getFullYear();
+      var ampm = hours >= 12 ? 'pm' : 'am';
+      hours = hours % 12;
+      hours = hours ? hours : 12; // the hour '0' makes '12'
+      minutes = minutes < 10 ? '0' + minutes : minutes;
+      var strTime = currDate + '-' + month + '-' + year + ' ' + hours + ':' + minutes + ' ' + ampm;
+      return strTime;
+    },
+  },
+  methods: {
+    getCookieWithName(cookie_name){
+       var matches = this.document_cookies.filter(function(el) {
+        return el.key == cookie_name;
+      });
+      if (matches.length > 0) {
+        return matches[0].value;
+      }
+      return '';
+    },
+    loadHiddenFields(){
+      var elValorDeLaProcedencia = this.procedencia;
+      if ((this.input_source_manually) && (this.form.source != '')) {
+        elValorDeLaProcedencia = this.nueva_procedencia;
+      }
+      this.payload.procedencia = elValorDeLaProcedencia;
+      this.payload.user_agent_uuid = this.user_agent_uuid;
+      this.payload.url_del_formulario = window.location.href;
+    },
+    sendInformationRequest() {
+      this.sending = true;
+      var information_request = {
+        timestamp: new Date().toJSON(),
+        payload: this.payload,
+      };
+      var limit = this.retry_sending_times;
+      var attempts_count = this.attempted_sendings_count;
+      var miliseconds_delay = this.seconds_before_next_attempt * 1000;
+      axios
+        .post(
+          "https://www.esanbackoffice.com/websites/products/information-request/",
+          information_request
+        )
+        .then((response) => {
+          console.log(response);
+          if (response.data) {
+            this.$router.push('/gracias'); 
+            this.sending = false;
+          } else {
+            if (attempts_count < limit) {
+              setTimeout(() => {
+                this.attempted_sendings_count = attempts_count + 1;
+                console.log(
+                  this.attempted_sendings_count + " retry attempts.1"
+                );
+                this.sendInformationRequest();
+              }, miliseconds_delay);
+            } else {
+              alert(
+                "Hubo un error. Inténtalo de nuevo en unos minutos, por favor.1"
+              ); // en lugar de una alerta, puede ser más claro para el usuario levantar un modal
+              this.sending = false;
+              this.attempted_sendings_count = 0;
+            }
+          }
+        })
+        .catch((error) => {
+          alert(error);
+          if (attempts_count < limit) {
+            setTimeout(() => {
+              this.attempted_sendings_count = attempts_count + 1;
+              console.log(this.attempted_sendings_count + " retry attempts.2");
+              this.sendInformationRequest();
+            }, miliseconds_delay);
+          } else {
+            alert(
+              "Hubo un error. Inténtalo de nuevo en unos minutos, por favor.2"
+            ); // en lugar de una alerta, puede ser más claro para el usuario levantar un modal
+            this.sending = false;
+            this.attempted_sendings_count = 0;
+          }
+        });
+    },
     onReset(event) {
       event.preventDefault();
       this.payload.numero_de_id = "";
@@ -522,7 +578,7 @@ export default {
       this.payload.apellido_paterno = "";
       this.payload.consulta = "";
       this.payload.como_te_enteraste = null;
-      this.payload.areasdeIntere = null;
+      this.payload.especialidad_o_concentracion = null;
       this.payload.academic_degree_code = null;
       this.payload.job_industry_code = null;
       this.payload.pais_nacionalidad_iso3 = "";
