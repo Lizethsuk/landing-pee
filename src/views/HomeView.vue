@@ -122,9 +122,7 @@
                       <h2>Administración y <br />
                     Dirección de 
                     Personas</h2>
-                    <p>Especialízate en: Operaciones y logística, 
-                      tecnologías de Proyectos, gestión de
-                      procesos y gerencia de proyectos.</p>  
+                    <p>Especialízate en: Administración y dirección de personas.</p>  
                     </div>
                    <div class="text-right" ><strong>+</strong></div> 
                     </div>
@@ -156,9 +154,7 @@
                       <div>
                         <h2>Business to <br />
                     Business</h2>
-                    <p>Especialízate en: Operaciones y logística, 
-                      tecnologías de Proyectos, gestión de
-                      procesos y gerencia de proyectos.</p>  
+                    <p>Especialízate en: Gestión estratégica y transformación digital B2B.</p>  
                       </div>
                       <div class="text-right" ><strong>+</strong></div> 
                     </div>
@@ -189,9 +185,9 @@
                     <div class="d-flex flex-column justify-content-between h-100">
                       <div>
                         <h2>Finanzas</h2>
-                    <p>Especialízate en: Operaciones y logística, 
-                      tecnologías de Proyectos, gestión de
-                      procesos y gerencia de proyectos.</p> 
+                    <p>Especialízate en: Finanzas corporativas, 
+                       preparación y evaluación de proyectos y banca.
+                      </p> 
                       </div>
                       <div class="text-right" ><strong>+</strong></div> 
                     </div>
@@ -223,9 +219,7 @@
                     <div class="d-flex flex-column justify-content-between h-100">
                       <div>
                         <h2>Energía</h2>  
-                    <p>Especialízate en: Operaciones y logística, 
-                      tecnologías de Proyectos, gestión de
-                      procesos y gerencia de proyectos.</p>  
+                    <p>Especialízate en:  Gestión de la Energía.</p>  
                       </div>
                       <div class="text-right" ><strong>+</strong></div> 
                       </div>  
@@ -260,9 +254,7 @@
                             <div class="d-flex flex-column justify-content-between h-100">
                               <div>
                                 <h2>Marketing</h2>
-                            <p>Especialízate en: Operaciones y logística, 
-                              tecnologías de Proyectos, gestión de
-                              procesos y gerencia de proyectos.</p>  
+                            <p>Especialízate en: Marketing, marketing digital y dirección de ventas.</p>  
                               </div>
                               <div class="text-right" ><strong>+</strong></div> 
                             </div>
@@ -291,9 +283,7 @@
                     <div class="d-flex flex-column justify-content-between h-100">
                       <div>
                       <h2>Minería</h2>
-                    <p>Especialízate en: Operaciones y logística, 
-                      tecnologías de Proyectos, gestión de
-                      procesos y gerencia de proyectos.</p> 
+                    <p>Especialízate en: Gestión minera</p> 
                     </div>
                     <div class="text-right" ><strong>+</strong></div> 
                       </div>  
@@ -324,8 +314,7 @@
                       <h2>Operaciones y <br />
                     Logística de Proyectos</h2>
                     <p>Especialízate en: Operaciones y logística, 
-                      tecnologías de Proyectos, gestión de
-                      procesos y gerencia de proyectos.</p> 
+                       gestión de procesos y gerencia de proyectos.</p> 
                       </div> 
                       <div class="text-right" ><strong>+</strong></div> 
                       </div>  
@@ -357,9 +346,7 @@
                   <div class="d-flex flex-column justify-content-between h-100">
                     <div>
                       <h2>Salud</h2>  
-                    <p>Especialízate en: Operaciones y logística, 
-                      tecnologías de Proyectos, gestión de
-                      procesos y gerencia de proyectos.</p> 
+                    <p>Especialízate en: Gestión de la salud.</p> 
                       </div>  
                       <div class="text-right" ><strong>+</strong></div> 
                   </div>               
@@ -396,9 +383,7 @@
                       <div>
                         <h2>Tecnología de <br />
                     la Información</h2>
-                    <p>Especialízate en: Operaciones y logística, 
-                      tecnologías de Proyectos, gestión de
-                      procesos y gerencia de proyectos.</p> 
+                    <p>Especialízate en: Tecnologías de Información</p> 
                       </div>
                       <div class="text-right" ><strong>+</strong></div> 
                     </div>
