@@ -137,7 +137,7 @@ a {
 }
 
 li {
-  background: #DBDBDB;
+  background: #D4F2C7;
 }
 
 li:nth-child(odd) {

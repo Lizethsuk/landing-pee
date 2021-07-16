@@ -54,7 +54,9 @@ export default {
   fill: #354258;
   stroke: #61ffab;
 }
-
+.green-mineria
+  fill #44AA6F;
+  stroke: none;
 .white {
   fill: mintcream;
   stroke: none;
