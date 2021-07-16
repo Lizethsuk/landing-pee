@@ -360,6 +360,7 @@ input, select {
   border-radius: 0px;
   font-family: raleway-regular;
   font-size: 14px;
+  padding 0.375rem 0.75rem
 }
 
 input {

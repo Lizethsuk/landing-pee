@@ -18,24 +18,24 @@
   "cursos":[
     {
       "section": "Salud",
-      "curso": "Acreditación de la calidad en clínicas y hospitales ",
-      "teacher": "Paul Cuellar Villanueva",
-      "horario": "Martes de 7:30 a 10:45 p.m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/salud/-acreditacion-de-la-calidad-en-clinicas-y-hospitales/"
+      "curso": "Gestión y negociación de contratos en los servicios de salud ",
+      "teacher": "Jorge Armando Ruiz Portal",
+      "horario": "Miércoles de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/salud/gestion-y-negociacion-de-contratos-en-los-servicios-de-salud/"
     },
     {
       "section": "Salud",
-      "curso": "Elementos claves para una auditoría en salud basada en evidencias",
-      "teacher": "Martín Tantaleán del Águila",
-      "horario": "Viernes de 7:30 a 10:45 p.m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/salud/-elementos-claves-para-una-auditoria-en-salud-basada-en-evidencias/"
+      "curso": "IPRESS PRIVADAS: Negociación con IAFAS",
+      "teacher": "Eduardo Ocampo Ludeña",
+      "horario": "Lunes de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/salud/ipress-privadas-negociacion-con-iafas/"
     },
     {
       "section": "Salud",
-      "curso": "Economía de la salud",
-      "teacher": "Jorge Alfredo Cordero Valera",
-      "horario": "Miércoles de 7:30 a 10:45 p.m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/salud/economia-de-la-salud/"
+      "curso": "Lean Healthcare: Mejora de Procesos en la Prestación y Gestión de Servicios de Salud",
+      "teacher": "Guillermo Alva Burga",
+      "horario": "Jueves de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/salud/lean-healthcare-mejora-de-procesos-en-la-prestacion-y-gestion-de-servicios-de-salud/"
     }
   ],
   "titlePasos":"Siguientes pasos",
