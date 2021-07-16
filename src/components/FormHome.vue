@@ -155,7 +155,7 @@ export default {
     return {
       countryName: false,
       payload: {
-        pais_nacionalidad_iso3: "",
+        pais_nacionalidad_iso3: null,
         correo_electrnico: "",
         nombres: "",
         apellido_paterno: "",
