@@ -43,11 +43,15 @@
           </b-col>
           <b-col lg="3" cols="12">
             <div class="text-center ">
-              <a class="pdf" href="https://www.esan.edu.pe/mails/prueba-nativa/2021/PEE/#/admision_page" >
+              <router-link class="nav-link pdf" :to="{
+                    name: 'admision_page'
+                  }"
+                    >
                 <Admision :color="colorIcon"/>
                 <p class="subtitle">Admisión</p>
                 <p class="description-text">Postula</p>
-              </a>
+              </router-link>
+          
             </div>
           </b-col>
         </b-row>
@@ -103,6 +107,9 @@ export default {
       };
     },
   },
+  beforeCreate() {
+    window.scrollTo(0, 0);
+  }
 };
 </script>
 
