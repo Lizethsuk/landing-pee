@@ -34,16 +34,24 @@
           </b-col>
           <b-col lg="3" cols="12">
             <div class="pasos-content folleto-content">
-            <Folleto :color="colorIcon"/>
-            <p class="subtitle">Folleto</p>
-            <p class="description-text">Descarga el folleto del <br> programa (pdf)</p>
+              <a target="_blank" class="pdf" href="https://www.esan.edu.pe/mails/prueba-nativa/2021/PEE/Folleto_4PEE_2021_final.pdf" download>
+                <Folleto :color="colorIcon"/>
+                <p class="subtitle">Folleto</p>
+                <p class="description-text">Descarga el folleto del <br> programa (pdf)</p>
+              </a>
             </div>
           </b-col>
           <b-col lg="3" cols="12">
             <div class="text-center ">
-            <Admision :color="colorIcon"/>
-            <p class="subtitle">Admisión</p>
-            <p class="description-text">Postula</p>
+              <router-link class="nav-link pdf" :to="{
+                    name: 'admision_page'
+                  }"
+                    >
+                <Admision :color="colorIcon"/>
+                <p class="subtitle">Admisión</p>
+                <p class="description-text">Postula</p>
+              </router-link>
+          
             </div>
           </b-col>
         </b-row>
@@ -99,11 +107,17 @@ export default {
       };
     },
   },
+  beforeCreate() {
+    window.scrollTo(0, 0);
+  }
 };
 </script>
 
 <style lang="stylus" scoped>
 @import '../styles/main.styl';
+.pdf
+  text-decoration none !important
+  color white !important
 .subtitle
   font-family gt-pressura-bold
   padding-top 20px
@@ -125,7 +139,7 @@ export default {
   font-family Raleway-Regular
 .pasos-areas {
   padding: 50px 4px
-  color white
+  color white !important
   margin 0 auto 
   
 }

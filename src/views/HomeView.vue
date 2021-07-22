@@ -79,6 +79,7 @@
             cols="12"
             lg="6"
             class=" col-form"
+            id="form-home"
             
           >
             <FormHome />
@@ -664,7 +665,7 @@
            <b-row>
           <b-col class="text-center">
             <div>
-  <b-button href="#">Regístrate</b-button>
+  <b-button href="#form-home">Regístrate</b-button>
 </div>
           </b-col>
         </b-row>

@@ -33,11 +33,16 @@
             </div>
           </b-col>        
           <b-col lg="4" cols="12">
-            <div class="text-center ">
-            <Admision :color="colorIcon"/>
-            <p class="subtitle">Admisión</p>
-            <p class="description-text">Postula</p>
-            </div>
+             <router-link class="nav-link pdf" :to="{
+                    name: 'admision_page'
+                  }"
+                    >            
+              <div class="text-center ">
+                <Admision :color="colorIcon"/>
+                <p class="subtitle">Admisión</p>
+                <p class="description-text">Postula</p>
+              </div>
+             </router-link>
           </b-col>
         </b-row>
       </b-container>
@@ -90,11 +95,17 @@ export default {
       };
     },
   },
+  beforeCreate() {
+    window.scrollTo(0, 0);
+  }
 };
 </script>
 
 <style lang="stylus" scoped>
 @import '../styles/main.styl';
+.pdf
+  text-decoration none !important
+  color white !important
 .subtitle
   font-family gt-pressura-bold
   padding-top 20px

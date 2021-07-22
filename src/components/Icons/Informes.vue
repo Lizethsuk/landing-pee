@@ -49,7 +49,9 @@ export default {
   fill: #61ffab;
   stroke: none;
 }
-
+.green-mineria
+  fill #44AA6F;
+  stroke: none;
 .green--outline {
   fill: #354258;
   stroke: #61ffab;
