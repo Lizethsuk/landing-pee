@@ -89,13 +89,13 @@
                 Copia de grado bachiller o constancia de egresado universitario,
                 si no contase con el requisito remitir el CV para evaluación.
               </li>
-              <li>Descarga la ficha de inscripción aquí.  <span class="subtitle-text-second">link</span>  </li>
+              <li>Descarga la ficha de inscripción aquí.  <span class="subtitle-text-second"> <a class="pdf" href="https://www.esan.edu.pe/mails/prueba-nativa/2021/PEE/ficha-de-inscripción_v3.docx" download > link </a> </span>  </li>
             </ul>
             <p class="subtitle-text">Formas de Inscripción Exalumnos PEE</p>
             <p>
               Si es Exalumnos del PEE o está matriculado en uno de los
               Certificados de Especialización deberá formalizar su matrícula
-              en:link
+              en:<span class="subtitle-text-second"> <a class="pdf" href="https://www.esan.edu.pe/mails/prueba-nativa/2021/PEE/SolicituddeMatriculaExalumnos.pdf" download> link </a> </span> 
             </p>
             <p>Teléfono: 317-7226</p>
             <span>E-mail: informesaesan.edu.pe </span>
@@ -142,6 +142,10 @@ export default {
 
 <style lang="stylus" scoped>
 @import '../../styles/main.styl'
+.pdf
+  text-decoration none !important
+  color bg-black
+  // color white !important
 .text-second-column
   padding-top 15px
 .text-columns

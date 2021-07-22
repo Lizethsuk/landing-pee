@@ -9,10 +9,10 @@
           <b-col  md="4" cols="12">
             <div class="column-three">
               <div class="social-media">
-                <span class="icon"><img src="../assets/components/footer/rs/facebook.png" alt=""></span>
-                <span class="icon"><img src="../assets/components/footer/rs/youtube.png" alt=""></span>
-                <span class="icon"><img src="../assets/components/footer/rs/linkedin.png" alt=""></span>
-                <span class="icon"><img src="../assets/components/footer/rs/twitter.png" alt=""></span>
+                <span class="icon">  <a target="_blank" href="https://es-la.facebook.com/esaneducacionejecutiva/"><img src="../assets/components/footer/rs/facebook.png" alt=""></a> </span>
+                <span class="icon"> <a target="_blank" href="https://www.youtube.com/user/esanperu"><img src="../assets/components/footer/rs/youtube.png" alt=""></a> </span>
+                <span class="icon"><a target="_blank" href="https://www.linkedin.com/company/esan"><img src="../assets/components/footer/rs/linkedin.png" alt=""></a> </span>
+                <span class="icon"><a target="_blank" href="https://twitter.com/esanperu"><img src="../assets/components/footer/rs/twitter.png" alt=""></a> </span>
               </div>
               <p class="web"> www.esan.edu.pe  </p>
               <p class="text-uni">&copy; Universidad de ESAN 2021  </p>
