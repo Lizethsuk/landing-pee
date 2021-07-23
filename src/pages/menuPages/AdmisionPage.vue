@@ -89,7 +89,7 @@
                 Copia de grado bachiller o constancia de egresado universitario,
                 si no contase con el requisito remitir el CV para evaluación.
               </li>
-              <li>Descarga la ficha de inscripción aquí.  <span class="subtitle-text-second"> <a class="pdf" href="https://www.esan.edu.pe/mails/prueba-nativa/2021/PEE/ficha-de-inscripcion-v3.docx" download > link </a> </span>  </li>
+              <li>Descarga la ficha de inscripción aquí.  <span class="subtitle-text-second"> <a class="pdf" href="https://www.esan.edu.pe/mails/prueba-nativa/2021/PEE/ficha-de-inscripcio@n-v3.docx" download > link </a> </span>  </li>
             </ul>
             <p class="subtitle-text">Formas de Inscripción Exalumnos PEE</p>
             <p>
@@ -97,8 +97,8 @@
               Certificados de Especialización deberá formalizar su matrícula
               en:<span class="subtitle-text-second"> <a class="pdf" href="https://www.esan.edu.pe/mails/prueba-nativa/2021/PEE/SolicituddeMatriculaExalumnos.pdf" download> link </a> </span> 
             </p>
-            <p>Teléfono: 317-7226</p>
-            <span>E-mail: informesaesan.edu.pe </span>
+            
+            <span>E-mail: informes@aesan.edu.pe</span>
             <p>Cuenta Corriente: 193-1764415-0-72, Banco de Crédito.</p>
             <p>
               <span class="subtitle-text-three"> Nota:</span>  Si el depósito es realizado en el banco, el participante
