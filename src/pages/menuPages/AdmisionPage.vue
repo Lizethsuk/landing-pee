@@ -98,7 +98,7 @@
               en:<span class="subtitle-text-second"> <a class="pdf" href="https://www.esan.edu.pe/mails/prueba-nativa/2021/PEE/SolicituddeMatriculaExalumnos.pdf" download> link </a> </span> 
             </p>
             
-            <span>E-mail: informes@aesan.edu.pe</span>
+            <span>E-mail: informes@esan.edu.pe</span>
             <p>Cuenta Corriente: 193-1764415-0-72, Banco de Crédito.</p>
             <p>
               <span class="subtitle-text-three"> Nota:</span>  Si el depósito es realizado en el banco, el participante
