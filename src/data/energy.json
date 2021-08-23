@@ -18,17 +18,10 @@
   "cursos":[
     {
       "section": "Energía",
-      "curso": "Mercados de energía",
-      "teacher": "Edwin Quintanilla Acosta",
-      "horario": "Jueves de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/energia/mercados-de-energia/"
-    },
-    {
-      "section": "Energía",
-      "curso": "Principios de regulación en energía ",
-      "teacher": "Jaime Mendoza",
-      "horario": "Viernes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/energia/principios-de-regulacion-en-energia/"
+      "curso": "Regulación del sector eléctrico",
+      "teacher": "Riquel Mitma Ramírez",
+      "horario": "Miércoles de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/energia/regulacion-del-sector-electrico/"
     }
   ],
   "titlePasos":"Del 07 de junio al 07 de agosto de 2021 ",

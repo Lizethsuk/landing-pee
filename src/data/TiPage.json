@@ -19,31 +19,52 @@
   
     {
       "section": "Tecnologías de la Información",
-      "curso": "Big data analytics",
-      "teacher": "Fernando Casafranca",
-      "horario": "Lunes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/tecnologias-de-informacion/big-data-analytics/"
-    },
-    {
-      "section": "Tecnologías de la Información",
-      "curso": "Gerencia de la Ciberseguridad",
-      "teacher": "Gianncarlo Gómez Morales",
-      "horario": "Martes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/tecnologias-de-informacion/gestion-de-la-ciberseguridad/"
-    },
-    {
-      "section": "Tecnologías de la Información",
-      "curso": "Gestión por procesos con tecnologías de información",
-      "teacher": "Richard Moarri",
-      "horario": "Jueves de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/tecnologias-de-informacion/gestion-por-procesos-con-tecnologias-de-informacion/"
-    },
-    {
-      "section": "Tecnologías de la Información",
-      "curso": "Transformación Digital en las Organizaciones",
-      "teacher": "Eddy Morris",
+      "curso": "Agile management: aplicando scrum en equipos y otros métodos de agilidad organizacional",
+      "teacher": "Arturo Valencia Castro",
       "horario": "Miércoles de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/tecnologias-de-informacion/transformacion-digital-en-las-organizaciones/"
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/tecnologias-de-informacion/agile-management-aplicando-scrum-en-equipos-y-otros-metodos-de-agilidad-organizacional/"
+    },
+    {
+      "section": "Tecnologías de la Información",
+      "curso": "Design thinking para la innovación",
+      "teacher": "Fabián Bueno Méndez",
+      "horario": "Miércoles de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/tecnologias-de-informacion/design-thinking-para-la-innovacion/"
+    },
+    {
+      "section": "Tecnologías de la Información",
+      "curso": "Emprendimiento corporativo en la era digital",
+      "teacher": "Silvia Dioses Farfán",
+      "horario": "Jueves de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/tecnologias-de-informacion/emprendimiento-corporativo-en-la-era-digital/"
+    },
+    {
+      "section": "Tecnologías de la Información",
+      "curso": "Gerencia Efectiva de las Tecnologías de Información",
+      "teacher": "Eddy Morris",
+      "horario": "Viernes de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/tecnologias-de-informacion/gerencia-efectiva-de-las-tecnologias-de-la-informacion/"
+    },
+    {
+      "section": "Tecnologías de la Información",
+      "curso": "Inteligencia de Negocios (Business Intelligence)",
+      "teacher": "Richard Moarri Nohra",
+      "horario": "Jueves de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/tecnologias-de-informacion/inteligencia-de-negocios-business-intelligence/"
+    },
+    {
+      "section": "Tecnologías de la Información",
+      "curso": "Metologías de innovación digital aplicado a tecnologías de información",
+      "teacher": "Omar Crespo Delgado",
+      "horario": "Martes de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/tecnologias-de-informacion/metologias-de-innovacion-digital-aplicado-a-tecnologias-de-informacion/"
+    },
+    {
+      "section": "Tecnologías de la Información",
+      "curso": "Transformación digital en B2B",
+      "teacher": "Cesar Cam Gensollen",
+      "horario": "Miércoles de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/b2b/transformacion-digital-en-b2b/"
     }
   ],
   "titlePasos":"Siguientes pasos",

@@ -18,24 +18,24 @@
   "cursos":[
     {
       "section": "Salud",
-      "curso": "Gestión y negociación de contratos en los servicios de salud ",
-      "teacher": "Jorge Armando Ruiz Portal",
-      "horario": "Miércoles de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/salud/gestion-y-negociacion-de-contratos-en-los-servicios-de-salud/"
-    },
-    {
-      "section": "Salud",
-      "curso": "IPRESS PRIVADAS: Negociación con IAFAS",
-      "teacher": "Eduardo Ocampo Ludeña",
-      "horario": "Lunes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/salud/ipress-privadas-negociacion-con-iafas/"
-    },
-    {
-      "section": "Salud",
-      "curso": "Lean Healthcare: Mejora de Procesos en la Prestación y Gestión de Servicios de Salud",
+      "curso": "Gerencia de precios y costos para los servicios de salud. Margen de rentabilidad",
       "teacher": "Guillermo Alva Burga",
+      "horario": "Martes de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/salud/gerencia-de-precios-y-costos-para-los-servicios-de-salud-margen-de-rentabilidad/"
+    },
+    {
+      "section": "Salud",
+      "curso": "Monitoreo mediante indicadores de calidad en Clínicas y Hospitales",
+      "teacher": "Paul Cuellar",
       "horario": "Jueves de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/salud/lean-healthcare-mejora-de-procesos-en-la-prestacion-y-gestion-de-servicios-de-salud/"
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/salud/monitoreo-mediante-indicadores-de-calidad-en-clinicas-y-hospitales/"
+    },
+    {
+      "section": "Salud",
+      "curso": "Planificación estratégica en las instituciones de salud",
+      "teacher": "César Neves",
+      "horario": "Lunes de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/salud/planificacion-estrategica-en-las-instituciones-de-salud/"
     }
   ],
   "titlePasos":"Siguientes pasos",

@@ -19,24 +19,24 @@
   "cursos":[
     {
       "section": "B2B",
-      "curso": "Finanzas en empresas B2B",
-      "teacher": "Alfredo Mendiola Cabrera | Carlos Aguirre Gamarra",
-      "horario": "Martes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/b2b/finanzas-en-empresas-b2b/"
+      "curso": "Estrategias de venta corporativa (B2B)",
+      "teacher": "Ana Belén Perdigones",
+      "horario": "Sábado de 9:00 a. m. a 12:15 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/b2b/estrategias-de-venta-corporativa-b2b/"
     },
     {
       "section": "B2B",
-      "curso": "Gerencia estratégica de ventas B2B en el entorno digital",
-      "teacher": "Alejandro Perea Málaga",
+      "curso": "Organización y gestión del talento humano en negocios B2B",
+      "teacher": "Guillermo Defilippi Rodríguez",
       "horario": "Martes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/b2b/gerencia-estrategica-de-ventas-b2b-en-el-entorno-digital/"
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/b2b/organizacion-y-gestion-del-talento-humano-en-negocios-b2b/"
     },
     {
       "section": "B2B",
-      "curso": "Nuevos modelos de negocio en entornos disruptivos en el sector B2B",
-      "teacher": "Boris Herrera Barrera",
+      "curso": "Transformación digital en B2B",
+      "teacher": "Cesar Cam Gensollen",
       "horario": "Miércoles de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/b2b/nuevos-modelos-de-negocio-en-entornos-disruptivos-en-el-sector-b2b/"
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/b2b/transformacion-digital-en-b2b/"
     }
   ],
   "titlePasos":"Siguientes pasos",
