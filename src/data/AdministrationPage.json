@@ -19,17 +19,17 @@
   "cursos":[
     {
       "section": "Administración",
-      "curso": "Comunicaciones para la Gerencia",
-      "teacher": "Ofelia Brown",
+      "curso": "Administración Gerencial: El Proceso Administrativo y sus Herramientas Claves de Gestión",
+      "teacher": "Enrique Louffat Olivares",
       "horario": "Martes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/administracion/comunicaciones-para-la-gerencia/"
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/administracion/administracion-gerencial-el-proceso-administrativo-y-sus-herramientas-claves-de-gestion/"
     },
     {
       "section": "Administración ",
-      "curso": "Gerencia y desarrollo de la organización: un enfoque contemporáneo",
-      "teacher": "Lydia Arbaiza Fermini",
-      "horario": "Jueves de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/administracion/gerencia-y-desarrollo-en-la-organizacion-un-enfoque-contemporaneo/"
+      "curso": "Business Agility: planeamiento estratégico extendido",
+      "teacher": "Luis Fernández Aguilar",
+      "horario": "Martes de 7:30 p.m. a 10:45 p.m",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/administracion/business-agility-planeamiento-estrategico-extendido/"
     },
     {
       "section": "Administración",
