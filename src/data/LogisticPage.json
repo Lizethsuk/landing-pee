@@ -19,103 +19,119 @@
   "cursos":[
     {
       "section": "Operaciones y Logística",
-      "curso": "Evaluación del desempeño logístico: uso de indicadores",
-      "teacher": "Armando Valdés Garrido Lecca",
-      "horario": "Jueves de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/evaluacion-del-desempeno-logistico-uso-de-indicadores/"
+      "curso": "Administración de la demanda y plan de compras",
+      "teacher": "Max Vargas Sánchez",
+      "horario": "Lunes de 7:30 a 10:45 p.m",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/administracion-de-la-demanda-y-plan-de-compras/"
     },
     {
       "section": "Operaciones y Logística",
-      "curso": "Gerencia de Compras y Abastecimiento Avanzada",
+      "curso": "El transporte de carga en época de pandemia",
+      "teacher": "Jorge Cornejo Zavaleta",
+      "horario": "Miércoles de 7:30 a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/el-transporte-de-carga-en-epoca-de-pandemia/"
+    },
+    {
+      "section": "Operaciones y Logística",
+      "curso": "Gerencia de compras y abastecimiento",
       "teacher": "Victor Tateishi Saito",
       "horario": "Martes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/gerencia-de-compras-y-abastecimiento-avanzada/"
-    },
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/gerencia-de-compras-y-abastecimiento/"
+    }
+    ,
     {
       "section": "Operaciones y Logística",
       "curso": "Gerencia de operaciones",
-      "teacher": "Aldo de la Cruz González",
-      "horario": "Martes de 7:30 p. m. a 10:45 p. m.",
+      "teacher": "Aldo de la Cruz | Aldo Bresani Torres",
+      "horario": "Martes de 7:30 a 10:45 p. m.",
       "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/gerencia-de-operaciones/"
     }
     ,
     {
       "section": "Operaciones y Logística",
-      "curso": "Gerencia Industrial Lean",
-      "teacher": "Fernando Maradiegue Tuesta",
-      "horario": "Jueves de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/gerencia-industrial-lean/"
-    }
-    ,
-    {
-      "section": "Operaciones y Logística",
-      "curso": "Gestión de la continuidad del negocio",
+      "curso": "Gestión de Crisis Organizacionales",
       "teacher": "Alberto Alexander",
       "horario": "Jueves de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/gestion-de-la-continuidad-del-negocio/"
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/gestion-de-crisis-organizacionales/"
     }
     ,
     {
       "section": "Operaciones y Logística",
-      "curso": "Gestión de Optimización de Centro de Distribución y Transporte",
-      "teacher": "David Gallardo Yaya",
-      "horario": "Miércoles de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/gestion-de-optimizacion-de-centro-de-distribucion-y-transporte/"
-    }
-    ,
-    {
-      "section": "Operaciones y Logística",
-      "curso": "Herramientas para optimizar la experiencia del cliente - OCX",
+      "curso": "Gestión de la Calidad con Six Sigma",
       "teacher": "Freddy Alvarado Vargas",
-      "horario": "Lunes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/herramientas-para-optimizer-la-experiencia-del-cliente---ocx/"
+      "horario": "Lunes de 7:30 a 10:45 p.m",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/gestion-de-la-calidad-con-six-sigma/"
     }
     ,
     {
       "section": "Operaciones y Logística",
-      "curso": "Logística de Depósitos especializados",
-      "teacher": "Carlos Figueredo",
-      "horario": "Miércoles de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/logistica-de-depositos-terminales-y-puertos/"
+      "curso": "Innovación Operativa & Dynamic Demand Planning",
+      "teacher": "Fernando Maradiegue Tuesta",
+      "horario": "Lunes de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/innovacion-operativa-dynamic-demand-planning/"
+    }
+    ,
+    {
+      "section": "Operaciones y Logística",
+      "curso": "Logística Aduanera",
+      "teacher": "Carlos Figueredo Robles",
+      "horario": "Jueves de 7:30 p.m. a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/logistica-aduanera/"
     },
     {
       "section": "Operaciones y Logística",
-      "curso": "Supply Chain Management",
+      "curso": "Planeamiento y Control de la Producción",
+      "teacher": "Aldo de la Cruz González",
+      "horario": "Jueves de 7:30 p.m. a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/planeamiento-y-control-de-la-produccion/"
+    }
+    ,
+    {
+      "section": "Operaciones y Logística",
+      "curso": "Supply Chain Management II. Gestionando la Cadena.",
       "teacher": "Germán Velásquez Salazar",
-      "horario": "Martes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/supply-chain-management/"
+      "horario": "Martes de 7:30 p.m. a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/supply-chain-management-ii-gestionando-la-cadena/"
     }
   ],
   "titleSecondCurso":"Cursos del Certificado de Especialización en Gestión de Procesos",
   "SecondCurso":[
     {
       "section": "Operaciones y Logística",
-      "curso": "Análisis de datos para el control de procesos",
+      "curso": "Análisis cuantitativo para la toma de decisiones",
       "teacher": "Tomás Minauro Latorre",
-      "horario": "Lunes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/analisis-de-datos-para-el-control-de-procesos/"
+      "horario": "Martes de 7:30 a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/analisis-cuantitativo-para-la-toma-de-decisiones/"
     },
     {
       "section": "Operaciones y Logística",
       "curso": "Business Process Management (BPM)",
-      "teacher": "Eddy Morris",
-      "horario": "Viernes de 7:30 p. m. a 10:45 p. m.",
+      "teacher": "Eddy Morris Abarca",
+      "horario": "Jueves de 7:30 a 10:45 p.m.",
       "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/business-process-management-bpm/"
     },
     {
       "section": "Operaciones y Logística",
-      "curso": "Gestión de la Mejora Continua",
-      "teacher": "Luis Bedoya",
-      "horario": "Miércoles de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/gestion-de-la-mejora-continua/"
+      "curso": "Gestión de la Calidad con Six Sigma",
+      "teacher": "Freddy Alvarado",
+      "horario": "Lunes de 7:30 a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/gestion-de-la-calidad-con-six-sigma/"
     }
     ,
     {
       "section": "Operaciones y Logística",
-      "curso": "Implementación ágil de procesos con design thinking y gestionada con Scrum",
-      "teacher": "Gustavo Ortega Ubillús",
-      "horario": "Jueves de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/implementacion-agil-de-procesos-redisenados-con-design-thinking-y-gestionada-con-scrum/"
+      "curso": "Indicadores (KPI's) y OKR's para la gestión de procesos",
+      "teacher": "Luis Fernández Aguilar",
+      "horario": "Miércoles de 7:30 a 10:45 p.m",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/indicadores-kpis-para-la-gestion-de-procesos/"
+    }
+    ,
+    {
+      "section": "Operaciones y Logística",
+      "curso": "Planeamiento y Control de la Producción",
+      "teacher": "Aldo de la Cruz González",
+      "horario": "Jueves de 7:30 a 10:45 p.m",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/planeamiento-y-control-de-la-produccion/"
     }
     
   ],
@@ -123,24 +139,24 @@
   "ThreeCurso":[
     {
       "section": "Operaciones y Logística",
-      "curso": "Gestión de relaciones con los stakeholders del proyecto",
-      "teacher": "Carlos Mimbela",
-      "horario": "Jueves de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/gestion-de-relaciones-con-los-stakeholders/"
+      "curso": "Gestión de proyectos",
+      "teacher": "Peter Yamakawa Tsuja",
+      "horario": "Miércoles de 7:30 a 10:45 p.m",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/gestion-de-proyectos/"
     },
     {
       "section": "Operaciones y Logística",
-      "curso": "Integrando OKR, BSC, KPIs y Scrum",
-      "teacher": "Luis Fernández Aguilar",
-      "horario": "Martes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/integrando-okr-bsc-y-scrum/"
+      "curso": "Herramientas para la Gerencia de Proyectos",
+      "teacher": "Luis Madrid Guerra",
+      "horario": "Jueves de 7:30 a 10:45 p.m.",
+      "linkCurso":"hhttps://www.esan.edu.pe/pee/areas/operaciones-y-logistica/herramientas-para-la-gerencia-de-proyectos/"
     },
     {
       "section": "Operaciones y Logística",
-      "curso": "Oficina de dirección de proyectos (PMO) y la gestión de portafolios",
-      "teacher": "Alexanders Hoyos Espinoza",
+      "curso": "Planificación, Control y Comunicación de Proyectos con el MS Project",
+      "teacher": "Juancarlos Landaure Olavarría",
       "horario": "Lunes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/pmo-y-gestion-de-portafolio/"
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/planificacion-control-y-comunicacion-de-proyectos-con-el-ms-proyect-2016/"
     }
   ],
   "titlePasos":"Siguientes pasos",
