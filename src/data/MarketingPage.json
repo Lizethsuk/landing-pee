@@ -14,133 +14,120 @@
   "dateTextSecond" : "Informativa",
   "dateText":"Conferencia",
   "buttonText":"Mira aquí el video",
-  "titleCurso":"Certificado de Especialización en Marketing",
+  "titleCurso":"Cursos del Certificado de Marketing",
   "cursos":[
     {
       "section": "Marketing",
-      "curso": "Consumer Insight & Innovation",
-      "teacher": "Rodolfo Alejandro Perea",
-      "horario": "Viernes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/consumer-insight-innovation/"
-    },
-    {
-      "section": "Marketing",
-      "curso": "Finanzas para el mundo comercial",
-      "teacher": "Lorena Calderón Pimentel",
-      "horario": "Martes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/finanzas-para-el-mundo-comercial/"
-    },
-    {
-      "section": "Marketing",
-      "curso": "Marketing estratégico 4.0",
+      "curso": "Estrategias de Marketing On y Off",
       "teacher": "José Luis Wakabayashi Muroya",
-      "horario": "Jueves de 7:30 p. m. a 10:45 p. m..",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/marketing-estrategico-40/"
+      "horario": "Jueves de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/estrategias-de-marketing-on-y-off/"
     },
     {
       "section": "Marketing",
-      "curso": "Marketing, Personal Branding and Career Search",
-      "teacher": "María Katia Sanchez",
+      "curso": "Estrategias de retención y fidelización de clientes",
+      "teacher": "Christian Aste León",
       "horario": "Martes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/marketing-personal-branding-and-career-search/"
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/estrategias-de-retencion-y-fidelizacion-de-clientes/"
     },
     {
       "section": "Marketing",
-      "curso": "Pricing & revenue management",
-      "teacher": "Gustavo Reyes Vergara",
-      "horario": "Lunes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/pricing-revenue-management/"
-    }, 
+      "curso": "Marketing analítico 2 en 1, Online + Offline: Decisiones basadas en datos",
+      "teacher": "Walter Martín Palomino Tamayo",
+      "horario": "Martes de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/marketing-analitico-2-en-1-online-offline-decisiones-basadas-en-datos/"
+    },
     {
       "section": "Marketing",
-      "curso": "Técnicas ágiles para la toma de decisiones de marketing",
-      "teacher": "Alvaro León-Gambetta Martín-Arranz",
+      "curso": "Plan de marketing para PYMEs",
+      "teacher": "Gonzalo Guerra-García",
       "horario": "Miércoles de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/tecnicas-agiles-para-la-toma-de-decisiones-de-marketing/"
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/plan-de-marketing-para-pequenas-y-medianas-empresas/"
+    },
+    {
+      "section": "Marketing",
+      "curso": "Trendhunting: cazando insights & tendencias de cambio",
+      "teacher": "Cristina Quiñones Dávila",
+      "horario": "Lunes de 7:30 a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/trendhunting-caza-de-tendencias-para-la-innovacion/"
     }
   ],
   "titleSecondCurso":"Certificado de Especialización en Marketing Digital",
   "SecondCurso":[
     {
       "section": "Marketing",
-      "curso": "Branding en social media - Simulación en redes sociales",
-      "teacher": "Shona Ureña de Zweig",
-      "horario": "Miércoles de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/branding-en-social-media/"
-    },
-    {
-      "section": "Marketing",
-      "curso": "Campañas Multiplataforma",
-      "teacher": "Christian Aste León",
-      "horario": "Martes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/gestion-de-campanas-multiplataforma/"
-    },
-    {
-      "section": "Marketing",
-      "curso": "Estrategias de Inbound Marketing",
-      "teacher": "Jorge Gil",
-      "horario": "Jueves de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/inbound-marketing/"
-    },
-    {
-      "section": "Marketing",
-      "curso": "Gerencia estratégica de ventas B2B en el entorno digital",
-      "teacher": "Alejandro Perea Málaga",
-      "horario": "Martes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/b2b/gerencia-estrategica-de-ventas-b2b-en-el-entorno-digital/"
-    },
-    {
-      "section": "Marketing",
-      "curso": "Investigación de mercados digital",
-      "teacher": "Gonzalo Guerra García | Percy Perea",
-      "horario": "Miércoles de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/investigacion-de-mercados-digital/"
-    },
-    {
-      "section": "Marketing",
-      "curso": "Marketing digital estratégico e interactivo",
-      "teacher": "Sergio Cuervo",
-      "horario": "Jueves de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/marketing-digital-estrategico-e-interactivo/"
-    },
-    {
-      "section": "Marketing",
-      "curso": "Tiendas Virtuales y Comercio Electrónico",
+      "curso": "Estrategias de posicionamiento SEO",
       "teacher": "Daniel Chicoma Lúcar",
-      "horario": "Lunes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/tiendas-virtuales-y-comercio-electronico/"
+      "horario": "Jueves de 7:30 p.m. a 10:45 pm.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/posicionamiento-seo/"
+    },
+    {
+      "section": "Marketing",
+      "curso": "Estrategias digitales con marketing automation",
+      "teacher": "Luis Ubillús Ramírez",
+      "horario": "Viernes de 7:30 p.m. a 10:45 pm.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/estrategias-digitales-con-marketing-automation/"
+    },
+    {
+      "section": "Marketing",
+      "curso": "Inteligencia artificial & big data aplicadas al marketing",
+      "teacher": "Jorge Gil",
+      "horario": "Miércoles de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/inteligencia-artificial-aplicada-al-marketing/"
+    },
+    {
+      "section": "Marketing",
+      "curso": "Maximizando las ventas a través del canal digital",
+      "teacher": "Sergio Cuervo Guzmán",
+      "horario": "Lunes de 7:30 a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/maximizando-las-ventas-a-traves-del-canal-digital/"
     }
-    
   ],
   "titleThreeCurso":"Certificado de Especialización en Dirección de Ventas",
   "ThreeCurso":[
     {
       "section": "Marketing",
-      "curso": "Decisiones en la gestión de canales de distribución y ventas",
-      "teacher": "Carlos Castillo Rodríguez-Novoa",
+      "curso": "Dirección de Ventas en entornos remotos",
+      "teacher": "José Carreras",
+      "horario": "Jueves de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/direccion-de-ventas-en-entornos-remotos/"
+    },
+    {
+      "section": "Marketing",
+      "curso": "Estrategias de venta corporativa (B2B)",
+      "teacher": "Ana Belén Perdigones",
+      "horario": "Sábado de 9:00 a. m. a 12:15 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/b2b/estrategias-de-venta-corporativa-b2b/"
+    },
+    {
+      "section": "Marketing",
+      "curso": "Gestión Comercial",
+      "teacher": "Carlos Urbina",
       "horario": "Miércoles de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/-curso-online-curso/"
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/gestion-comercial/"
     },
     {
       "section": "Marketing",
-      "curso": "Ejecución comercial y Kpis",
-      "teacher": "Carlos Palomino",
-      "horario": "Jueves de 7:30 p. m. a 10:45 p.m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/ejecucion-comercial-y-kpis/"
-    },
+      "curso": "Gestión de vendedores y clientes en un entorno omnicanal",
+      "teacher": "José Luis Wakabayashi Muroya",
+      "horario": "Lunes de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/gestion-de-vendedores-y-clientes-en-un-entorno-omnicanal/"
+    }
+    ,
     {
       "section": "Marketing",
-      "curso": "Finanzas para el mundo comercial",
-      "teacher": "Lorena Calderón Pimentel",
+      "curso": "Maximizando las ventas a través del canal digital",
+      "teacher": "Sergio Cuervo Guzmán",
+      "horario": "Lunes de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/maximizando-las-ventas-a-traves-del-canal-digital/"
+    }
+    ,
+    {
+      "section": "Marketing",
+      "curso": "Técnicas de venta y negociación",
+      "teacher": "Carlos Alberto Mendoza",
       "horario": "Martes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/finanzas-para-el-mundo-comercial/"
-    },
-    {
-      "section": "Marketing",
-      "curso": "Gerencia de ventas",
-      "teacher": "José Luis Wakabayashi",
-      "horario": "Viernes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/gerencia-en-ventas/"
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/marketing/tecnicas-de-venta-y-negociacion/"
     }
   ],
   "titlePasos":"Siguientes pasos",
