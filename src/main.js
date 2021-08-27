@@ -11,6 +11,14 @@ Vue.use(vueCountryRegionSelect)
 Vue.use(BootstrapVue)
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
+import VueMeta from 'vue-meta'
+
+Vue.use(VueMeta  )
+
+
+// const { generate } = VueMeta
+
+
 
 // function(cookie_name) {
 //   var matches = this.document_cookies.filter(function(el) {
