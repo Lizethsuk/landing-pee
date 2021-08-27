@@ -7,23 +7,31 @@
 <script>
 export default {
   name: "App",
-  // metaInfo: {
-  //   // if no subcomponents specify a metaInfo.title, this title will be used
-  //   title: "PEE",
-  //   // all titles will be injected into this template
-  //   titleTemplate: "%s | PEE ESAN",
-  // },
+  data() {
+    return {
+      userData: {
+        name: "ESAN Graduate School of Business | ESAN",
+        keywords:
+          "pee, programa para ejecutivos, cursos esan, pee esan, programas de esan, cursos cortos esan, pee de esan",
+        description:
+          "El PEE (Programa de Especialización para Ejecutivos) te formará de manera rápida y exigente de acuerdo a tus necesidades. ¡Conoce más, aquí!",
+      },
+    };
+  },
+  metaInfo() {
+    return {
+      title: this.userData.name ,
+      meta: [
+        { name: "description", content: this.userData.description },
+        { property: "og:title", content: this.userData.name },
+        { property: "og:description", content: this.userData.description },
+        { property: "og:type", content: "website" },
+        { name: "keywords", content: this.userData.keywords },
+     
+      ],
+    };
+  },
 };
 </script>
 
-<style lang="stylus">
-// .slide-fade-enter-active {
-//   transition: all .2s ease;
-// }
-// .slide-fade-leave-active {
-//   transition: all .2s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-// }
-// .slide-fade-enter, .slide-fade-leave-to{
-//   opacity: 0;
-// }
-</style>
+<style lang="stylus"></style>

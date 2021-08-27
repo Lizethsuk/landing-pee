@@ -77,7 +77,7 @@ export default {
   },
   metaInfo() {
     return {
-      title: `${this.userData.name}`,
+      title: this.userData.name,
       meta: [
         { name: "description", content: this.userData.description },
         { property: "og:title", content: "SALUD | PEE de ESAN" },
