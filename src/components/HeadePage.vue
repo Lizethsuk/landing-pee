@@ -11,16 +11,16 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
           <b-nav-item-dropdown text="Áreas" class="nav-link item-nav" right>
-            <b-dropdown-item to="/administracion_page" href="#">Administración y Dirección de personas</b-dropdown-item>
-            <b-dropdown-item to="/b2b_page" href="#">Business to Business</b-dropdown-item>
-            <b-dropdown-item to="/energy_page" href="#">Energía</b-dropdown-item>
-            <b-dropdown-item to="/finanzas_page" href="#">Finanzas</b-dropdown-item>
+            <b-dropdown-item to="/administracion" href="#">Administración y Dirección de personas</b-dropdown-item>
+            <b-dropdown-item to="/b2b" href="#">Business to Business</b-dropdown-item>
+            <b-dropdown-item to="/energia" href="#">Energía</b-dropdown-item>
+            <b-dropdown-item to="/finanzas" href="#">Finanzas</b-dropdown-item>
             
-            <b-dropdown-item to="/marketing_page" href="#">Marketing</b-dropdown-item>
-            <b-dropdown-item to="/mineria_page" href="#">Minería</b-dropdown-item>
-            <b-dropdown-item to="/salud_page" href="#">Salud</b-dropdown-item>
-            <b-dropdown-item to="/logistica_page" href="#">Operaciones y Logística</b-dropdown-item>
-            <b-dropdown-item to="/ti_page" href="#">Tecnologías de la Información</b-dropdown-item>
+            <b-dropdown-item to="/marketing" href="#">Marketing</b-dropdown-item>
+            <b-dropdown-item to="/mineria" href="#">Minería</b-dropdown-item>
+            <b-dropdown-item to="/salud" href="#">Salud</b-dropdown-item>
+            <b-dropdown-item to="/logistica" href="#">Operaciones y Logística</b-dropdown-item>
+            <b-dropdown-item to="/ti" href="#">Tecnologías de la Información</b-dropdown-item>
             
             
             
@@ -30,11 +30,11 @@
           </b-nav-item-dropdown>
         
           <p class="line"></p>
-          <b-nav-item href="#" to="/admision_page" class="nav-link item-nav">Admisión
+          <b-nav-item href="#" to="/admision" class="nav-link item-nav">Admisión
             <!-- <router-link  > Admisión </router-link>  -->
           </b-nav-item>
           <p class="line"></p>
-          <b-nav-item href="#" to="/financiamiento_page" class="nav-link item-nav">
+          <b-nav-item href="#" to="/financiamiento" class="nav-link item-nav">
             Financiamento
             <!-- <router-link class="nav-link item-nav" to="">  </router-link>   --></b-nav-item>
           <b-nav-item to="/solicita_informacion" class="button-content" > <b-button class="button-nav" squared>Solicita información</b-button></b-nav-item>

@@ -128,7 +128,7 @@ export default {
   z-index 1
   text-align right
   width: 290px;
-  padding-right 36px
+  padding-right 2px
   font-weight: bold;
   height: 63px;
   line-height 57px
