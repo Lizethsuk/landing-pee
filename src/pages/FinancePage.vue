@@ -3,7 +3,7 @@
     <div>
      <HeadePage />
       <ImagePage :message="myJson.title" />
-    
+      
       <CursosPage :title="myJson.titleCurso" >
         <CursoList
           v-for="curso in myJson.cursos"

@@ -30,12 +30,12 @@ export default new VueRouter({
       component: SolicitaInformacion
     },
     {
-      path: "/financiamiento_page",
+      path: "/financiamiento",
       name: "financiamiento_page",
       component: FinanciamientoPage
     },
     {
-      path: "/admision_page",
+      path: "/admision",
       name: "admision_page",
       component: AdmisionPage,
       
@@ -46,48 +46,48 @@ export default new VueRouter({
       component: HomeView
     },
     {
-      path: "/salud_page",
+      path: "/salud",
       name: "salud_page",
       component: SaludPage,
      
     },
     {
-      path: "/energy_page",
+      path: "/energia",
       name: "energy_page",
       component: EnergyPage
     },
     {
-      path: "/ti_page",
+      path: "/ti",
       name: "ti_page",
       component: TiPage
     },
     {
-      path: "/b2b_page",
+      path: "/b2b",
       name: "b2b_page",
       component: B2bPage
     },
     {
-      path: "/administracion_page",
+      path: "/administracion",
       name: "administracion_page",
       component: AdministrationPage,
     },
     {
-      path: "/finanzas_page",
+      path: "/finanzas",
       name: "finanzas_page",
       component: FinancePage
     },
     {
-      path: "/marketing_page",
+      path: "/marketing",
       name: "marketing_page",
       component: MarketingPage
     },
     {
-      path: "/logistica_page",
+      path: "/logistica",
       name: "logistica_page",
       component: LogisticPage
     },
     {
-      path: "/mineria_page",
+      path: "/mineria",
       name: "mineria_page",
       component: MiningPage
     }

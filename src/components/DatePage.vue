@@ -127,8 +127,8 @@ export default {
   position relative
   z-index 1
   text-align right
-  width: 320px;
-  padding-right 10px
+  width: 290px;
+  padding-right 2px
   font-weight: bold;
   height: 63px;
   line-height 57px
