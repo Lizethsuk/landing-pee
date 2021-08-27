@@ -172,8 +172,8 @@ export default {
       },
       areasdeInteres: [
         { text: "¿Qué área te interesa?", value: null },
-        "Administración y Dirección de personas",
-        "Business to Business",
+        { value: "Administración", text: 'Administración y Dirección de personas' },
+        { value: "B2B", text: 'Business to Business' },
         "Energía",
         "Finanzas",
         "Marketing",
