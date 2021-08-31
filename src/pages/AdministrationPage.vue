@@ -78,31 +78,13 @@ export default {
   data() {
     return {
       myJson: json,
-      userData: {
-        name: "ADMINISTRACIÓN Y DIRECCIÓN DE PERSONAS | PEE de ESAN",
-        keywords:"pee, programa para ejecutivos, cursos esan, pee esan, programas de esan, cursos cortos esan, pee de esan",
-        description:
-          "Conoce más acerca de los cursos del área de Administración  y Dirección de personas del Programa de Especialización para Ejecutivos, PEE de ESAN y actualiza tus conocimientos. ",
-      },
-      aws_url: process.env.AWS_URL,
+
     };
   },
   beforeCreate() {
     window.scrollTo(0, 0);
   },
- metaInfo() {
-    return {
-      title: `${this.userData.name}`,
-      meta: [
-        { name: "description", content: this.userData.description },
-        { property: "og:title", content: this.userData.name },
-        { property: "og:description", content: this.userData.description },
-        { property: "og:type", content: "article" },
-        { name: "keywords", content: this.userData.keywords },
-        { property: 'og:site_name', content: 'ADMINISTRACIÓN Y DIRECCIÓN DE PERSONAS | PEE de ESAN'},
-      ],
-    };
-  },
+
 };
 </script>
 

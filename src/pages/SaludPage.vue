@@ -65,28 +65,7 @@ export default {
   },
   data() {
     return {
-      userData: {
-        name: "SALUD | PEE de ESAN",
-        keywords:"pee, programa para ejecutivos, cursos esan, pee esan, programas de esan, cursos cortos esan, pee de esan",
-        description:
-          "Conoce más acerca de los cursos del área de Administración  y Dirección de personas del Programa de Especialización para Ejecutivos, PEE de ESAN y actualiza tus conocimientos. ",
-      },
-      aws_url: process.env.AWS_URL,
       myJson: json,
-    };
-  },
-  metaInfo() {
-    return {
-      title: this.userData.name,
-      meta: [
-        { name: "description", content: this.userData.description },
-        { property: "og:title", content: "SALUD | PEE de ESAN" },
-        { property: "og:description", content: this.userData.description },
-        { property: "og:type", content: "article" },
-        { name: "keywords", content: this.userData.keywords },
-        { property: 'og:site_name', content: 'SALUD | PEE de ESAN'},
-
-      ],
     };
   },
 };

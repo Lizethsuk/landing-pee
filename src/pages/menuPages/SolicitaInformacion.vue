@@ -7,7 +7,11 @@
       <b-row>
         <b-col>
           <p class="subtitle-text">Solicita mas Información</p>
-          <b-form @submit="sendInformationRequest" @reset="onReset" v-if="show">
+          <b-form
+            v-on:submit.prevent="sendInformationRequest"
+            @reset="onReset"
+            v-if="show"
+          >
             <b-container class="pl-0 pr-0">
               <b-row>
                 <b-col cols="12">
@@ -44,7 +48,7 @@
                       label-for="input-3"
                     >
                       <b-form-input
-                        type="number"
+                        type="text"
                         id="input-3"
                         v-model="payload.numero_de_id"
                         placeholder="Número de DNI/ID"
@@ -111,14 +115,13 @@
                       label-for="input-4"
                     >
                       <b-form-input
-                        type="number"
+                        type="text"
                         id="input-4"
                         v-model="payload.telefono"
                         placeholder="Teléfono"
                         required
                       ></b-form-input>
                     </b-form-group>
-
                     <b-form-group
                       class="form-content"
                       id="input-group-11"
@@ -131,6 +134,7 @@
                         <option
                           v-for="pais_nacionalidad_iso3 in pais_nacionalidad_iso3"
                           :key="pais_nacionalidad_iso3.id"
+                          :value="pais_nacionalidad_iso3.iso3_code"
                         >
                           {{ pais_nacionalidad_iso3.short_name }}
                         </option>
@@ -170,33 +174,33 @@
                     label-for="input-14"
                   >
                     <b-form-input
-                      type="number"
+                      type="text"
                       id="input-3"
                       v-model="payload.numero_de_id"
                       placeholder="Número de DNI/ID"
                       required
                     ></b-form-input>
                   </b-form-group>
-                <b-form-group
-                      class="form-content"
-                      id="input-group-11"
-                      label-for="input-11"
-                    >
-                      <b-form-input
-                        type="email"
-                        id="input-4"
-                        v-model="payload.correo_electrnico"
-                        placeholder="Correo"
-                        required
-                      ></b-form-input>
-                    </b-form-group>
+                  <b-form-group
+                    class="form-content"
+                    id="input-group-11"
+                    label-for="input-11"
+                  >
+                    <b-form-input
+                      type="email"
+                      id="input-4"
+                      v-model="payload.correo_electrnico"
+                      placeholder="Correo"
+                      required
+                    ></b-form-input>
+                  </b-form-group>
                   <b-form-group
                     class="form-content"
                     id="input-group-15"
                     label-for="input-15"
                   >
                     <b-form-input
-                      type="number"
+                      type="text"
                       id="input-4"
                       v-model="payload.telefono"
                       placeholder="Teléfono"
@@ -220,14 +224,18 @@
                     id="input-group-17"
                     label-for="input-17"
                   >
-                 <select v-model="payload.pais_nacionalidad_iso3" required>
-                    <option v-bind:value="null" selected>
-                      -Seleccione su país-
-                    </option>
-                    <option v-for="pais_nacionalidad_iso3 in pais_nacionalidad_iso3" :key="pais_nacionalidad_iso3.id">
-                      {{ pais_nacionalidad_iso3.short_name }}
-                    </option>
-                  </select> 
+                    <select v-model="payload.pais_nacionalidad_iso3" required>
+                      <option v-bind:value="null" selected>
+                        -Seleccione su país-
+                      </option>
+                      <option
+                        v-for="pais_nacionalidad_iso3 in pais_nacionalidad_iso3"
+                        :key="pais_nacionalidad_iso3.id"
+                        :value="pais_nacionalidad_iso3.iso3_code"
+                      >
+                        {{ pais_nacionalidad_iso3.short_name }}
+                      </option>
+                    </select>
                   </b-form-group>
 
                   <b-form-group
@@ -352,9 +360,7 @@
             <b-button class="btn-m" block @click="hideModal">Cerrar</b-button>
           </b-col>
           <b-col cols="7">
-            <b-button class="btn-m" block @click="accept"
-              >Acepto esta política</b-button
-            >
+            <b-button class="btn-m" block>Acepto esta política</b-button>
           </b-col>
         </b-row>
       </b-container>
@@ -377,25 +383,22 @@ export default {
     PasosPages2,
   },
   data() {
-    return {  
+    return {
       payload: {
         pais_nacionalidad_iso3: null,
-        numero_de_id: "",
         nombres: "",
+        apellido_paterno: "",
+        especialidad_o_concentracion: null,
+        numero_de_id: "",
+        correo_electrnico: "",
         telefono: "",
+        acepta_politica_de_privacidad: [],
         empresa: "",
         cargo: "",
-        correo_electrnico: "",
-        apellido_paterno: "",
+        ciudad: "LIMA",
+        programa: "PEE",
         consulta: "",
         como_te_enteraste: null,
-        acepta_politica_de_privacidad: [],
-        ciudad: 'LIMA', // debe inicializarse, aquí; en javascript después; o, en última instancia, presentar opciones en el HTML para que el usuario elija
-        programa: 'PEE', // igual que *ciudad*
-        url_del_formulario: '', // se carga automáticamente
-        procedencia: '',// se carga automáticamente
-        user_agent_uuid: '',// se carga automáticamente
-        especialidad_o_concentracion:null,
       },
       alternativas: [
         { text: "-Elije una alternativa-", value: null },
@@ -413,8 +416,11 @@ export default {
       ],
       areasdeInteres: [
         { text: "¿Qué área te interesa?", value: null },
-        { value: "Administración", text: 'Administración y Dirección de personas' },
-        { value: "B2B", text: 'Business to Business' },
+        {
+          value: "Administración",
+          text: "Administración y Dirección de personas",
+        },
+        { value: "B2B", text: "Business to Business" },
         "Energía",
         "Finanzas",
         "Marketing",
@@ -436,7 +442,7 @@ export default {
       sending: false,
       retry_sending_times: 3, // Cuántas veces queremos que se reintente enviar la data automáticamente, cuando se encuentra algún error.
       attempted_sendings_count: 0, // Conteo de las veces que ya se intentó enviar la data antes de tener éxito: usado para los reintentos automáticos
-      seconds_before_next_attempt: 2, // Tiempo de espera entre reintentos  
+      seconds_before_next_attempt: 2, // Tiempo de espera entre reintentos
       selected: null,
     };
   },
@@ -446,67 +452,79 @@ export default {
       .get("https://www.esanbackoffice.com/world/api/countries/?limit=200")
       .then(
         (response) => (
-          (this.pais_nacionalidad_iso3 = response.data.results)
+          (this.pais_nacionalidad_iso3 = response.data.results),
+          console.log(response)
         )
       );
   },
 
   computed: {
-    document_cookies: function() {
-      var key_values_list = document.cookie.split('; ');
+    document_cookies: function () {
+      var key_values_list = document.cookie.split("; ");
       var cookies_list = [];
-      for (let i = 0; i < key_values_list.length; i++) { 
-          var current_key_and_value = key_values_list[i].split('=');
-          cookies_list.push({
-            key: current_key_and_value[0],
-            value: current_key_and_value[1],
-          })
+      for (let i = 0; i < key_values_list.length; i++) {
+        var current_key_and_value = key_values_list[i].split("=");
+        cookies_list.push({
+          key: current_key_and_value[0],
+          value: current_key_and_value[1],
+        });
       }
       return cookies_list;
     },
-    nueva_procedencia: function() {
-      if (this.form.source != '') {
-// 				this.addTrafficSourceToForm();
-        return this.form.source + '|>' + this.source_datetime + ')';
+    nueva_procedencia: function () {
+      if (this.form.source != "") {
+        // 				this.addTrafficSourceToForm();
+        return this.form.source + "|>" + this.source_datetime + ")";
       }
-      return '(cómo llegará a Formstack)';
+      return "(cómo llegará a Formstack)";
     },
-    procedencia: function() {
+    procedencia: function () {
       return this.getCookieWithName("traffic_source");
     },
-    user_agent_uuid: function() {
+    user_agent_uuid: function () {
       // id = 'sdi_user_agent_uuid'
       return this.getCookieWithName("user_agent_uuid");
     },
-    source_datetime: function() {
+    source_datetime: function () {
       var right_now = new Date();
-      var date_of_click = new Date(right_now.getTime() - 10*60*1000);
+      var date_of_click = new Date(right_now.getTime() - 10 * 60 * 1000);
       var currDate = date_of_click.getDate();
       var hours = date_of_click.getHours();
       var minutes = date_of_click.getMinutes();
       var month = date_of_click.getMonth() + 1;
       var year = date_of_click.getFullYear();
-      var ampm = hours >= 12 ? 'pm' : 'am';
+      var ampm = hours >= 12 ? "pm" : "am";
       hours = hours % 12;
       hours = hours ? hours : 12; // the hour '0' makes '12'
-      minutes = minutes < 10 ? '0' + minutes : minutes;
-      var strTime = currDate + '-' + month + '-' + year + ' ' + hours + ':' + minutes + ' ' + ampm;
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      var strTime =
+        currDate +
+        "-" +
+        month +
+        "-" +
+        year +
+        " " +
+        hours +
+        ":" +
+        minutes +
+        " " +
+        ampm;
       return strTime;
     },
   },
   methods: {
-    getCookieWithName(cookie_name){
-       var matches = this.document_cookies.filter(function(el) {
+    getCookieWithName(cookie_name) {
+      var matches = this.document_cookies.filter(function (el) {
         return el.key == cookie_name;
       });
       if (matches.length > 0) {
         return matches[0].value;
       }
-      return '';
+      return "";
     },
-    loadHiddenFields(){
+    loadHiddenFields() {
       var elValorDeLaProcedencia = this.procedencia;
-      if ((this.input_source_manually) && (this.form.source != '')) {
+      if (this.input_source_manually && this.form.source != "") {
         elValorDeLaProcedencia = this.nueva_procedencia;
       }
       this.payload.procedencia = elValorDeLaProcedencia;
@@ -515,63 +533,33 @@ export default {
     },
     sendInformationRequest() {
       this.sending = true;
+      // ESTO ES PROPIAMENTE LO QUE SE ENVÍA + LA METADATA
       var information_request = {
-        timestamp: new Date().toJSON(),
+        timestamp: new Date().toJSON(), // FECHA Y HORA EXACTAS DEL ENVIO EN FORMATO JSON
         payload: this.payload,
       };
-      var limit = this.retry_sending_times;
-      var attempts_count = this.attempted_sendings_count;
-      var miliseconds_delay = this.seconds_before_next_attempt * 1000;
+      console.log(this.payload);
       axios
         .post(
-          "https://www.esanbackoffice.com/websites/products/information-request/",
+          "https://staging.esanbackoffice.com/websites/products/information-request/",
           information_request
         )
-        .then((response) => {
+        .then(function (response) {
           console.log(response);
-          if (response.data) {
-            this.$router.push('/gracias'); 
-            this.sending = false;
-          } else {
-            if (attempts_count < limit) {
-              setTimeout(() => {
-                this.attempted_sendings_count = attempts_count + 1;
-                console.log(
-                  this.attempted_sendings_count + " retry attempts.1"
-                );
-                this.sendInformationRequest();
-              }, miliseconds_delay);
-            } else {
-              alert(
-                "Hubo un error. Inténtalo de nuevo en unos minutos, por favor.1"
-              ); // en lugar de una alerta, puede ser más claro para el usuario levantar un modal
-              this.sending = false;
-              this.attempted_sendings_count = 0;
-            }
-          }
+          window.location.href =
+            "https://www.esan.edu.pe/pee/solicitud-de-informacion/gracias/";
+          // alert("Éxito.");
         })
-        .catch((error) => {
-          alert(error);
-          if (attempts_count < limit) {
-            setTimeout(() => {
-              this.attempted_sendings_count = attempts_count + 1;
-              console.log(this.attempted_sendings_count + " retry attempts.2");
-              this.sendInformationRequest();
-            }, miliseconds_delay);
-          } else {
-            alert(
-              "Hubo un error. Inténtalo de nuevo en unos minutos, por favor.2"
-            ); // en lugar de una alerta, puede ser más claro para el usuario levantar un modal
-            this.sending = false;
-            this.attempted_sendings_count = 0;
-          }
+        .catch(function (error) {
+          console.log(error);
+          alert("Error.");
         });
     },
     onReset(event) {
       event.preventDefault();
       this.payload.numero_de_id = "";
-      this.payload.correo_electrnico="",
-      this.payload.nombres = "";
+      (this.payload.correo_electrnico = ""), (this.payload.nombres = "");
+      this.payload.correo_electrnico = "";
       this.payload.telefono = "";
       this.payload.empresa = "";
       this.payload.cargo = "";
@@ -600,7 +588,8 @@ export default {
     accept() {
       const data = ["0"];
       this.$refs["my-modal"].toggle("#toggle-btn");
-      this.payload.acepta_politica_de_privacidad = this.payload.acepta_politica_de_privacidad.concat(data);
+      this.payload.acepta_politica_de_privacidad =
+        this.payload.acepta_politica_de_privacidad.concat(data);
     },
   },
 };
