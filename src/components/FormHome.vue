@@ -1,6 +1,10 @@
 <template>
   <div class="form-class">
-    <b-form @submit="sendInformationRequest" v-if="show" class="form-g">
+    <b-form
+      v-on:submit.prevent="sendInformationRequest"
+      v-if="show"
+      class="form-g"
+    >
       <b-form-group class="all-btn">
         <h1>
           Regístrate <br />
@@ -69,14 +73,16 @@
         ></b-form-input>
       </b-form-group>
       <b-form-group class="all-btn">
-      <select v-model="payload.pais_nacionalidad_iso3" required>
-                <option v-bind:value="null" selected>
-                  -Seleccione su país-
-                </option>
-                <option v-for="country in countries" :key="country.id">
-                  {{ country.short_name }}
-                </option>
-              </select>
+        <select v-model="payload.pais_nacionalidad_iso3" required>
+          <option v-bind:value="null" selected>-Seleccione su país-</option>
+          <option
+            v-for="country in countries"
+            :value="country.iso3_code"
+            :key="country.id"
+          >
+            {{ country.short_name }}
+          </option>
+        </select>
       </b-form-group>
       <b-form-group
         class="all-btn"
@@ -92,7 +98,7 @@
           <b-form-checkbox class="conditions" value="0"> </b-form-checkbox>
           <span class="text-condiciones">
             Acepto las
-            <a @click="toggleModal" >
+            <a @click="toggleModal">
               condiciones de tratamiento para mis datos.
             </a>
           </span>
@@ -164,16 +170,19 @@ export default {
         cargo: "",
         especialidad_o_concentracion: null,
         acepta_politica_de_privacidad: [],
-        ciudad: 'LIMA', // debe inicializarse, aquí; en javascript después; o, en última instancia, presentar opciones en el HTML para que el usuario elija
-        programa: 'PEE', // igual que *ciudad*
-        url_del_formulario: '', // se carga automáticamente
-        procedencia: '',// se carga automáticamente
-        user_agent_uuid: '',// se carga automáticamente
+        ciudad: "LIMA", // debe inicializarse, aquí; en javascript después; o, en última instancia, presentar opciones en el HTML para que el usuario elija
+        programa: "PEE", // igual que *ciudad*
+        url_del_formulario: "", // se carga automáticamente
+        procedencia: "", // se carga automáticamente
+        user_agent_uuid: "", // se carga automáticamente
       },
       areasdeInteres: [
         { text: "¿Qué área te interesa?", value: null },
-        "Administración y Dirección de personas",
-        "Business to Business",
+        {
+          value: "Administración",
+          text: "Administración y Dirección de personas",
+        },
+        { value: "B2B", text: "Business to Business" },
         "Energía",
         "Finanzas",
         "Marketing",
@@ -194,68 +203,75 @@ export default {
     this.loadHiddenFields();
     axios
       .get("https://www.esanbackoffice.com/world/api/countries/?limit=200")
-      .then(
-        (response) => (
-          (this.countries = response.data.results)
-        )
-      );
+      .then((response) => (this.countries = response.data.results));
   },
   computed: {
-    document_cookies: function() {
-      var key_values_list = document.cookie.split('; ');
+    document_cookies: function () {
+      var key_values_list = document.cookie.split("; ");
       var cookies_list = [];
-      for (let i = 0; i < key_values_list.length; i++) { 
-          var current_key_and_value = key_values_list[i].split('=');
-          cookies_list.push({
-            key: current_key_and_value[0],
-            value: current_key_and_value[1],
-          })
+      for (let i = 0; i < key_values_list.length; i++) {
+        var current_key_and_value = key_values_list[i].split("=");
+        cookies_list.push({
+          key: current_key_and_value[0],
+          value: current_key_and_value[1],
+        });
       }
       return cookies_list;
     },
-    nueva_procedencia: function() {
-      if (this.form.source != '') {
-// 				this.addTrafficSourceToForm();
-        return this.form.source + '|>' + this.source_datetime + ')';
+    nueva_procedencia: function () {
+      if (this.form.source != "") {
+        // 				this.addTrafficSourceToForm();
+        return this.form.source + "|>" + this.source_datetime + ")";
       }
-      return '(cómo llegará a Formstack)';
+      return "(cómo llegará a Formstack)";
     },
-    procedencia: function() {
+    procedencia: function () {
       return this.getCookieWithName("traffic_source");
     },
-    user_agent_uuid: function() {
+    user_agent_uuid: function () {
       // id = 'sdi_user_agent_uuid'
       return this.getCookieWithName("user_agent_uuid");
     },
-    source_datetime: function() {
+    source_datetime: function () {
       var right_now = new Date();
-      var date_of_click = new Date(right_now.getTime() - 10*60*1000);
+      var date_of_click = new Date(right_now.getTime() - 10 * 60 * 1000);
       var currDate = date_of_click.getDate();
       var hours = date_of_click.getHours();
       var minutes = date_of_click.getMinutes();
       var month = date_of_click.getMonth() + 1;
       var year = date_of_click.getFullYear();
-      var ampm = hours >= 12 ? 'pm' : 'am';
+      var ampm = hours >= 12 ? "pm" : "am";
       hours = hours % 12;
       hours = hours ? hours : 12; // the hour '0' makes '12'
-      minutes = minutes < 10 ? '0' + minutes : minutes;
-      var strTime = currDate + '-' + month + '-' + year + ' ' + hours + ':' + minutes + ' ' + ampm;
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      var strTime =
+        currDate +
+        "-" +
+        month +
+        "-" +
+        year +
+        " " +
+        hours +
+        ":" +
+        minutes +
+        " " +
+        ampm;
       return strTime;
     },
   },
   methods: {
-    getCookieWithName(cookie_name){
-       var matches = this.document_cookies.filter(function(el) {
+    getCookieWithName(cookie_name) {
+      var matches = this.document_cookies.filter(function (el) {
         return el.key == cookie_name;
       });
       if (matches.length > 0) {
         return matches[0].value;
       }
-      return '';
+      return "";
     },
-    loadHiddenFields(){
+    loadHiddenFields() {
       var elValorDeLaProcedencia = this.procedencia;
-      if ((this.input_source_manually) && (this.form.source != '')) {
+      if (this.input_source_manually && this.form.source != "") {
         elValorDeLaProcedencia = this.nueva_procedencia;
       }
       this.payload.procedencia = elValorDeLaProcedencia;
@@ -279,7 +295,7 @@ export default {
         .then((response) => {
           console.log(response);
           if (response.data) {
-            this.$router.push('/gracias'); 
+            window.location.href = "https://www.esan.edu.pe/pee/solicitud-de-informacion/gracias/";
             this.sending = false;
           } else {
             if (attempts_count < limit) {
@@ -328,15 +344,17 @@ export default {
     accept() {
       const data = ["0"];
       this.$refs["my-modal"].toggle("#toggle-btn");
-      this.payload.acepta_politica_de_privacidad = this.payload.acepta_politica_de_privacidad.concat(data);
+      this.payload.acepta_politica_de_privacidad =
+        this.payload.acepta_politica_de_privacidad.concat(data);
     },
   },
 };
 </script>
 <style lang="stylus" scoped>
 @import '../styles/main.styl';
+
 p {
-  margin-bottom 1px
+  margin-bottom: 1px;
 }
 
 .modal1 {
@@ -407,7 +425,7 @@ input, select {
   border-radius: 0px;
   font-family: raleway-regular;
   font-size: 14px;
-  padding 0.375rem 0.75rem
+  padding: 0.375rem 0.75rem;
 }
 
 input {

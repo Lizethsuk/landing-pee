@@ -6,18 +6,8 @@
 
 <script>
 export default {
-  name: "App",
+  name: "App"
 };
 </script>
 
-<style lang="stylus">
-// .slide-fade-enter-active {
-//   transition: all .2s ease;
-// }
-// .slide-fade-leave-active {
-//   transition: all .2s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-// }
-// .slide-fade-enter, .slide-fade-leave-to{
-//   opacity: 0;
-// }
-</style>
+<style lang="stylus"></style>

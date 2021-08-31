@@ -12,8 +12,8 @@
             <div class="pasos-content">
               <Calendario :color="colorIcon"/>
               <p class="subtitle">Calendario</p>
-              <p class="description-text">Del 07 de junio al <br>
-                <span> 07 de agosto de 2021 </span>
+              <p class="description-text">Del 18 de octubre al <br>
+                <span>11 de diciembre</span>
                  </p>
               <!-- <p v-text="calendarioText" class="description-text"></p> -->
               <div class="vl"></div>

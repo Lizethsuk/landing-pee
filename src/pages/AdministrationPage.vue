@@ -2,11 +2,18 @@
   <div>
     <div>
       <HeadePage />
-      <ImagePage :message="myJson.title"  :messageSecond="myJson.title2"/>
-      <DatePage :bgColorButton="myJson.bgColorButtonDate" :bgColorDivider="myJson.bgColorDividerDate"  
-      :dateTextSecond="myJson.dateTextSecond" :buttonText="myJson.buttonText"  
-      :dateText="myJson.dateText" :bgColor="myJson.bgColorDate" :month="myJson.month" :day="myJson.date" />
-      <CursosPage :title="myJson.titleCurso" >
+      <ImagePage :message="myJson.title" :messageSecond="myJson.title2" />
+      <DatePage
+        :bgColorButton="myJson.bgColorButtonDate"
+        :bgColorDivider="myJson.bgColorDividerDate"
+        :dateTextSecond="myJson.dateTextSecond"
+        :buttonText="myJson.buttonText"
+        :dateText="myJson.dateText"
+        :bgColor="myJson.bgColorDate"
+        :month="myJson.month"
+        :day="myJson.date"
+      />
+      <CursosPage :title="myJson.titleCurso">
         <CursoList
           v-for="curso in myJson.cursos"
           :sectionName="curso.section"
@@ -15,11 +22,11 @@
           :horarioName="curso.horario"
           :linkCurso="curso.linkCurso"
           :key="curso.id"
-          :lineColor="myJson.lineColorCursos" :bgColor="myJson.bgColorCursos"
+          :lineColor="myJson.lineColorCursos"
+          :bgColor="myJson.bgColorCursos"
         />
-
       </CursosPage>
-      <hr>
+      <hr />
       <CursosPage :title="myJson.titleSecondCurso">
         <CursoList
           v-for="curso in myJson.cursosSecond"
@@ -41,7 +48,6 @@
         :informeText="myJson.informesText"
         :folletoText="myJson.folletoText"
         :admisionText="myJson.admisionText"
-       
       />
       <FooterPage />
     </div>
@@ -59,7 +65,7 @@ import CursoList from "../components/CursoList";
 import PasosPages from "../components/PasosPages.vue";
 
 export default {
-  name:"AdministrationPage",
+  name: "AdministrationPage",
   components: {
     HeadePage,
     FooterPage,
@@ -72,24 +78,28 @@ export default {
   data() {
     return {
       myJson: json,
+
     };
   },
   beforeCreate() {
     window.scrollTo(0, 0);
-  }
-}
+  },
+
+};
 </script>
 
 <style lang="stylus" scoped>
+@import '../styles/main.styl';
 
- @import "../styles/main.styl"
-
-hr 
-  background-color:secondary-administracion
+hr {
+  background-color: secondary-administracion;
   height: 5px;
-  opacity 1 !important
-.jumbotron
-  background-image url('../assets/areas/administracion/banner/kv_007-1.jpg')
+  opacity: 1 !important;
+}
+
+.jumbotron {
+  background-image: url('../assets/areas/administracion/banner/kv_007-1.jpg');
+}
 
 .fecha {
   font-size: 20px;
@@ -174,5 +184,4 @@ li:nth-child(odd) {
 section {
   border-bottom: 4px solid primary-pee;
 }
-
 </style>

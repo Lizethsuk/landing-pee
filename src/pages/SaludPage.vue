@@ -1,12 +1,19 @@
 <template>
+  <div>
     <div>
-    <div>
-     <HeadePage />
+      <HeadePage />
       <ImagePage :message="myJson.title" />
-      <DatePage :bgColorButton="myJson.bgColorButtonDate" :bgColorDivider="myJson.bgColorDividerDate"  
-      :dateTextSecond="myJson.dateTextSecond" :buttonText="myJson.buttonText"  
-      :dateText="myJson.dateText" :bgColor="myJson.bgColorDate" :month="myJson.month" :day="myJson.date" />
-      <CursosPage :title="myJson.titleCurso" >
+      <DatePage
+        :bgColorButton="myJson.bgColorButtonDate"
+        :bgColorDivider="myJson.bgColorDividerDate"
+        :dateTextSecond="myJson.dateTextSecond"
+        :buttonText="myJson.buttonText"
+        :dateText="myJson.dateText"
+        :bgColor="myJson.bgColorDate"
+        :month="myJson.month"
+        :day="myJson.date"
+      />
+      <CursosPage :title="myJson.titleCurso">
         <CursoList
           v-for="curso in myJson.cursos"
           :sectionName="curso.section"
@@ -15,11 +22,11 @@
           :horarioName="curso.horario"
           :key="curso.id"
           :linkCurso="curso.linkCurso"
-          :lineColor="myJson.lineColorCursos" :bgColor="myJson.bgColorCursos"
+          :lineColor="myJson.lineColorCursos"
+          :bgColor="myJson.bgColorCursos"
         />
-
       </CursosPage>
-       <PasosPages
+      <PasosPages
         :colorIcon="myJson.colorIcon"
         :lineColor="myJson.lineColorPasos"
         :bgColor="myJson.bgColorPasos"
@@ -27,12 +34,10 @@
         :informeText="myJson.informesText"
         :folletoText="myJson.folletoText"
         :admisionText="myJson.admisionText"
-       
       />
       <FooterPage />
     </div>
   </div>
-  
 </template>
 
 <script>
@@ -60,17 +65,18 @@ export default {
   },
   data() {
     return {
-      myJson: json
+      myJson: json,
     };
   },
 };
 </script>
 
 <style lang="stylus" scoped>
+@import '../styles/main.styl';
 
- @import "../styles/main.styl"
-.jumbotron
-  background-image url('../assets/areas/salud/banner/kv_006-1.jpg')
+.jumbotron {
+  background-image: url('../assets/areas/salud/banner/kv_006-1.jpg');
+}
 
 .fecha {
   font-size: 20px;
@@ -137,7 +143,7 @@ a {
 }
 
 li {
-  background: #B8E1DE
+  background: #B8E1DE;
   // opacity 0.5
 }
 
@@ -155,6 +161,5 @@ li:nth-child(odd) {
 
 section {
   border-bottom: 4px solid primary-pee;
-  }
-
+}
 </style>

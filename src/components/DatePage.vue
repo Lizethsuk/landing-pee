@@ -116,7 +116,7 @@ export default {
   position absolute
   z-index 2
   width 50px
-  font-size 120px
+  font-size 120px 
   margin-right 310px
   margin-top -67px
   font-weight: bold
@@ -175,8 +175,8 @@ export default {
 +for_breakpoint(desktop-lap)
   .section-1
     width 50px
-    font-size 100px
-    margin-right 190px
+    font-size 80px
+    margin-right 225px
     margin-top -67px
     font-weight: bold
     line-height 182px
@@ -186,7 +186,7 @@ export default {
     position relative
     z-index 1
     text-align right
-    width: 190px;
+    width: 250px;
     padding-right 10px
     font-weight: bold;
     height: 63px;

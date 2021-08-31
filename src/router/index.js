@@ -37,7 +37,8 @@ export default new VueRouter({
     {
       path: "/admision",
       name: "admision_page",
-      component: AdmisionPage
+      component: AdmisionPage,
+      
     },
     {
       path: "/",
@@ -47,7 +48,8 @@ export default new VueRouter({
     {
       path: "/salud",
       name: "salud_page",
-      component: SaludPage
+      component: SaludPage,
+     
     },
     {
       path: "/energia",
@@ -67,7 +69,7 @@ export default new VueRouter({
     {
       path: "/administracion",
       name: "administracion_page",
-      component: AdministrationPage
+      component: AdministrationPage,
     },
     {
       path: "/finanzas",

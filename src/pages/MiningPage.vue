@@ -3,7 +3,7 @@
     <div>
      <HeadePage />
       <ImagePage :message="myJson.title" />
-      <DatePage :bgColorButton="myJson.bgColorButtonDate" :bgColorDivider="myJson.bgColorDividerDate"  
+      <DatePage class="date-mining" :bgColorButton="myJson.bgColorButtonDate" :bgColorDivider="myJson.bgColorDividerDate"  
       :dateTextSecond="myJson.dateTextSecond" :buttonText="myJson.buttonText"  
       :dateText="myJson.dateText" :bgColor="myJson.bgColorDate" :month="myJson.month" :day="myJson.date" />
       <CursosPage :title="myJson.titleCurso" >
@@ -69,6 +69,11 @@ export default {
 <style lang="stylus" scoped>
 
  @import "../styles/main.styl"
+
+.section-1[data-v-098f2de6]
+  margin-right 250px !important
+.section-2[data-v-098f2de6]
+  width: 250px !important 
 .jumbotron
   background-image url('../assets/areas/mineria/kv1.jpg')
 
