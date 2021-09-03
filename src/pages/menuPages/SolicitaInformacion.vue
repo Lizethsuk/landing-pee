@@ -20,12 +20,31 @@
                     id="input-group-1"
                     label-for="input-1"
                   >
-                    <b-form-select
+                    <select
+                      class="form-select"
+                      aria-label="ciudad_de_residencia"
+                      name="ciudad_de_residencia"
                       id="input-1"
                       v-model="payload.especialidad_o_concentracion"
-                      :options="areasdeInteres"
                       required
-                    ></b-form-select>
+                    >
+                      <option value="">¿Qué área te interesa?</option>
+                      <option value="Administración">
+                        Administración y Dirección de personas
+                      </option>
+                      <option value="B2B">Business to Business</option>
+                      <option value="Energía">Energía</option>
+                      <option value="Finanzas">Finanzas</option>
+                      <option value="Marketing">Marketing</option>
+                      <option value="Minería">Minería</option>
+                      <option value="Salud">Salud</option>
+                      <option value="Operaciones y Logística">
+                        Operaciones y Logística
+                      </option>
+                      <option value="Tecnologías de la Información">
+                        Tecnologías de la Información
+                      </option>
+                    </select>
                   </b-form-group>
                 </b-col>
                 <b-col class="form-desktop" sm="6">
@@ -127,10 +146,15 @@
                       id="input-group-11"
                       label-for="input-11"
                     >
-                      <select v-model="payload.pais_nacionalidad_iso3" required>
-                        <option v-bind:value="null" selected>
-                          -Seleccione su país-
-                        </option>
+                      <select
+                        class="form-select"
+                        aria-label="ciudad_de_residencia"
+                        name="ciudad_de_residencia"
+                        id="input-3"
+                        v-model="payload.pais_nacionalidad_iso3"
+                        required
+                      >
+                        <option value="">-Seleccione su país-</option>
                         <option
                           v-for="pais_nacionalidad_iso3 in pais_nacionalidad_iso3"
                           :key="pais_nacionalidad_iso3.id"
@@ -224,10 +248,15 @@
                     id="input-group-17"
                     label-for="input-17"
                   >
-                    <select v-model="payload.pais_nacionalidad_iso3" required>
-                      <option v-bind:value="null" selected>
-                        -Seleccione su país-
-                      </option>
+                    <select
+                      class="form-select"
+                      aria-label="ciudad_de_residencia"
+                      name="ciudad_de_residencia"
+                      id="input-3"
+                      v-model="payload.pais_nacionalidad_iso3"
+                      required
+                    >
+                      <option value="">-Seleccione su país-</option>
                       <option
                         v-for="pais_nacionalidad_iso3 in pais_nacionalidad_iso3"
                         :key="pais_nacionalidad_iso3.id"
@@ -293,12 +322,55 @@
               id="input-group-24"
               label-for="input-24"
             >
-              <b-form-select
+              <select
+                class="form-select"
+                aria-label="ciudad_de_residencia"
+                name="ciudad_de_residencia"
                 id="input-24"
                 v-model="payload.como_te_enteraste"
-                :options="alternativas"
                 required
-              ></b-form-select>
+              >
+                <option value="">-Elije una alternativa-</option>
+                <option value="Me lo comentó una amiga o amigo.">
+                  Me lo comentó una amiga o amigo.
+                </option>
+                <option
+                  value=" Vi un aviso publicitario en un periódico o revista."
+                >
+                  Vi un aviso publicitario en un periódico o revista.
+                </option>
+                <option
+                  value=" Recibí un folleto impreso en mi casa u oficina."
+                >
+                  Recibí un folleto impreso en mi casa u oficina.
+                </option>
+                <option value="Vi un aviso publicitario en internet.">
+                  Vi un aviso publicitario en internet.
+                </option>
+                <option
+                  value="Buscando información en Google u otros buscadores."
+                >
+                  Buscando información en Google u otros buscadores.
+                </option>
+                <option
+                  value=" Recibí información de mi empleador, jefe o de la empresa para
+                  la que trabajo."
+                >
+                  Recibí información de mi empleador, jefe o de la empresa para
+                  la que trabajo.
+                </option>
+                <option value=" Me contactó un representante de ventas.">
+                  Me contactó un representante de ventas.
+                </option>
+                <option value=" Visitando el sitio web de ESAN.">
+                  Visitando el sitio web de ESAN.
+                </option>
+                <option
+                  value="Navegando por internet, en blogs u otros sitios web."
+                >
+                  Navegando por internet, en blogs u otros sitios web.
+                </option>
+              </select>
             </b-form-group>
             <br />
 
@@ -385,10 +457,10 @@ export default {
   data() {
     return {
       payload: {
-        pais_nacionalidad_iso3: null,
+        pais_nacionalidad_iso3: "",
         nombres: "",
         apellido_paterno: "",
-        especialidad_o_concentracion: null,
+        especialidad_o_concentracion: "",
         numero_de_id: "",
         correo_electrnico: "",
         telefono: "",
@@ -398,10 +470,10 @@ export default {
         ciudad: "LIMA",
         programa: "PEE",
         consulta: "",
-        como_te_enteraste: null,
+        como_te_enteraste: "",
       },
       alternativas: [
-        { text: "-Elije una alternativa-", value: null },
+        { text: "-Elije una alternativa-", value: "elije" },
         "Me lo comentó una amiga o amigo.",
         "Vi un aviso publicitario en un periódico o revista.",
         "Recibí un folleto impreso en mi casa u oficina.",
