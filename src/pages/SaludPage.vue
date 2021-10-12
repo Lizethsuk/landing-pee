@@ -2,7 +2,7 @@
   <div>
     <div>
       <HeadePage />
-      <ImagePage :message="myJson.title" />
+      <ImagePage especialidad="Salud" :message="myJson.title" />
       <DatePage
         :bgColorButton="myJson.bgColorButtonDate"
         :bgColorDivider="myJson.bgColorDividerDate"
