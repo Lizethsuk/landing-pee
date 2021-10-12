@@ -2,7 +2,7 @@
    <div>
     <div>
      <HeadePage />
-      <ImagePage :message="myJson.title" :messageSecond="myJson.title2"/>
+      <ImagePage especialidad="Tecnologías de la Información" :message="myJson.title" :messageSecond="myJson.title2"/>
       <DatePage class="date-mining" :bgColorButton="myJson.bgColorButtonDate" :bgColorDivider="myJson.bgColorDividerDate"  
       :dateTextSecond="myJson.dateTextSecond" :buttonText="myJson.buttonText"  
       :dateText="myJson.dateText" :bgColor="myJson.bgColorDate" :month="myJson.month" :day="myJson.date" />

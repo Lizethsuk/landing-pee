@@ -2,7 +2,7 @@
    <div>
     <div>
      <HeadePage />
-      <ImagePage :message="myJson.title" />
+      <ImagePage especialidad="Finanzas" :message="myJson.title" />
       
       <CursosPage :title="myJson.titleCurso" >
         <CursoList
