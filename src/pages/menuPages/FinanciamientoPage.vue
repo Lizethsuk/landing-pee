@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeadePage />
-    <ImagePage isHidden="hidden" bgColorDivider="#C3B36D" message="Financiamiento" />
+    <ImagePage2 isHidden="hidden" bgColorDivider="#C3B36D" message="Financiamiento" />
     <div class="bv-example-row">
       <b-container class="pasos-areas">
         <b-row>
@@ -243,14 +243,14 @@
 <script>
 import HeadePage from "../../components/HeadePage";
 import FooterPage from "../../components/FooterPage";
-import ImagePage from "../../components/ImagePage.vue";
+import ImagePage2 from "../../components/ImagePage2.vue";
 import PasosPages2 from "../../components/PasosPages2.vue";
 export default {
   name: "FinanciamientoPage",
   components: {
     HeadePage,
     FooterPage,
-    ImagePage,
+    ImagePage2,
     PasosPages2,
   },
 };

@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeadePage />
-    <ImagePage isHidden="hidden" bgColorDivider="#C3B36D" message="Solicita Información" />
+    <ImagePage2 isHidden="hidden" bgColorDivider="#C3B36D" message="Solicita Información" />
 
     <b-container class="pasos-areas">
       <b-row>
@@ -444,14 +444,14 @@
 import axios from "axios";
 import HeadePage from "../../components/HeadePage";
 import FooterPage from "../../components/FooterPage";
-import ImagePage from "../../components/ImagePage.vue";
+import ImagePage2 from "../../components/ImagePage2.vue";
 import PasosPages2 from "../../components/PasosPages2.vue";
 export default {
   name: "SolicitaInformacion",
   components: {
     HeadePage,
     FooterPage,
-    ImagePage,
+    ImagePage2,
     PasosPages2,
   },
   data() {
