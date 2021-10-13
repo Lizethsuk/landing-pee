@@ -137,7 +137,13 @@
           </span>
         </b-form-checkbox-group>
       </b-form-group>
+      <b-form-group
+        class="all-btn"
+        id="input-group-12"
+       
+      >
       <b-button class="btn" type="submit">Enviar</b-button>
+       </b-form-group>
     </b-form>
     <b-modal
       ref="my-modal"
@@ -145,7 +151,7 @@
       title="Política de Protección de Datos Personales"
     >
       <div class="d-block text-justify modal1">
-        <h3 class="text-center">Política de Protección de Datos Personales</h3>
+        
         <p>
           De conformidad con la Ley N° 29733, Ley de Protección de Datos
           Personales, el usuario da su consentimiento para el tratamiento de los
@@ -163,7 +169,7 @@
           y administrativas; y se mantendrán mientras sean útiles para que la
           Universidad pueda prestar y ofrecer sus servicios y darles trámite.
         </p>
-        <p>
+        <p class="pb-4">
           El usuario podrá ejercer los derechos de acceso, rectificación,
           oposición y cancelación de los datos personales escribiendo a
           datospersonales@esan.edu.pe o a la siguiente dirección: <br />
@@ -430,7 +436,9 @@ h1 {
 //   width: 100%;
 //   max-width: 386px;
 // }
-
+.form-control {
+  height: 38px
+}
 .custom-checkbox {
   display: inline-flex;
   margin-top: 10px;
@@ -441,22 +449,25 @@ h1 {
 }
 
 .all-btn {
-  padding: 0px 40px;
+  padding: 0px 35px;
 }
 
 .btn {
   background-color: #C0B170;
-  width: 50%;
-  height: 30px;
-  margin-top: 10px;
+  width: 100%;
+  height: 45px;
+  margin-top: 0px;
   border-radius: 0px;
   color: bg-form;
   font-weight: bold;
   font-size: 15px;
+  padding 10px 
 }
 
 .form-g {
-  padding-top: 40px;
+  padding: 25px 0px;
+  background-color: #262b2d;
+  max-width: 390px
 }
 
 // input, select {
@@ -478,6 +489,13 @@ select {
   border: 1.8px solid white;
   width: 100%;
   // padding 12px 5px
-  color:  #676868;;
+  color:  #676868;
+  height: 38px;
+  border-radius: 4px
+}
++for_breakpoint(xs) {
+  .all-btn {
+  padding: 0px 10px;
+}
 }
 </style>

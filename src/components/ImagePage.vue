@@ -8,12 +8,12 @@
     <div class="title-content">
       <b-container>
         <b-row>
-          <b-col lg="7" cols="12">
+          <b-col lg="7"  md="7" cols="12" class="col-title">
             <p class="title" v-text="message"></p>
             <p class="title" v-text="messageSecond"></p>
             <hr class="line" />
           </b-col>
-          <b-col>
+          <b-col lg="5" md="7" cols="12" class="mx-auto">
             <FormSmallPages   :especialidad= "especialidad"  />
           </b-col>
         </b-row>
@@ -63,11 +63,14 @@ export default {
 
 <style lang="stylus" scoped>
 @import '../styles/main.styl';
-
+.col-title {
+  padding-top 190px
+}
 .jumbotron {
   margin-bottom: 0px;
   padding: 0px;
   border-radius: 0px;
+  background-color: #252a2d !important
 }
 
 .image {
@@ -88,7 +91,7 @@ export default {
 
 .title {
   text-transform: uppercase;
-  font-size: 60px;
+  font-size: 55px;
   margin-block-end: 0px;
   width: 12em;
   font-family: gt-pressura-bold;
@@ -97,7 +100,7 @@ export default {
 
 .line {
   border-top: 3px solid var(--bg-color-divider);
-  max-width: 48.5vw;
+  max-width: 50.5vw;
   width: auto;
   margin-left: -25rem;
   opacity: 1 !important;
@@ -106,16 +109,15 @@ export default {
 }
 
 .title-content {
-  bottom: -26rem;
+  bottom: -3rem;
   position: relative;
-  height: 134px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 +for_breakpoint(desktop-lap) {
   .image {
-    height: 400px;
+    height: auto;
     // opacity: 0.8;
     position: relative;
     background-repeat: no-repeat;
@@ -123,9 +125,9 @@ export default {
   }
 
   .title-content {
-    bottom: -15rem;
+    bottom: 0rem;
     position: relative;
-    height: 134px;
+    padding 12px 0px
   }
 }
 
@@ -163,6 +165,9 @@ export default {
     line-height: 52px;
     width: auto;
   }
+   .col-title {
+    padding-top 90px
+  }
 }
 
 +for_breakpoint(cell-sm) {
@@ -180,15 +185,16 @@ export default {
   }
 
   .image {
-    height: 300px;
+    min-height: 770px;
   }
 
   .title-content {
-    bottom: -9rem;
+    bottom: 0rem;
     position: relative;
-    height: 134px;
   }
-
+  .col-title {
+    padding-top 70px
+  }
   +for_breakpoint(xs) {
     .title {
       font-size: 33px;

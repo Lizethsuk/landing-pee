@@ -115,7 +115,7 @@ export default {
   .button-content
     text-align center
   .navbar-brand
-    max-width 220px
+    max-width 200px
     width 100% 
   .nav
     padding 10px 5px   
