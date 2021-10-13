@@ -8,18 +8,12 @@
     <div class="title-content">
       <b-container>
         <b-row>
-          <b-col lg="7" md="7" cols="12" class="col-title">
+          <b-col lg="7"  cols="12" class="col-title">
             <p class="title" v-text="message"></p>
             <p class="title" v-text="messageSecond"></p>
             <hr class="line" />
           </b-col>
-          <b-col lg="5" md="7" cols="12" class="mx-auto">
-            <FormSmallPages
-              :style="isHiddenForm"
-              :especialidad="especialidad"
-              
-            />
-          </b-col>
+          
         </b-row>
       </b-container>
     </div>
@@ -27,12 +21,9 @@
 </template>
 
 <script>
-import FormSmallPages from "./FormSmallPages.vue";
 export default {
   name: "ImagePage2",
-  components: {
-    FormSmallPages,
-  },
+ 
   props: {
     especialidad: {
       type: String,
@@ -77,7 +68,7 @@ export default {
 @import '../styles/main.styl';
 
 .col-title {
-  padding-top: 190px;
+  padding-top: 320px;
 }
 
 .jumbotron {
@@ -88,7 +79,7 @@ export default {
 }
 
 .image {
-  height: 590px;
+  height: 500px;
   // opacity: 0.8;
   position: relative;
   background-repeat: no-repeat;
@@ -147,7 +138,7 @@ export default {
 
 +for_breakpoint(lapt) {
   .line {
-    max-width: 53.5vw;
+    max-width: 56.5vw;
     margin-left: -18rem;
     width: auto;
   }
@@ -181,13 +172,13 @@ export default {
   }
 
   .col-title {
-    padding-top: 90px;
+    padding-top: 199px;
   }
 }
 
 +for_breakpoint(cell-sm) {
   .line {
-    max-width: 105vw;
+    max-width: 114vw;
     margin-left: -7rem;
     width: auto;
     margin-bottom: 30px;
@@ -200,7 +191,7 @@ export default {
   }
 
   .image {
-    min-height: 770px;
+    min-height: 260px;
   }
 
   .title-content {
@@ -209,7 +200,7 @@ export default {
   }
 
   .col-title {
-    padding-top: 70px;
+    padding-top: 140px;
   }
 
   +for_breakpoint(xs) {
