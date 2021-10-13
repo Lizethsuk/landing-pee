@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeadePage />
-    <ImagePage bgColorDivider="#C3B36D" message="Solicita Información" />
+    <ImagePage isHidden="hidden" bgColorDivider="#C3B36D" message="Solicita Información" />
 
     <b-container class="pasos-areas">
       <b-row>
