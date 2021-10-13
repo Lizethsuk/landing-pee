@@ -8,13 +8,17 @@
     <div class="title-content">
       <b-container>
         <b-row>
-          <b-col lg="7"  md="7" cols="12" class="col-title">
+          <b-col lg="7" md="7" cols="12" class="col-title">
             <p class="title" v-text="message"></p>
             <p class="title" v-text="messageSecond"></p>
             <hr class="line" />
           </b-col>
           <b-col lg="5" md="7" cols="12" class="mx-auto">
-            <FormSmallPages   :especialidad= "especialidad"  />
+            <FormSmallPages
+              :style="isHiddenForm"
+              :especialidad="especialidad"
+              
+            />
           </b-col>
         </b-row>
       </b-container>
@@ -33,6 +37,9 @@ export default {
     especialidad: {
       type: String,
       require: true,
+    },
+    isHidden: {
+      type: String,
     },
     message: {
       type: String,
@@ -57,20 +64,27 @@ export default {
         "--bg-color-divider": this.bgColorDivider,
       };
     },
+    isHiddenForm() {
+      return {
+        "visibility": this.isHidden,
+      };
+    },
   },
 };
 </script>
 
 <style lang="stylus" scoped>
 @import '../styles/main.styl';
+
 .col-title {
-  padding-top 190px
+  padding-top: 190px;
 }
+
 .jumbotron {
   margin-bottom: 0px;
   padding: 0px;
   border-radius: 0px;
-  background-color: #252a2d !important
+  background-color: #252a2d !important;
 }
 
 .image {
@@ -127,7 +141,7 @@ export default {
   .title-content {
     bottom: 0rem;
     position: relative;
-    padding 12px 0px
+    padding: 12px 0px;
   }
 }
 
@@ -165,8 +179,9 @@ export default {
     line-height: 52px;
     width: auto;
   }
-   .col-title {
-    padding-top 90px
+
+  .col-title {
+    padding-top: 90px;
   }
 }
 
@@ -192,9 +207,11 @@ export default {
     bottom: 0rem;
     position: relative;
   }
+
   .col-title {
-    padding-top 70px
+    padding-top: 70px;
   }
+
   +for_breakpoint(xs) {
     .title {
       font-size: 33px;

@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeadePage />
-    <ImagePage bgColorDivider="#C3B36D" message="Financiamiento" />
+    <ImagePage isHidden="hidden" bgColorDivider="#C3B36D" message="Financiamiento" />
     <div class="bv-example-row">
       <b-container class="pasos-areas">
         <b-row>

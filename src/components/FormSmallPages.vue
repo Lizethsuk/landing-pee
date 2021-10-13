@@ -5,51 +5,6 @@
       v-if="show"
       class="form-g"
     >
-      <!-- <b-form-group class="all-btn">
-        <h1>
-          Regístrate <br />
-          aquí:
-        </h1>
-        <p>
-          Los cursos del PEE te permitirán desarrollarte en el ámbito
-          profesional.
-        </p>
-      </b-form-group> -->
-      <!-- <b-form-group class="all-btn" id="input-group-3" label-for="input-3"> -->
-      <!-- <b-form-select
-          id="input-3"
-          v-model="payload.especialidad_o_concentracion"
-          :options="areasdeInteres"
-          required
-        ></b-form-select> -->
-
-      <!-- <select
-          class="form-select"
-          aria-label="ciudad_de_residencia"
-          name="ciudad_de_residencia"
-          id="input-3"
-          v-model="payload.especialidad_o_concentracion"
-          required
-        >
-          <option value="">¿Qué área te interesa?</option>
-          <option value="Administración">
-            Administración y Dirección de personas
-          </option>
-          <option value="B2B">Business to Business</option>
-          <option value="Energía">Energía</option>
-          <option value="Finanzas">Finanzas</option>
-          <option value="Marketing">Marketing</option>
-          <option value="Minería">Minería</option>
-          <option value="Salud">Salud</option>
-          <option value="Operaciones y Logística">
-            Operaciones y Logística
-          </option>
-          <option value="Tecnologías de la Información">
-            Tecnologías de la Información
-          </option>
-        </select>
-      </b-form-group> -->
-
       <b-form-group class="all-btn" id="input-group-2" label-for="input-2">
         <b-form-input
           id="input-2"
@@ -91,14 +46,6 @@
           required
         ></b-form-input>
       </b-form-group>
-      <!-- <b-form-group class="all-btn" id="input-group-7" label-for="input-7">
-        <b-form-input
-          id="input-7"
-          v-model="payload.cargo"
-          placeholder="Cargo"
-          required
-        ></b-form-input>
-      </b-form-group> -->
       <b-form-group class="all-btn">
         <select
           class="form-select"
@@ -243,12 +190,6 @@ export default {
       seconds_before_next_attempt: 2,
     };
   },
-  // mounted() {
-  //   this.loadHiddenFields();
-  //   axios
-  //     .get("https://www.esanbackoffice.com/world/api/countries/?limit=200")
-  //     .then((response) => (this.countries = response.data.results));
-  // },
   computed: {
     document_cookies: function () {
       var key_values_list = document.cookie.split("; ");
