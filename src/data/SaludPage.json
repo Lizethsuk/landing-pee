@@ -17,25 +17,28 @@
   "titleCurso":"Cursos del Certificado de Especialización en Gestión de la Salud",
   "cursos":[
     {
+      "img1" : "none",
       "section": "Salud",
-      "curso": "Gerencia de precios y costos para los servicios de salud. Margen de rentabilidad",
+      "curso": "Estrategias de relacionamiento comunitario y proyectos de salud",
       "teacher": "Guillermo Alva Burga",
       "horario": "Martes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/salud/gerencia-de-precios-y-costos-para-los-servicios-de-salud-margen-de-rentabilidad/"
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/salud/estrategias-de-relacionamiento-comunitario-y-proyectos-de-salud/"
     },
     {
+      "img2" : "none",
       "section": "Salud",
-      "curso": "Monitoreo mediante indicadores de calidad en Clínicas y Hospitales",
-      "teacher": "Paul Cuellar",
-      "horario": "Jueves de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/salud/monitoreo-mediante-indicadores-de-calidad-en-clinicas-y-hospitales/"
+      "curso": "Farmaeconomía",
+      "teacher": "Rosina Hinojosa Ramírez",
+      "horario": "Sábado de 9:00 a. m. a 12:15 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/salud/farmaeconomia/"
     },
     {
+      "img2" : "none",
       "section": "Salud",
-      "curso": "Planificación estratégica en las instituciones de salud",
-      "teacher": "César Neves",
-      "horario": "Lunes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/salud/planificacion-estrategica-en-las-instituciones-de-salud/"
+      "curso": "Gerencia de contratos, regulación y acreditación en los servicios de salud",
+      "teacher": "Jorge Armando Ruiz Portal",
+      "horario": "Miércoles de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":""
     }
   ],
   "titlePasos":"Siguientes pasos",

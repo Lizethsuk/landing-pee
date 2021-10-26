@@ -60,10 +60,10 @@
                     </b-col>
                     <b-col sm="10" cols="8">
                       <div class="section-content2">
-                  <div class="section-1">18</div>
+                  <div class="section-1">24</div>
                   <div class="section-2">
                     <div class="init-date">
-                      <span>de octubre</span>
+                      <span>de enero</span>
                       
                     </div>
                   </div>
@@ -631,11 +631,11 @@
                   <b-col md="6" cols="12" align-self="center">
                     <div class="div-section-content">
                       <div class="section-content">
-                        <div class="section-1">18</div>
+                        <div class="section-1">24</div>
                         <div class="section-2">
                           <div class="init-date">
                             <span>inicio</span><br />
-                            de octubre
+                            de enero
                           </div>
                         </div>
                       </div>

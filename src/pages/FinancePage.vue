@@ -3,7 +3,16 @@
     <div>
      <HeadePage />
       <ImagePage especialidad="Finanzas" :message="myJson.title" />
-      
+      <DatePage
+        :bgColorButton="myJson.bgColorButtonDate"
+        :bgColorDivider="myJson.bgColorDividerDate"
+        :dateTextSecond="myJson.dateTextSecond"
+        :buttonText="myJson.buttonText"
+        :dateText="myJson.dateText"
+        :bgColor="myJson.bgColorDate"
+        :month="myJson.month"
+        :day="myJson.date"
+      />
       <CursosPage :title="myJson.titleCurso" >
         <CursoList
           v-for="curso in myJson.cursos"
@@ -69,6 +78,7 @@ import FooterPage from "../components/FooterPage";
 import ImagePage from "../components/ImagePage.vue";
 import CursosPage from "../components/CursosPage";
 import CursoList from "../components/CursoList";
+import DatePage from "../components/DatePage";
 import PasosPages from "../components/PasosPages.vue";
 
 export default {
@@ -77,6 +87,7 @@ export default {
     HeadePage,
     FooterPage,
     ImagePage,
+    DatePage,
     CursosPage,
     CursoList,
     PasosPages,

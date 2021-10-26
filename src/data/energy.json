@@ -17,11 +17,28 @@
   "titleCurso":"Cursos del Certificado de Especialización en Gestión de la Energía",
   "cursos":[
     {
+      "img2" : "none",
       "section": "Energía",
-      "curso": "Regulación del sector eléctrico",
-      "teacher": "Riquel Mitma Ramírez",
+      "curso": "Aspectos tributarios del sector de energía y minería",
+      "teacher": "Roberto José Casanova-Regis Albi",
+      "horario": "Lunes de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":""
+    },
+    {
+      "img2" : "none",
+      "section": "Energía",
+      "curso": "Biocombustibles y energías alternativas. Los combustibles fósiles deciden reinventarse",
+      "teacher": "Victor Fernández Guzmán",
+      "horario": "Viernes de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/energia/biocombustibles-y-energias-alternativas-los-combustibles-fosiles-deciden-reinventarse/"
+    },
+    {
+      "img2" : "none",
+      "section": "Energía",
+      "curso": "Gestión de sistemas de compensación y retribución total en empresas del sector minería y energía",
+      "teacher": "Martín Vergara Pinto",
       "horario": "Miércoles de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/energia/regulacion-del-sector-electrico/"
+      "linkCurso":""
     }
   ],
   "titlePasos":"Del 07 de junio al 07 de agosto de 2021 ",
