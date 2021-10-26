@@ -9,8 +9,8 @@
   "lineColorPasos":"#ADBCC5",
   "bgColorPasos":" #8395A1",
   "colorIcon":"finance",
-  "date":"14",
-  "month":"julio",
+  "date":"02",
+  "month":"diciembre",
   "dateTextSecond" : "Informativa",
   "dateText":"Conferencia",
   "buttonText":"Mira aquí el video",
@@ -18,25 +18,32 @@
   "cursos":[
     {
       "section": "Finanzas ",
+      "curso": "Análisis de estados financieros",
+      "teacher": "Marita Chang Olivas",
+      "horario": "Jueves de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/analisis-de-estados-financieros/"
+    },
+    {
+      "section": "Finanzas ",
       "curso": "Análisis de Riesgo Crediticio",
       "teacher": "Arturo García Villacorta",
-      "horario": "Jueves de 7:30 a 10:45 p. m.",
+      "horario": "Miércoles de 7:30 p. m. a 10:45 p. m.",
       "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/analisis-de-riesgo-crediticio/"
     },
     {
       "section": "Finanzas",
-      "curso": "Aplicación práctica de IFRS 2020 aplicables a empresas peruanas",
-      "teacher": "Mario Miguel Vergara Silva ",
+      "curso": "Análisis, modelamiento financiero y proyección de estados financieros a mediano y largo plazo",
+      "teacher": "Carlos Aguirre Gamarra ",
       "horario": "Jueves de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/aplicacion-practica-de-ifrs-2020-aplicables-a-empresas-peruanas/"
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/analisis-modelamiento-financiero-y-proyeccion-de-estaos-financieros-a-mediano-y-largo-plazo/"
       
     },
     {
       "section": "Finanzas",
-      "curso": "Aspectos Contables, Financieros, Societarios y Tributarios de Reorganización Empresarial",
+      "curso": "Cómo gestionar un adecuado planeamiento tributario",
       "teacher": "Reynaldo Moquillaza Orellana",
-      "horario": "Viernes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/aspectos-contables-financieros-societarios-y-tributarios-de-reorganizacion-empresarial/"
+      "horario": "Jueves de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/como-gestionar-un-adecuado-planeamiento-tributario/"
     },
     {
       "section": "Finanzas",
@@ -56,49 +63,49 @@
       "section": "Finanzas",
       "curso": "Estrategias financieras para la creación de valor",
       "teacher": "Alfredo Mendiola Cabrera",
-      "horario": "Lunes de 7:30 a 10:45 p. m.",
+      "horario": "Martes de 7:30 p. m. a 10:45 p. m.",
       "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/estrategias-financieras-para-la-creacion-de-valor/"
     },
     {
       "section": "Finanzas",
-      "curso": "Estructuración financiera",
-      "teacher": "Diego Campos",
+      "curso": "Financiamiento para startups",
+      "teacher": "Luis Felipe Oliva Díaz",
       "horario": "Lunes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/estructuracion-financiera/"
+      "linkCurso":""
+    },
+    {
+      "section": "Finanzas",
+      "curso": "Finanzas en empresas B2B",
+      "teacher": "Alfredo Mendiola Cabrera | Carlos Aguirre Gamarra",
+      "horario": "Miércoles de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/b2b/finanzas-en-empresas-b2b/"
+    },
+    {
+      "section": "Finanzas",
+      "curso": "Finanzas para proyectos sostenibles",
+      "teacher": "Walther Reátegui Vela",
+      "horario": "Lunes 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/finanzas-para-proyectos-sostenibles/"
     },
     {
       "section": "Finanzas",
       "curso": "Gestión de créditos y cobranzas",
       "teacher": "Arturo García Villacorta",
-      "horario": "Miércoles de 7:30 a 10:45 p.m",
+      "horario": "Viernes de 7:30 p. m. a 10:45 p.m.",
       "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/gestion-de-creditos-y-cobranzas/"
     },
     {
       "section": "Finanzas",
-      "curso": "Gestión financiera",
-      "teacher": "Ricardo Salinas Vilcachagua",
-      "horario": "Miércoles 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/gestion-financiera/"
-    },
-    {
-      "section": "Finanzas",
-      "curso": "Liderando la toma de decisiones con finanzas",
-      "teacher": "Luis Piazzón Gallo",
-      "horario": "Miércoles de 7:30 a 10:45 p.m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/liderando-la-toma-de-decisiones-con-finanzas/"
-    },
-    {
-      "section": "Finanzas",
-      "curso": "Mercados Financieros y Estrategias de Inversión",
-      "teacher": "Juan Luis Valdiviezo Trelles",
-      "horario": "Martes de 7:30 a 10:45 p.m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/mercados-financieros-y-estrategias-de-inversion/"
+      "curso": "Optimización de la gestión financiera y tributaria",
+      "teacher": "Marita Chang Olivas | Carlos Chirinos Sota",
+      "horario": "Viernes de 7:30 p. m. a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/optimizacion-de-la-gestion-financiera-y-tributaria/"
     },
     {
       "section": "Finanzas",
       "curso": "Planeamiento Financiero",
       "teacher": "Manuel Acevedo",
-      "horario": "Miércoles de 7:30 p.m. a 10:45 p.m.",
+      "horario": "Miércoles de 7:30 p. m. a 10:45 p. m.",
       "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/planeamiento-financiero/"
     }
   ],
@@ -106,17 +113,17 @@
   "SecondCurso":[
     {
       "section": "Finanzas ",
-      "curso": "Evaluación de proyectos sociales",
-      "teacher": "Mary Mollo",
-      "horario": "Miércoles de 7:30 a 10:45 p.m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/evaluacion-de-proyectos-sociales/"
+      "curso": "Formulación, Preparación y Evaluación de Proyectos Nuevos y Proyectos en Marcha",
+      "teacher": "Alex Albújar Cruz",
+      "horario": "Jueves de 7:30 p. m. a 10:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/formulacion-preparacion-y-evaluacion-de-proyectos-nuevos-y-proyectos-en-marcha/"
     },
     {
       "section": "Finanzas ",
-      "curso": "Formulación, Preparación y Evaluación de Proyectos Nuevos y Proyectos en Marcha",
-      "teacher": "Alex Albújar Cruz",
-      "horario": "Jueves de 7:30 p. m a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/formulacion-preparacion-y-evaluacion-de-proyectos-nuevos-y-proyectos-en-marcha/"
+      "curso": "Fusiones, Adquisiciones y Valorización de Empresas",
+      "teacher": "Enrique Cárcamo Cárcamo",
+      "horario": "Miércoles de 7:30 p. m a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/fusiones-adquisiciones-y-valorizacion-de-empresas/"
     }
   ],
   "titleThreeCurso":"Cursos del Certificado de Especialización en Banca",
@@ -125,36 +132,16 @@
       "section": "Finanzas ",
       "curso": "Análisis de Riesgo Crediticio",
       "teacher": "Arturo García Villacorta",
-      "horario": "Jueves de 7:30 a 10:45 p. m.",
+      "horario": "Miércoles de 7:30 p. m. a 10:45 p. m.",
       "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/analisis-de-riesgo-crediticio/"
     },
-    {
-      "section": "Finanzas ",
-      "curso": "Estructuración financiera",
-      "teacher": "Diego Campos",
-      "horario": "Lunes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/estructuracion-financiera/"
-    },
+   
     {
       "section": "Finanzas",
       "curso": "Gestión de créditos y cobranzas",
       "teacher": "Arturo García Villacorta",
-      "horario": "Miércoles de 7:30 p. m. a 10:45 p. m.",
+      "horario": "Viernes de 7:30 p. m. a 10:45 p. m.",
       "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/gestion-de-creditos-y-cobranzas/"
-    },
-    {
-      "section": "Finanzas",
-      "curso": "Mercados Financieros y Estrategias de Inversión",
-      "teacher": "Juan Luis Valdiviezo Trelles",
-      "horario": "Martes de 7:30 a 10:45 p.m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/mercados-financieros-y-estrategias-de-inversion/"
-    },
-    {
-      "section": "Finanzas",
-      "curso": "Planeamiento estratégico y marketing bancario",
-      "teacher": "Miguel García Villacorta",
-      "horario": "Jueves de 7:30 a 10:45 p.m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/planeamiento-estrategico-y-marketing-bancario/"
     }
 
   ],

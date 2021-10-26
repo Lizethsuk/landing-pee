@@ -18,25 +18,27 @@
   "titleCurso":"Cursos del Certificado de Especialización en Gestión Estratégica y Transformación Digital B2B",
   "cursos":[
     {
+      "img1" : "none",
       "section": "B2B",
-      "curso": "Estrategias de venta corporativa (B2B)",
-      "teacher": "Ana Belén Perdigones",
-      "horario": "Sábado de 9:00 a. m. a 12:15 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/b2b/estrategias-de-venta-corporativa-b2b/"
+      "curso": "Customer Experience en B2B",
+      "teacher": "Manuel Ramos Soldevilla",
+      "horario": "Viernes de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/b2b/customer-experience-en-b2b/"
     },
     {
       "section": "B2B",
-      "curso": "Organización y gestión del talento humano en negocios B2B",
-      "teacher": "Guillermo Defilippi Rodríguez",
+      "curso": "Estrategias de Marketing B2B",
+      "teacher": "Jorge Merzthal Toranzo",
       "horario": "Martes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/b2b/organizacion-y-gestion-del-talento-humano-en-negocios-b2b/"
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/b2b/estrategias-de-marketing-b2b/"
     },
+    
     {
       "section": "B2B",
-      "curso": "Transformación digital en B2B",
-      "teacher": "Cesar Cam Gensollen",
+      "curso": "Finanzas en empresas B2B",
+      "teacher": "Alfredo Mendiola Cabrera | Carlos Aguirre",
       "horario": "Miércoles de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":"https://www.esan.edu.pe/pee/areas/b2b/transformacion-digital-en-b2b/"
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/b2b/finanzas-en-empresas-b2b/"
     }
   ],
   "titlePasos":"Siguientes pasos",
