@@ -235,7 +235,7 @@ export default {
         "Minería",
         "Salud",
         "Operaciones y Logística",
-        "Tecnologías de la Información",
+        "Tecnologías de Información",
       ],
       countries: [],
       show: true,
