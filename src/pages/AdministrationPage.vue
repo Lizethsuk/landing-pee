@@ -2,7 +2,7 @@
   <div>
     <div>
       <HeadePage />
-      <ImagePage especialidad="Administración" :message="myJson.title" :messageSecond="myJson.title2" />
+      <ImagePage  especialidad="Administración" :message="myJson.title" :messageSecond="myJson.title2" />
       <DatePage
         :bgColorButton="myJson.bgColorButtonDate"
         :bgColorDivider="myJson.bgColorDividerDate"
@@ -14,8 +14,11 @@
         :day="myJson.date"
       />
       <CursosPage :title="myJson.titleCurso">
-        <CursoList
+        <CursoList 
+          
           v-for="curso in myJson.cursos"
+          :isHidden="curso.img1" 
+          :isHidden1="curso.img2" 
           :sectionName="curso.section"
           :cursoName="curso.curso"
           :teacherName="curso.teacher"
@@ -30,6 +33,8 @@
       <CursosPage :title="myJson.titleSecondCurso">
         <CursoList
           v-for="curso in myJson.cursosSecond"
+          :isHidden="curso.img1" 
+          :isHidden1="curso.img2" 
           :sectionName="curso.section"
           :cursoName="curso.curso"
           :linkCurso="curso.linkCurso"
