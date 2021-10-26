@@ -1,35 +1,49 @@
 <template>
-    <li class="nav-item li-area">
-      <a target="_blank" class="text" :href="linkCurso">
-        <div class="box-area" :style="cssVars">
-          <p class="title-curso" v-text="sectionName"></p>
-          <p class="name-curso" v-text="cursoName"></p>
-          <hr class="new4" :style="cssVars" />
-          
-                <img src="../assets/components/cursoList/shap/online.png" alt="">
-          <p class="encargado" v-text="teacherName"></p>
-          <p class="fecha" v-text="horarioName"></p>
-        </div>
-      </a>
-  
-    </li>
+  <li class="nav-item li-area">
+    <a target="_blank" class="text" :href="linkCurso">
+      <div class="box-area" :style="cssVars">
+        <p class="title-curso" v-text="sectionName"></p>
+        <p class="name-curso" v-text="cursoName"></p>
+        <hr class="new4" :style="cssVars" />
+        <img
+          :style="img1"
+          src="../assets/components/cursoList/shap/online.png"
+          alt=""
+        />
+
+        <img
+          :style="img2"
+          src="../assets/components/cursoList/shap/online.png"
+          alt=""
+        />
+        <p class="encargado" v-text="teacherName"></p>
+        <p class="fecha" v-text="horarioName"></p>
+      </div>
+    </a>
+  </li>
 </template>
 
 <script>
 export default {
   name: "CursoList",
   props: {
-   linkCurso:{
+    linkCurso: {
       type: String,
       require: true,
-   } ,
-   sectionName: {
+    },
+    sectionName: {
       type: String,
       require: true,
     },
     cursoName: {
       type: String,
       require: true,
+    },
+    isHidden: {
+      type: String,
+    },
+    isHidden1: {
+      type: String,
     },
     teacherName: {
       type: String,
@@ -55,7 +69,17 @@ export default {
         "--line-color": this.lineColor,
       };
     },
-  }
+    img1() {
+      return {
+        "display": this.isHidden,
+      };
+    },
+    img2() {
+      return {
+        "display": this.isHidden1,
+      };
+    },
+  },
 };
 </script>
 
@@ -63,31 +87,35 @@ export default {
 @import '../styles/main.styl';
 
 // .name-curso {
-//   padding-bottom: 10px;
+// padding-bottom: 10px;
 // }
-.text
-  color #212529
+.text {
+  color: #212529;
   text-decoration: none; /* no underline */
+}
 
-.name-curso
+.name-curso {
   font-size: 20px;
-  font-family gt-pressura-bold
-.title-curso 
+  font-family: gt-pressura-bold;
+}
+
+.title-curso {
   font-size: 15px;
   margin-block-end: 5px;
-  font-family Raleway-Regular
+  font-family: Raleway-Regular;
+}
 
 .fecha {
   font-size: 14px;
-  font-family Raleway-Regular
-  margin-block-start: 0px
+  font-family: Raleway-Regular;
+  margin-block-start: 0px;
 }
 
 .encargado {
-  padding-top 10px
+  padding-top: 10px;
   margin-block-end: 0px;
   font-size: 15px;
-  font-family Raleway-Bold
+  font-family: Raleway-Bold;
 }
 
 hr.new4 {
@@ -115,11 +143,11 @@ ul {
 
 .nav-item {
   display: inline-block;
-  max-width 374px;
-  width: 100%!important;
+  max-width: 374px;
+  width: 100% !important;
   font-size: 24px;
   min-height: 70px;
-  margin 0px 3px
+  margin: 0px 3px;
 }
 
 a {
@@ -130,9 +158,9 @@ a {
 
 .navbar-nav {
   flex-direction: row;
-  display flex;
-  justify-content space-between
-  flex-wrap wrap 
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .nav-link {
@@ -147,14 +175,13 @@ a {
   line-height: 23px;
   width: 100%;
   height: 217px;
-  border: 1px solid  var(--bg-color);
+  border: 1px solid var(--bg-color);
   padding: 10px;
-  
 }
 
 li {
   background: #DBDBDB;
-  margin 0 3px 10px 3px!important
+  margin: 0 3px 10px 3px !important;
 }
 
 li:nth-child(odd) {
@@ -172,21 +199,31 @@ li:nth-child(odd) {
 section {
   border-bottom: 4px solid primary-pee;
 }
-@media (min-width: 1200px) and (max-width: 1399px)
-  .nav-item 
-    max-width 373px;
-    width: 100%!important;
-@media (min-width: 992px) and (max-width: 1199px)
-  .nav-item 
-    max-width 311px;
-    width: 100%!important;    
-    
-@media (min-width: 768px) and (max-width: 991px)
-  .nav-item 
-    max-width 353px;
-    width: 100%!important;   
-@media (max-width: 767px)
-  .box-area
-    height auto  
 
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .nav-item {
+    max-width: 373px;
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .nav-item {
+    max-width: 311px;
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .nav-item {
+    max-width: 353px;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .box-area {
+    height: auto;
+  }
+}
 </style>
