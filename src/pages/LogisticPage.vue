@@ -1,53 +1,71 @@
 <template>
+  <div>
     <div>
-    <div>
-     <HeadePage />
-      <ImagePage especialidad="Operaciones y Logística" :message="myJson.title" :messageSecond="myJson.title2"  />
-      <DatePage class="date-mining" :bgColorButton="myJson.bgColorButtonDate" :bgColorDivider="myJson.bgColorDividerDate"  
-      :dateTextSecond="myJson.dateTextSecond" :buttonText="myJson.buttonText"  
-      :dateText="myJson.dateText" :bgColor="myJson.bgColorDate" :month="myJson.month" :day="myJson.date" />
-     <CursosPage :title="myJson.titleCurso" >
+      <HeadePage />
+      <ImagePage
+        especialidad="Operaciones y Logística"
+        :message="myJson.title"
+        :messageSecond="myJson.title2"
+      />
+      <DatePage
+        class="date-mining"
+        :bgColorButton="myJson.bgColorButtonDate"
+        :bgColorDivider="myJson.bgColorDividerDate"
+        :dateTextSecond="myJson.dateTextSecond"
+        :buttonText="myJson.buttonText"
+        :dateText="myJson.dateText"
+        :bgColor="myJson.bgColorDate"
+        :month="myJson.month"
+        :day="myJson.date"
+      />
+      <CursosPage :title="myJson.titleCurso">
         <CursoList
           v-for="curso in myJson.cursos"
           :sectionName="curso.section"
           :cursoName="curso.curso"
+          :isHidden="curso.img1"
+          :isHidden1="curso.img2"
           :teacherName="curso.teacher"
           :horarioName="curso.horario"
           :linkCurso="curso.linkCurso"
           :key="curso.id"
-          :lineColor="myJson.lineColorCursos" :bgColor="myJson.bgColorCursos"
+          :lineColor="myJson.lineColorCursos"
+          :bgColor="myJson.bgColorCursos"
         />
-
       </CursosPage>
-      <hr>
-      <CursosPage :title="myJson.titleSecondCurso" >
+      <hr />
+      <CursosPage :title="myJson.titleSecondCurso">
         <CursoList
           v-for="curso in myJson.SecondCurso"
           :sectionName="curso.section"
           :cursoName="curso.curso"
+          :isHidden="curso.img1"
+          :isHidden1="curso.img2"
           :teacherName="curso.teacher"
           :linkCurso="curso.linkCurso"
           :horarioName="curso.horario"
           :key="curso.id"
-          :lineColor="myJson.lineColorCursos" :bgColor="myJson.bgColorCursos"
+          :lineColor="myJson.lineColorCursos"
+          :bgColor="myJson.bgColorCursos"
         />
-
       </CursosPage>
-      <hr>
-      <CursosPage :title="myJson.titleThreeCurso" >
+      <hr />
+      <CursosPage :title="myJson.titleThreeCurso">
         <CursoList
           v-for="curso in myJson.ThreeCurso"
           :sectionName="curso.section"
           :cursoName="curso.curso"
           :teacherName="curso.teacher"
+          :isHidden="curso.img1"
+          :isHidden1="curso.img2"
           :linkCurso="curso.linkCurso"
           :horarioName="curso.horario"
           :key="curso.id"
-          :lineColor="myJson.lineColorCursos" :bgColor="myJson.bgColorCursos"
+          :lineColor="myJson.lineColorCursos"
+          :bgColor="myJson.bgColorCursos"
         />
-
       </CursosPage>
-       <PasosPages
+      <PasosPages
         :colorIcon="myJson.colorIcon"
         :lineColor="myJson.lineColorPasos"
         :bgColor="myJson.bgColorPasos"
@@ -55,7 +73,6 @@
         :informeText="myJson.informesText"
         :folletoText="myJson.folletoText"
         :admisionText="myJson.admisionText"
-       
       />
       <FooterPage />
     </div>
@@ -73,7 +90,7 @@ import CursoList from "../components/CursoList";
 import PasosPages from "../components/PasosPages.vue";
 
 export default {
-  name:"LogisticPage",
+  name: "LogisticPage",
   components: {
     HeadePage,
     FooterPage,
@@ -91,19 +108,21 @@ export default {
       myJson: json,
     };
   },
-}
+};
 </script>
 
 <style lang="stylus" scoped>
+@import '../styles/main.styl';
 
- @import "../styles/main.styl"
-
-hr 
-  background-color:secondary-logistica
+hr {
+  background-color: secondary-logistica;
   height: 5px;
-  opacity 1 !important
-.jumbotron
-  background-image url('../assets/areas/logistica/banner/kv_003-1.jpg')
+  opacity: 1 !important;
+}
+
+.jumbotron {
+  background-image: url('../assets/areas/logistica/banner/kv_003-1.jpg');
+}
 
 .fecha {
   font-size: 20px;
@@ -188,5 +207,4 @@ li:nth-child(odd) {
 section {
   border-bottom: 4px solid primary-pee;
 }
-
 </style>

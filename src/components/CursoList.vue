@@ -13,7 +13,7 @@
 
         <img
           :style="img2"
-          src="../assets/components/cursoList/shap/online.png"
+          src="../assets/components/cursoList/shap/new-online.png"
           alt=""
         />
         <p class="encargado" v-text="teacherName"></p>

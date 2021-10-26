@@ -20,6 +20,8 @@
           :cursoName="curso.curso"
           :teacherName="curso.teacher"
           :horarioName="curso.horario"
+          :isHidden="curso.img1"
+          :isHidden1="curso.img2"
           :key="curso.id"
           :linkCurso="curso.linkCurso"
           :lineColor="myJson.lineColorCursos"

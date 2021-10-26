@@ -1,25 +1,34 @@
 <template>
   <div>
     <div>
-     <HeadePage />
-      <ImagePage  especialidad="Energía" :message="myJson.title" />
-      <DatePage :bgColorButton="myJson.bgColorButtonDate" :bgColorDivider="myJson.bgColorDividerDate"  
-      :dateTextSecond="myJson.dateTextSecond" :buttonText="myJson.buttonText"  
-      :dateText="myJson.dateText" :bgColor="myJson.bgColorDate" :month="myJson.month" :day="myJson.date" />
-      <CursosPage :title="myJson.titleCurso" >
+      <HeadePage />
+      <ImagePage especialidad="Energía" :message="myJson.title" />
+      <DatePage
+        :bgColorButton="myJson.bgColorButtonDate"
+        :bgColorDivider="myJson.bgColorDividerDate"
+        :dateTextSecond="myJson.dateTextSecond"
+        :buttonText="myJson.buttonText"
+        :dateText="myJson.dateText"
+        :bgColor="myJson.bgColorDate"
+        :month="myJson.month"
+        :day="myJson.date"
+      />
+      <CursosPage :title="myJson.titleCurso">
         <CursoList
           v-for="curso in myJson.cursos"
           :sectionName="curso.section"
           :cursoName="curso.curso"
           :teacherName="curso.teacher"
           :horarioName="curso.horario"
+          :isHidden="curso.img1"
+          :isHidden1="curso.img2"
           :key="curso.id"
           :linkCurso="curso.linkCurso"
-          :lineColor="myJson.lineColorCursos" :bgColor="myJson.bgColorCursos"
+          :lineColor="myJson.lineColorCursos"
+          :bgColor="myJson.bgColorCursos"
         />
-
       </CursosPage>
-       <PasosPages 
+      <PasosPages
         :colorIcon="myJson.colorIcon"
         :lineColor="myJson.lineColorPasos"
         :bgColor="myJson.bgColorPasos"
@@ -27,7 +36,6 @@
         :informeText="myJson.informesText"
         :folletoText="myJson.folletoText"
         :admisionText="myJson.admisionText"
-       
       />
       <FooterPage />
     </div>
@@ -60,19 +68,20 @@ export default {
     };
   },
   mounted() {
-    console.log(this.myJson)
-   
+    console.log(this.myJson);
   },
   beforeCreate() {
     window.scrollTo(0, 0);
-  }
+  },
 };
 </script>
 
 <style lang="stylus" scoped>
 @import '../styles/main.styl';
-.jumbotron
-  background-image url('../assets/areas/energia/banner/kv_001-1.jpg')
+
+.jumbotron {
+  background-image: url('../assets/areas/energia/banner/kv_001-1.jpg');
+}
 
 .fecha {
   font-size: 20px;

@@ -1,25 +1,35 @@
 <template>
+  <div>
     <div>
-    <div>
-     <HeadePage />
+      <HeadePage />
       <ImagePage especialidad="Minería" :message="myJson.title" />
-      <DatePage class="date-mining" :bgColorButton="myJson.bgColorButtonDate" :bgColorDivider="myJson.bgColorDividerDate"  
-      :dateTextSecond="myJson.dateTextSecond" :buttonText="myJson.buttonText"  
-      :dateText="myJson.dateText" :bgColor="myJson.bgColorDate" :month="myJson.month" :day="myJson.date" />
-      <CursosPage :title="myJson.titleCurso" >
+      <DatePage
+        class="date-mining"
+        :bgColorButton="myJson.bgColorButtonDate"
+        :bgColorDivider="myJson.bgColorDividerDate"
+        :dateTextSecond="myJson.dateTextSecond"
+        :buttonText="myJson.buttonText"
+        :dateText="myJson.dateText"
+        :bgColor="myJson.bgColorDate"
+        :month="myJson.month"
+        :day="myJson.date"
+      />
+      <CursosPage :title="myJson.titleCurso">
         <CursoList
           v-for="curso in myJson.cursos"
           :sectionName="curso.section"
           :cursoName="curso.curso"
+          :isHidden="curso.img1"
+          :isHidden1="curso.img2"
           :teacherName="curso.teacher"
           :horarioName="curso.horario"
           :key="curso.id"
           :linkCurso="curso.linkCurso"
-          :lineColor="myJson.lineColorCursos" :bgColor="myJson.bgColorCursos"
+          :lineColor="myJson.lineColorCursos"
+          :bgColor="myJson.bgColorCursos"
         />
-
       </CursosPage>
-       <PasosPages
+      <PasosPages
         :colorIcon="myJson.colorIcon"
         :lineColor="myJson.lineColorPasos"
         :bgColor="myJson.bgColorPasos"
@@ -27,7 +37,6 @@
         :informeText="myJson.informesText"
         :folletoText="myJson.folletoText"
         :admisionText="myJson.admisionText"
-       
       />
       <FooterPage />
     </div>
@@ -45,7 +54,7 @@ import CursoList from "../components/CursoList";
 import PasosPages from "../components/PasosPages.vue";
 
 export default {
-  name:"MiningPage",
+  name: "MiningPage",
   components: {
     HeadePage,
     FooterPage,
@@ -60,22 +69,26 @@ export default {
   },
   data() {
     return {
-      myJson: json
+      myJson: json,
     };
   },
-}
+};
 </script>
 
 <style lang="stylus" scoped>
+@import '../styles/main.styl';
 
- @import "../styles/main.styl"
+.section-1[data-v-098f2de6] {
+  margin-right: 250px !important;
+}
 
-.section-1[data-v-098f2de6]
-  margin-right 250px !important
-.section-2[data-v-098f2de6]
-  width: 250px !important 
-.jumbotron
-  background-image url('../assets/areas/mineria/kv1.jpg')
+.section-2[data-v-098f2de6] {
+  width: 250px !important;
+}
+
+.jumbotron {
+  background-image: url('../assets/areas/mineria/kv1.jpg');
+}
 
 .fecha {
   font-size: 20px;
@@ -160,6 +173,4 @@ li:nth-child(odd) {
 section {
   border-bottom: 4px solid primary-pee;
 }
-
-
 </style>

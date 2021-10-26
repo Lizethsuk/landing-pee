@@ -1,7 +1,7 @@
 <template>
-   <div>
+  <div>
     <div>
-     <HeadePage />
+      <HeadePage />
       <ImagePage especialidad="Finanzas" :message="myJson.title" />
       <DatePage
         :bgColorButton="myJson.bgColorButtonDate"
@@ -13,7 +13,7 @@
         :month="myJson.month"
         :day="myJson.date"
       />
-      <CursosPage :title="myJson.titleCurso" >
+      <CursosPage :title="myJson.titleCurso">
         <CursoList
           v-for="curso in myJson.cursos"
           :sectionName="curso.section"
@@ -21,29 +21,33 @@
           :teacherName="curso.teacher"
           :linkCurso="curso.linkCurso"
           :horarioName="curso.horario"
+          :isHidden="curso.img1"
+          :isHidden1="curso.img2"
           :key="curso.id"
-          :lineColor="myJson.lineColorCursos" :bgColor="myJson.bgColorCursos"
+          :lineColor="myJson.lineColorCursos"
+          :bgColor="myJson.bgColorCursos"
         />
-
       </CursosPage>
-         <hr>
-      <CursosPage :title="myJson.titleSecondCurso" >
+      <hr />
+      <CursosPage :title="myJson.titleSecondCurso">
         <CursoList
           v-for="curso in myJson.SecondCurso"
           :sectionName="curso.section"
+          :isHidden="curso.img1"
+          :isHidden1="curso.img2"
           :cursoName="curso.curso"
           :teacherName="curso.teacher"
           :horarioName="curso.horario"
           :linkCurso="curso.linkCurso"
           :key="curso.id"
-          :lineColor="myJson.lineColorCursos" :bgColor="myJson.bgColorCursos"
+          :lineColor="myJson.lineColorCursos"
+          :bgColor="myJson.bgColorCursos"
         />
-
       </CursosPage>
 
-         <hr>
+      <hr />
 
-      <CursosPage :title="myJson.titleThreeCurso" >
+      <CursosPage :title="myJson.titleThreeCurso">
         <CursoList
           v-for="curso in myJson.ThreeCurso"
           :sectionName="curso.section"
@@ -51,12 +55,14 @@
           :teacherName="curso.teacher"
           :horarioName="curso.horario"
           :linkCurso="curso.linkCurso"
+          :isHidden="curso.img1"
+          :isHidden1="curso.img2"
           :key="curso.id"
-          :lineColor="myJson.lineColorCursos" :bgColor="myJson.bgColorCursos"
+          :lineColor="myJson.lineColorCursos"
+          :bgColor="myJson.bgColorCursos"
         />
-
       </CursosPage>
-       <PasosPages
+      <PasosPages
         :colorIcon="myJson.colorIcon"
         :lineColor="myJson.lineColorPasos"
         :bgColor="myJson.bgColorPasos"
@@ -64,7 +70,6 @@
         :informeText="myJson.informesText"
         :folletoText="myJson.folletoText"
         :admisionText="myJson.admisionText"
-       
       />
       <FooterPage />
     </div>
@@ -82,7 +87,7 @@ import DatePage from "../components/DatePage";
 import PasosPages from "../components/PasosPages.vue";
 
 export default {
-  name:"FinancePage",
+  name: "FinancePage",
   components: {
     HeadePage,
     FooterPage,
@@ -100,19 +105,21 @@ export default {
       myJson: json,
     };
   },
-}
+};
 </script>
 
 <style lang="stylus" scoped>
+@import '../styles/main.styl';
 
- @import "../styles/main.styl"
-
-hr 
-  background-color:secondary-finanzas
+hr {
+  background-color: secondary-finanzas;
   height: 3px;
-  opacity 1 !important
-.jumbotron
-  background-image url('../assets/areas/finanzas/banner/kv_002-1.jpg')
+  opacity: 1 !important;
+}
+
+.jumbotron {
+  background-image: url('../assets/areas/finanzas/banner/kv_002-1.jpg');
+}
 
 .fecha {
   font-size: 20px;
@@ -197,6 +204,4 @@ li:nth-child(odd) {
 section {
   border-bottom: 4px solid primary-pee;
 }
-
-
 </style>
