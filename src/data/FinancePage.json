@@ -17,6 +17,7 @@
   "titleCurso":"Cursos del Certificado de Finanzas Corporativas",
   "cursos":[
     {
+      "img2" : "none",
       "section": "Finanzas ",
       "curso": "Análisis de estados financieros",
       "teacher": "Marita Chang Olivas",
@@ -24,6 +25,7 @@
       "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/analisis-de-estados-financieros/"
     },
     {
+      "img2" : "none",
       "section": "Finanzas ",
       "curso": "Análisis de Riesgo Crediticio",
       "teacher": "Arturo García Villacorta",
@@ -31,6 +33,7 @@
       "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/analisis-de-riesgo-crediticio/"
     },
     {
+      "img2" : "none",
       "section": "Finanzas",
       "curso": "Análisis, modelamiento financiero y proyección de estados financieros a mediano y largo plazo",
       "teacher": "Carlos Aguirre Gamarra ",
@@ -39,6 +42,7 @@
       
     },
     {
+      "img2" : "none",
       "section": "Finanzas",
       "curso": "Cómo gestionar un adecuado planeamiento tributario",
       "teacher": "Reynaldo Moquillaza Orellana",
@@ -46,6 +50,7 @@
       "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/como-gestionar-un-adecuado-planeamiento-tributario/"
     },
     {
+      "img2" : "none",
       "section": "Finanzas",
       "curso": "Contabilidad Financiera Gerencial",
       "teacher": "Luis Ramos Rodríguez",
@@ -53,6 +58,7 @@
       "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/contabilidad-financiera-gerencial/"
     },
     {
+      "img2" : "none",
       "section": "Finanzas",
       "curso": "Contabilidad y Finanzas para No Especialistas",
       "teacher": "Patricia Gonzáles",
@@ -60,6 +66,7 @@
       "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/contabilidad-y-finanzas-para-no-especialistas/"
     },
     {
+      "img2" : "none",
       "section": "Finanzas",
       "curso": "Estrategias financieras para la creación de valor",
       "teacher": "Alfredo Mendiola Cabrera",
@@ -67,6 +74,7 @@
       "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/estrategias-financieras-para-la-creacion-de-valor/"
     },
     {
+      "img2" : "none",
       "section": "Finanzas",
       "curso": "Financiamiento para startups",
       "teacher": "Luis Felipe Oliva Díaz",
@@ -74,6 +82,7 @@
       "linkCurso":""
     },
     {
+      "img2" : "none",
       "section": "Finanzas",
       "curso": "Finanzas en empresas B2B",
       "teacher": "Alfredo Mendiola Cabrera | Carlos Aguirre Gamarra",
@@ -81,6 +90,7 @@
       "linkCurso":"https://www.esan.edu.pe/pee/areas/b2b/finanzas-en-empresas-b2b/"
     },
     {
+      "img2" : "none",
       "section": "Finanzas",
       "curso": "Finanzas para proyectos sostenibles",
       "teacher": "Walther Reátegui Vela",
@@ -88,6 +98,7 @@
       "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/finanzas-para-proyectos-sostenibles/"
     },
     {
+      "img2" : "none",
       "section": "Finanzas",
       "curso": "Gestión de créditos y cobranzas",
       "teacher": "Arturo García Villacorta",
@@ -95,6 +106,7 @@
       "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/gestion-de-creditos-y-cobranzas/"
     },
     {
+      "img2" : "none",
       "section": "Finanzas",
       "curso": "Optimización de la gestión financiera y tributaria",
       "teacher": "Marita Chang Olivas | Carlos Chirinos Sota",
@@ -102,6 +114,7 @@
       "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/optimizacion-de-la-gestion-financiera-y-tributaria/"
     },
     {
+      "img2" : "none",
       "section": "Finanzas",
       "curso": "Planeamiento Financiero",
       "teacher": "Manuel Acevedo",
@@ -112,6 +125,7 @@
   "titleSecondCurso":"Cursos del Certificado de Especialización en Preparación y Evaluación de Proyectos",
   "SecondCurso":[
     {
+      "img2" : "none",
       "section": "Finanzas ",
       "curso": "Formulación, Preparación y Evaluación de Proyectos Nuevos y Proyectos en Marcha",
       "teacher": "Alex Albújar Cruz",
@@ -119,6 +133,7 @@
       "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/formulacion-preparacion-y-evaluacion-de-proyectos-nuevos-y-proyectos-en-marcha/"
     },
     {
+      "img2" : "none",
       "section": "Finanzas ",
       "curso": "Fusiones, Adquisiciones y Valorización de Empresas",
       "teacher": "Enrique Cárcamo Cárcamo",
@@ -129,6 +144,7 @@
   "titleThreeCurso":"Cursos del Certificado de Especialización en Banca",
   "ThreeCurso":[
     {
+      "img2" : "none",
       "section": "Finanzas ",
       "curso": "Análisis de Riesgo Crediticio",
       "teacher": "Arturo García Villacorta",
@@ -137,6 +153,7 @@
     },
    
     {
+      "img2" : "none",
       "section": "Finanzas",
       "curso": "Gestión de créditos y cobranzas",
       "teacher": "Arturo García Villacorta",

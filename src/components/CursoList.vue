@@ -95,7 +95,7 @@ export default {
 }
 
 .name-curso {
-  font-size: 20px;
+  font-size: 19px;
   font-family: gt-pressura-bold;
 }
 

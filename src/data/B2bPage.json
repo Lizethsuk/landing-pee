@@ -26,6 +26,7 @@
       "linkCurso":"https://www.esan.edu.pe/pee/areas/b2b/customer-experience-en-b2b/"
     },
     {
+      "img2" : "none",
       "section": "B2B",
       "curso": "Estrategias de Marketing B2B",
       "teacher": "Jorge Merzthal Toranzo",
@@ -34,6 +35,7 @@
     },
     
     {
+      "img2" : "none",
       "section": "B2B",
       "curso": "Finanzas en empresas B2B",
       "teacher": "Alfredo Mendiola Cabrera | Carlos Aguirre",
