@@ -17,7 +17,7 @@
             <b-dropdown-item to="/finanzas" href="#">Finanzas</b-dropdown-item>
             
             <b-dropdown-item to="/marketing" href="#">Marketing</b-dropdown-item>
-            <b-dropdown-item to="/mineria" href="#">Minería</b-dropdown-item>
+          <!--  <b-dropdown-item to="/mineria" href="#">Minería</b-dropdown-item> -->
             <b-dropdown-item to="/salud" href="#">Salud</b-dropdown-item>
             <b-dropdown-item to="/logistica" href="#">Operaciones y Logística</b-dropdown-item>
             <b-dropdown-item to="/ti" href="#">Tecnologías de la Información</b-dropdown-item>
