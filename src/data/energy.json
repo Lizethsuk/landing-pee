@@ -16,14 +16,7 @@
   "buttonText":"Mira aquí el video",
   "titleCurso":"Cursos del Certificado de Especialización en Gestión de la Energía",
   "cursos":[
-    {
-      "img2" : "none",
-      "section": "Energía",
-      "curso": "Aspectos tributarios del sector de energía y minería",
-      "teacher": "Roberto José Casanova-Regis Albi",
-      "horario": "Lunes de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":""
-    },
+    
     {
       "img2" : "none",
       "section": "Energía",

@@ -10,7 +10,7 @@
   "title":"Salud",
   "text-con":"Conferencia Informativa",
   "date":"14",
-  "month":"setiembre",
+  "month":"diciembre",
   "dateTextSecond" : "Informativa",
   "dateText":"Conferencia",
   "buttonText":"Mira aquí el video",
@@ -31,14 +31,6 @@
       "teacher": "Rosina Hinojosa Ramírez",
       "horario": "Sábado de 9:00 a. m. a 12:15 p. m.",
       "linkCurso":"https://www.esan.edu.pe/pee/areas/salud/farmaeconomia/"
-    },
-    {
-      "img2" : "none",
-      "section": "Salud",
-      "curso": "Gerencia de contratos, regulación y acreditación en los servicios de salud",
-      "teacher": "Jorge Armando Ruiz Portal",
-      "horario": "Miércoles de 7:30 p. m. a 10:45 p. m.",
-      "linkCurso":""
     }
   ],
   "titlePasos":"Siguientes pasos",
