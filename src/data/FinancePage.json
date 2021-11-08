@@ -120,6 +120,14 @@
       "teacher": "Manuel Acevedo",
       "horario": "Miércoles de 7:30 p. m. a 10:45 p. m.",
       "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/planeamiento-financiero/"
+    },
+    {
+      "img2" : "none",
+      "section": "Finanzas",
+      "curso": "Costos para la Gerencia",
+      "teacher": "José Velazco Páucar",
+      "horario": "Jueves de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/finanzas/costos-para-la-gerencia/"
     }
   ],
   "titleSecondCurso":"Cursos del Certificado de Especialización en Preparación y Evaluación de Proyectos",

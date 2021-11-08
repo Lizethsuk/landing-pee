@@ -101,6 +101,22 @@
       "teacher": "Aldo Bresani Torres",
       "horario": "Jueves de 7:30 p. m. a 10:45 p. m.",
       "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/planeamiento-y-control-de-la-produccion/"
+    },
+    {
+      "img2" : "none",
+      "section": "Operaciones y Logística",
+      "curso": "Lean thinking & tools para procesos de bienes y servicios",
+      "teacher": "Freddy Alvarado Vargas",
+      "horario": "Martes de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/lean-thinking-tools-para-procesos-de-bienes-y-servicios/"
+    },
+    {
+      "img2" : "none",
+      "section": "Operaciones y Logística",
+      "curso": "Técnicas prácticas de calidad para elevar la rentabilidad en la empresa",
+      "teacher": "Aldo Bresani Torres",
+      "horario": "Jueves de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/operaciones-y-logistica/tecnicas-practicas-de-calidad-para-elevar-la-rentabilidad-en-la-empresa/"
     }
   ],
   "titleSecondCurso":"Cursos del Certificado de Especialización en Gestión de Procesos",

@@ -3,17 +3,7 @@
     <div>
       <HeadePage />
       <ImagePage especialidad="Minería" :message="myJson.title" />
-      <DatePage
-        class="date-mining"
-        :bgColorButton="myJson.bgColorButtonDate"
-        :bgColorDivider="myJson.bgColorDividerDate"
-        :dateTextSecond="myJson.dateTextSecond"
-        :buttonText="myJson.buttonText"
-        :dateText="myJson.dateText"
-        :bgColor="myJson.bgColorDate"
-        :month="myJson.month"
-        :day="myJson.date"
-      />
+     
       <CursosPage :title="myJson.titleCurso">
         <CursoList
           v-for="curso in myJson.cursos"
@@ -48,7 +38,6 @@ import json from "../data/MiningPage.json";
 import HeadePage from "../components/HeadePage";
 import FooterPage from "../components/FooterPage";
 import ImagePage from "../components/ImagePage.vue";
-import DatePage from "../components/DatePage.vue";
 import CursosPage from "../components/CursosPage";
 import CursoList from "../components/CursoList";
 import PasosPages from "../components/PasosPages.vue";
@@ -59,7 +48,6 @@ export default {
     HeadePage,
     FooterPage,
     ImagePage,
-    DatePage,
     CursosPage,
     CursoList,
     PasosPages,

@@ -31,6 +31,14 @@
       "teacher": "Rosina Hinojosa Ramírez",
       "horario": "Sábado de 9:00 a. m. a 12:15 p. m.",
       "linkCurso":"https://www.esan.edu.pe/pee/areas/salud/farmaeconomia/"
+    },
+    {
+      "img2" : "none",
+      "section": "Salud",
+      "curso": "Salud digital e historia clínica electrónica: desafíos y soluciones",
+      "teacher": "Juan Jorge Rodríguez Abad | Alfredo Rasmussen Ochoa",
+      "horario": "Martes de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/salud/salud-digital-e-historia-clinica-electronica-desafios-y-soluciones/"
     }
   ],
   "titlePasos":"Siguientes pasos",

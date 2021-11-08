@@ -32,6 +32,14 @@
       "teacher": "Martín Vergara Pinto",
       "horario": "Miércoles de 7:30 p. m. a 10:45 p. m.",
       "linkCurso":"https://www.esan.edu.pe/pee/areas/mineria/gestion-de-sistemas-de-compensacion-y-retribucion-total-en-empresas-del-sector-mineria-y-energia/"
+    },
+    {
+      "img2" : "none",
+      "section": "Energía",
+      "curso": "Planificación energética",
+      "teacher": "Luis Espinoza Quiñonez",
+      "horario": "Sábados de 9:30 a.m. a 12:45 p.m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/energia/planificacion-energetica/"
     }
   ],
   "titlePasos":"Del 07 de junio al 07 de agosto de 2021 ",

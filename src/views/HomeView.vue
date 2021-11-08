@@ -266,7 +266,7 @@
                       </div>
                     </div>
                   </b-col>
-         <!-- <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
+       <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
             <div class="flip-card" >
               <div class="flip-card-inner">
                 <div class="flip-card-front bg-mineria">
@@ -293,7 +293,7 @@
                 </div>
               </div>
             </div>
-          </b-col> -->
+          </b-col> 
           <b-col cols="12" lg="4" sm="6" class="pl-0 pr-0">
             <div class="flip-card" >
               <div class="flip-card-inner">

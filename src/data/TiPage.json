@@ -60,7 +60,7 @@
     {
       "img2" : "none",
       "section": "Tecnologías de la Información",
-      "curso": "Gestión de la innovación en entornos BAN",
+      "curso": "Gestión de la innovación en entornos BANI",
       "teacher": "Eddy Morris Abarca",
       "horario": "Domingo de 9:00 a. m. a 12:15 p. m.",
       "linkCurso":"https://www.esan.edu.pe/pee/areas/tecnologias-de-informacion/gestion-de-la-innovacion-en-entornos-bani/"
@@ -88,6 +88,14 @@
       "teacher": "Eddy Morris",
       "horario": "Miércoles de 7:30 p. m. a 10:45 p. m.",
       "linkCurso":"https://www.esan.edu.pe/pee/areas/tecnologias-de-informacion/transformacion-digital-en-las-organizaciones/"
+    },
+    {
+      "img2" : "none",
+      "section": "Tecnologías de la Información",
+      "curso": "Business Intelligence",
+      "teacher": "Richard Moarri Nohra",
+      "horario": "Martes de 7:30 p. m. a 10:45 p. m.",
+      "linkCurso":"https://www.esan.edu.pe/pee/areas/tecnologias-de-informacion/inteligencia-de-negocios-business-intelligence/"
     }
   ],
   "titlePasos":"Siguientes pasos",

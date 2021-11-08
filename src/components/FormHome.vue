@@ -39,7 +39,7 @@
           <option value="Energía">Energía</option>
           <option value="Finanzas">Finanzas</option>
           <option value="Marketing">Marketing</option>
-         <!--  <option value="Minería">Minería</option> -->
+          <option value="Minería">Minería</option> 
           <option value="Salud">Salud</option>
           <option value="Operaciones y Logística">
             Operaciones y Logística
